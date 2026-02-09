@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股投资组合 X 推文汇总 - 真实测试版</title>
+    <title>美股投资组合 X 推文汇总 - 修正版</title>
     <style>
         * {
             margin: 0;
@@ -198,6 +198,11 @@
             color: #1d9bf0;
         }
         
+        .priority-rejected {
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+        
         .ai-note {
             margin-left: 52px;
             margin-top: 8px;
@@ -213,6 +218,15 @@
             color: #1d9bf0;
         }
         
+        .ai-note-rejected {
+            background-color: rgba(239, 68, 68, 0.1);
+            border-left: 2px solid #ef4444;
+        }
+        
+        .ai-note-rejected strong {
+            color: #ef4444;
+        }
+        
         .section-divider {
             margin: 16px 0;
             padding: 12px;
@@ -222,6 +236,27 @@
             font-size: 14px;
             font-weight: 600;
             color: #1d9bf0;
+        }
+        
+        .learning-box {
+            margin: 16px 0;
+            padding: 16px;
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 1px solid #ef4444;
+            border-radius: 12px;
+        }
+        
+        .learning-box h3 {
+            color: #ef4444;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        
+        .learning-box p {
+            color: #e7e9ea;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
         }
         
         .footer {
@@ -243,8 +278,8 @@
     <div class="container">
         <div class="header">
             <h1>📈 美股投资组合 X 推文汇总</h1>
-            <div class="date">2026-02-09 真实测试版 | 过去48小时</div>
-            <div class="stats">✅ 官方内容 3条 | 🔍 第三方深度分析 3条</div>
+            <div class="date">2026-02-09 修正版 | 过去48小时</div>
+            <div class="stats">✅ 官方内容 1条 | 🔍 第三方深度分析 2条 | ❌ 已过滤 1条</div>
         </div>
         
         <!-- Tesla Section -->
@@ -259,7 +294,7 @@
             
             <div class="section-divider">📢 官方内容（自动收录，无需判断）</div>
             
-            <!-- Official Tweet 1 -->
+            <!-- Official Tweet -->
             <div class="tweet">
                 <div class="tweet-header">
                     <div class="tweet-avatar">T</div>
@@ -298,21 +333,17 @@
                 <div class="tweet-content">
                     <div class="tweet-text">This is a key reason why xAI Colossus (largest coherent AI supercomputer) has >500 Tesla megapack batteries feeding power & why all the new large AI data centers will. 
 
-People close to the tech & many institutions are aware, eventually retail will catch up. $EOSE $TSLA FLNC
-
-引用：AI数据中心电力问题比你想象的更严重（不仅仅是容量问题）</div>
+People close to the tech & many institutions are aware, eventually retail will catch up. $EOSE $TSLA FLNC</div>
                     <div class="tweet-translation">🇨🇳 这是xAI Colossus（最大的连贯AI超级计算机）使用超过500个Tesla Megapack电池供电的关键原因，也是为什么所有新的大型AI数据中心都会这样做。
 
-接近技术的人和许多机构都知道这一点，最终散户投资者也会意识到。$EOSE $TSLA FLNC
-
-引用：AI数据中心电力问题比你想象的更严重（不仅仅是容量问题）</div>
+接近技术的人和许多机构都知道这一点，最终散户投资者也会意识到。</div>
                 </div>
                 <div class="ai-note">
                     <strong>AI判断：</strong>深度行业洞察 ✅
-                    <br>• 揭示AI数据中心对Tesla储能业务的需求
-                    <br>• 包含具体数据（>500个Megapack）
-                    <br>• 提出投资逻辑：机构已知，散户将跟进
-                    <br>• 涉及供应链和产业趋势
+                    <br>• 包含具体数据：>500个Megapack
+                    <br>• 揭示行业趋势：AI数据中心对储能的需求
+                    <br>• 投资逻辑：机构已知，散户将跟进
+                    <br>• 有实质内容，看了有收获
                     <br>→ 自动收录
                 </div>
                 <div class="tweet-stats">
@@ -324,41 +355,6 @@ People close to the tech & many institutions are aware, eventually retail will c
             </div>
             
             <!-- Third-party Analysis 2 -->
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="tweet-avatar">A</div>
-                    <div class="tweet-author">
-                        <span class="tweet-author-name">Anthony Pompliano 🌪</span>
-                        <span class="tweet-author-handle">@APompliano</span>
-                        <span class="priority-badge priority-high">深度分析</span>
-                    </div>
-                    <div class="tweet-time">13小时前</div>
-                </div>
-                <div class="tweet-content">
-                    <div class="tweet-text">I sat down with @jvisserlabs to discuss why bitcoin is selling off, why software multiples are compressing, and how capital is shifting toward scarce, physical assets. 
-
-We cover data centers, AI, energy, and semiconductors, plus insights on Elon Musk, Tesla, SpaceX, and what it means for investors.</div>
-                    <div class="tweet-translation">🇨🇳 我与@jvisserlabs坐下来讨论为什么比特币正在抛售，为什么软件估值倍数正在压缩，以及资本如何转向稀缺的实物资产。
-
-我们涵盖了数据中心、AI、能源和半导体，以及对Elon Musk、Tesla、SpaceX的见解，以及这对投资者意味着什么。</div>
-                </div>
-                <div class="ai-note">
-                    <strong>AI判断：</strong>宏观投资趋势分析 ✅
-                    <br>• 资本流向分析：从软件转向实物资产
-                    <br>• 涉及多个相关行业：数据中心、AI、能源、半导体
-                    <br>• 包含Tesla和SpaceX的投资逻辑
-                    <br>• 作者是知名投资者Anthony Pompliano
-                    <br>→ 自动收录
-                </div>
-                <div class="tweet-stats">
-                    <div class="tweet-stat"><span>💬</span><span>23</span></div>
-                    <div class="tweet-stat"><span>🔁</span><span>23</span></div>
-                    <div class="tweet-stat"><span>❤️</span><span>254</span></div>
-                    <div class="tweet-stat"><span>👁️</span><span>3.6万</span></div>
-                </div>
-            </div>
-            
-            <!-- Third-party Analysis 3 -->
             <div class="tweet">
                 <div class="tweet-header">
                     <div class="tweet-avatar">M</div>
@@ -374,19 +370,19 @@ We cover data centers, AI, energy, and semiconductors, plus insights on Elon Mus
 
 At Tesla, we have open-sourced our patents. Anyone can use our patents for free. 
 
-At SpaceX, we don't use patents. Once in a while, we'll file a patent just so..."</div>
+At SpaceX, we don't use patents."</div>
                     <div class="tweet-translation">🇨🇳 Elon Musk："我的任何公司所做的事情都不是为了扼杀竞争。事实上，我们做的恰恰相反。
 
 在Tesla，我们开源了我们的专利。任何人都可以免费使用我们的专利。
 
-在SpaceX，我们不使用专利。偶尔我们会申请专利，只是为了..."</div>
+在SpaceX，我们不使用专利。"</div>
                 </div>
                 <div class="ai-note">
                     <strong>AI判断：</strong>竞争战略分析 ✅
                     <br>• 揭示Tesla和SpaceX的开放战略
-                    <br>• 反映公司对竞争的态度和长期策略
-                    <br>• 可能影响行业竞争格局
-                    <br>• 虽然是Elon的话，但由第三方分享和传播
+                    <br>• 具体内容：开源专利、不用专利
+                    <br>• 反映公司对竞争的态度
+                    <br>• 有实质观点，看了有收获
                     <br>→ 自动收录
                 </div>
                 <div class="tweet-stats">
@@ -396,43 +392,71 @@ At SpaceX, we don't use patents. Once in a while, we'll file a patent just so...
                     <div class="tweet-stat"><span>👁️</span><span>12万</span></div>
                 </div>
             </div>
-        </div>
-        
-        <!-- NVIDIA Section -->
-        <div class="company-section">
-            <div class="company-header">
-                <div class="company-icon">N</div>
-                <div class="company-info">
-                    <h2>NVIDIA</h2>
-                    <div class="symbol">NVDA</div>
+            
+            <div class="section-divider">❌ 已过滤内容（学习案例）</div>
+            
+            <!-- Rejected Tweet -->
+            <div class="tweet" style="opacity: 0.6;">
+                <div class="tweet-header">
+                    <div class="tweet-avatar">A</div>
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Anthony Pompliano 🌪</span>
+                        <span class="tweet-author-handle">@APompliano</span>
+                        <span class="priority-badge priority-rejected">已过滤</span>
+                    </div>
+                    <div class="tweet-time">13小时前</div>
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-text">I sat down with @jvisserlabs to discuss why bitcoin is selling off, why software multiples are compressing, and how capital is shifting toward scarce, physical assets. 
+
+We cover data centers, AI, energy, and semiconductors, plus insights on Elon Musk, Tesla, SpaceX...</div>
+                    <div class="tweet-translation">🇨🇳 我与@jvisserlabs坐下来讨论为什么比特币正在抛售，为什么软件估值倍数正在压缩，以及资本如何转向稀缺的实物资产。
+
+我们涵盖了数据中心、AI、能源和半导体，以及对Elon Musk、Tesla、SpaceX的见解...</div>
+                </div>
+                <div class="ai-note ai-note-rejected">
+                    <strong>用户反馈：</strong>不符合标准 ❌
+                    <br>• 只是播客预告，说"我们讨论了X、Y、Z"
+                    <br>• 没有具体观点、数据或结论
+                    <br>• 看了没有收获
+                    <br>→ 应该过滤
                 </div>
             </div>
             
-            <div class="section-divider">⏳ 测试版：正在采集中...</div>
-            <div style="padding: 20px; text-align: center; color: #71767b; font-size: 14px;">
-                完整版将包含NVIDIA官方推文和第三方深度分析
+            <div class="learning-box">
+                <h3>📚 学习要点</h3>
+                <p><strong>为什么这条被过滤：</strong></p>
+                <p>• 播客/视频预告类内容：只说"我们讨论了..."但没有实质内容</p>
+                <p>• 没有具体观点、数据、分析或结论</p>
+                <p>• 用户看了不会有收获</p>
+                <p style="margin-top: 12px;"><strong>正确的标准：</strong></p>
+                <p>• 必须有实质内容：具体的观点、数据、分析、结论</p>
+                <p>• 用户看了能有收获、能帮助投资决策</p>
+                <p>• 不是宣传，而是干货</p>
             </div>
         </div>
         
         <div class="footer">
-            <p><strong>📊 AI筛选逻辑展示</strong></p>
-            <p style="margin-top: 12px;">本次测试展示了AI如何筛选第三方内容：</p>
-            <p style="margin-top: 8px;">
-                <strong>✅ 自动收录的深度分析：</strong><br>
-                1. Jeff Lutz - AI数据中心电力需求分析（行业洞察+数据）<br>
-                2. Anthony Pompliano - 资本流向趋势分析（宏观投资逻辑）<br>
-                3. Mars University - Tesla开放战略分析（竞争格局）
+            <p><strong>📊 AI筛选逻辑（已修正）</strong></p>
+            <p style="margin-top: 12px;">
+                <strong>✅ 收录的2条深度分析：</strong><br>
+                1. Jeff Lutz - AI数据中心电力需求（具体数据+行业洞察）<br>
+                2. Mars University - Tesla开放战略（具体内容+战略分析）
             </p>
             <p style="margin-top: 12px;">
-                <strong>筛选标准：</strong><br>
-                • 包含独特见解或数据支撑<br>
-                • 涉及竞争、技术、产业链分析<br>
-                • 对投资决策有参考价值<br>
-                • 避免重复讨论和情绪化评论
+                <strong>❌ 过滤的1条：</strong><br>
+                Anthony Pompliano - 播客预告（只说讨论了什么，没有实质内容）
+            </p>
+            <p style="margin-top: 12px;">
+                <strong>更新的筛选标准：</strong><br>
+                • 必须有实质内容（观点、数据、分析、结论）<br>
+                • 避免播客/视频预告、活动宣传<br>
+                • 用户看了要有收获<br>
+                • 能帮助投资决策
             </p>
             <p style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #2f3336;">
                 🤖 由 OpenClaw AI 自动采集、筛选和翻译<br>
-                数据来源：X (Twitter) | 测试时间：2026-02-09 21:00<br>
+                根据用户反馈持续学习和优化<br>
                 © 2026 美股投资组合监控系统
             </p>
         </div>
