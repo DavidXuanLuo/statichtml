@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股投资组合 X 推文汇总 - 测试版</title>
+    <title>美股投资组合 X 推文汇总 - 真实测试版</title>
     <style>
         * {
             margin: 0;
@@ -193,9 +193,9 @@
             color: #f91880;
         }
         
-        .priority-medium {
-            background-color: rgba(255, 212, 0, 0.2);
-            color: #ffd400;
+        .priority-official {
+            background-color: rgba(29, 155, 240, 0.2);
+            color: #1d9bf0;
         }
         
         .ai-note {
@@ -213,10 +213,15 @@
             color: #1d9bf0;
         }
         
-        .no-tweets {
-            padding: 40px 16px;
+        .section-divider {
+            margin: 16px 0;
+            padding: 12px;
+            background-color: #16181c;
+            border-radius: 8px;
             text-align: center;
-            color: #71767b;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d9bf0;
         }
         
         .footer {
@@ -238,8 +243,8 @@
     <div class="container">
         <div class="header">
             <h1>📈 美股投资组合 X 推文汇总</h1>
-            <div class="date">2026-02-09 测试版 | 过去24小时</div>
-            <div class="stats">✅ 收录 3 条重要内容 | 🤖 AI筛选测试中</div>
+            <div class="date">2026-02-09 真实测试版 | 过去48小时</div>
+            <div class="stats">✅ 官方内容 3条 | 🔍 第三方深度分析 3条</div>
         </div>
         
         <!-- Tesla Section -->
@@ -252,14 +257,16 @@
                 </div>
             </div>
             
-            <!-- Tweet 1: Model Y获奖 -->
+            <div class="section-divider">📢 官方内容（自动收录，无需判断）</div>
+            
+            <!-- Official Tweet 1 -->
             <div class="tweet">
                 <div class="tweet-header">
                     <div class="tweet-avatar">T</div>
                     <div class="tweet-author">
                         <span class="tweet-author-name">Tesla</span>
                         <span class="tweet-author-handle">@Tesla</span>
-                        <span class="priority-badge priority-high">高优先级</span>
+                        <span class="priority-badge priority-official">官方</span>
                     </div>
                     <div class="tweet-time">23小时前</div>
                 </div>
@@ -267,121 +274,131 @@
                     <div class="tweet-text">Consumer Reports names Model Y best EV for 2026</div>
                     <div class="tweet-translation">🇨🇳 Consumer Reports评选Model Y为2026年最佳电动车</div>
                 </div>
-                <div class="ai-note">
-                    <strong>AI判断：</strong>产品获奖信息，来自权威媒体Consumer Reports，对品牌形象和销量有正面影响 → 自动收录
-                </div>
                 <div class="tweet-stats">
-                    <div class="tweet-stat">
-                        <span>💬</span>
-                        <span>292</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>🔁</span>
-                        <span>841</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>❤️</span>
-                        <span>6.1K</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>👁️</span>
-                        <span>37万</span>
-                    </div>
+                    <div class="tweet-stat"><span>💬</span><span>292</span></div>
+                    <div class="tweet-stat"><span>🔁</span><span>841</span></div>
+                    <div class="tweet-stat"><span>❤️</span><span>6.1K</span></div>
+                    <div class="tweet-stat"><span>👁️</span><span>37万</span></div>
                 </div>
             </div>
             
-            <!-- Tweet 2: FSD救命 -->
+            <div class="section-divider">🔍 第三方深度分析（AI筛选）</div>
+            
+            <!-- Third-party Analysis 1 -->
             <div class="tweet">
                 <div class="tweet-header">
-                    <div class="tweet-avatar">T</div>
+                    <div class="tweet-avatar">J</div>
                     <div class="tweet-author">
-                        <span class="tweet-author-name">Tesla</span>
-                        <span class="tweet-author-handle">@Tesla</span>
-                        <span class="priority-badge priority-high">高优先级</span>
+                        <span class="tweet-author-name">Jeff Lutz 🔋</span>
+                        <span class="tweet-author-handle">@thejefflutz</span>
+                        <span class="priority-badge priority-high">深度分析</span>
                     </div>
-                    <div class="tweet-time">2月7日</div>
+                    <div class="tweet-time">21小时前</div>
                 </div>
                 <div class="tweet-content">
-                    <div class="tweet-text">❤️
+                    <div class="tweet-text">This is a key reason why xAI Colossus (largest coherent AI supercomputer) has >500 Tesla megapack batteries feeding power & why all the new large AI data centers will. 
 
-引用：FSD helped save my father's life during a massive heart attack. This is our story
+People close to the tech & many institutions are aware, eventually retail will catch up. $EOSE $TSLA FLNC
 
-On November 15, 2025, my father left Atlanta heading to Birmingham on I-20 West to help care for my grandmother. He had just received the FSD v14.1.3 update on his 2026 Model Y Launch Edition...</div>
-                    <div class="tweet-translation">🇨🇳 ❤️
+引用：AI数据中心电力问题比你想象的更严重（不仅仅是容量问题）</div>
+                    <div class="tweet-translation">🇨🇳 这是xAI Colossus（最大的连贯AI超级计算机）使用超过500个Tesla Megapack电池供电的关键原因，也是为什么所有新的大型AI数据中心都会这样做。
 
-引用：FSD在一次严重心脏病发作中帮助挽救了我父亲的生命。这是我们的故事
+接近技术的人和许多机构都知道这一点，最终散户投资者也会意识到。$EOSE $TSLA FLNC
 
-2025年11月15日，我父亲从亚特兰大出发前往伯明翰照顾我的祖母。他刚刚在2026款Model Y Launch Edition上收到FSD v14.1.3更新...</div>
+引用：AI数据中心电力问题比你想象的更严重（不仅仅是容量问题）</div>
                 </div>
                 <div class="ai-note">
-                    <strong>AI判断：</strong>FSD技术的真实救命案例，展示自动驾驶的安全价值，具有重大社会意义和营销价值 → 自动收录
+                    <strong>AI判断：</strong>深度行业洞察 ✅
+                    <br>• 揭示AI数据中心对Tesla储能业务的需求
+                    <br>• 包含具体数据（>500个Megapack）
+                    <br>• 提出投资逻辑：机构已知，散户将跟进
+                    <br>• 涉及供应链和产业趋势
+                    <br>→ 自动收录
                 </div>
                 <div class="tweet-stats">
-                    <div class="tweet-stat">
-                        <span>💬</span>
-                        <span>292</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>🔁</span>
-                        <span>1.1K</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>❤️</span>
-                        <span>8.0K</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>👁️</span>
-                        <span>69万</span>
-                    </div>
+                    <div class="tweet-stat"><span>💬</span><span>10</span></div>
+                    <div class="tweet-stat"><span>🔁</span><span>7</span></div>
+                    <div class="tweet-stat"><span>❤️</span><span>144</span></div>
+                    <div class="tweet-stat"><span>👁️</span><span>1.4万</span></div>
                 </div>
             </div>
             
-            <!-- Tweet 3: 进入非洲市场 -->
+            <!-- Third-party Analysis 2 -->
             <div class="tweet">
                 <div class="tweet-header">
-                    <div class="tweet-avatar">T</div>
+                    <div class="tweet-avatar">A</div>
                     <div class="tweet-author">
-                        <span class="tweet-author-name">Tesla</span>
-                        <span class="tweet-author-handle">@Tesla</span>
-                        <span class="priority-badge priority-high">高优先级</span>
+                        <span class="tweet-author-name">Anthony Pompliano 🌪</span>
+                        <span class="tweet-author-handle">@APompliano</span>
+                        <span class="priority-badge priority-high">深度分析</span>
                     </div>
-                    <div class="tweet-time">2月6日</div>
+                    <div class="tweet-time">13小时前</div>
                 </div>
                 <div class="tweet-content">
-                    <div class="tweet-text">Our first market in Africa
+                    <div class="tweet-text">I sat down with @jvisserlabs to discuss why bitcoin is selling off, why software multiples are compressing, and how capital is shifting toward scarce, physical assets. 
 
-引用：Bonjour le Maroc ! Configurator for Model 3 & Y now open
-tesla.com/fr_ma</div>
-                    <div class="tweet-translation">🇨🇳 我们在非洲的第一个市场
+We cover data centers, AI, energy, and semiconductors, plus insights on Elon Musk, Tesla, SpaceX, and what it means for investors.</div>
+                    <div class="tweet-translation">🇨🇳 我与@jvisserlabs坐下来讨论为什么比特币正在抛售，为什么软件估值倍数正在压缩，以及资本如何转向稀缺的实物资产。
 
-引用：你好摩洛哥！Model 3和Model Y配置器现已开放
-tesla.com/fr_ma</div>
+我们涵盖了数据中心、AI、能源和半导体，以及对Elon Musk、Tesla、SpaceX的见解，以及这对投资者意味着什么。</div>
                 </div>
                 <div class="ai-note">
-                    <strong>AI判断：</strong>市场扩张战略，首次进入非洲大陆，具有里程碑意义 → 自动收录
+                    <strong>AI判断：</strong>宏观投资趋势分析 ✅
+                    <br>• 资本流向分析：从软件转向实物资产
+                    <br>• 涉及多个相关行业：数据中心、AI、能源、半导体
+                    <br>• 包含Tesla和SpaceX的投资逻辑
+                    <br>• 作者是知名投资者Anthony Pompliano
+                    <br>→ 自动收录
                 </div>
                 <div class="tweet-stats">
-                    <div class="tweet-stat">
-                        <span>💬</span>
-                        <span>359</span>
+                    <div class="tweet-stat"><span>💬</span><span>23</span></div>
+                    <div class="tweet-stat"><span>🔁</span><span>23</span></div>
+                    <div class="tweet-stat"><span>❤️</span><span>254</span></div>
+                    <div class="tweet-stat"><span>👁️</span><span>3.6万</span></div>
+                </div>
+            </div>
+            
+            <!-- Third-party Analysis 3 -->
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="tweet-avatar">M</div>
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Mars University</span>
+                        <span class="tweet-author-handle">@MarsUniversityX</span>
+                        <span class="priority-badge priority-high">战略分析</span>
                     </div>
-                    <div class="tweet-stat">
-                        <span>🔁</span>
-                        <span>1.4K</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>❤️</span>
-                        <span>9.3K</span>
-                    </div>
-                    <div class="tweet-stat">
-                        <span>👁️</span>
-                        <span>59万</span>
-                    </div>
+                    <div class="tweet-time">4小时前</div>
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-text">Elon Musk: "Nothing any of my companies have done has been to stifle competition. In fact, we've done the opposite. 
+
+At Tesla, we have open-sourced our patents. Anyone can use our patents for free. 
+
+At SpaceX, we don't use patents. Once in a while, we'll file a patent just so..."</div>
+                    <div class="tweet-translation">🇨🇳 Elon Musk："我的任何公司所做的事情都不是为了扼杀竞争。事实上，我们做的恰恰相反。
+
+在Tesla，我们开源了我们的专利。任何人都可以免费使用我们的专利。
+
+在SpaceX，我们不使用专利。偶尔我们会申请专利，只是为了..."</div>
+                </div>
+                <div class="ai-note">
+                    <strong>AI判断：</strong>竞争战略分析 ✅
+                    <br>• 揭示Tesla和SpaceX的开放战略
+                    <br>• 反映公司对竞争的态度和长期策略
+                    <br>• 可能影响行业竞争格局
+                    <br>• 虽然是Elon的话，但由第三方分享和传播
+                    <br>→ 自动收录
+                </div>
+                <div class="tweet-stats">
+                    <div class="tweet-stat"><span>💬</span><span>117</span></div>
+                    <div class="tweet-stat"><span>🔁</span><span>195</span></div>
+                    <div class="tweet-stat"><span>❤️</span><span>1.1K</span></div>
+                    <div class="tweet-stat"><span>👁️</span><span>12万</span></div>
                 </div>
             </div>
         </div>
         
-        <!-- NVIDIA Section (示例 - 暂无数据) -->
+        <!-- NVIDIA Section -->
         <div class="company-section">
             <div class="company-header">
                 <div class="company-icon">N</div>
@@ -391,67 +408,31 @@ tesla.com/fr_ma</div>
                 </div>
             </div>
             
-            <div class="no-tweets">
-                ⏳ 测试版暂未采集此账号数据
-            </div>
-        </div>
-        
-        <!-- Robinhood Section -->
-        <div class="company-section">
-            <div class="company-header">
-                <div class="company-icon">R</div>
-                <div class="company-info">
-                    <h2>Robinhood</h2>
-                    <div class="symbol">HOOD</div>
-                </div>
-            </div>
-            
-            <div class="no-tweets">
-                ⏳ 测试版暂未采集此账号数据
-            </div>
-        </div>
-        
-        <!-- Circle Section -->
-        <div class="company-section">
-            <div class="company-header">
-                <div class="company-icon">C</div>
-                <div class="company-info">
-                    <h2>Circle</h2>
-                    <div class="symbol">USDC</div>
-                </div>
-            </div>
-            
-            <div class="no-tweets">
-                ⏳ 测试版暂未采集此账号数据
-            </div>
-        </div>
-        
-        <!-- Super Micro Section -->
-        <div class="company-section">
-            <div class="company-header">
-                <div class="company-icon">S</div>
-                <div class="company-info">
-                    <h2>Super Micro Computer</h2>
-                    <div class="symbol">SMCI</div>
-                </div>
-            </div>
-            
-            <div class="no-tweets">
-                ⏳ 测试版暂未采集此账号数据
+            <div class="section-divider">⏳ 测试版：正在采集中...</div>
+            <div style="padding: 20px; text-align: center; color: #71767b; font-size: 14px;">
+                完整版将包含NVIDIA官方推文和第三方深度分析
             </div>
         </div>
         
         <div class="footer">
-            <p><strong>📊 AI筛选逻辑说明</strong></p>
-            <p style="margin-top: 8px;">本次测试收录的3条Tesla推文均为<strong>高优先级</strong>内容：</p>
+            <p><strong>📊 AI筛选逻辑展示</strong></p>
+            <p style="margin-top: 12px;">本次测试展示了AI如何筛选第三方内容：</p>
             <p style="margin-top: 8px;">
-                ✅ Model Y获奖 - 产品荣誉<br>
-                ✅ FSD救命案例 - 技术价值证明<br>
-                ✅ 进入非洲市场 - 战略扩张
+                <strong>✅ 自动收录的深度分析：</strong><br>
+                1. Jeff Lutz - AI数据中心电力需求分析（行业洞察+数据）<br>
+                2. Anthony Pompliano - 资本流向趋势分析（宏观投资逻辑）<br>
+                3. Mars University - Tesla开放战略分析（竞争格局）
+            </p>
+            <p style="margin-top: 12px;">
+                <strong>筛选标准：</strong><br>
+                • 包含独特见解或数据支撑<br>
+                • 涉及竞争、技术、产业链分析<br>
+                • 对投资决策有参考价值<br>
+                • 避免重复讨论和情绪化评论
             </p>
             <p style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #2f3336;">
                 🤖 由 OpenClaw AI 自动采集、筛选和翻译<br>
-                数据来源：X (Twitter) | 测试时间：2026-02-09 20:50<br>
+                数据来源：X (Twitter) | 测试时间：2026-02-09 21:00<br>
                 © 2026 美股投资组合监控系统
             </p>
         </div>
