@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donald J. Trump 最近帖子 - 2026-02-09</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000000;
+            color: #e7e9ea;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            border-bottom: 1px solid #2f3336;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .verified-badge {
+            width: 20px;
+            height: 20px;
+            background-color: #1d9bf0;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .header .username {
+            color: #71767b;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .header .bio {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .header .stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .header .stats span {
+            color: #71767b;
+        }
+
+        .header .stats strong {
+            color: #e7e9ea;
+            font-weight: 700;
+        }
+
+        .summary {
+            background-color: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1d9bf0;
+        }
+
+        .summary-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #2f3336;
+        }
+
+        .summary-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .summary-item h3 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #e7e9ea;
+        }
+
+        .summary-item .time {
+            color: #71767b;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .summary-item p {
+            color: #e7e9ea;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .tweet-list h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2f3336;
+        }
+
+        .tweet {
+            background-color: #16181c;
+            border: 1px solid #2f3336;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .tweet:hover {
+            background-color: #1c1f23;
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .tweet-header .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #c41e3a, #8b0000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .tweet-header .info {
+            flex: 1;
+        }
+
+        .tweet-header .name {
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .tweet-header .handle {
+            color: #71767b;
+            font-size: 15px;
+        }
+
+        .tweet-header .time {
+            color: #71767b;
+            font-size: 15px;
+        }
+
+        .tweet-content {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            white-space: pre-wrap;
+        }
+
+        .tweet-content a {
+            color: #1d9bf0;
+            text-decoration: none;
+        }
+
+        .tweet-content a:hover {
+            text-decoration: underline;
+        }
+
+        .tweet-badge {
+            display: inline-block;
+            background-color: #1d9bf0;
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .tweet-stats {
+            display: flex;
+            gap: 20px;
+            padding-top: 12px;
+            border-top: 1px solid #2f3336;
+            font-size: 14px;
+            color: #71767b;
+        }
+
+        .tweet-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #71767b;
+            font-size: 13px;
+            border-top: 1px solid #2f3336;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #1d9bf0;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .tweet-stats {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Donald J. Trump
+                <span class="verified-badge">✓</span>
+            </h1>
+            <div class="username">@realDonaldTrump</div>
+            <div class="bio">45th & 47th President of the United States of America 🇺🇸</div>
+            <div class="stats">
+                <div><strong>5.9万</strong> <span>帖子</span></div>
+                <div><strong>53</strong> <span>正在关注</span></div>
+                <div><strong>1.1亿</strong> <span>关注者</span></div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>📊 最近帖子主题汇总</h2>
+            
+            <div class="summary-item">
+                <h3>🎬 《MELANIA》纪录片推广</h3>
+                <p>特朗普多次转发和推广关于第一夫人梅拉尼娅的纪录片《MELANIA》，该片在首映周末获得800万美元票房，创下十年来纪录片最佳开局。</p>
+            </div>
+
+            <div class="summary-item">
+                <h3>❄️ 冬季风暴应对</h3>
+                <p>特朗普发布关于美国历史性冬季风暴的简报，表示政府正在与州和地方官员协调，FEMA已做好充分准备。</p>
+            </div>
+
+            <div class="summary-item">
+                <h3>🎄 圣诞祝福</h3>
+                <p>特朗普发布圣诞祝福，提到不再有开放边境、男性参加女性体育比赛等问题，强调股市创纪录。</p>
+            </div>
+
+            <div class="summary-item">
+                <h3>🔄 转发支持者内容</h3>
+                <p>转发了Dan Scavino Jr.的婚礼感谢帖，以及多个关于梅拉尼娅纪录片的媒体报道。</p>
+            </div>
+        </div>
+
+        <div class="tweet-list">
+            <h2>📝 最近10条帖子</h2>
+
+            <div class="tweet">
+                <div class="tweet-badge">🔄 转帖</div>
+                <div class="tweet-header">
+                    <div class="avatar">DS</div>
+                    <div class="info">
+                        <div class="name">
+                            Dan Scavino Jr. 🇺🇸 🦅
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@DanScavino · <span class="time">2月3日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">On behalf of Erin and me, thank you to everyone for the love and support we've received. We both had an unforgettable wedding day, and we'll never forget it. We're humbled and grateful to all. THANK YOU! 🙏🏻 🇺🇸 🦅 🚀
+
+🎥 [包含视频内容]</div>
+                <div class="tweet-stats">
+                    <span>💬 1万 回复</span>
+                    <span>🔄 1万 转帖</span>
+                    <span>❤️ 6.8万 喜欢</span>
+                    <span>👁️ 634万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-badge">🔄 转帖</div>
+                <div class="tweet-header">
+                    <div class="avatar">TH</div>
+                    <div class="info">
+                        <div class="name">
+                            The Hollywood Reporter
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@THR · <span class="time">2月1日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">Box Office: 'Melania' Heads for $8 Million Opening, the Best Showing in a Decade for a Doc</div>
+                <div class="tweet-stats">
+                    <span>💬 2,870 回复</span>
+                    <span>🔄 2,271 转帖</span>
+                    <span>❤️ 1.5万 喜欢</span>
+                    <span>👁️ 502万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-badge">🔄 转帖</div>
+                <div class="tweet-header">
+                    <div class="avatar">FN</div>
+                    <div class="info">
+                        <div class="name">
+                            Fox News
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@FoxNews · <span class="time">2月1日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">RECORD BREAKER: "Melania," a documentary following the first lady in the 20 days before President Trump's second inauguration, earns $8 million opening weekend — reportedly making it the biggest documentary debut in more than a decade.
+
+📷 [包含图片]</div>
+                <div class="tweet-stats">
+                    <span>💬 7,288 回复</span>
+                    <span>🔄 5,282 转帖</span>
+                    <span>❤️ 3.5万 喜欢</span>
+                    <span>👁️ 1,037万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-badge">🔄 转帖</div>
+                <div class="tweet-header">
+                    <div class="avatar">MT</div>
+                    <div class="info">
+                        <div class="name">
+                            MELANIA TRUMP
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@MELANIATRUMP · <span class="time">2月1日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">MELANIA, the film. #1 Highest Opening In 10 Yrs (Doc) Loved By All - "A" CinemaScore
+
+📷 [包含图片]</div>
+                <div class="tweet-stats">
+                    <span>💬 1.7万 回复</span>
+                    <span>🔄 1.1万 转帖</span>
+                    <span>❤️ 7.4万 喜欢</span>
+                    <span>👁️ 728万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar">DT</div>
+                    <div class="info">
+                        <div class="name">
+                            Donald J. Trump
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@realDonaldTrump · <span class="time">1月31日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">Last night I saw, "MELANIA," for the second time. The audience loved it, and so do I. Check it out — A MUST SEE!
+
+🔗 amazon.com - Melania: Twenty Days to History</div>
+                <div class="tweet-stats">
+                    <span>💬 4.3万 回复</span>
+                    <span>🔄 4万 转帖</span>
+                    <span>❤️ 31万 喜欢</span>
+                    <span>👁️ 3,622万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar">DT</div>
+                    <div class="info">
+                        <div class="name">
+                            Donald J. Trump
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@realDonaldTrump · <span class="time">1月27日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">MELANIA, the Movie, is a MUST WATCH. Get your tickets today — Selling out, FAST! Photo: Regine Mahaux
+
+🔗 amazon.com/salp/melaniamo
+
+📷 [包含图片]</div>
+                <div class="tweet-stats">
+                    <span>💬 6.2万 回复</span>
+                    <span>🔄 4.9万 转帖</span>
+                    <span>❤️ 41万 喜欢</span>
+                    <span>👁️ 4,450万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar">DT</div>
+                    <div class="info">
+                        <div class="name">
+                            Donald J. Trump
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@realDonaldTrump · <span class="time">1月24日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">I have been briefed on the Record Cold Wave and Historic Winter Storm that will be hitting much of the United States this weekend. The Trump Administration is coordinating with State and Local Officials. FEMA is fully prepared to respond. Stay Safe and Stay Warm! President DJT
+
+📰 引用 @NWS: "Take this storm seriously, folks. Moderate to major impacts are expected from the Central US through to the Northeast today through the weekend..."</div>
+                <div class="tweet-stats">
+                    <span>💬 3万 回复</span>
+                    <span>🔄 4.2万 转帖</span>
+                    <span>❤️ 28万 喜欢</span>
+                    <span>👁️ 4,808万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar">DT</div>
+                    <div class="info">
+                        <div class="name">
+                            Donald J. Trump
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@realDonaldTrump · <span class="time">1月24日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">COUNTDOWN: 7 Days until the World will witness an unforgettable, behind-the-scenes, look at one of the most important events of our time. MELANIA: TWENTY DAYS TO HISTORY:
+
+🔗 amazon.com/salp/melaniamo
+
+🎥 [包含视频内容]</div>
+                <div class="tweet-stats">
+                    <span>💬 3.9万 回复</span>
+                    <span>🔄 5.3万 转帖</span>
+                    <span>❤️ 39万 喜欢</span>
+                    <span>👁️ 6,174万 观看</span>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar">DT</div>
+                    <div class="info">
+                        <div class="name">
+                            Donald J. Trump
+                            <span class="verified-badge">✓</span>
+                        </div>
+                        <div class="handle">@realDonaldTrump · <span class="time">2025年12月25日</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">Merry Christmas to all, including the Radical Left Scum that is doing everything possible to destroy our Country, but are failing badly. We no longer have Open Borders, Men in Women's Sports, Transgender for Everyone, or Weak Law Enforcement. What we do have is a Record Stock...</div>
+                <div class="tweet-stats">
+                    <span>💬 11万 回复</span>
+                    <span>🔄 10万 转帖</span>
+                    <span>❤️ 80万 喜欢</span>
+                    <span>👁️ 7,734万 观看</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>数据采集时间: 2026-02-09 18:02 GMT+8</p>
+            <p>由 <a href="https://github.com/DavidXuanLuo/statichtml" target="_blank">贾维斯</a> 自动生成</p>
+            <p>© 2026 · 数据来源: <a href="https://x.com/realDonaldTrump" target="_blank">@realDonaldTrump</a></p>
+        </div>
+    </div>
+</body>
+</html>
