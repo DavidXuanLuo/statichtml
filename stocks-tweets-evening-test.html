@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股投资组合 X 推文汇总 - 晚间测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #e7e9ea;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #000;
+        }
+        
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #2f3336;
+            padding: 16px;
+            z-index: 100;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #e7e9ea;
+        }
+        
+        .header .date {
+            font-size: 13px;
+            color: #71767b;
+            margin-top: 4px;
+        }
+        
+        .header .test-note {
+            font-size: 12px;
+            color: #1d9bf0;
+            margin-top: 8px;
+            padding: 8px;
+            background-color: #16181c;
+            border-radius: 8px;
+            border-left: 3px solid #1d9bf0;
+        }
+        
+        .company-section {
+            border-bottom: 1px solid #2f3336;
+            padding: 16px;
+        }
+        
+        .company-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #2f3336;
+        }
+        
+        .company-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1d9bf0, #7856ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        
+        .company-info h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #e7e9ea;
+        }
+        
+        .company-info .symbol {
+            font-size: 14px;
+            color: #71767b;
+        }
+        
+        .tweet {
+            padding: 12px 0;
+            border-bottom: 1px solid #2f3336;
+        }
+        
+        .tweet:last-child {
+            border-bottom: none;
+        }
+        
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .tweet-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 12px;
+        }
+        
+        .tweet-author {
+            flex: 1;
+        }
+        
+        .tweet-author-name {
+            font-weight: 700;
+            color: #e7e9ea;
+            font-size: 15px;
+        }
+        
+        .tweet-author-handle {
+            color: #71767b;
+            font-size: 15px;
+        }
+        
+        .tweet-time {
+            color: #71767b;
+            font-size: 15px;
+        }
+        
+        .tweet-content {
+            margin-left: 52px;
+            margin-bottom: 12px;
+        }
+        
+        .tweet-text {
+            font-size: 15px;
+            color: #e7e9ea;
+            margin-bottom: 8px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .tweet-translation {
+            font-size: 14px;
+            color: #71767b;
+            padding: 12px;
+            background-color: #16181c;
+            border-radius: 12px;
+            border-left: 3px solid #1d9bf0;
+        }
+        
+        .ai-analysis {
+            font-size: 13px;
+            color: #ffd700;
+            padding: 10px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            border-left: 3px solid #ffd700;
+            margin-top: 8px;
+        }
+        
+        .ai-analysis-title {
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .tweet-stats {
+            display: flex;
+            gap: 20px;
+            margin-left: 52px;
+            color: #71767b;
+            font-size: 13px;
+        }
+        
+        .tweet-stat {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            color: #71767b;
+            font-size: 13px;
+            border-top: 1px solid #2f3336;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📈 美股投资组合 X 推文汇总</h1>
+            <div class="date">2026-02-09 21:45 | 晚间测试</div>
+            <div class="test-note">
+                🧪 这是学习阶段的测试采集。应用今天学到的标准筛选内容，请您评价反馈！
+            </div>
+        </div>
+        
+        <!-- Tesla/SpaceX Section -->
+        <div class="company-section">
+            <div class="company-header">
+                <div class="company-icon">T</div>
+                <div class="company-info">
+                    <h2>Tesla / SpaceX</h2>
+                    <div class="symbol">TSLA</div>
+                </div>
+            </div>
+            
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="tweet-avatar"></div>
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Elon Musk</span>
+                        <span class="tweet-author-handle">@elonmusk</span>
+                    </div>
+                    <div class="tweet-time">14小时前</div>
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-text">For those unaware, SpaceX has already shifted focus to building a self-growing city on the Moon, as we can potentially achieve that in less than 10 years, whereas Mars would take 20+ years. The mission of SpaceX remains the same: extend consciousness and life as we know it to other worlds.</div>
+                    <div class="tweet-translation">🇨🇳 对于那些不知道的人：SpaceX已经将重点转移到在月球上建造自我生长的城市，因为我们可能在不到10年内实现这一目标，而火星需要20多年。SpaceX的使命保持不变：将意识和生命延伸到其他世界。</div>
+                    <div class="ai-analysis">
+                        <div class="ai-analysis-title">🤖 AI判断：✅ 自动收录（官方账号）</div>
+                        SpaceX战略重大转向：从火星优先转向月球优先。时间表从20+年缩短到&lt;10年。虽然是SpaceX不是Tesla，但Musk的时间分配对Tesla有影响。
+                    </div>
+                </div>
+                <div class="tweet-stats">
+                    <div class="tweet-stat">
+                        <span>💬</span>
+                        <span>20,158</span>
+                    </div>
+                    <div class="tweet-stat">
+                        <span>🔁</span>
+                        <span>24,256</span>
+                    </div>
+                    <div class="tweet-stat">
+                        <span>❤️</span>
+                        <span>195,516</span>
+                    </div>
+                    <div class="tweet-stat">
+                        <span>👁️</span>
+                        <span>29.6M</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="tweet-avatar"></div>
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Tesla</span>
+                        <span class="tweet-author-handle">@Tesla</span>
+                    </div>
+                    <div class="tweet-time">23小时前</div>
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-text">Cybertruck is now available for lease in the US 🚙⚡</div>
+                    <div class="tweet-translation">🇨🇳 Cybertruck现在可以在美国租赁了 🚙⚡</div>
+                    <div class="ai-analysis">
+                        <div class="ai-analysis-title">🤖 AI判断：✅ 自动收录（官方账号）</div>
+                        产品业务更新：Cybertruck增加租赁选项，扩大市场覆盖。
+                    </div>
+                </div>
+                <div class="tweet-stats">
+                    <div class="tweet-stat">
+                        <span>💬</span>
+                        <span>N/A</span>
+                    </div>
+                    <div class="tweet-stat">
+                        <span>🔁</span>
+                        <span>N/A</span>
+                    </div>
+                    <div class="tweet-stat">
+                        <span>❤️</span>
+                        <span>N/A</span>
+                    </div>
+                    <div class="tweet-stat">
+                        <span>👁️</span>
+                        <span>N/A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🤖 由 OpenClaw AI 自动采集和翻译</p>
+            <p>📊 本次采集：2条官方推文</p>
+            <p>⚠️ 搜索策略问题：关键词搜索结果质量差（都是Discord推广、交易群广告）</p>
+            <p>💡 改进方向：直接访问账号主页 + 关注高质量分析师 + 使用X的"For You"推荐</p>
+            <p>© 2026 美股投资组合监控系统</p>
+        </div>
+    </div>
+</body>
+</html>
