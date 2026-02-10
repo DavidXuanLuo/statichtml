@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk 最新推文 - 中英对照</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        
+        .header .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .header .profile-info img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        
+        .header .profile-name {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        
+        .tweet-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .tweet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .tweet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .tweet-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+        }
+        
+        .tweet-time {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .tweet-content {
+            margin-bottom: 20px;
+        }
+        
+        .tweet-text {
+            margin-bottom: 15px;
+        }
+        
+        .tweet-text.english {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .tweet-text.chinese {
+            font-size: 1.05em;
+            color: #555;
+            line-height: 1.8;
+            padding: 15px;
+            background: #fff8e1;
+            border-radius: 10px;
+            border-left: 4px solid #ffa726;
+        }
+        
+        .language-label {
+            font-weight: bold;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .language-label.en {
+            color: #667eea;
+        }
+        
+        .language-label.zh {
+            color: #ff9800;
+        }
+        
+        .tweet-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .tweet-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .tweet-card {
+                padding: 20px;
+            }
+            
+            .tweet-number {
+                font-size: 1.5em;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Elon Musk 最新推文</h1>
+            <div class="subtitle">Latest Tweets with Chinese Translation</div>
+            <div class="profile-info">
+                <div>
+                    <div class="profile-name">@elonmusk</div>
+                    <div style="font-size: 0.9em; opacity: 0.8;">2.3亿 关注者</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tweet 1 -->
+        <div class="tweet-card">
+            <div class="tweet-header">
+                <div class="tweet-number">1</div>
+                <div class="tweet-time">📅 2026-02-09 20:55 (UTC)</div>
+            </div>
+            <div class="tweet-content">
+                <div class="tweet-text english">
+                    <span class="language-label en">🇺🇸 English</span>
+                    SpaceX will build a system that allows anyone to travel to Moon. This will so insanely cool 🚀 💫 🤩
+                </div>
+                <div class="tweet-text chinese">
+                    <span class="language-label zh">🇨🇳 中文翻译</span>
+                    SpaceX 将建造一个系统，让任何人都能前往月球。这将会超级酷炫！🚀 💫 🤩
+                </div>
+            </div>
+            <a href="https://x.com/elonmusk/status/2020964809999777996" target="_blank" class="tweet-link">
+                查看原推文 →
+            </a>
+        </div>
+
+        <!-- Tweet 2 -->
+        <div class="tweet-card">
+            <div class="tweet-header">
+                <div class="tweet-number">2</div>
+                <div class="tweet-time">📅 2026-02-09 20:57 (UTC)</div>
+            </div>
+            <div class="tweet-content">
+                <div class="tweet-text english">
+                    <span class="language-label en">🇺🇸 English</span>
+                    And Mars too
+                </div>
+                <div class="tweet-text chinese">
+                    <span class="language-label zh">🇨🇳 中文翻译</span>
+                    火星也一样（也能去）
+                </div>
+            </div>
+            <a href="https://x.com/elonmusk/status/2020965197788348505" target="_blank" class="tweet-link">
+                查看原推文 →
+            </a>
+        </div>
+
+        <!-- Tweet 3 -->
+        <div class="tweet-card">
+            <div class="tweet-header">
+                <div class="tweet-number">3</div>
+                <div class="tweet-time">📅 2026-02-09 20:59 (UTC)</div>
+            </div>
+            <div class="tweet-content">
+                <div class="tweet-text english">
+                    <span class="language-label en">🇺🇸 English</span>
+                    Life cannot just be about one sad thing after another. There must also be things that make us super excited and inspired about the future. This is one of things. Bigtime.
+                </div>
+                <div class="tweet-text chinese">
+                    <span class="language-label zh">🇨🇳 中文翻译</span>
+                    生活不能只是一件悲伤的事接着另一件。必须也要有让我们对未来感到超级兴奋和鼓舞的事情。这就是其中之一。非常重要。
+                </div>
+            </div>
+            <a href="https://x.com/elonmusk/status/2020965730003640784" target="_blank" class="tweet-link">
+                查看原推文 →
+            </a>
+        </div>
+
+        <!-- Tweet 4 -->
+        <div class="tweet-card">
+            <div class="tweet-header">
+                <div class="tweet-number">4</div>
+                <div class="tweet-time">📅 2026-02-09 21:01 (UTC)</div>
+            </div>
+            <div class="tweet-content">
+                <div class="tweet-text english">
+                    <span class="language-label en">🇺🇸 English</span>
+                    [图片推文 - Image Tweet]
+                </div>
+                <div class="tweet-text chinese">
+                    <span class="language-label zh">🇨🇳 中文翻译</span>
+                    [这是一条图片推文，请点击查看原推文]
+                </div>
+            </div>
+            <a href="https://x.com/elonmusk/status/2020966211421601878" target="_blank" class="tweet-link">
+                查看原推文 →
+            </a>
+        </div>
+
+        <!-- Tweet 5 -->
+        <div class="tweet-card">
+            <div class="tweet-header">
+                <div class="tweet-number">5</div>
+                <div class="tweet-time">📅 2026-02-09 20:46 (UTC)</div>
+            </div>
+            <div class="tweet-content">
+                <div class="tweet-text english">
+                    <span class="language-label en">🇺🇸 English</span>
+                    This will be so awesome 🔥
+                </div>
+                <div class="tweet-text chinese">
+                    <span class="language-label zh">🇨🇳 中文翻译</span>
+                    这将会非常棒！🔥
+                </div>
+            </div>
+            <a href="https://x.com/elonmusk/status/2020962635156684920" target="_blank" class="tweet-link">
+                查看原推文 →
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>📊 数据采集时间：2026-02-10 12:41 (GMT+8)</p>
+            <p>🤖 由 OpenClaw AI 自动采集并翻译</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                © 2026 | 推文内容版权归 @elonmusk 所有
+            </p>
+        </div>
+    </div>
+</body>
+</html>
