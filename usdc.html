@@ -148,36 +148,36 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-label">当前价格</div>
-                <div class="stat-value" id="currentPrice">$1.00</div>
+                <div class="stat-value" id="currentPrice">加载中...</div>
                 <div class="stat-change">稳定币 1:1 锚定美元</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-label">市值 / 流通供应量</div>
-                <div class="stat-value" id="marketCap">$72.88B</div>
+                <div class="stat-value" id="marketCap">加载中...</div>
                 <div class="stat-change" id="marketCapChange">--</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-label">24小时交易量</div>
-                <div class="stat-value" id="volume24h">$10.56B</div>
+                <div class="stat-value" id="volume24h">加载中...</div>
                 <div class="stat-change" id="volumeChange">--</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-label">交易量/市值比</div>
-                <div class="stat-value" id="volMarketRatio">14.43%</div>
+                <div class="stat-value" id="volMarketRatio">加载中...</div>
                 <div class="stat-change">流动性指标</div>
             </div>
         </div>
         
         <div class="chart-container">
-            <div class="chart-title">📈 流通供应量走势（过去3个月）</div>
+            <div class="chart-title">📈 流通供应量走势</div>
             <canvas id="supplyChart"></canvas>
         </div>
         
         <div class="chart-container">
-            <div class="chart-title">📊 24小时交易量走势（过去3个月）</div>
+            <div class="chart-title">📊 24小时交易量走势</div>
             <canvas id="volumeChart"></canvas>
         </div>
         
@@ -186,32 +186,18 @@
             <p><strong>数据来源：</strong>CoinMarketCap</p>
             <p><strong>更新频率：</strong>每天中午12:00（北京时间）自动采集</p>
             <p><strong>采集内容：</strong>USDC 市值、24小时交易量、流通供应量</p>
-            <p><strong>数据积累：</strong>从 2026-02-09 开始记录，将逐日积累形成完整走势图</p>
-            <p><strong>说明：</strong>目前仅有首日数据，随着每日自动采集，图表将展示更完整的趋势变化</p>
+            <p><strong>数据积累：</strong>从 2026-02-09 开始记录，逐日积累形成完整走势图</p>
+            <p><strong>说明：</strong>随着每日自动采集，图表将展示更完整的趋势变化</p>
         </div>
         
         <div class="update-time" id="updateTime">
-            最后更新：2026-02-09 20:27 (GMT+8)
+            最后更新：加载中...
         </div>
     </div>
     
     <script>
-        // 从本地JSON文件加载数据（实际部署时需要通过API或直接嵌入）
-        const usdcData = {
-            "records": [
-                {
-                    "date": "2026-02-09",
-                    "timestamp": 1739095673,
-                    "price": 1.00,
-                    "marketCap": 72880000000,
-                    "volume24h": 10560000000,
-                    "circulatingSupply": 72880000000,
-                    "source": "CoinMarketCap"
-                }
-            ],
-            "lastUpdate": "2026-02-09T12:27:53Z",
-            "source": "CoinMarketCap"
-        };
+        // 从data.json加载数据
+        let usdcData = null;
         
         // 格式化数字
         function formatNumber(num) {
@@ -251,6 +237,11 @@
                     `<span class="positive">▲ ${volumeChange}%</span>` : 
                     `<span class="negative">▼ ${Math.abs(volumeChange)}%</span>`;
             }
+            
+            // 更新时间
+            const updateDate = new Date(usdcData.lastUpdate);
+            document.getElementById('updateTime').textContent = 
+                '最后更新：' + updateDate.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }) + ' (GMT+8)';
         }
         
         // 创建图表
@@ -352,9 +343,21 @@
             });
         }
         
-        // 初始化
-        updateStats();
-        createCharts();
+        // 加载数据并初始化
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                usdcData = data;
+                updateStats();
+                createCharts();
+            })
+            .catch(error => {
+                console.error('加载数据失败:', error);
+                document.getElementById('currentPrice').textContent = '加载失败';
+                document.getElementById('marketCap').textContent = '加载失败';
+                document.getElementById('volume24h').textContent = '加载失败';
+                document.getElementById('volMarketRatio').textContent = '加载失败';
+            });
     </script>
 </body>
 </html>
