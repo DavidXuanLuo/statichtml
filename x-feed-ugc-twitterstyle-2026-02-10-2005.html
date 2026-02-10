@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>X高价值收录（UGC优先）</title>
+  <style>
+    :root{
+      --bg:#ffffff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+    .phone{max-width:430px;margin:0 auto;min-height:100vh;background:#fff}
+
+    .status{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-weight:600;font-size:18px}
+    .header{height:53px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:sticky;top:0;background:#fff;z-index:9}
+    .header .title{font-size:30px;line-height:1;font-weight:300;letter-spacing:.5px}
+
+    .tabs{display:flex;align-items:center;border-bottom:1px solid var(--line);height:52px;padding:0 16px}
+    .tab{flex:1;text-align:center;color:var(--sub);font-size:15px;font-weight:500;position:relative;padding-top:2px}
+    .tab.active{color:var(--text);font-weight:700}
+    .tab.active::after{content:"";position:absolute;left:28%;right:28%;bottom:-16px;height:4px;border-radius:999px;background:var(--blue)}
+
+    .tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+    .avatar{width:40px;height:40px;border-radius:50%;background:#d9e6f2;color:#1f2937;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 40px}
+    .main{flex:1;min-width:0}
+    .head{display:flex;gap:6px;align-items:center;min-width:0}
+    .name{font-weight:800;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:120px}
+    .id,.time{color:var(--sub);font-size:17px;white-space:nowrap}
+    .dot{color:var(--sub)}
+
+    .text{margin-top:2px;font-size:33px;line-height:1.24;word-break:break-word}
+    @media (max-width:430px){.text{font-size:18px}.name,.id,.time{font-size:17px}}
+
+    .media{margin-top:10px;border:1px solid #cfd9de;border-radius:16px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#cfd9de}
+    .media div{background:#f7f9f9;min-height:160px;display:flex;align-items:center;justify-content:center;color:#8b98a5;font-size:14px}
+
+    .actions{margin-top:10px;display:grid;grid-template-columns:repeat(5,1fr);color:var(--sub);font-size:14px}
+    .act{display:flex;align-items:center;gap:6px}
+    .why{margin-top:8px;color:#3b4a57;font-size:14px;line-height:1.45}
+
+    .bottom{position:sticky;bottom:0;height:58px;border-top:1px solid var(--line);background:#fff;display:flex;justify-content:space-around;align-items:center;font-size:25px}
+    .fab{position:fixed;right:calc(50% - 430px/2 + 16px);bottom:76px;width:56px;height:56px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:34px;box-shadow:0 4px 12px rgba(29,155,240,.35)}
+    @media (max-width:430px){.fab{right:16px}}
+
+    a{color:var(--blue);text-decoration:none}
+  </style>
+</head>
+<body>
+<div class="phone">
+  <div class="status"><span>20:05</span><span>◔◔◔</span></div>
+  <div class="header"><div class="title">𝕏</div></div>
+  <div class="tabs"><div class="tab active">为你推荐</div><div class="tab">正在关注</div></div>
+
+  <article class="tweet">
+    <div class="avatar">J</div>
+    <div class="main">
+      <div class="head"><span class="name">Juan</span><span class="id">@JuanRodrig07</span><span class="dot">·</span><span class="time">13小时</span></div>
+      <div class="text">Kalshi 在超级碗当天单日交易量创新高。若 HOOD 拿到约 40% 份额，对应约 3.5 亿美元交易额，约 350 万美元收入。</div>
+      <div class="actions">
+        <div class="act">💬 <span>17</span></div><div class="act">🔁 <span>80</span></div><div class="act">❤️ <span>1049</span></div><div class="act">📊 <span>1.7万</span></div><div class="act">🔖</div>
+      </div>
+      <div class="why">高价值：UGC + 明确数据 + 可推导收入弹性（HOOD核心业务线）。</div>
+    </div>
+  </article>
+
+  <article class="tweet">
+    <div class="avatar">S</div>
+    <div class="main">
+      <div class="head"><span class="name">TheSonOfWalkley</span><span class="id">@TheSon...</span><span class="dot">·</span><span class="time">13小时</span></div>
+      <div class="text">TSLA 正在招聘 50+ 个 Cybercab 相关制造岗位，量产爬坡信号增强。</div>
+      <div class="media"><div>Cybercab 图</div><div>配图</div></div>
+      <div class="actions">
+        <div class="act">💬 <span>17</span></div><div class="act">🔁 <span>80</span></div><div class="act">❤️ <span>1049</span></div><div class="act">📊 <span>1.7万</span></div><div class="act">🔖</div>
+      </div>
+      <div class="why">高价值：Tesla 年内主线是 Robotaxi，这类“招聘数量+岗位方向”属于前置里程碑。</div>
+    </div>
+  </article>
+
+  <article class="tweet">
+    <div class="avatar">D</div>
+    <div class="main">
+      <div class="head"><span class="name">Dustin Gouker</span><span class="id">@DustinGouker</span><span class="dot">·</span><span class="time">21小时</span></div>
+      <div class="text">Kalshi 超级碗当天单日交易量约 8.71 亿美元，并公布热门市场交易结构。</div>
+      <div class="actions">
+        <div class="act">💬 <span>33</span></div><div class="act">🔁 <span>128</span></div><div class="act">❤️ <span>1741</span></div><div class="act">📊 <span>8.6万</span></div><div class="act">🔖</div>
+      </div>
+      <div class="why">高价值：上游原始规模数据，可直接用来校验 HOOD 相关测算。</div>
+    </div>
+  </article>
+
+  <article class="tweet">
+    <div class="avatar">R</div>
+    <div class="main">
+      <div class="head"><span class="name">Roland Pircher</span><span class="id">@piloly</span><span class="dot">·</span><span class="time">19小时</span></div>
+      <div class="text">波兰 1 月 Tesla 销量与市占细分数据更新，BEV 渗透率与 Tesla 份额同给出。</div>
+      <div class="actions">
+        <div class="act">💬 <span>9</span></div><div class="act">🔁 <span>24</span></div><div class="act">❤️ <span>210</span></div><div class="act">📊 <span>6200</span></div><div class="act">🔖</div>
+      </div>
+      <div class="why">高价值：区域销量+份额类UGC，属于可跟踪趋势的量化内容。</div>
+    </div>
+  </article>
+
+  <div class="bottom"><span>⌂</span><span>⌕</span><span>◎</span><span>🔔</span><span>✉</span></div>
+</div>
+<div class="fab">+</div>
+</body>
+</html>
