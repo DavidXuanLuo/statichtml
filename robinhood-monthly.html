@@ -25,23 +25,24 @@
 <div class="wrap">
   <h1>📊 Robinhood 月度运营数据追踪</h1>
   <div class="sub">区间：2025-01 ~ 2026-01（13个月）｜数据源：Robinhood Investor Relations</div>
+  <div class="sub">说明：本页优先使用 Robinhood 官网“Operating Data（月度运营数据）”公告；若该月官网未发布对应公告，则显示“缺失”。</div>
 
   <div class="card grid" id="stats"></div>
 
   <div class="card">
-    <h3>Funded Customers / AUC / Net Deposits 走势</h3>
+    <h3>注资账户 / 托管资产 / 净入金 走势</h3>
     <canvas id="mainChart"></canvas>
   </div>
 
   <div class="card">
-    <h3>交易量走势（Equity / Crypto）</h3>
+    <h3>交易量走势（股票 / 加密）</h3>
     <canvas id="volChart"></canvas>
   </div>
 
   <div class="card">
-    <h3>明细表（缺失月份为官网未检索到对应“Operating Data”发布页）</h3>
+    <h3>明细表（缺失月份=官网当月未发布对应“运营数据”公告）</h3>
     <table>
-      <thead><tr><th>月份</th><th>Funded Customers (M)</th><th>AUC ($B)</th><th>Net Deposits ($B)</th><th>Equity Vol ($B)</th><th>Crypto Vol ($B)</th><th>来源</th></tr></thead>
+      <thead><tr><th>月份</th><th>注资账户(百万)</th><th>托管资产AUC(十亿美元)</th><th>净入金(十亿美元)</th><th>股票交易量(十亿美元)</th><th>加密交易量(十亿美元)</th><th>来源</th></tr></thead>
       <tbody id="tbody"></tbody>
     </table>
   </div>
@@ -56,31 +57,31 @@ fetch('robinhood-monthly.json').then(r=>r.json()).then(data=>{
 
   const latest = [...rows].reverse().find(r=>r.available) || {};
   document.getElementById('stats').innerHTML = `
-    <div><div class='k'>已抓到发布页</div><div class='v'>${avail}/13</div></div>
-    <div><div class='k'>最新可用月份</div><div class='v'>${latest.month||'-'}</div></div>
-    <div><div class='k'>最新 Funded Customers</div><div class='v'>${latest.funded_customers_m??'-'} M</div></div>
-    <div><div class='k'>最新 Net Deposits</div><div class='v'>${latest.net_deposits_b??'-'} B</div></div>`;
+    <div><div class='k'>已抓取月份</div><div class='v'>${avail}/13</div></div>
+    <div><div class='k'>最新披露月份</div><div class='v'>${latest.month||'-'}</div></div>
+    <div><div class='k'>最新注资账户</div><div class='v'>${latest.funded_customers_m??'-'} M</div></div>
+    <div><div class='k'>最新净入金</div><div class='v'>${latest.net_deposits_b??'-'} B</div></div>`;
 
   new Chart(document.getElementById('mainChart'), {
     type:'line',
     data:{labels,datasets:[
-      {label:'Funded Customers (M)',data:rows.map(r=>toNum(r.funded_customers_m)),borderColor:'#60a5fa',spanGaps:true},
-      {label:'AUC ($B)',data:rows.map(r=>toNum(r.auc_b)),borderColor:'#22c55e',spanGaps:true},
-      {label:'Net Deposits ($B)',data:rows.map(r=>toNum(r.net_deposits_b)),borderColor:'#f59e0b',spanGaps:true}
+      {label:'注资账户(百万)',data:rows.map(r=>toNum(r.funded_customers_m)),borderColor:'#60a5fa',spanGaps:true},
+      {label:'托管资产AUC(十亿美元)',data:rows.map(r=>toNum(r.auc_b)),borderColor:'#22c55e',spanGaps:true},
+      {label:'净入金(十亿美元)',data:rows.map(r=>toNum(r.net_deposits_b)),borderColor:'#f59e0b',spanGaps:true}
     ]}, options:{responsive:true,plugins:{legend:{labels:{color:'#cbd5e1'}}},scales:{x:{ticks:{color:'#94a3b8'}},y:{ticks:{color:'#94a3b8'}}}}
   });
 
   new Chart(document.getElementById('volChart'), {
     type:'bar',
     data:{labels,datasets:[
-      {label:'Equity Vol ($B)',data:rows.map(r=>toNum(r.equity_volume_b)),backgroundColor:'#38bdf8'},
-      {label:'Crypto Vol ($B)',data:rows.map(r=>toNum(r.crypto_volume_b)),backgroundColor:'#a78bfa'}
+      {label:'股票交易量(十亿美元)',data:rows.map(r=>toNum(r.equity_volume_b)),backgroundColor:'#38bdf8'},
+      {label:'加密交易量(十亿美元)',data:rows.map(r=>toNum(r.crypto_volume_b)),backgroundColor:'#a78bfa'}
     ]}, options:{responsive:true,plugins:{legend:{labels:{color:'#cbd5e1'}}},scales:{x:{ticks:{color:'#94a3b8'}},y:{ticks:{color:'#94a3b8'}}}}
   });
 
   const tb = document.getElementById('tbody');
   rows.forEach(r=>{
-    const na = v => (v===null||v===undefined) ? '<span class="na">N/A</span>' : v;
+    const na = v => (v===null||v===undefined) ? '<span class="na">缺失</span>' : v;
     const tr = document.createElement('tr');
     tr.innerHTML = `<td>${r.month}</td><td>${na(r.funded_customers_m)}</td><td>${na(r.auc_b)}</td><td>${na(r.net_deposits_b)}</td><td>${na(r.equity_volume_b)}</td><td>${na(r.crypto_volume_b)}</td><td>${r.available?`<a target="_blank" href="${r.url}">链接</a>`:'N/A'}</td>`;
     tb.appendChild(tr);
