@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队成员 - Team Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #141b3a;
+            --bg-card: #1a2347;
+            --accent-gold: #d4af37;
+            --accent-amber: #f4a261;
+            --text-primary: #e8e9f3;
+            --text-secondary: #a8adc7;
+            --text-muted: #6b7199;
+            --border-color: rgba(212, 175, 55, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .background-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image:
+                repeating-linear-gradient(45deg, transparent, transparent 35px, var(--accent-gold) 35px, var(--accent-gold) 36px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--accent-gold) 35px, var(--accent-gold) 36px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .header-accent {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+            margin: 0 auto 30px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .member-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .member-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-amber));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .member-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .member-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-gold);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.15);
+        }
+
+        .card-header {
+            padding: 40px 30px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+            position: relative;
+        }
+
+        .avatar-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .avatar-border {
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-amber));
+            padding: 4px;
+            animation: rotate 8s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--bg-secondary);
+            position: relative;
+            z-index: 1;
+        }
+
+        .member-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .member-role {
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .member-bio {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            min-height: 60px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--accent-gold);
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .member-card:nth-child(1) { animation-delay: 0.1s; }
+        .member-card:nth-child(2) { animation-delay: 0.15s; }
+        .member-card:nth-child(3) { animation-delay: 0.2s; }
+        .member-card:nth-child(4) { animation-delay: 0.25s; }
+        .member-card:nth-child(5) { animation-delay: 0.3s; }
+        .member-card:nth-child(6) { animation-delay: 0.35s; }
+        .member-card:nth-child(7) { animation-delay: 0.4s; }
+        .member-card:nth-child(8) { animation-delay: 0.45s; }
+        .member-card:nth-child(9) { animation-delay: 0.5s; }
+        .member-card:nth-child(10) { animation-delay: 0.55s; }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-accent"></div>
+            <h1>Our Team</h1>
+            <p class="subtitle">Meet the talented individuals behind our success</p>
+        </header>
+
+        <div class="team-grid" id="teamGrid"></div>
+    </div>
+
+    <script>
+        const teamMembers = [
+            {
+                name: "张雨萱",
+                role: "首席执行官",
+                email: "yuxuan.zhang@company.com",
+                phone: "+86 138-0123-4567",
+                bio: "拥有15年科技行业经验，致力于推动创新和团队发展，曾带领多个项目获得行业认可。",
+                avatar: "https://i.pravatar.cc/300?img=1"
+            },
+            {
+                name: "李明轩",
+                role: "技术总监",
+                email: "mingxuan.li@company.com",
+                phone: "+86 139-8765-4321",
+                bio: "全栈开发专家，精通云架构和微服务设计，热衷于探索前沿技术并应用于实际项目。",
+                avatar: "https://i.pravatar.cc/300?img=12"
+            },
+            {
+                name: "王诗涵",
+                role: "产品经理",
+                email: "shihan.wang@company.com",
+                phone: "+86 136-5432-1098",
+                bio: "以用户为中心的产品设计理念，擅长将复杂需求转化为简洁优雅的解决方案。",
+                avatar: "https://i.pravatar.cc/300?img=5"
+            },
+            {
+                name: "陈浩然",
+                role: "设计总监",
+                email: "haoran.chen@company.com",
+                phone: "+86 137-2468-1357",
+                bio: "屡获殊荣的UI/UX设计师，专注于创造令人难忘的数字体验和品牌视觉识别。",
+                avatar: "https://i.pravatar.cc/300?img=13"
+            },
+            {
+                name: "刘思琪",
+                role: "市场总监",
+                email: "siqi.liu@company.com",
+                phone: "+86 135-9876-5432",
+                bio: "数字营销策略专家，擅长品牌建设和用户增长，成功策划多个病毒式营销活动。",
+                avatar: "https://i.pravatar.cc/300?img=9"
+            },
+            {
+                name: "赵宇航",
+                role: "运营总监",
+                email: "yuhang.zhao@company.com",
+                phone: "+86 138-7654-3210",
+                bio: "数据驱动的运营专家，通过精细化运营和流程优化显著提升业务效率。",
+                avatar: "https://i.pravatar.cc/300?img=14"
+            },
+            {
+                name: "周欣怡",
+                role: "人力资源总监",
+                email: "xinyi.zhou@company.com",
+                phone: "+86 139-3456-7890",
+                bio: "致力于打造积极向上的企业文化，建立高效的人才培养和激励体系。",
+                avatar: "https://i.pravatar.cc/300?img=10"
+            },
+            {
+                name: "吴俊杰",
+                role: "财务总监",
+                email: "junjie.wu@company.com",
+                phone: "+86 136-8901-2345",
+                bio: "资深财务专家，擅长财务规划和风险管理，为公司战略决策提供有力支持。",
+                avatar: "https://i.pravatar.cc/300?img=15"
+            },
+            {
+                name: "林雅婷",
+                role: "客户成功经理",
+                email: "yating.lin@company.com",
+                phone: "+86 137-6543-2109",
+                bio: "以客户满意度为首要目标，建立长期合作关系，客户续约率达95%以上。",
+                avatar: "https://i.pravatar.cc/300?img=20"
+            },
+            {
+                name: "黄子轩",
+                role: "数据科学家",
+                email: "zixuan.huang@company.com",
+                phone: "+86 135-4321-0987",
+                bio: "机器学习和大数据分析专家，通过数据洞察驱动业务决策和产品优化。",
+                avatar: "https://i.pravatar.cc/300?img=33"
+            }
+        ];
+
+        function createMemberCard(member) {
+            return `
+                <div class="member-card">
+                    <div class="card-header">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-border"></div>
+                            <img src="${member.avatar}" alt="${member.name}" class="avatar">
+                        </div>
+                        <h3 class="member-name">${member.name}</h3>
+                        <p class="member-role">${member.role}</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="member-bio">${member.bio}</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">✉</span>
+                                <span>${member.email}</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">☎</span>
+                                <span>${member.phone}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        const teamGrid = document.getElementById('teamGrid');
+        teamGrid.innerHTML = teamMembers.map(member => createMemberCard(member)).join('');
+    </script>
+</body>
+</html>
