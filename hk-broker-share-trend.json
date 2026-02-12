@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-02-12",
+  "method": "share = broker_volume / hkex_total_turnover",
+  "units": {
+    "broker_volume": "HKD billion",
+    "hkex_total_turnover": "HKD billion",
+    "share": "decimal"
+  },
+  "coverage_months": ["2025-12", "2026-01", "2026-02"],
+  "data": [
+    {
+      "month": "2025-12",
+      "hkex_total_turnover": 3135.17,
+      "futu_broker_volume": null,
+      "tiger_broker_volume": null,
+      "futu_share": null,
+      "tiger_share": null,
+      "status": "HKEX denominator available; broker numerator not publicly disclosed at monthly HK-stock level"
+    },
+    {
+      "month": "2026-01",
+      "hkex_total_turnover": null,
+      "futu_broker_volume": null,
+      "tiger_broker_volume": null,
+      "futu_share": null,
+      "tiger_share": null,
+      "status": "not yet verifiable with current official monthly bulletin/page snapshot"
+    },
+    {
+      "month": "2026-02",
+      "hkex_total_turnover": null,
+      "futu_broker_volume": null,
+      "tiger_broker_volume": null,
+      "futu_share": null,
+      "tiger_share": null,
+      "status": "current month not closed / no official full-month stats yet"
+    }
+  ],
+  "weekly_feasibility": {
+    "can_do": false,
+    "reason": "可验证周度口径不可做：公开可核验源未提供‘富途/老虎-港股成交额’周度披露；HKEX公开参与者页面可核验到参与者映射与市场总量，但缺少品牌级周度成交时序。",
+    "alternative": "按月跟踪（官方月报/统计发布后更新）"
+  },
+  "mapping_context": {
+    "futu": {
+      "legal_entity": "Futu Securities International (Hong Kong) Limited",
+      "participant_id": "01955",
+      "source": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV"
+    },
+    "tiger": {
+      "legal_entity": "Tiger Brokers (HK) Global Limited",
+      "participant_id": "02142",
+      "source": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV"
+    }
+  },
+  "sources": [
+    {
+      "name": "HKEX Stock Exchange Participants' Market Share Report",
+      "url": "https://www.hkex.com.hk/Market-Data/Statistics/Participant/Stock-Exchange-Participants_-Market-Share-Report?sc_lang=en",
+      "used_for": "2025-12 HKEX total turnover"
+    },
+    {
+      "name": "HKEX Current SEHK Exchange Participants CSV",
+      "url": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV",
+      "used_for": "entity mapping verification"
+    }
+  ]
+}
