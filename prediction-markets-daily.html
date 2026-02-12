@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>预测市场三家每日走势图</title>
+  <style>
+    :root { --bg:#f6f7fb; --card:#fff; --text:#111827; --muted:#6b7280; --border:#e5e7eb; }
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Noto Sans CJK SC',sans-serif;}
+    .wrap{max-width:980px;margin:0 auto;padding:14px;}
+    h1{font-size:20px;margin:4px 0 8px}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:10px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin:10px 0;}
+    .legend{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:#374151;margin-bottom:8px}
+    .dot{display:inline-block;width:10px;height:10px;border-radius:99px;margin-right:4px;vertical-align:middle}
+    canvas{width:100%;height:260px;display:block;background:#fff;border-radius:8px}
+    table{width:100%;border-collapse:collapse;font-size:12px}
+    th,td{border-bottom:1px solid #eef0f3;padding:8px 6px;text-align:right;vertical-align:top}
+    th:first-child,td:first-child{text-align:left;white-space:nowrap}
+    .note{font-size:11px;color:var(--muted);text-align:left;min-width:160px}
+    .null{color:#9ca3af}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>预测市场三家每日走势图</h1>
+    <div class="meta" id="meta">加载中…</div>
+
+    <section class="card">
+      <div class="legend">
+        <span><i class="dot" style="background:#2563eb"></i>Polymarket（日度代理）</span>
+        <span><i class="dot" style="background:#16a34a"></i>Manifold（日度代理）</span>
+        <span><i class="dot" style="background:#7c3aed"></i>Kalshi（日度已公布，T+1）</span>
+      </div>
+      <canvas id="dailyChart" width="960" height="260"></canvas>
+    </section>
+
+    <section class="card">
+      <div class="legend">
+        <span><i class="dot" style="background:#ef4444"></i>Kalshi累计（单独展示，非日度）</span>
+      </div>
+      <canvas id="cumChart" width="960" height="220"></canvas>
+    </section>
+
+    <section class="card">
+      <h3 style="margin:0 0 8px;font-size:15px">每日数据表</h3>
+      <div style="overflow:auto">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>Polymarket</th>
+              <th>Manifold</th>
+              <th>Kalshi日度</th>
+              <th>Kalshi累计</th>
+              <th style="text-align:left">备注</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" style="font-size:12px;line-height:1.6;color:#374151">
+      <b>口径说明：</b>
+      <ol style="padding-left:18px;margin:8px 0 0">
+        <li>三家单位不同，图仅用于趋势对比，不做跨平台求和。</li>
+        <li><b>Kalshi日度</b>使用公开已公布日度值（T+1）。</li>
+        <li><b>Kalshi累计</b>为累计成交，不是日度，已单独成图，避免误读为日度。</li>
+        <li>null 表示该日缺失/待补采（已在表格备注标注）。</li>
+      </ol>
+    </section>
+  </div>
+
+<script>
+(async function(){
+  const res = await fetch('./data/prediction-markets-daily-history.json?_=' + Date.now());
+  const data = await res.json();
+  const rows = data.records || [];
+
+  document.getElementById('meta').textContent = `覆盖日期：${data.coverage.start_date} ~ ${data.coverage.end_date} ｜ 生成时间：${data.generated_at}`;
+
+  function fmt(v){ return v == null ? '<span class="null">null</span>' : Number(v).toLocaleString(undefined,{maximumFractionDigits:2}); }
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.date}</td>
+      <td>${fmt(r.polymarket_daily)}</td>
+      <td>${fmt(r.manifold_daily)}</td>
+      <td>${fmt(r.kalshi_daily_published)}</td>
+      <td>${fmt(r.kalshi_cumulative)}</td>
+      <td class="note">${r.note || ''}</td>
+    </tr>
+  `).join('');
+
+  const labels = rows.map(r=>r.date.slice(5));
+  const s1 = rows.map(r=>r.polymarket_daily);
+  const s2 = rows.map(r=>r.manifold_daily);
+  const s3 = rows.map(r=>r.kalshi_daily_published);
+  const s4 = rows.map(r=>r.kalshi_cumulative);
+
+  function drawLineChart(canvas, series, colors, labels){
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height;
+    const pad = {l:40,r:10,t:12,b:24};
+    ctx.clearRect(0,0,W,H);
+
+    const all = series.flat().filter(v=>v!=null);
+    const min = all.length ? Math.min(...all) : 0;
+    const max = all.length ? Math.max(...all) : 1;
+    const yMin = min===max ? 0 : min;
+    const yMax = min===max ? max*1.1 : max*1.1;
+
+    ctx.strokeStyle = '#e5e7eb'; ctx.lineWidth=1;
+    for(let i=0;i<4;i++){
+      const y = pad.t + (H-pad.t-pad.b)*i/3;
+      ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(W-pad.r,y); ctx.stroke();
+    }
+
+    const n = labels.length;
+    const x = i => pad.l + (W-pad.l-pad.r)*(n<=1?0:i/(n-1));
+    const y = v => pad.t + (H-pad.t-pad.b)*(1-(v-yMin)/(yMax-yMin||1));
+
+    ctx.fillStyle='#6b7280'; ctx.font='11px sans-serif';
+    labels.forEach((lb,i)=>{ if(i===0||i===n-1||i%2===0){ ctx.fillText(lb, x(i)-12, H-6); } });
+
+    series.forEach((arr,si)=>{
+      ctx.strokeStyle = colors[si]; ctx.lineWidth=2;
+      let started = false;
+      ctx.beginPath();
+      arr.forEach((v,i)=>{
+        if(v==null){ started=false; return; }
+        const px=x(i), py=y(v);
+        if(!started){ ctx.moveTo(px,py); started=true; } else { ctx.lineTo(px,py); }
+      });
+      ctx.stroke();
+
+      arr.forEach((v,i)=>{
+        if(v==null) return;
+        const px=x(i), py=y(v);
+        ctx.fillStyle=colors[si]; ctx.beginPath(); ctx.arc(px,py,2.6,0,Math.PI*2); ctx.fill();
+      });
+    });
+  }
+
+  drawLineChart(document.getElementById('dailyChart'), [s1,s2,s3], ['#2563eb','#16a34a','#7c3aed'], labels);
+  drawLineChart(document.getElementById('cumChart'), [s4], ['#ef4444'], labels);
+})();
+</script>
+</body>
+</html>

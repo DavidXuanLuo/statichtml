@@ -1,0 +1,87 @@
+{
+  "dataset": "prediction_markets_daily_history",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-02-12T23:35:00+08:00",
+  "coverage": {
+    "start_date": "2026-02-06",
+    "end_date": "2026-02-12"
+  },
+  "definitions": {
+    "polymarket_daily": "sum(markets.volume24hr), USDC proxy, rolling 24h snapshot of fetch day",
+    "manifold_daily": "sum(abs(bets.shares)) for today (paged scan), shares proxy",
+    "kalshi_daily_published": "official published daily contracts (T+1), integer contracts",
+    "kalshi_cumulative": "official cumulative contracts; NOT daily volume"
+  },
+  "records": [
+    {
+      "date": "2026-02-06",
+      "polymarket_daily": null,
+      "manifold_daily": null,
+      "kalshi_daily_published": null,
+      "kalshi_cumulative": null,
+      "missing": true,
+      "note": "占位：等待历史补采"
+    },
+    {
+      "date": "2026-02-07",
+      "polymarket_daily": null,
+      "manifold_daily": null,
+      "kalshi_daily_published": null,
+      "kalshi_cumulative": null,
+      "missing": true,
+      "note": "占位：等待历史补采"
+    },
+    {
+      "date": "2026-02-08",
+      "polymarket_daily": null,
+      "manifold_daily": null,
+      "kalshi_daily_published": null,
+      "kalshi_cumulative": null,
+      "missing": true,
+      "note": "占位：等待历史补采"
+    },
+    {
+      "date": "2026-02-09",
+      "polymarket_daily": null,
+      "manifold_daily": null,
+      "kalshi_daily_published": null,
+      "kalshi_cumulative": null,
+      "missing": true,
+      "note": "占位：等待历史补采"
+    },
+    {
+      "date": "2026-02-10",
+      "polymarket_daily": null,
+      "manifold_daily": null,
+      "kalshi_daily_published": 24700475,
+      "kalshi_cumulative": 345187028,
+      "missing": false,
+      "note": "Kalshi最新已公布交易日（T+1）"
+    },
+    {
+      "date": "2026-02-11",
+      "polymarket_daily": null,
+      "manifold_daily": null,
+      "kalshi_daily_published": null,
+      "kalshi_cumulative": null,
+      "missing": true,
+      "note": "占位：Kalshi该日尚未在本数据集中补齐"
+    },
+    {
+      "date": "2026-02-12",
+      "polymarket_daily": 100669927.79,
+      "manifold_daily": 241695.36,
+      "kalshi_daily_published": null,
+      "kalshi_cumulative": null,
+      "missing": false,
+      "note": "Polymarket/Manifold为最新可用抓取值；Kalshi日度待T+1公布"
+    }
+  ],
+  "source_latest": {
+    "polymarket_date": "2026-02-12",
+    "manifold_date": "2026-02-12",
+    "kalshi_published_date": "2026-02-10",
+    "kalshi_daily_published": 24700475,
+    "kalshi_cumulative": 345187028
+  }
+}
