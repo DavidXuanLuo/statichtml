@@ -1,7 +1,7 @@
 {
   "dataset": "prediction_markets_daily_history",
   "timezone": "Asia/Shanghai",
-  "generated_at": "2026-02-13T07:26:31+08:00",
+  "generated_at": "2026-02-13T07:32:51+08:00",
   "coverage": {
     "start_date": "2025-11-16",
     "end_date": "2026-02-13"
@@ -2422,19 +2422,19 @@
     {
       "date": "2026-02-13",
       "platform": "Manifold",
-      "daily_total_value": 241695.36,
+      "daily_total_value": 389716.23,
       "unit": "shares(today, paged)",
       "source": "https://api.manifold.markets/v0/bets",
-      "method": "sum(abs(bets.shares))",
+      "method": "sum(abs(bets.shares)) from paged recent bets, scanned=2000",
       "status": "partial"
     },
     {
       "date": "2026-02-13",
       "platform": "Polymarket",
-      "daily_total_value": 100669927.79,
+      "daily_total_value": 105895052.02,
       "unit": "USDC(volume24hr sum, proxy)",
       "source": "https://gamma-api.polymarket.com/markets",
-      "method": "sum(markets.volume24hr)",
+      "method": "sum(markets.volume24hr), 800 active unresolved markets",
       "status": "partial"
     }
   ]
