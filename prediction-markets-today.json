@@ -8,7 +8,7 @@
     "start_utc": "2026-02-11T16:00:00+00:00",
     "end_utc": "2026-02-12T16:00:00+00:00"
   },
-  "generated_at": "2026-02-12T16:15:02.022428+08:00",
+  "generated_at": "2026-02-12T16:29:02.573276+08:00",
   "definition": {
     "primary": "当日成交合约总量（无法直取时采用公开可复现近似）",
     "auxiliary": "新增市场/新增合约条目（listing口径）",
@@ -18,7 +18,7 @@
     "Polymarket": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 96018169.01,
+        "value": 106374615.0,
         "unit": "USDC(volume24hr sum, proxy)",
         "source_metric": "sum(markets.volume24hr)"
       },
@@ -31,43 +31,48 @@
         "new_contract_listing_count": null
       },
       "status": "partial",
-      "note": "公开Gamma接口分页抓取800个活跃未结算市场，以volume24hr汇总作为“当日成交合约总量”近似。该口径为24小时滚动窗口，可能与自然日(Asia/Shanghai)有偏差；若存在分页上限仍可能低估。"
+      "note": "公开Gamma接口分页抓取800个活跃未结算市场，以volume24hr汇总作为近似（24h滚动）。"
     },
     "Manifold": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 292186.73,
+        "value": 313353.96,
         "unit": "shares(today, paged)",
         "source_metric": "sum(abs(bets.shares))"
       },
       "derived": {
-        "traded_contract_entries": 316,
+        "traded_contract_entries": 326,
         "bets_scanned": 2000
       },
       "auxiliary": {
-        "new_market_count": 73,
-        "new_contract_listing_count": 131
+        "new_market_count": 74,
+        "new_contract_listing_count": 132
       },
       "status": "partial",
-      "note": "按beforeTime分页扫描2000条bets，累加当日shares绝对值；为公开口径近似，非官方结算成交量。"
+      "note": "分页扫描2000条bets，累加当日shares绝对值近似。"
     },
     "Kalshi": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 0.0,
-        "unit": "contracts(volume_24h sum, proxy)",
-        "source_metric": "sum(markets.volume_24h)"
+        "value": 76797437.52,
+        "unit": "contracts(sampled trade-rate extrapolation)",
+        "source_metric": "sum(first_20_pages.trades.count_fp) * elapsed_day/sample_span"
       },
       "derived": {
-        "traded_contract_entries": 0,
-        "traded_markets": 0
+        "traded_contract_entries": 2033,
+        "trades_scanned": 20000,
+        "trades_pages_sampled": 20,
+        "markets_sampled": 200,
+        "volume24h_nonzero_markets": 0,
+        "open_interest_sum_markets_sample": 0.0,
+        "method": "extrapolated_from_official_trade_feed"
       },
       "auxiliary": {
-        "new_market_count": 2000,
-        "new_contract_listing_count": 4000
+        "new_market_count": 200,
+        "new_contract_listing_count": 400
       },
       "status": "partial",
-      "note": "Kalshi分页抓取2000个市场，按volume_24h汇总作为当日成交近似(24h滚动)。该值并非严格自然日，且受分页覆盖影响。"
+      "note": "今日全量交易页数过大，采用可验证替代：官方/markets/trades前20页样本（20000条）覆盖31.7分钟，按同速率外推至今日已过时长。 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零0个（sum=0.0）。"
     }
   },
   "completeness": "3/3"

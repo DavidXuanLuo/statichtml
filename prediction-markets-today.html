@@ -12,9 +12,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;m
 .grid{display:grid;grid-template-columns:1fr;gap:10px}
 .card{background:#fff;border:1px solid #e7e7e7;border-radius:12px;padding:12px}
 .card h3{margin:0 0 8px;font-size:16px;display:flex;justify-content:space-between;align-items:center}
-.big{font-size:28px;font-weight:800;line-height:1.1}
-.sub{font-size:12px;color:#666;margin-top:2px;margin-bottom:8px}
-ul{padding-left:18px;margin:6px 0 0} li{margin:4px 0;font-size:13px;line-height:1.4}
+.card.kalshi{border:2px solid #9b5cff;background:linear-gradient(180deg,#faf6ff,#fff)}
+.focus{display:inline-block;font-size:11px;color:#6b2bd9;background:#f1e8ff;border:1px solid #d6bfff;border-radius:999px;padding:3px 8px;margin-bottom:6px}
+.big{font-size:28px;font-weight:800;line-height:1.1;word-break:break-word}
+.sub{font-size:12px;color:#666;margin-top:2px;margin-bottom:8px;word-break:break-word}
+ul{padding-left:18px;margin:6px 0 0} li{margin:4px 0;font-size:13px;line-height:1.45}
 .tag{font-size:11px;padding:2px 6px;border-radius:999px;border:1px solid #ddd;background:#f7f7f7}
 .tag.partial{background:#fff6e8;border-color:#f1d39f} .tag.missing{background:#ffeef0;border-color:#ffccd5} .tag.ok{background:#eaf7ea;border-color:#bce0bc}
 @media (min-width: 860px){.grid{grid-template-columns:1fr 1fr 1fr}}
@@ -22,44 +24,47 @@ ul{padding-left:18px;margin:6px 0 0} li{margin:4px 0;font-size:13px;line-height:
 </head>
 <body>
 <div class='h'>预测市场日报：主指标=当日成交合约总量</div>
-<div class='meta'>日期：<b>2026-02-12</b> ｜ 生成：2026-02-12T16:15:02.022428+08:00 ｜ 完整性：3/3</div>
+<div class='meta'>日期：<b>2026-02-12</b> ｜ 生成：2026-02-12T16:29:02.573276+08:00 ｜ 完整性：3/3</div>
 <div class='box'><b>口径说明</b>：
-主指标为“当日成交合约总量”。若平台无严格自然日成交总量公开接口，则降级为可复现近似值（如 volume24hr/volume_24h 汇总或 bets.shares 累加），并在平台说明中标注偏差来源。不同平台单位不同，<b>不做跨平台直接加总</b>。
+主指标为“当日成交合约总量”。Kalshi优先用官方交易流 /markets/trades（count_fp）口径；若当日全量分页过大，降级为“官方交易流样本速率外推”，并在卡片中明确标注。不同平台单位不同，<b>不做跨平台直接加总</b>。
 </div>
 <div class='grid'>
 <section class='card'>
   <h3>Polymarket <span class='tag partial'>partial</span></h3>
-  <div class='big'>96,018,169.01</div>
+  
+  <div class='big'>106,374,615.0</div>
   <div class='sub'>USDC(volume24hr sum, proxy)</div>
   <ul>
     <li><b>主指标来源：</b>sum(markets.volume24hr)</li>
     <li><b>辅助-新增市场：</b>—</li>
     <li><b>辅助-新增合约条目：</b>—</li>
-    <li><b>说明：</b>公开Gamma接口分页抓取800个活跃未结算市场，以volume24hr汇总作为“当日成交合约总量”近似。该口径为24小时滚动窗口，可能与自然日(Asia/Shanghai)有偏差；若存在分页上限仍可能低估。</li>
+    <li><b>说明：</b>公开Gamma接口分页抓取800个活跃未结算市场，以volume24hr汇总作为近似（24h滚动）。</li>
   </ul>
 </section>
 
 <section class='card'>
   <h3>Manifold <span class='tag partial'>partial</span></h3>
-  <div class='big'>292,186.73</div>
+  
+  <div class='big'>313,353.96</div>
   <div class='sub'>shares(today, paged)</div>
   <ul>
     <li><b>主指标来源：</b>sum(abs(bets.shares))</li>
-    <li><b>辅助-新增市场：</b>73</li>
-    <li><b>辅助-新增合约条目：</b>131</li>
-    <li><b>说明：</b>按beforeTime分页扫描2000条bets，累加当日shares绝对值；为公开口径近似，非官方结算成交量。</li>
+    <li><b>辅助-新增市场：</b>74</li>
+    <li><b>辅助-新增合约条目：</b>132</li>
+    <li><b>说明：</b>分页扫描2000条bets，累加当日shares绝对值近似。</li>
   </ul>
 </section>
 
-<section class='card'>
+<section class='card kalshi'>
   <h3>Kalshi <span class='tag partial'>partial</span></h3>
-  <div class='big'>0.0</div>
-  <div class='sub'>contracts(volume_24h sum, proxy)</div>
+  <div class='focus'>Kalshi主值（优先展示）</div>
+  <div class='big'>76,797,437.52</div>
+  <div class='sub'>contracts(sampled trade-rate extrapolation)</div>
   <ul>
-    <li><b>主指标来源：</b>sum(markets.volume_24h)</li>
-    <li><b>辅助-新增市场：</b>2000</li>
-    <li><b>辅助-新增合约条目：</b>4000</li>
-    <li><b>说明：</b>Kalshi分页抓取2000个市场，按volume_24h汇总作为当日成交近似(24h滚动)。该值并非严格自然日，且受分页覆盖影响。</li>
+    <li><b>主指标来源：</b>sum(first_20_pages.trades.count_fp) * elapsed_day/sample_span</li>
+    <li><b>辅助-新增市场：</b>200</li>
+    <li><b>辅助-新增合约条目：</b>400</li>
+    <li><b>说明：</b>今日全量交易页数过大，采用可验证替代：官方/markets/trades前20页样本（20000条）覆盖31.7分钟，按同速率外推至今日已过时长。 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零0个（sum=0.0）。</li>
   </ul>
 </section>
 </div>
