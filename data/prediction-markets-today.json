@@ -1,5 +1,5 @@
 {
-  "metric": "today_new_prediction_markets_and_contracts",
+  "metric": "today_traded_contract_volume_primary",
   "timezone": "Asia/Shanghai",
   "date_shanghai": "2026-02-12",
   "window": {
@@ -8,30 +8,66 @@
     "start_utc": "2026-02-11T16:00:00+00:00",
     "end_utc": "2026-02-12T16:00:00+00:00"
   },
-  "generated_at": "2026-02-12T14:55:35.002124+08:00",
+  "generated_at": "2026-02-12T15:34:28.038661+08:00",
+  "definition": {
+    "primary": "当日成交合约总量（或最接近公开口径）",
+    "auxiliary": "新增市场/新增合约条目（listing口径）",
+    "note": "避免与listing count混淆"
+  },
   "platforms": {
     "Polymarket": {
-      "market_count": 2065,
-      "contract_count": 4130,
-      "status": "ok",
-      "note": "市场数沿用原统计；合约数按二元市场约2合约/市场估算（实际以outcomes为准）"
+      "primary": {
+        "name": "当日成交合约总量",
+        "value": null,
+        "unit": "missing",
+        "source_metric": "unavailable"
+      },
+      "derived": {
+        "traded_contract_entries": null,
+        "traded_markets": null
+      },
+      "auxiliary": {
+        "new_market_count": null,
+        "new_contract_listing_count": null
+      },
+      "status": "missing",
+      "note": "Polymarket公开接口当前在本环境下无法稳定完成大结果集拉取（频繁IncompleteRead），暂无法可靠产出当日成交合约总量，已标记缺失。"
     },
     "Manifold": {
-      "market_count": 67,
-      "contract_count": 134,
+      "primary": {
+        "name": "当日成交合约总量",
+        "value": 364948.75,
+        "unit": "shares(latest 3k bets)",
+        "source_metric": "sum(abs(bets.shares))"
+      },
+      "derived": {
+        "traded_contract_entries": 312
+      },
+      "auxiliary": {
+        "new_market_count": 71,
+        "new_contract_listing_count": 128
+      },
       "status": "partial",
-      "note": "市场数沿用原统计；合约数按BINARY≈2估算（多选/其他类型可能偏差）"
+      "note": "Manifold使用公开/v0/bets近似；当前仅基于最新3000条bets，超出部分可能漏计。"
     },
     "Kalshi": {
-      "market_count": 6000,
-      "contract_count": 12000,
-      "status": "partial",
-      "note": "市场数沿用原统计；Kalshi多为binary，合约数按2估算；原始市场数本身为partial"
+      "primary": {
+        "name": "当日成交合约总量",
+        "value": null,
+        "unit": "missing",
+        "source_metric": "unavailable"
+      },
+      "derived": {
+        "traded_contract_entries": null,
+        "traded_markets": 0
+      },
+      "auxiliary": {
+        "new_market_count": null,
+        "new_contract_listing_count": null
+      },
+      "status": "missing",
+      "note": "Kalshi公开市场列表缺少稳定可用的全量排序/聚合接口，当前无法可靠得到“当日成交合约总量”全站值；已标记缺失。"
     }
   },
-  "completeness": "3/3",
-  "totals": {
-    "known_market_sum": 8132,
-    "known_contract_sum": 16264
-  }
+  "completeness": "1/3"
 }
