@@ -1,0 +1,55 @@
+{
+  "project": "Robinhood Tokenized Stocks Onchain Tracker",
+  "network": "Arbitrum",
+  "updated_at": "2026-02-12T19:58:00+08:00",
+  "disclaimer": "原始链上看板（Dune）存在反爬限制，当前先以可验证公开报道中引用的Dune数据做可用版汇总；后续可切换为Dune API直连。",
+  "metrics": {
+    "tvl_usd": 15000000,
+    "cumulative_mint_volume_usd": 19300000,
+    "cumulative_burn_volume_usd": 11500000,
+    "net_outstanding_usd": 7800000,
+    "tokenized_assets_count": 2000,
+    "data_time": "2026-02-11"
+  },
+  "history": [
+    {
+      "date": "2025-10-18",
+      "tvl_usd": 8500000,
+      "cumulative_mint_volume_usd": 19300000,
+      "cumulative_burn_volume_usd": 11500000,
+      "net_outstanding_usd": 7800000,
+      "tokenized_assets_count": 493,
+      "source_label": "Cointelegraph（引用 Dune 数据）",
+      "source_url": "https://cointelegraph.com/news/robinhood-expands-tokenization-500-us-stocks-etfs-arbitrum",
+      "dune_url": "https://dune.com/the_defi_report/robinhood-stock-tokens"
+    },
+    {
+      "date": "2026-02-11",
+      "tvl_usd": 15000000,
+      "cumulative_mint_volume_usd": null,
+      "cumulative_burn_volume_usd": null,
+      "net_outstanding_usd": null,
+      "tokenized_assets_count": 2000,
+      "source_label": "CoinDesk（引用 Dune/Entropy Advisors 数据）",
+      "source_url": "https://www.coindesk.com/business/2026/02/11/robinhood-starts-testing-its-own-blockchain-as-crypto-and-tokenization-push-deepens",
+      "dune_url": "https://dune.com/the_defi_report/robinhood-stock-tokens"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Dune Dashboard: Robinhood Stock Tokens",
+      "url": "https://dune.com/the_defi_report/robinhood-stock-tokens",
+      "note": "目标原始看板（当前环境有Cloudflare拦截）"
+    },
+    {
+      "name": "Cointelegraph (published 2025-10-18)",
+      "url": "https://cointelegraph.com/news/robinhood-expands-tokenization-500-us-stocks-etfs-arbitrum",
+      "note": "文中给出 493 assets、TVL>8.5M、累计铸造19.3M、累计销毁11.5M"
+    },
+    {
+      "name": "CoinDesk (published 2026-02-11)",
+      "url": "https://www.coindesk.com/business/2026/02/11/robinhood-starts-testing-its-own-blockchain-as-crypto-and-tokenization-push-deepens",
+      "note": "文中给出 almost 2,000 assets、equity tokens total value 15M"
+    }
+  ]
+}
