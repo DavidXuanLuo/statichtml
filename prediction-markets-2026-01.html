@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2026年1月预测市场新增合约 + Robinhood运营数据</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;background:#f7f8fa;color:#1f2937}
+    .card{background:#fff;border-radius:12px;padding:16px 18px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+    h1{font-size:24px;margin:0 0 8px} h2{font-size:18px;margin:0 0 10px}
+    #chart{height:420px}
+    table{border-collapse:collapse;width:100%;font-size:14px}
+    th,td{border-bottom:1px solid #eee;padding:8px 6px;text-align:right}
+    th:first-child,td:first-child{text-align:left}
+    .muted{color:#6b7280;font-size:13px}
+    .warn{color:#b45309}
+    a{color:#2563eb}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>2026年1月预测市场各平台每日新增合约数 + Robinhood 1月运营数据</h1>
+    <div id="meta" class="muted"></div>
+  </div>
+
+  <div class="card">
+    <h2>每日新增合约数（折线图）</h2>
+    <div id="chart"></div>
+    <div class="muted warn">注：Kalshi 日级新增数据在本次抓取中未完成回溯，图中留空。</div>
+  </div>
+
+  <div class="card">
+    <h2>平台汇总</h2>
+    <table id="summaryTable"></table>
+  </div>
+
+  <div class="card">
+    <h2>Robinhood 2026年1月可验证指标</h2>
+    <table id="rbTable"></table>
+  </div>
+
+  <div class="card">
+    <h2>数据完整性说明</h2>
+    <div id="completeness" class="muted"></div>
+    <h2 style="margin-top:14px">来源</h2>
+    <ul id="sources"></ul>
+  </div>
+
+<script>
+(async function(){
+  const data = await fetch('./data/prediction_markets_2026_01.json').then(r=>r.json());
+  document.getElementById('meta').innerText = `生成时间: ${data.meta.generated_at} | 时区: ${data.meta.timezone} | 统计区间: ${data.meta.date_range.join(' ~ ')}`;
+
+  const dates = data.daily_new_contracts.map(d=>d.date);
+  const p = data.daily_new_contracts.map(d=>d.Polymarket);
+  const k = data.daily_new_contracts.map(d=>d.Kalshi);
+  const m = data.daily_new_contracts.map(d=>d.Manifold);
+
+  const chart = echarts.init(document.getElementById('chart'));
+  chart.setOption({
+    tooltip:{trigger:'axis'},
+    legend:{data:['Polymarket','Kalshi','Manifold']},
+    xAxis:{type:'category',data:dates,axisLabel:{rotate:45}},
+    yAxis:{type:'value',name:'新增合约数'},
+    series:[
+      {name:'Polymarket',type:'line',smooth:true,data:p},
+      {name:'Kalshi',type:'line',smooth:true,data:k,connectNulls:false},
+      {name:'Manifold',type:'line',smooth:true,data:m}
+    ]
+  });
+
+  const s = data.summary;
+  document.getElementById('summaryTable').innerHTML = `
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>Polymarket 合计</td><td>${s.Polymarket_total ?? 'N/A'}</td></tr>
+    <tr><td>Kalshi 合计</td><td>${s.Kalshi_total ?? '缺失'}</td></tr>
+    <tr><td>Manifold 合计</td><td>${s.Manifold_total ?? 'N/A'}</td></tr>
+    <tr><td>总计（不含Kalshi）</td><td>${s.All_platforms_total_excluding_Kalshi ?? 'N/A'}</td></tr>`;
+
+  const rb = data.robinhood_january_2026;
+  document.getElementById('rbTable').innerHTML = `
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>交易日数量</td><td>${rb.trading_days ?? 'N/A'}</td></tr>
+    <tr><td>月初开盘价</td><td>${rb.month_open ?? 'N/A'}</td></tr>
+    <tr><td>月末收盘价</td><td>${rb.month_close ?? 'N/A'}</td></tr>
+    <tr><td>月度涨跌幅</td><td>${rb.monthly_return_pct ?? 'N/A'}%</td></tr>
+    <tr><td>月内最高价</td><td>${rb.high ?? 'N/A'}</td></tr>
+    <tr><td>月内最低价</td><td>${rb.low ?? 'N/A'}</td></tr>
+    <tr><td>日均成交量</td><td>${rb.avg_daily_volume ?? 'N/A'}</td></tr>
+    <tr><td>月度总成交量</td><td>${rb.total_volume ?? 'N/A'}</td></tr>
+    <tr><td>口径说明</td><td style="text-align:left">${rb.note}</td></tr>`;
+
+  document.getElementById('completeness').innerHTML = `
+    <p><b>预测市场：</b>${data.data_completeness.prediction_markets}</p>
+    <p><b>Robinhood：</b>${data.data_completeness.robinhood}</p>
+    <p class="warn">${data.kalshi_sampling_note || ''}</p>`;
+
+  const ul = document.getElementById('sources');
+  data.sources.forEach(x=>{
+    const li=document.createElement('li');
+    li.innerHTML=`${x.platform}: <a href="${x.url}" target="_blank">${x.url}</a>（字段：${x.field}）`;
+    ul.appendChild(li);
+  })
+})();
+</script>
+</body>
+</html>

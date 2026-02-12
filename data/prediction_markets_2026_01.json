@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "title": "2026年1月预测市场各平台每日新增合约数 + Robinhood 1月运营数据",
+    "generated_at": "2026-02-12T00:35:56.979596+00:00",
+    "timezone": "UTC",
+    "date_range": [
+      "2026-01-01",
+      "2026-01-31"
+    ],
+    "method": "Polymarket按startDate；Manifold按createdTime；Kalshi暂缺。"
+  },
+  "sources": [
+    {
+      "platform": "Polymarket",
+      "url": "https://gamma-api.polymarket.com/markets?start_date_min=2026-01-01&start_date_max=2026-01-31T23:59:59Z",
+      "field": "startDate"
+    },
+    {
+      "platform": "Manifold",
+      "url": "https://manifold.markets/api/v0/markets/?limit=1000",
+      "field": "createdTime"
+    },
+    {
+      "platform": "Kalshi",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/markets?limit=1000",
+      "field": "created_time"
+    },
+    {
+      "platform": "Robinhood",
+      "url": "https://stooq.com/q/d/l/?s=hood.us&i=d",
+      "field": "Date/Open/High/Low/Close/Volume"
+    }
+  ],
+  "daily_new_contracts": [
+    {
+      "date": "2026-01-01",
+      "Polymarket": 500,
+      "Kalshi": null,
+      "Manifold": 202,
+      "Total_excluding_Kalshi": 702
+    },
+    {
+      "date": "2026-01-02",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 147,
+      "Total_excluding_Kalshi": 147
+    },
+    {
+      "date": "2026-01-03",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 190,
+      "Total_excluding_Kalshi": 190
+    },
+    {
+      "date": "2026-01-04",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 113,
+      "Total_excluding_Kalshi": 113
+    },
+    {
+      "date": "2026-01-05",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 129,
+      "Total_excluding_Kalshi": 129
+    },
+    {
+      "date": "2026-01-06",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 223,
+      "Total_excluding_Kalshi": 223
+    },
+    {
+      "date": "2026-01-07",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 113,
+      "Total_excluding_Kalshi": 113
+    },
+    {
+      "date": "2026-01-08",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 83,
+      "Total_excluding_Kalshi": 83
+    },
+    {
+      "date": "2026-01-09",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 107,
+      "Total_excluding_Kalshi": 107
+    },
+    {
+      "date": "2026-01-10",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 80,
+      "Total_excluding_Kalshi": 80
+    },
+    {
+      "date": "2026-01-11",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 78,
+      "Total_excluding_Kalshi": 78
+    },
+    {
+      "date": "2026-01-12",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 139,
+      "Total_excluding_Kalshi": 139
+    },
+    {
+      "date": "2026-01-13",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 116,
+      "Total_excluding_Kalshi": 116
+    },
+    {
+      "date": "2026-01-14",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 104,
+      "Total_excluding_Kalshi": 104
+    },
+    {
+      "date": "2026-01-15",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 97,
+      "Total_excluding_Kalshi": 97
+    },
+    {
+      "date": "2026-01-16",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 95,
+      "Total_excluding_Kalshi": 95
+    },
+    {
+      "date": "2026-01-17",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 72,
+      "Total_excluding_Kalshi": 72
+    },
+    {
+      "date": "2026-01-18",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 79,
+      "Total_excluding_Kalshi": 79
+    },
+    {
+      "date": "2026-01-19",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 107,
+      "Total_excluding_Kalshi": 107
+    },
+    {
+      "date": "2026-01-20",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 109,
+      "Total_excluding_Kalshi": 109
+    },
+    {
+      "date": "2026-01-21",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 101,
+      "Total_excluding_Kalshi": 101
+    },
+    {
+      "date": "2026-01-22",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 113,
+      "Total_excluding_Kalshi": 113
+    },
+    {
+      "date": "2026-01-23",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 80,
+      "Total_excluding_Kalshi": 80
+    },
+    {
+      "date": "2026-01-24",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 95,
+      "Total_excluding_Kalshi": 95
+    },
+    {
+      "date": "2026-01-25",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 83,
+      "Total_excluding_Kalshi": 83
+    },
+    {
+      "date": "2026-01-26",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 84,
+      "Total_excluding_Kalshi": 84
+    },
+    {
+      "date": "2026-01-27",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 88,
+      "Total_excluding_Kalshi": 88
+    },
+    {
+      "date": "2026-01-28",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 74,
+      "Total_excluding_Kalshi": 74
+    },
+    {
+      "date": "2026-01-29",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 96,
+      "Total_excluding_Kalshi": 96
+    },
+    {
+      "date": "2026-01-30",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 130,
+      "Total_excluding_Kalshi": 130
+    },
+    {
+      "date": "2026-01-31",
+      "Polymarket": 0,
+      "Kalshi": null,
+      "Manifold": 66,
+      "Total_excluding_Kalshi": 66
+    }
+  ],
+  "summary": {
+    "Polymarket_total": 500,
+    "Kalshi_total": null,
+    "Manifold_total": 3393,
+    "All_platforms_total_excluding_Kalshi": 3893
+  },
+  "kalshi_sampling_note": "Kalshi markets接口分页体量极大，本次运行窗口未完成回溯到2026年1月，故日级数据标记为缺失。",
+  "robinhood_january_2026": {
+    "note": "未找到Robinhood官方披露的2026年1月“日级新增合约数”。以下提供可验证的1月运营相关指标（HOOD股价与成交量，交易日口径）。",
+    "source": {
+      "name": "Stooq HOOD daily historical prices",
+      "url": "https://stooq.com/q/d/l/?s=hood.us&i=d"
+    },
+    "trading_days": 20,
+    "month_open": 115.478,
+    "month_close": 99.48,
+    "monthly_return_pct": -13.85,
+    "high": 124.35,
+    "low": 98.37,
+    "avg_daily_volume": 21479892,
+    "total_volume": 429597841
+  },
+  "data_completeness": {
+    "prediction_markets": "Polymarket/Manifold为1月统计；Kalshi缺失。",
+    "robinhood": "无官方日级新增合约，采用HOOD日线市场指标替代。"
+  }
+}
