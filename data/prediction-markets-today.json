@@ -8,7 +8,7 @@
     "start_utc": "2026-02-11T16:00:00+00:00",
     "end_utc": "2026-02-12T16:00:00+00:00"
   },
-  "generated_at": "2026-02-12T16:54:31.575296+08:00",
+  "generated_at": "2026-02-12T23:24:59.153013+08:00",
   "definition": {
     "primary": "当日成交合约总量（Kalshi主口径=公开日度总值T+1）",
     "auxiliary": "新增市场/新增合约条目（listing口径）",
@@ -18,7 +18,7 @@
     "Polymarket": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 103804078.62,
+        "value": 100669927.79,
         "unit": "USDC(volume24hr sum, proxy)",
         "source_metric": "sum(markets.volume24hr)"
       },
@@ -36,17 +36,17 @@
     "Manifold": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 331944.88,
+        "value": 241695.36,
         "unit": "shares(today, paged)",
         "source_metric": "sum(abs(bets.shares))"
       },
       "derived": {
-        "traded_contract_entries": 344,
+        "traded_contract_entries": 364,
         "bets_scanned": 2000
       },
       "auxiliary": {
-        "new_market_count": 75,
-        "new_contract_listing_count": 134
+        "new_market_count": 105,
+        "new_contract_listing_count": 187
       },
       "status": "partial",
       "note": "分页扫描2000条bets，累加当日shares绝对值近似。"
