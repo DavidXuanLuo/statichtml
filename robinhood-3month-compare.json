@@ -1,7 +1,7 @@
 {
   "title": "Robinhood 近三个月运营数据对比（2025-11 / 2025-12 / 2026-01）",
-  "generated_at": "2026-02-12T17:40:00+08:00",
-  "source_policy": "优先使用 Robinhood IR 官方月度指标材料；若未披露则标注待披露/缺失",
+  "generated_at": "2026-02-12T18:28:00+08:00",
+  "source_policy": "优先使用 Robinhood IR 官方披露；并以 SEC EDGAR 披露做交叉核验。2026-01 当前为公司披露的 Select Preliminary Operating Data（初步、未经审计）",
   "sources": [
     {
       "name": "Robinhood November 2025 Operating Data (Press Release)",
@@ -14,9 +14,14 @@
       "type": "excel"
     },
     {
-      "name": "Robinhood Shares Selected December 2025 Month-To-Date Trading Volumes（仅精选交易量披露）",
-      "url": "https://investors.robinhood.com/events/event-details/robinhood-shares-selected-december-2025-month-date-trading-volumes",
-      "type": "event_release"
+      "name": "Robinhood Reports Fourth Quarter and Full Year 2025 Results（含 Select Preliminary January 2026 Operating Data）",
+      "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-fourth-quarter-and-full-year-2025-results",
+      "type": "press_release"
+    },
+    {
+      "name": "SEC 8-K Exhibit 99.1 (Feb 10, 2026) - q42025robinhoodexhibit991.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000013/q42025robinhoodexhibit991.htm",
+      "type": "sec_filing"
     }
   ],
   "months": [
@@ -42,15 +47,20 @@
     },
     {
       "month": "2026-01",
-      "status": "待披露/缺失",
+      "status": "已披露（初步值，未经审计）",
       "funded_customers_m": null,
-      "net_deposits_b": null,
-      "equity_volume_b": null,
-      "options_contracts_m": null,
-      "crypto_volume_b": null,
-      "note": "截至 2026-02-12，未检索到 Robinhood IR 已公开的 2026-01 完整月度指标材料"
+      "net_deposits_b": 4.5,
+      "equity_volume_b": 227.0,
+      "options_contracts_m": 200.0,
+      "crypto_volume_b": 22.9,
+      "note": "来自 Robinhood 2025Q4 业绩新闻稿中的 Select Preliminary January 2026 Operating Data，已与 SEC 8-K Exhibit 99.1 交叉一致"
     }
   ],
+  "field_level_missing_reasons": {
+    "2026-01": {
+      "funded_customers_m": "Robinhood 在 2026-02-10 的 Select Preliminary January 2026 Operating Data 中未披露该字段；需等待后续 January Monthly Metrics Release 或季度正式文件。"
+    }
+  },
   "mom_summary": {
     "2025-11_to_2025-12": {
       "funded_customers": "↑ +0.1M",
@@ -60,11 +70,11 @@
       "crypto_volume": "↓ -7.4B"
     },
     "2025-12_to_2026-01": {
-      "funded_customers": "→ 待披露/缺失",
-      "net_deposits": "→ 待披露/缺失",
-      "equity_volume": "→ 待披露/缺失",
-      "options_contracts": "→ 待披露/缺失",
-      "crypto_volume": "→ 待披露/缺失"
+      "funded_customers": "→ 缺失（字段未披露）",
+      "net_deposits": "↑ +1.3B",
+      "equity_volume": "↑ +38.4B",
+      "options_contracts": "↑ +0.6M",
+      "crypto_volume": "↑ +1.7B"
     }
   }
 }

@@ -21,18 +21,13 @@
     .na { color: var(--na); font-weight: 600; }
     .mono { font-variant-numeric: tabular-nums; }
     a { color:#8ab4ff; word-break: break-all; }
-    @media (max-width: 640px) {
-      h1 { font-size: 18px; }
-      table { font-size: 12px; }
-      th,td { padding: 8px 4px; }
-    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
       <h1>Robinhood 三个月运营数据对比（2025-11 / 2025-12 / 2026-01）</h1>
-      <p>口径：优先采用 Robinhood IR 官方月度指标材料（press release / dashboard / PDF / Excel）。若月份尚无完整披露，明确标注“待披露/缺失”。</p>
+      <p>口径：优先采用 Robinhood IR 官方材料，并以 SEC EDGAR 同期披露交叉核验。2026-01 为公司披露的 <strong>初步值（未经审计）</strong>。</p>
     </div>
 
     <div class="card">
@@ -66,16 +61,16 @@
             <td class="mono">188.6</td>
             <td class="mono">199.4</td>
             <td class="mono">21.2</td>
-            <td>已披露（Q4 补充材料）</td>
+            <td>已披露（Q4补充材料）</td>
           </tr>
           <tr>
             <td class="mono">2026-01</td>
-            <td class="na">待披露/缺失</td>
-            <td class="na">待披露/缺失</td>
-            <td class="na">待披露/缺失</td>
-            <td class="na">待披露/缺失</td>
-            <td class="na">待披露/缺失</td>
-            <td class="na">待披露/缺失</td>
+            <td class="na">缺失（字段未披露）</td>
+            <td class="mono">4.5</td>
+            <td class="mono">227.0</td>
+            <td class="mono">200.0</td>
+            <td class="mono">22.9</td>
+            <td>已披露（初步值，未经审计）</td>
           </tr>
         </tbody>
       </table>
@@ -91,17 +86,31 @@
         <li>Options Contracts：<span class="up">↑ +6.2M</span></li>
         <li>Crypto Volume：<span class="down">↓ -7.4B</span></li>
       </ul>
-      <p><strong>2025-12 → 2026-01：</strong> <span class="na">→ 待披露/缺失（暂无完整月度指标）</span></p>
+      <p><strong>2025-12 → 2026-01：</strong></p>
+      <ul>
+        <li>Funded Customers：<span class="na">→ 缺失（字段未披露）</span></li>
+        <li>Net Deposits：<span class="up">↑ +1.3B</span></li>
+        <li>Equity Volume：<span class="up">↑ +38.4B</span></li>
+        <li>Options Contracts：<span class="up">↑ +0.6M</span></li>
+        <li>Crypto Volume：<span class="up">↑ +1.7B</span></li>
+      </ul>
     </div>
 
     <div class="card">
-      <h2>数据来源（Robinhood IR 官方）</h2>
+      <h2>字段级缺失原因（2026-01）</h2>
       <ul>
-        <li><a href="https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-november-2025-operating-data" target="_blank">November 2025 Operating Data (Press Release)</a></li>
-        <li><a href="https://investors.robinhood.com/static-files/99655fd4-960f-4530-a69f-6a4537d83e1a" target="_blank">Q4 2025 Earnings Supplement.xlsx（含 Monthly KPIs，覆盖 Dec 2025）</a></li>
-        <li><a href="https://investors.robinhood.com/events/event-details/robinhood-shares-selected-december-2025-month-date-trading-volumes" target="_blank">Selected December 2025 Month-To-Date Trading Volumes（非完整月报）</a></li>
+        <li><strong>Funded Customers (M)</strong>：Robinhood 在 2026-02-10 披露的 “Select Preliminary January 2026 Operating Data” 未给出该字段；需等待后续 January Monthly Metrics Release 或季度正式文件。</li>
       </ul>
-      <p>说明：截至 2026-02-12，未检索到 2026-01 的完整月度运营指标官方材料，故严格标注为“待披露/缺失”。</p>
+    </div>
+
+    <div class="card">
+      <h2>数据来源（已交叉核验）</h2>
+      <ul>
+        <li><a href="https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-november-2025-operating-data" target="_blank">Robinhood November 2025 Operating Data (IR)</a></li>
+        <li><a href="https://investors.robinhood.com/static-files/99655fd4-960f-4530-a69f-6a4537d83e1a" target="_blank">Q4 2025 Earnings Supplement.xlsx（Dec 2025 Monthly KPIs）</a></li>
+        <li><a href="https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-fourth-quarter-and-full-year-2025-results" target="_blank">Robinhood Q4/FY2025 Results（含 Select Preliminary January 2026 Operating Data）</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1783879/000178387926000013/q42025robinhoodexhibit991.htm" target="_blank">SEC 8-K Exhibit 99.1（与 IR 披露交叉一致）</a></li>
+      </ul>
     </div>
   </div>
 </body>
