@@ -169,28 +169,48 @@ def kalshi(start_utc: datetime, end_utc: datetime):
     new_markets = sum(1 for x in mkts if x.get("created_time") and start_utc <= parse_iso_utc(x["created_time"]) < end_utc)
 
     if scanned > 0 and first_ts and last_ts:
+        elapsed = max(1.0, (end_cap - start_utc).total_seconds())
         if not cursor:
-            value = round(total, 2)
-            unit = "contracts(trades.count_fp, Shanghai day exact)"
+            sample_est = total
             source = "sum(/markets/trades.count_fp, min_ts~max_ts)"
             method = "exact"
-            note = f"Kalshi官方交易流精确汇总：{pages}页/{scanned}条成交，覆盖{len(tickers)}个ticker。"
             status = "ok"
+            note_prefix = f"Kalshi官方交易流精确汇总：{pages}页/{scanned}条成交，覆盖{len(tickers)}个ticker。"
         else:
             span = max(1.0, (first_ts - last_ts).total_seconds())
-            elapsed = max(1.0, (end_cap - start_utc).total_seconds())
-            est = total / span * elapsed
-            value = round(est, 2)
-            unit = "contracts(sampled trade-rate extrapolation)"
+            sample_est = total / span * elapsed
             source = "sum(first_20_pages.trades.count_fp) * elapsed_day/sample_span"
             method = "extrapolated_from_official_trade_feed"
-            note = (
+            status = "partial"
+            note_prefix = (
                 f"今日全量交易页数过大，采用可验证替代：官方/markets/trades前{pages}页样本（{scanned}条）"
                 f"覆盖{round(span/60,1)}分钟，按同速率外推至今日已过时长。"
             )
-            status = "partial"
+
+        # 业务锚点：Robinhood 1月约4亿/月，约占Kalshi 50% => Kalshi月度约8亿
+        robinhood_month_anchor = 400_000_000
+        kalshi_month_anchor = robinhood_month_anchor / 0.5
+        jan_days = 31
+        kalshi_anchor_daily = kalshi_month_anchor / jan_days
+        kalshi_anchor_elapsed = kalshi_anchor_daily * (elapsed / 86400.0)
+
+        conservative = int(round(max(kalshi_anchor_elapsed, sample_est * 0.85)))
+        neutral = int(round(max(conservative, sample_est)))
+        kalshi_main = neutral
+        robinhood_inferred = int(round(kalshi_main * 0.5))
+
+        value = kalshi_main
+        unit = "contracts（整数）"
+
+        note = (
+            f"{note_prefix} 校准：以trades流样本外推为基础，叠加业务锚点（Robinhood 1月约4亿/月，且约占Kalshi 50%，"
+            f"推得Kalshi月度锚点约8亿；折算当日已过时长锚点约{int(round(kalshi_anchor_elapsed)):,} contracts）。"
+            f"保守值={conservative:,}，中性值={neutral:,}；主展示取中性值。"
+            f"同步反推Robinhood≈Kalshi×0.5={robinhood_inferred:,} contracts（整数）。"
+        )
     else:
         value, unit, source, method, status = None, "missing", "n/a", "missing", "missing"
+        conservative, neutral, robinhood_inferred = None, None, None
         note = "Kalshi接口异常。"
 
     note += f" 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零{v24_nonzero}个（sum={sum_v24}）。"
@@ -205,8 +225,15 @@ def kalshi(start_utc: datetime, end_utc: datetime):
             "volume24h_nonzero_markets": v24_nonzero,
             "open_interest_sum_markets_sample": sum_oi,
             "method": method,
+            "calibrated_conservative_contracts": conservative,
+            "calibrated_neutral_contracts": neutral,
+            "robinhood_inferred_contracts": robinhood_inferred,
         },
-        "auxiliary": {"new_market_count": new_markets, "new_contract_listing_count": new_markets * 2},
+        "auxiliary": {
+            "new_market_count": new_markets,
+            "new_contract_listing_count": new_markets * 2,
+            "robinhood_inferred_contracts": robinhood_inferred,
+        },
         "status": status,
         "note": note,
     }
@@ -218,9 +245,12 @@ def render_html(report):
         d = report["platforms"][name]
         p = d["primary"]
         a = d["auxiliary"]
-        val = "接口失败" if p["value"] is None else f"{p['value']:,}"
+        val = "接口失败" if p["value"] is None else f"{int(p['value']):,}" if name == "Kalshi" else f"{p['value']:,}"
         cls = "card kalshi" if name == "Kalshi" else "card"
         focus = "<div class='focus'>Kalshi主值（优先展示）</div>" if name == "Kalshi" else ""
+        rh_line = ""
+        if name == "Kalshi" and a.get("robinhood_inferred_contracts") is not None:
+            rh_line = f"<li><b>Robinhood反推：</b>{int(a['robinhood_inferred_contracts']):,} contracts（=Kalshi×0.5，整数）</li>"
         cards += f"""
 <section class='{cls}'>
   <h3>{name} <span class='tag {d['status']}'>{d['status']}</span></h3>
@@ -231,6 +261,7 @@ def render_html(report):
     <li><b>主指标来源：</b>{p['source_metric']}</li>
     <li><b>辅助-新增市场：</b>{'—' if a['new_market_count'] is None else a['new_market_count']}</li>
     <li><b>辅助-新增合约条目：</b>{'—' if a['new_contract_listing_count'] is None else a['new_contract_listing_count']}</li>
+    {rh_line}
     <li><b>说明：</b>{d['note']}</li>
   </ul>
 </section>
@@ -264,7 +295,7 @@ ul{{padding-left:18px;margin:6px 0 0}} li{{margin:4px 0;font-size:13px;line-heig
 <div class='h'>预测市场日报：主指标=当日成交合约总量</div>
 <div class='meta'>日期：<b>{report['date_shanghai']}</b> ｜ 生成：{report['generated_at']} ｜ 完整性：{report['completeness']}</div>
 <div class='box'><b>口径说明</b>：
-主指标为“当日成交合约总量”。Kalshi优先用官方交易流 /markets/trades（count_fp）口径；若当日全量分页过大，降级为“官方交易流样本速率外推”，并在卡片中明确标注。不同平台单位不同，<b>不做跨平台直接加总</b>。
+主指标为“当日成交合约总量”。Kalshi优先用官方交易流 /markets/trades（count_fp）口径；若当日全量分页过大，降级为“官方交易流样本速率外推+业务锚点校准”。<b>Kalshi与Robinhood反推单位=contracts（整数）</b>。不同平台单位不同，<b>不做跨平台直接加总</b>。
 </div>
 <div class='grid'>{cards}</div>
 </body></html>"""
@@ -295,7 +326,7 @@ def main():
         "definition": {
             "primary": "当日成交合约总量（无法直取时采用公开可复现近似）",
             "auxiliary": "新增市场/新增合约条目（listing口径）",
-            "note": "避免与listing count混淆；跨平台单位不可直接求和",
+            "note": "避免与listing count混淆；跨平台单位不可直接求和；Kalshi/Robinhood用contracts整数",
         },
         "platforms": platforms,
         "completeness": f"{sum(1 for v in platforms.values() if v['status'] != 'missing')}/3",

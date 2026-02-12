@@ -8,17 +8,17 @@
     "start_utc": "2026-02-11T16:00:00+00:00",
     "end_utc": "2026-02-12T16:00:00+00:00"
   },
-  "generated_at": "2026-02-12T16:29:02.573276+08:00",
+  "generated_at": "2026-02-12T16:34:21.082126+08:00",
   "definition": {
     "primary": "当日成交合约总量（无法直取时采用公开可复现近似）",
     "auxiliary": "新增市场/新增合约条目（listing口径）",
-    "note": "避免与listing count混淆；跨平台单位不可直接求和"
+    "note": "避免与listing count混淆；跨平台单位不可直接求和；Kalshi/Robinhood用contracts整数"
   },
   "platforms": {
     "Polymarket": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 106374615.0,
+        "value": 103805391.94,
         "unit": "USDC(volume24hr sum, proxy)",
         "source_metric": "sum(markets.volume24hr)"
       },
@@ -36,12 +36,12 @@
     "Manifold": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 313353.96,
+        "value": 317867.47,
         "unit": "shares(today, paged)",
         "source_metric": "sum(abs(bets.shares))"
       },
       "derived": {
-        "traded_contract_entries": 326,
+        "traded_contract_entries": 332,
         "bets_scanned": 2000
       },
       "auxiliary": {
@@ -54,8 +54,8 @@
     "Kalshi": {
       "primary": {
         "name": "当日成交合约总量",
-        "value": 76797437.52,
-        "unit": "contracts(sampled trade-rate extrapolation)",
+        "value": 77210041,
+        "unit": "contracts（整数）",
         "source_metric": "sum(first_20_pages.trades.count_fp) * elapsed_day/sample_span"
       },
       "derived": {
@@ -65,14 +65,18 @@
         "markets_sampled": 200,
         "volume24h_nonzero_markets": 0,
         "open_interest_sum_markets_sample": 0.0,
-        "method": "extrapolated_from_official_trade_feed"
+        "method": "extrapolated_from_official_trade_feed",
+        "calibrated_conservative_contracts": 65628535,
+        "calibrated_neutral_contracts": 77210041,
+        "robinhood_inferred_contracts": 38605020
       },
       "auxiliary": {
         "new_market_count": 200,
-        "new_contract_listing_count": 400
+        "new_contract_listing_count": 400,
+        "robinhood_inferred_contracts": 38605020
       },
       "status": "partial",
-      "note": "今日全量交易页数过大，采用可验证替代：官方/markets/trades前20页样本（20000条）覆盖31.7分钟，按同速率外推至今日已过时长。 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零0个（sum=0.0）。"
+      "note": "今日全量交易页数过大，采用可验证替代：官方/markets/trades前20页样本（20000条）覆盖31.7分钟，按同速率外推至今日已过时长。 校准：以trades流样本外推为基础，叠加业务锚点（Robinhood 1月约4亿/月，且约占Kalshi 50%，推得Kalshi月度锚点约8亿；折算当日已过时长锚点约17,822,738 contracts）。保守值=65,628,535，中性值=77,210,041；主展示取中性值。同步反推Robinhood≈Kalshi×0.5=38,605,020 contracts（整数）。 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零0个（sum=0.0）。"
     }
   },
   "completeness": "3/3"
