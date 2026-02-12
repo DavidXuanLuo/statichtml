@@ -1,0 +1,70 @@
+{
+  "title": "Robinhood 近三个月运营数据对比（2025-11 / 2025-12 / 2026-01）",
+  "generated_at": "2026-02-12T17:40:00+08:00",
+  "source_policy": "优先使用 Robinhood IR 官方月度指标材料；若未披露则标注待披露/缺失",
+  "sources": [
+    {
+      "name": "Robinhood November 2025 Operating Data (Press Release)",
+      "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-november-2025-operating-data",
+      "type": "press_release"
+    },
+    {
+      "name": "Robinhood Q4 2025 Earnings Supplement.xlsx（含 Monthly KPIs, December 2025）",
+      "url": "https://investors.robinhood.com/static-files/99655fd4-960f-4530-a69f-6a4537d83e1a",
+      "type": "excel"
+    },
+    {
+      "name": "Robinhood Shares Selected December 2025 Month-To-Date Trading Volumes（仅精选交易量披露）",
+      "url": "https://investors.robinhood.com/events/event-details/robinhood-shares-selected-december-2025-month-date-trading-volumes",
+      "type": "event_release"
+    }
+  ],
+  "months": [
+    {
+      "month": "2025-11",
+      "status": "已披露",
+      "funded_customers_m": 26.9,
+      "net_deposits_b": 7.1,
+      "equity_volume_b": 201.5,
+      "options_contracts_m": 193.2,
+      "crypto_volume_b": 28.6,
+      "note": "来自 2025-11 月度运营数据官方披露"
+    },
+    {
+      "month": "2025-12",
+      "status": "已披露（来自Q4补充材料中的Monthly KPIs）",
+      "funded_customers_m": 27.0,
+      "net_deposits_b": 3.2,
+      "equity_volume_b": 188.6,
+      "options_contracts_m": 199.4,
+      "crypto_volume_b": 21.2,
+      "note": "来源为 Robinhood Q4 2025 Earnings Supplement.xlsx 的 Monthly KPIs（Dec 2025）"
+    },
+    {
+      "month": "2026-01",
+      "status": "待披露/缺失",
+      "funded_customers_m": null,
+      "net_deposits_b": null,
+      "equity_volume_b": null,
+      "options_contracts_m": null,
+      "crypto_volume_b": null,
+      "note": "截至 2026-02-12，未检索到 Robinhood IR 已公开的 2026-01 完整月度指标材料"
+    }
+  ],
+  "mom_summary": {
+    "2025-11_to_2025-12": {
+      "funded_customers": "↑ +0.1M",
+      "net_deposits": "↓ -3.9B",
+      "equity_volume": "↓ -12.9B",
+      "options_contracts": "↑ +6.2M",
+      "crypto_volume": "↓ -7.4B"
+    },
+    "2025-12_to_2026-01": {
+      "funded_customers": "→ 待披露/缺失",
+      "net_deposits": "→ 待披露/缺失",
+      "equity_volume": "→ 待披露/缺失",
+      "options_contracts": "→ 待披露/缺失",
+      "crypto_volume": "→ 待披露/缺失"
+    }
+  }
+}
