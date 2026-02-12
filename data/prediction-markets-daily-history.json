@@ -1,9 +1,9 @@
 {
   "dataset": "prediction_markets_daily_history",
   "timezone": "Asia/Shanghai",
-  "generated_at": "2026-02-12T23:35:00+08:00",
+  "generated_at": "2026-02-12T23:38:00+08:00",
   "coverage": {
-    "start_date": "2026-02-06",
+    "start_date": "2026-02-10",
     "end_date": "2026-02-12"
   },
   "definitions": {
@@ -14,42 +14,6 @@
   },
   "records": [
     {
-      "date": "2026-02-06",
-      "polymarket_daily": null,
-      "manifold_daily": null,
-      "kalshi_daily_published": null,
-      "kalshi_cumulative": null,
-      "missing": true,
-      "note": "占位：等待历史补采"
-    },
-    {
-      "date": "2026-02-07",
-      "polymarket_daily": null,
-      "manifold_daily": null,
-      "kalshi_daily_published": null,
-      "kalshi_cumulative": null,
-      "missing": true,
-      "note": "占位：等待历史补采"
-    },
-    {
-      "date": "2026-02-08",
-      "polymarket_daily": null,
-      "manifold_daily": null,
-      "kalshi_daily_published": null,
-      "kalshi_cumulative": null,
-      "missing": true,
-      "note": "占位：等待历史补采"
-    },
-    {
-      "date": "2026-02-09",
-      "polymarket_daily": null,
-      "manifold_daily": null,
-      "kalshi_daily_published": null,
-      "kalshi_cumulative": null,
-      "missing": true,
-      "note": "占位：等待历史补采"
-    },
-    {
       "date": "2026-02-10",
       "polymarket_daily": null,
       "manifold_daily": null,
@@ -57,15 +21,6 @@
       "kalshi_cumulative": 345187028,
       "missing": false,
       "note": "Kalshi最新已公布交易日（T+1）"
-    },
-    {
-      "date": "2026-02-11",
-      "polymarket_daily": null,
-      "manifold_daily": null,
-      "kalshi_daily_published": null,
-      "kalshi_cumulative": null,
-      "missing": true,
-      "note": "占位：Kalshi该日尚未在本数据集中补齐"
     },
     {
       "date": "2026-02-12",
