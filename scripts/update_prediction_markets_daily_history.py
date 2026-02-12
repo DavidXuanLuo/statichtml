@@ -103,13 +103,14 @@ def get_kalshi_published(today_local_str: str):
     if not published:
         return None, None, "missing", "Kalshi historical snapshots unavailable"
     latest = published[-1]
-    daily = latest.get("total_contracts_traded_change")
+    # Use trading_volume_change (USD) for cross-platform comparability with Polymarket USDC volume.
+    daily = latest.get("trading_volume_change")
     if daily is None and len(published) >= 2:
         prev = published[-2]
-        daily = float(latest.get("total_contracts_traded") or 0) - float(prev.get("total_contracts_traded") or 0)
+        daily = float(latest.get("trading_volume") or 0) - float(prev.get("trading_volume") or 0)
     if daily is None:
-        return latest.get("date"), None, "missing", "Kalshi daily change missing"
-    return latest.get("date"), int(round(float(daily))), "ok", "published_daily_t_plus_1 from kalshidata historical-snapshots.total_contracts_traded_change"
+        return latest.get("date"), None, "missing", "Kalshi trading volume daily change missing"
+    return latest.get("date"), round(float(daily), 2), "ok", "published_daily_t_plus_1 from kalshidata historical-snapshots.trading_volume_change"
 
 
 def load_existing_records():
@@ -305,7 +306,7 @@ def main():
             "date": k_date,
             "platform": "Kalshi",
             "daily_total_value": k_val,
-            "unit": "contracts",
+            "unit": "USD(trading_volume_change, T+1)",
             "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
             "method": k_method_detail,
             "status": k_status,
