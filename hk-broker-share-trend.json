@@ -1,68 +1,71 @@
 {
   "as_of": "2026-02-12",
-  "method": "share = broker_volume / hkex_total_turnover",
+  "method": "proxy_share = futu_hk_stock_trading_volume_quarter / hkex_total_turnover_same_quarter",
   "units": {
-    "broker_volume": "HKD billion",
+    "futu_hk_stock_trading_volume": "HKD billion",
     "hkex_total_turnover": "HKD billion",
-    "share": "decimal"
+    "proxy_share": "decimal"
   },
-  "coverage_months": ["2025-12", "2026-01", "2026-02"],
+  "coverage_periods": ["2025Q1", "2025Q2", "2025Q3"],
   "data": [
     {
-      "month": "2025-12",
-      "hkex_total_turnover": 3135.17,
-      "futu_broker_volume": null,
-      "tiger_broker_volume": null,
-      "futu_share": null,
-      "tiger_share": null,
-      "status": "HKEX denominator available; broker numerator not publicly disclosed at monthly HK-stock level"
+      "period": "2025Q1",
+      "hkex_total_turnover": 11596.21,
+      "futu_hk_stock_trading_volume": 916.0,
+      "tiger_hk_stock_trading_volume": null,
+      "futu_proxy_share": 0.07899,
+      "tiger_proxy_share": null,
+      "status": "Futu numerator from company earnings release; Tiger HK-stock numerator not publicly available in same verifiable quarterly format"
     },
     {
-      "month": "2026-01",
-      "hkex_total_turnover": null,
-      "futu_broker_volume": null,
-      "tiger_broker_volume": null,
-      "futu_share": null,
-      "tiger_share": null,
-      "status": "not yet verifiable with current official monthly bulletin/page snapshot"
+      "period": "2025Q2",
+      "hkex_total_turnover": 11180.71,
+      "futu_hk_stock_trading_volume": 833.5,
+      "tiger_hk_stock_trading_volume": null,
+      "futu_proxy_share": 0.07455,
+      "tiger_proxy_share": null,
+      "status": "Futu numerator from company earnings release; Tiger HK-stock numerator not publicly available in same verifiable quarterly format"
     },
     {
-      "month": "2026-02",
-      "hkex_total_turnover": null,
-      "futu_broker_volume": null,
-      "tiger_broker_volume": null,
-      "futu_share": null,
-      "tiger_share": null,
-      "status": "current month not closed / no official full-month stats yet"
+      "period": "2025Q3",
+      "hkex_total_turnover": 13873.60,
+      "futu_hk_stock_trading_volume": 1190.0,
+      "tiger_hk_stock_trading_volume": null,
+      "futu_proxy_share": 0.08578,
+      "tiger_proxy_share": null,
+      "status": "Futu numerator from company earnings release; Tiger HK-stock numerator not publicly available in same verifiable quarterly format"
     }
   ],
-  "weekly_feasibility": {
-    "can_do": false,
-    "reason": "可验证周度口径不可做：公开可核验源未提供‘富途/老虎-港股成交额’周度披露；HKEX公开参与者页面可核验到参与者映射与市场总量，但缺少品牌级周度成交时序。",
-    "alternative": "按月跟踪（官方月报/统计发布后更新）"
-  },
-  "mapping_context": {
-    "futu": {
-      "legal_entity": "Futu Securities International (Hong Kong) Limited",
-      "participant_id": "01955",
-      "source": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV"
-    },
-    "tiger": {
-      "legal_entity": "Tiger Brokers (HK) Global Limited",
-      "participant_id": "02142",
-      "source": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV"
-    }
+  "notes": {
+    "why_proxy": "HKEX公开页面可核验市场总成交额（月度），但未直接披露品牌级（富途/老虎）月度港股成交额。故采用‘公司披露港股成交额(季度)’与‘HKEX同季度总成交额’并列并计算代理占比。",
+    "calculation_detail": "HKEX同季度总成交额 = 该季度三个月的HKEX月总成交额求和；Futu港股成交额采用其季度业绩新闻稿中‘trading volume for Hong Kong stocks’字段（HK$）。",
+    "tiger_status": "当前未在可核验公开源中拿到老虎按季度拆分的港股成交额字段，因此暂为空。"
   },
   "sources": [
     {
       "name": "HKEX Stock Exchange Participants' Market Share Report",
       "url": "https://www.hkex.com.hk/Market-Data/Statistics/Participant/Stock-Exchange-Participants_-Market-Share-Report?sc_lang=en",
-      "used_for": "2025-12 HKEX total turnover"
+      "used_for": "2025年各月HKEX总成交额（用于汇总2025Q1-Q3分母）"
+    },
+    {
+      "name": "Futu Q1 2025 unaudited financial results",
+      "url": "https://ir.futuholdings.com/news-releases/news-release-details/futu-announces-first-quarter-2025-unaudited-financial-results",
+      "used_for": "trading volume for Hong Kong stocks was HK$916.0 billion"
+    },
+    {
+      "name": "Futu Q2 2025 unaudited financial results",
+      "url": "https://ir.futuholdings.com/news-releases/news-release-details/futu-announces-second-quarter-2025-unaudited-financial-results",
+      "used_for": "trading volume for Hong Kong stocks was HK$833.5 billion"
+    },
+    {
+      "name": "Futu Q3 2025 unaudited financial results",
+      "url": "https://ir.futuholdings.com/news-releases/news-release-details/futu-announces-third-quarter-2025-unaudited-financial-results",
+      "used_for": "trading volume for Hong Kong stocks was HK$1.19 trillion"
     },
     {
       "name": "HKEX Current SEHK Exchange Participants CSV",
       "url": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV",
-      "used_for": "entity mapping verification"
+      "used_for": "entity mapping verification (Futu 01955; Tiger 02142)"
     }
   ]
 }
