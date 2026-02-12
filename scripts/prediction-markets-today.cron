@@ -1,0 +1,3 @@
+# Install with: crontab scripts/prediction-markets-today.cron
+CRON_TZ=Asia/Shanghai
+30 14 * * * /bin/bash /Users/uc_bilin/.openclaw/workspace/statichtml/scripts/update_prediction_markets_today.sh >> /Users/uc_bilin/.openclaw/workspace/statichtml/data/prediction-markets-today-cron.log 2>&1
