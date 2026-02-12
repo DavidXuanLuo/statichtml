@@ -1,465 +1,87 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股投资组合 X 推文汇总 - 修正版</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #000;
-            color: #e7e9ea;
-            line-height: 1.5;
-        }
-        
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #000;
-        }
-        
-        .header {
-            position: sticky;
-            top: 0;
-            background-color: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid #2f3336;
-            padding: 16px;
-            z-index: 100;
-        }
-        
-        .header h1 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #e7e9ea;
-        }
-        
-        .header .date {
-            font-size: 13px;
-            color: #71767b;
-            margin-top: 4px;
-        }
-        
-        .header .stats {
-            font-size: 13px;
-            color: #1d9bf0;
-            margin-top: 8px;
-        }
-        
-        .company-section {
-            border-bottom: 1px solid #2f3336;
-            padding: 16px;
-        }
-        
-        .company-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 16px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #2f3336;
-        }
-        
-        .company-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #1d9bf0, #7856ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: bold;
-            margin-right: 12px;
-        }
-        
-        .company-info h2 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #e7e9ea;
-        }
-        
-        .company-info .symbol {
-            font-size: 14px;
-            color: #71767b;
-        }
-        
-        .tweet {
-            padding: 12px 0;
-            border-bottom: 1px solid #2f3336;
-            transition: background-color 0.2s;
-        }
-        
-        .tweet:hover {
-            background-color: rgba(255, 255, 255, 0.03);
-        }
-        
-        .tweet:last-child {
-            border-bottom: none;
-        }
-        
-        .tweet-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-        
-        .tweet-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #333;
-            margin-right: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-        
-        .tweet-author {
-            flex: 1;
-        }
-        
-        .tweet-author-name {
-            font-weight: 700;
-            color: #e7e9ea;
-            font-size: 15px;
-        }
-        
-        .tweet-author-handle {
-            color: #71767b;
-            font-size: 15px;
-            margin-left: 4px;
-        }
-        
-        .tweet-time {
-            color: #71767b;
-            font-size: 15px;
-        }
-        
-        .tweet-content {
-            margin-left: 52px;
-            margin-bottom: 12px;
-        }
-        
-        .tweet-text {
-            font-size: 15px;
-            color: #e7e9ea;
-            margin-bottom: 8px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-        
-        .tweet-translation {
-            font-size: 14px;
-            color: #71767b;
-            padding: 12px;
-            background-color: #16181c;
-            border-radius: 12px;
-            border-left: 3px solid #1d9bf0;
-            margin-top: 8px;
-        }
-        
-        .tweet-stats {
-            display: flex;
-            gap: 20px;
-            margin-left: 52px;
-            color: #71767b;
-            font-size: 13px;
-        }
-        
-        .tweet-stat {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        
-        .priority-badge {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            margin-left: 8px;
-        }
-        
-        .priority-high {
-            background-color: rgba(249, 24, 128, 0.2);
-            color: #f91880;
-        }
-        
-        .priority-official {
-            background-color: rgba(29, 155, 240, 0.2);
-            color: #1d9bf0;
-        }
-        
-        .priority-rejected {
-            background-color: rgba(239, 68, 68, 0.2);
-            color: #ef4444;
-        }
-        
-        .ai-note {
-            margin-left: 52px;
-            margin-top: 8px;
-            padding: 8px 12px;
-            background-color: rgba(29, 155, 240, 0.1);
-            border-left: 2px solid #1d9bf0;
-            border-radius: 8px;
-            font-size: 13px;
-            color: #71767b;
-        }
-        
-        .ai-note strong {
-            color: #1d9bf0;
-        }
-        
-        .ai-note-rejected {
-            background-color: rgba(239, 68, 68, 0.1);
-            border-left: 2px solid #ef4444;
-        }
-        
-        .ai-note-rejected strong {
-            color: #ef4444;
-        }
-        
-        .section-divider {
-            margin: 16px 0;
-            padding: 12px;
-            background-color: #16181c;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 14px;
-            font-weight: 600;
-            color: #1d9bf0;
-        }
-        
-        .learning-box {
-            margin: 16px 0;
-            padding: 16px;
-            background-color: rgba(239, 68, 68, 0.1);
-            border: 1px solid #ef4444;
-            border-radius: 12px;
-        }
-        
-        .learning-box h3 {
-            color: #ef4444;
-            font-size: 16px;
-            margin-bottom: 12px;
-        }
-        
-        .learning-box p {
-            color: #e7e9ea;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-        
-        .footer {
-            padding: 20px;
-            text-align: center;
-            color: #71767b;
-            font-size: 13px;
-            border-top: 1px solid #2f3336;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                max-width: 100%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股X推文日报 2026-02-12</title>
+  <style>
+    body{margin:0;background:#000;color:#e7e9ea;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .wrap{max-width:760px;margin:0 auto;padding:16px}
+    .card{border:1px solid #2f3336;border-radius:14px;padding:14px;margin:10px 0;background:#0b0b0b}
+    .muted{color:#71767b;font-size:13px}
+    .tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;margin-left:6px}
+    .official{background:#1d9bf033;color:#1d9bf0}.deep{background:#22c55e33;color:#22c55e}.uncertain{background:#f59e0b33;color:#f59e0b}
+    a{color:#8ab4ff}
+    h1,h2,h3{margin:0 0 8px 0}
+    .quote{background:#111827;border-left:3px solid #1d9bf0;padding:10px;border-radius:8px;margin-top:8px;white-space:pre-wrap}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>📈 美股投资组合 X 推文汇总</h1>
-            <div class="date">2026-02-09 修正版 | 过去48小时</div>
-            <div class="stats">✅ 官方内容 1条 | 🔍 第三方深度分析 2条 | ❌ 已过滤 1条</div>
-        </div>
-        
-        <!-- Tesla Section -->
-        <div class="company-section">
-            <div class="company-header">
-                <div class="company-icon">T</div>
-                <div class="company-info">
-                    <h2>Tesla</h2>
-                    <div class="symbol">TSLA</div>
-                </div>
-            </div>
-            
-            <div class="section-divider">📢 官方内容（自动收录，无需判断）</div>
-            
-            <!-- Official Tweet -->
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="tweet-avatar">T</div>
-                    <div class="tweet-author">
-                        <span class="tweet-author-name">Tesla</span>
-                        <span class="tweet-author-handle">@Tesla</span>
-                        <span class="priority-badge priority-official">官方</span>
-                    </div>
-                    <div class="tweet-time">23小时前</div>
-                </div>
-                <div class="tweet-content">
-                    <div class="tweet-text">Consumer Reports names Model Y best EV for 2026</div>
-                    <div class="tweet-translation">🇨🇳 Consumer Reports评选Model Y为2026年最佳电动车</div>
-                </div>
-                <div class="tweet-stats">
-                    <div class="tweet-stat"><span>💬</span><span>292</span></div>
-                    <div class="tweet-stat"><span>🔁</span><span>841</span></div>
-                    <div class="tweet-stat"><span>❤️</span><span>6.1K</span></div>
-                    <div class="tweet-stat"><span>👁️</span><span>37万</span></div>
-                </div>
-            </div>
-            
-            <div class="section-divider">🔍 第三方深度分析（AI筛选）</div>
-            
-            <!-- Third-party Analysis 1 -->
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="tweet-avatar">J</div>
-                    <div class="tweet-author">
-                        <span class="tweet-author-name">Jeff Lutz 🔋</span>
-                        <span class="tweet-author-handle">@thejefflutz</span>
-                        <span class="priority-badge priority-high">深度分析</span>
-                    </div>
-                    <div class="tweet-time">21小时前</div>
-                </div>
-                <div class="tweet-content">
-                    <div class="tweet-text">This is a key reason why xAI Colossus (largest coherent AI supercomputer) has >500 Tesla megapack batteries feeding power & why all the new large AI data centers will. 
+<div class="wrap">
+  <h1>📈 美股X推文每日汇总（2026-02-12）</h1>
+  <p class="muted">采集窗口：过去24小时（北京时间 08:30）｜⚠️ 受X页面反爬与账号可见性影响，本次结果“可能不完整”</p>
+  <p class="muted">收录 6 条重要内容（其中 3 条深度分析）｜有价值讨论 3 条｜待确认 2 条</p>
 
-People close to the tech & many institutions are aware, eventually retail will catch up. $EOSE $TSLA FLNC</div>
-                    <div class="tweet-translation">🇨🇳 这是xAI Colossus（最大的连贯AI超级计算机）使用超过500个Tesla Megapack电池供电的关键原因，也是为什么所有新的大型AI数据中心都会这样做。
+  <h2>TSLA / Tesla</h2>
+  <div class="card">
+    <div><strong>@Tesla</strong><span class="tag official">官方自动收录</span></div>
+    <div class="quote">FSD Supervised is a game changer for road trips especially（引用用户实测：1400km/17小时全程几乎无需人工介入）。</div>
+    <div class="quote">🇨🇳 中文：FSD Supervised 被强调为长途驾驶体验跃迁，核心投资含义在于“功能可用性→口碑扩散→付费订阅/整车转化”链条在增强。</div>
+    <div class="muted">链接：<a href="https://x.com/KyleReidhead/status/2021213639949353059">原帖引用链接</a></div>
+    <div class="muted">AI筛选理由：涉及核心业务FSD，且有用户实测场景与长里程数据支撑。</div>
+  </div>
 
-接近技术的人和许多机构都知道这一点，最终散户投资者也会意识到。</div>
-                </div>
-                <div class="ai-note">
-                    <strong>AI判断：</strong>深度行业洞察 ✅
-                    <br>• 包含具体数据：>500个Megapack
-                    <br>• 揭示行业趋势：AI数据中心对储能的需求
-                    <br>• 投资逻辑：机构已知，散户将跟进
-                    <br>• 有实质内容，看了有收获
-                    <br>→ 自动收录
-                </div>
-                <div class="tweet-stats">
-                    <div class="tweet-stat"><span>💬</span><span>10</span></div>
-                    <div class="tweet-stat"><span>🔁</span><span>7</span></div>
-                    <div class="tweet-stat"><span>❤️</span><span>144</span></div>
-                    <div class="tweet-stat"><span>👁️</span><span>1.4万</span></div>
-                </div>
-            </div>
-            
-            <!-- Third-party Analysis 2 -->
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="tweet-avatar">M</div>
-                    <div class="tweet-author">
-                        <span class="tweet-author-name">Mars University</span>
-                        <span class="tweet-author-handle">@MarsUniversityX</span>
-                        <span class="priority-badge priority-high">战略分析</span>
-                    </div>
-                    <div class="tweet-time">4小时前</div>
-                </div>
-                <div class="tweet-content">
-                    <div class="tweet-text">Elon Musk: "Nothing any of my companies have done has been to stifle competition. In fact, we've done the opposite. 
+  <h2>HOOD / Robinhood</h2>
+  <div class="card">
+    <div><strong>@vladtenev</strong><span class="tag official">官方自动收录</span></div>
+    <div class="quote">There was a time when you couldn't trade stocks on your phone... Tokenization will unlock 24/7 markets...</div>
+    <div class="quote">🇨🇳 中文：Vlad重申“代币化将打开7*24小时市场”，是Robinhood战略主线（从经纪平台向链上资产交易基础设施迁移）。</div>
+    <div class="muted">链接：<a href="https://x.com/vladtenev">账号主页（该条在主页可见）</a></div>
+    <div class="muted">AI筛选理由：管理层对产品路线与市场结构变化的明确表态，具备中长期估值锚意义。</div>
+  </div>
 
-At Tesla, we have open-sourced our patents. Anyone can use our patents for free. 
+  <h2>USDC / Circle</h2>
+  <div class="card">
+    <div><strong>@circle</strong><span class="tag official">官方自动收录</span></div>
+    <div class="quote">The world’s first hackathon run entirely by AI agents, powered by USDC... 204 valid submissions, 1,352 votes, 9,712 comments, $30,000 USDC.</div>
+    <div class="quote">🇨🇳 中文：Circle强调“AI Agent + USDC”真实使用场景，给出可量化活动数据，验证稳定币在AI原生经济中的支付与激励能力。</div>
+    <div class="muted">链接：<a href="https://x.com/USDC/status/2021625822294216977">https://x.com/USDC/status/2021625822294216977</a></div>
+    <div class="muted">AI筛选理由：包含具体数据，且属于“稳定币真实落地”高价值信号。</div>
+  </div>
 
-At SpaceX, we don't use patents."</div>
-                    <div class="tweet-translation">🇨🇳 Elon Musk："我的任何公司所做的事情都不是为了扼杀竞争。事实上，我们做的恰恰相反。
+  <div class="card">
+    <div><strong>@circle</strong><span class="tag deep">深度分析</span></div>
+    <div class="quote">Native USDC and CCTP are coming soon to EDGE Chain... Circle Ventures invested...</div>
+    <div class="quote">🇨🇳 中文：这是“支付网络+跨链基础设施+生态投资”的组合拳，不只是营销口号，体现Circle在结算层与生态层同步扩张。</div>
+    <div class="muted">AI筛选理由：产业链位置清晰（结算基础设施），并给出可执行落地路径（链整合+CCTP）。</div>
+  </div>
 
-在Tesla，我们开源了我们的专利。任何人都可以免费使用我们的专利。
+  <h2>NVDA / NVIDIA</h2>
+  <div class="card">
+    <div><strong>@nvidia / @NVIDIADC</strong><span class="tag deep">深度分析</span></div>
+    <div class="quote">NVIDIA + SK hynix：利用PhysicsNeMo加速半导体研发；NVIDIA + Samsung：建设AI factory推动智能制造。</div>
+    <div class="quote">🇨🇳 中文：NVIDIA正在把优势从“GPU芯片”外溢到“半导体研发方法学+制造体系”，这会提升其在产业链的话语权与粘性。</div>
+    <div class="muted">链接：<a href="https://x.com/NVIDIADC/status/2021298122987635068">SK hynix相关</a> ｜ <a href="https://x.com/NVIDIADC/status/2021337380184051848">Samsung相关</a></div>
+    <div class="muted">AI筛选理由：属于供应链/产业链深度内容，且有明确合作对象与应用方向。</div>
+  </div>
 
-在SpaceX，我们不使用专利。"</div>
-                </div>
-                <div class="ai-note">
-                    <strong>AI判断：</strong>竞争战略分析 ✅
-                    <br>• 揭示Tesla和SpaceX的开放战略
-                    <br>• 具体内容：开源专利、不用专利
-                    <br>• 反映公司对竞争的态度
-                    <br>• 有实质观点，看了有收获
-                    <br>→ 自动收录
-                </div>
-                <div class="tweet-stats">
-                    <div class="tweet-stat"><span>💬</span><span>117</span></div>
-                    <div class="tweet-stat"><span>🔁</span><span>195</span></div>
-                    <div class="tweet-stat"><span>❤️</span><span>1.1K</span></div>
-                    <div class="tweet-stat"><span>👁️</span><span>12万</span></div>
-                </div>
-            </div>
-            
-            <div class="section-divider">❌ 已过滤内容（学习案例）</div>
-            
-            <!-- Rejected Tweet -->
-            <div class="tweet" style="opacity: 0.6;">
-                <div class="tweet-header">
-                    <div class="tweet-avatar">A</div>
-                    <div class="tweet-author">
-                        <span class="tweet-author-name">Anthony Pompliano 🌪</span>
-                        <span class="tweet-author-handle">@APompliano</span>
-                        <span class="priority-badge priority-rejected">已过滤</span>
-                    </div>
-                    <div class="tweet-time">13小时前</div>
-                </div>
-                <div class="tweet-content">
-                    <div class="tweet-text">I sat down with @jvisserlabs to discuss why bitcoin is selling off, why software multiples are compressing, and how capital is shifting toward scarce, physical assets. 
+  <h2>待用户确认（不确定内容）</h2>
+  <div class="card">
+    <div><strong>❓ 候选A：@elonmusk（xAI组织调整）</strong><span class="tag uncertain">待确认</span></div>
+    <div class="quote">xAI重组以提升执行速度，涉及团队调整（3h内高热度）。</div>
+    <div class="muted">不确定点：事件重要，但更偏组织人事；对TSLA/NVDA/HOOD/USDC直接投资映射需要你拍板。</div>
+    <div class="muted">链接：<a href="https://x.com/elonmusk/status/2021673886157607383">https://x.com/elonmusk/status/2021673886157607383</a></div>
+  </div>
 
-We cover data centers, AI, energy, and semiconductors, plus insights on Elon Musk, Tesla, SpaceX...</div>
-                    <div class="tweet-translation">🇨🇳 我与@jvisserlabs坐下来讨论为什么比特币正在抛售，为什么软件估值倍数正在压缩，以及资本如何转向稀缺的实物资产。
+  <div class="card">
+    <div><strong>❓ 候选B：@nvidia（GTC抽奖/活动宣传）</strong><span class="tag uncertain">待确认</span></div>
+    <div class="quote">A Golden Ticket to GTC could be yours...（活动导流类内容）</div>
+    <div class="muted">不确定点：高互动但偏营销，除非你希望追踪GTC情绪热度，否则通常应忽略。</div>
+    <div class="muted">链接：<a href="https://x.com/nvidia">https://x.com/nvidia</a></div>
+  </div>
 
-我们涵盖了数据中心、AI、能源和半导体，以及对Elon Musk、Tesla、SpaceX的见解...</div>
-                </div>
-                <div class="ai-note ai-note-rejected">
-                    <strong>用户反馈：</strong>不符合标准 ❌
-                    <br>• 只是播客预告，说"我们讨论了X、Y、Z"
-                    <br>• 没有具体观点、数据或结论
-                    <br>• 看了没有收获
-                    <br>→ 应该过滤
-                </div>
-            </div>
-            
-            <div class="learning-box">
-                <h3>📚 学习要点</h3>
-                <p><strong>为什么这条被过滤：</strong></p>
-                <p>• 播客/视频预告类内容：只说"我们讨论了..."但没有实质内容</p>
-                <p>• 没有具体观点、数据、分析或结论</p>
-                <p>• 用户看了不会有收获</p>
-                <p style="margin-top: 12px;"><strong>正确的标准：</strong></p>
-                <p>• 必须有实质内容：具体的观点、数据、分析、结论</p>
-                <p>• 用户看了能有收获、能帮助投资决策</p>
-                <p>• 不是宣传，而是干货</p>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p><strong>📊 AI筛选逻辑（已修正）</strong></p>
-            <p style="margin-top: 12px;">
-                <strong>✅ 收录的2条深度分析：</strong><br>
-                1. Jeff Lutz - AI数据中心电力需求（具体数据+行业洞察）<br>
-                2. Mars University - Tesla开放战略（具体内容+战略分析）
-            </p>
-            <p style="margin-top: 12px;">
-                <strong>❌ 过滤的1条：</strong><br>
-                Anthony Pompliano - 播客预告（只说讨论了什么，没有实质内容）
-            </p>
-            <p style="margin-top: 12px;">
-                <strong>更新的筛选标准：</strong><br>
-                • 必须有实质内容（观点、数据、分析、结论）<br>
-                • 避免播客/视频预告、活动宣传<br>
-                • 用户看了要有收获<br>
-                • 能帮助投资决策
-            </p>
-            <p style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #2f3336;">
-                🤖 由 OpenClaw AI 自动采集、筛选和翻译<br>
-                根据用户反馈持续学习和优化<br>
-                © 2026 美股投资组合监控系统
-            </p>
-        </div>
-    </div>
+  <h3>采集备注</h3>
+  <p class="muted">1) 指定账号中 @SuperMicroCmptr / @CharlesLiang_SM / @JHuangNVIDIA 当前返回“账号不存在/不可见”；2) @RobinhoodApp 页面抓取失败，改以创始人账号与相关公开信息补充；3) “为你推荐”关键词搜索页在游客抓取路径下需要登录态，未完整提取。</p>
+</div>
 </body>
 </html>
