@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>泡泡玛特7个直播间本月GMV（日）</title>
   <style>
-    :root{--bg:#f6f7fb;--card:#fff;--text:#111827;--muted:#6b7280;--brand:#2563eb;--ok:#059669;--warn:#d97706;border-radius:14px}
-    *{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--text)}
+    :root{--bg:#f6f7fb;--card:#fff;--text:#111827;--muted:#6b7280;--brand:#2563eb}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--text)}
     .wrap{max-width:860px;margin:0 auto;padding:12px}
     h1{font-size:20px;margin:8px 0 4px}
-    .sub{color:var(--muted);font-size:12px;margin-bottom:10px}
+    .sub{color:var(--muted);font-size:12px;margin-bottom:10px;line-height:1.5}
     .grid{display:grid;grid-template-columns:1fr;gap:10px}
     .card{background:var(--card);border-radius:14px;padding:12px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
     .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -20,8 +21,11 @@
     canvas{width:100%;height:240px}
     details{background:#fff;border:1px solid #eef0f4;border-radius:10px;padding:8px;margin-top:8px}
     summary{font-weight:600;cursor:pointer}
-    table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px}
-    th,td{padding:6px 4px;border-bottom:1px solid #f1f5f9;text-align:right}
+    .muted{color:var(--muted);font-size:12px}
+    .warn{display:inline-block;background:#fff7ed;color:#c2410c;border:1px solid #fed7aa;font-size:11px;padding:1px 6px;border-radius:999px;margin-left:6px}
+    .tableWrap{overflow:auto;-webkit-overflow-scrolling:touch}
+    table{width:100%;min-width:520px;border-collapse:collapse;margin-top:8px;font-size:12px}
+    th,td{padding:6px 4px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap}
     th:first-child,td:first-child{text-align:left}
     .ft{font-size:11px;color:#6b7280;line-height:1.5}
   </style>
@@ -39,50 +43,57 @@
       <canvas id="chart" height="240"></canvas>
     </div>
     <div class="card">
-      <div class="tag">每日总计明细</div>
+      <div class="tag">每日总计明细（2/1~2/12 全量）</div>
       <div id="dailyList"></div>
     </div>
     <div class="card">
       <div class="tag">各直播间逐日明细（可折叠）</div>
       <div id="roomDetails"></div>
     </div>
-    <div class="card ft">说明：GMV“推演值”=区间中值；保留low/high。数据源为蝉妈妈页面可见数据（近7天）。仅统计指定7个直播间。</div>
+    <div class="card ft">说明：GMV“推演值”=区间中值；保留low/high。无可见记录日期统一按0展示并标注“无可见记录”。</div>
   </div>
 </div>
 <script>
 fetch('./data/popmart-liverooms-2026-02.json').then(r=>r.json()).then(data=>{
   const fmt=v=>(v/10000).toFixed(2)+'万';
-  document.getElementById('meta').textContent=`月份：${data.month}｜更新时间：${data.updated_at}`;
+  document.getElementById('meta').textContent=`月份：${data.month}｜更新时间：${data.updated_at}｜补齐后天数=${data.days.length}天`;
   const m=data.month_to_date_total;
   document.getElementById('monthKpi').innerHTML=`
     <div class='k'><span>累计 low</span><b>${fmt(m.low_gmv)}</b></div>
     <div class='k'><span>累计 estimate</span><b style='color:#2563eb'>${fmt(m.estimate_gmv)}</b></div>
     <div class='k'><span>累计 high</span><b>${fmt(m.high_gmv)}</b></div>`;
 
-  document.getElementById('dailyList').innerHTML = data.days.map(d=>`<details><summary>${d.date}</summary>
+  document.getElementById('dailyList').innerHTML = data.days.map(d=>`<details><summary>${d.date}${d.has_visible_record===false?"<span class='warn'>无可见记录</span>":''}</summary>
     <div class='kpi' style='margin-top:8px'>
       <div class='k'><span>low</span><b>${fmt(d.total.low_gmv)}</b></div>
       <div class='k'><span>estimate</span><b style='color:#2563eb'>${fmt(d.total.estimate_gmv)}</b></div>
       <div class='k'><span>high</span><b>${fmt(d.total.high_gmv)}</b></div>
-    </div></details>`).join('');
+    </div>
+    ${d.has_visible_record===false?"<div class='muted' style='margin-top:6px'>当日无抓取记录，按0展示。</div>":''}
+    </details>`).join('');
 
   const roomMap = {};
   data.rooms.forEach(r=>roomMap[r]=[]);
-  data.days.forEach(d=>d.rooms.forEach(r=>roomMap[r.room_name].push({date:d.date,...r})));
+  data.days.forEach(d=>d.rooms.forEach(r=>roomMap[r.room_name].push({date:d.date,dayHas:d.has_visible_record!==false,...r})));
   document.getElementById('roomDetails').innerHTML = Object.entries(roomMap).map(([name,rows])=>`<details><summary>${name}</summary>
-    <table><thead><tr><th>日期</th><th>low</th><th>estimate</th><th>high</th></tr></thead><tbody>
-      ${rows.map(r=>`<tr><td>${r.date}</td><td>${fmt(r.low_gmv)}</td><td style='color:#2563eb'>${fmt(r.estimate_gmv)}</td><td>${fmt(r.high_gmv)}</td></tr>`).join('')}
-    </tbody></table></details>`).join('');
+    <div class='tableWrap'><table><thead><tr><th>日期</th><th>low</th><th>estimate</th><th>high</th><th>备注</th></tr></thead><tbody>
+      ${rows.map(r=>`<tr><td>${r.date}</td><td>${fmt(r.low_gmv)}</td><td style='color:#2563eb'>${fmt(r.estimate_gmv)}</td><td>${fmt(r.high_gmv)}</td><td>${r.dayHas?'':'无可见记录'}</td></tr>`).join('')}
+    </tbody></table></div></details>`).join('');
 
   const c=document.getElementById('chart'),ctx=c.getContext('2d');
   const dpr=window.devicePixelRatio||1; c.width=c.clientWidth*dpr; c.height=240*dpr; ctx.scale(dpr,dpr);
   const W=c.clientWidth,H=240,p=28;
   const xs=data.days.map((d,i)=>p+i*(W-2*p)/(Math.max(1,data.days.length-1)));
-  const vals=data.days.map(d=>d.total.estimate_gmv),max=Math.max(...vals)*1.12;
+  const vals=data.days.map(d=>d.total.estimate_gmv),max=Math.max(1,...vals)*1.12;
   const y=v=>H-p-(v/max)*(H-2*p);
   ctx.strokeStyle='#e5e7eb';ctx.lineWidth=1; for(let i=0;i<4;i++){const yy=p+i*(H-2*p)/3;ctx.beginPath();ctx.moveTo(p,yy);ctx.lineTo(W-p,yy);ctx.stroke();}
   ctx.strokeStyle='#2563eb';ctx.lineWidth=2;ctx.beginPath();xs.forEach((x,i)=>i?ctx.lineTo(x,y(vals[i])):ctx.moveTo(x,y(vals[i])));ctx.stroke();
-  ctx.fillStyle='#2563eb';xs.forEach((x,i)=>{ctx.beginPath();ctx.arc(x,y(vals[i]),3.5,0,Math.PI*2);ctx.fill();ctx.font='11px sans-serif';ctx.fillText((vals[i]/10000).toFixed(1)+'w',x-14,y(vals[i])-8);ctx.fillText(data.days[i].date.slice(5),x-15,H-8);});
+  ctx.fillStyle='#2563eb';
+  xs.forEach((x,i)=>{
+    ctx.beginPath();ctx.arc(x,y(vals[i]),3,0,Math.PI*2);ctx.fill();
+    if(i%2===0 || i===xs.length-1){ctx.font='10px sans-serif';ctx.fillText(data.days[i].date.slice(5),x-14,H-8);}
+    if(vals[i]>0){ctx.font='10px sans-serif';ctx.fillText((vals[i]/10000).toFixed(1)+'w',x-14,y(vals[i])-8);}
+  });
 });
 </script>
 </body></html>

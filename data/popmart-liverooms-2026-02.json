@@ -5,7 +5,7 @@
   "unit": "yuan",
   "method": "estimate_gmv = (low_gmv + high_gmv) / 2",
   "source": "蝉妈妈直播搜索结果（关键词：泡泡玛特，近7天筛选）",
-  "source_note": "仅使用当前页面可见数据（2026-02-06至2026-02-08），并聚焦指定7个直播间。",
+  "source_note": "日期轴已补齐 2026-02-01 至 2026-02-12；无可见记录日期按 0 展示并标注。",
   "rooms": [
     "泡泡玛特官方旗舰店",
     "泡泡玛特盲盒屋",
@@ -16,6 +16,346 @@
     "泡泡玛特拆卡直播间"
   ],
   "days": [
+    {
+      "date": "2026-02-01",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-02",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-03",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-04",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-05",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
     {
       "date": "2026-02-06",
       "total": {
@@ -73,7 +413,9 @@
           "estimate_gmv": 62500,
           "source_range": "5w~7.5w"
         }
-      ]
+      ],
+      "has_visible_record": true,
+      "record_note": "有可见记录"
     },
     {
       "date": "2026-02-07",
@@ -132,7 +474,9 @@
           "estimate_gmv": 62500,
           "source_range": "5w~7.5w"
         }
-      ]
+      ],
+      "has_visible_record": true,
+      "record_note": "有可见记录"
     },
     {
       "date": "2026-02-08",
@@ -191,7 +535,281 @@
           "estimate_gmv": 62500,
           "source_range": "5w~7.5w"
         }
-      ]
+      ],
+      "has_visible_record": true,
+      "record_note": "有可见记录"
+    },
+    {
+      "date": "2026-02-09",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-10",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-11",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
+    },
+    {
+      "date": "2026-02-12",
+      "total": {
+        "low_gmv": 0,
+        "high_gmv": 0,
+        "estimate_gmv": 0
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 0,
+          "high_gmv": 0,
+          "estimate_gmv": 0,
+          "source_range": "0（无可见记录）",
+          "record_note": "无可见记录"
+        }
+      ],
+      "has_visible_record": false,
+      "record_note": "无可见记录"
     }
   ],
   "month_to_date_total": {
@@ -199,5 +817,5 @@
     "high_gmv": 29225000,
     "estimate_gmv": 23012500
   },
-  "updated_at": "2026-02-12 16:08 GMT+8"
+  "updated_at": "2026-02-12 16:19 GMT+8"
 }
