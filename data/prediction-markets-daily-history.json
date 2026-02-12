@@ -1,42 +1,2441 @@
 {
   "dataset": "prediction_markets_daily_history",
   "timezone": "Asia/Shanghai",
-  "generated_at": "2026-02-12T23:38:00+08:00",
+  "generated_at": "2026-02-13T07:26:31+08:00",
   "coverage": {
-    "start_date": "2026-02-10",
-    "end_date": "2026-02-12"
-  },
-  "definitions": {
-    "polymarket_daily": "sum(markets.volume24hr), USDC proxy, rolling 24h snapshot of fetch day",
-    "manifold_daily": "sum(abs(bets.shares)) for today (paged scan), shares proxy",
-    "kalshi_daily_published": "official published daily contracts (T+1), integer contracts",
-    "kalshi_cumulative": "official cumulative contracts; NOT daily volume"
+    "start_date": "2025-11-16",
+    "end_date": "2026-02-13"
   },
   "records": [
     {
+      "date": "2025-11-16",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-16",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-16",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-17",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-17",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-17",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-18",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-18",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-18",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-19",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-19",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-19",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-20",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-20",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-20",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-21",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-21",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-21",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-22",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-22",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-22",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-23",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-23",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-23",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-24",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-24",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-24",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-25",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-25",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-25",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-26",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-26",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-26",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-27",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-27",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-27",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-28",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-28",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-28",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-29",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-29",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-29",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-30",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-30",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-11-30",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-01",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-01",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-01",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-02",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-02",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-02",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-03",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-03",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-03",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-04",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-04",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-04",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-05",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-05",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-05",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-06",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-06",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-06",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-07",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-07",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-07",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-08",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-08",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-08",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-09",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-09",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-09",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-10",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-10",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-10",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-11",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-11",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-11",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-12",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-12",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-12",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-13",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-13",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-13",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-14",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-14",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-14",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-15",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-15",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-15",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-16",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-16",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-16",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-17",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-17",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-17",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-18",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-18",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-18",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-19",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-19",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-19",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-20",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-20",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-20",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-21",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-21",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-21",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-22",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-22",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-22",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-23",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-23",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-23",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-24",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-24",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-24",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-25",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-25",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-25",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-26",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-26",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-26",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-27",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-27",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-27",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-28",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-28",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-28",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-29",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-29",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-29",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-30",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-30",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-30",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-31",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-31",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2025-12-31",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-01",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-01",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-01",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-02",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-02",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-02",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-03",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-03",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-03",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-04",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-04",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-04",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-05",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-05",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-05",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-06",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-06",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-06",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-07",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-07",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-07",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-08",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-08",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-08",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-09",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-09",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-09",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-10",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-10",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-10",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-11",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-11",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-11",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-12",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-12",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-12",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-13",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-13",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-13",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-14",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-14",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-14",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-15",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-15",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-15",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-16",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-16",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-16",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-17",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-17",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-17",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-18",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-18",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-18",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-19",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-19",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-19",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-20",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-20",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-20",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-21",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-21",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-21",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-22",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-22",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-22",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-23",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-23",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-23",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-24",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-24",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-24",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-25",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-25",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-25",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-26",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-26",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-26",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-27",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-27",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-27",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-28",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-28",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-28",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-29",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-29",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-29",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-30",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-30",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-30",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-31",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-31",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-01-31",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-01",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-01",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-01",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-02",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-02",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-02",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-03",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-03",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-03",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-04",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-04",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-04",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-05",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-05",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-05",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-06",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-06",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-06",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-07",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-07",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-07",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-08",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-08",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-08",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-09",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-09",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-09",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
       "date": "2026-02-10",
-      "polymarket_daily": null,
-      "manifold_daily": null,
-      "kalshi_daily_published": 24700475,
-      "kalshi_cumulative": 345187028,
-      "missing": false,
-      "note": "Kalshi最新已公布交易日（T+1）"
+      "platform": "Kalshi",
+      "daily_total_value": 24700475,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "ok"
+    },
+    {
+      "date": "2026-02-10",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "sum(abs(bets.shares))",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-10",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "sum(markets.volume24hr)",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-11",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-11",
+      "platform": "Manifold",
+      "daily_total_value": null,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-11",
+      "platform": "Polymarket",
+      "daily_total_value": null,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "public_proxy_not_backfilled",
+      "status": "missing"
     },
     {
       "date": "2026-02-12",
-      "polymarket_daily": 100669927.79,
-      "manifold_daily": 241695.36,
-      "kalshi_daily_published": null,
-      "kalshi_cumulative": null,
-      "missing": false,
-      "note": "Polymarket/Manifold为最新可用抓取值；Kalshi日度待T+1公布"
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-12",
+      "platform": "Manifold",
+      "daily_total_value": 241695.36,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "sum(abs(bets.shares))",
+      "status": "partial"
+    },
+    {
+      "date": "2026-02-12",
+      "platform": "Polymarket",
+      "daily_total_value": 100669927.79,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "sum(markets.volume24hr)",
+      "status": "partial"
+    },
+    {
+      "date": "2026-02-13",
+      "platform": "Kalshi",
+      "daily_total_value": null,
+      "unit": "contracts",
+      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
+      "method": "published_daily_t_plus_1",
+      "status": "missing"
+    },
+    {
+      "date": "2026-02-13",
+      "platform": "Manifold",
+      "daily_total_value": 241695.36,
+      "unit": "shares(today, paged)",
+      "source": "https://api.manifold.markets/v0/bets",
+      "method": "sum(abs(bets.shares))",
+      "status": "partial"
+    },
+    {
+      "date": "2026-02-13",
+      "platform": "Polymarket",
+      "daily_total_value": 100669927.79,
+      "unit": "USDC(volume24hr sum, proxy)",
+      "source": "https://gamma-api.polymarket.com/markets",
+      "method": "sum(markets.volume24hr)",
+      "status": "partial"
     }
-  ],
-  "source_latest": {
-    "polymarket_date": "2026-02-12",
-    "manifold_date": "2026-02-12",
-    "kalshi_published_date": "2026-02-10",
-    "kalshi_daily_published": 24700475,
-    "kalshi_cumulative": 345187028
-  }
+  ]
 }
