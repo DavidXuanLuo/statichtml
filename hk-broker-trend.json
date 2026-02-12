@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-02-12",
+  "official_data_availability": {
+    "broker_level_turnover": false,
+    "description": "HKEX公开页面可直接抓取到‘市场整体+分层(Top 14/15-65/65+)’月度数据，但未提供按单一Exchange Participant历史成交额时间序列API/CSV。"
+  },
+  "series": {
+    "futu": [],
+    "tiger": []
+  },
+  "proxy_market_context_monthly": [
+    {"month":"2025-01","total_turnover_bil_hkd":2217.46},
+    {"month":"2025-02","total_turnover_bil_hkd":4680.63},
+    {"month":"2025-03","total_turnover_bil_hkd":4698.12},
+    {"month":"2025-04","total_turnover_bil_hkd":4125.49},
+    {"month":"2025-05","total_turnover_bil_hkd":3358.83},
+    {"month":"2025-06","total_turnover_bil_hkd":3696.39},
+    {"month":"2025-07","total_turnover_bil_hkd":4242.13},
+    {"month":"2025-08","total_turnover_bil_hkd":4288.92},
+    {"month":"2025-09","total_turnover_bil_hkd":5342.55},
+    {"month":"2025-10","total_turnover_bil_hkd":4408.72},
+    {"month":"2025-11","total_turnover_bil_hkd":3693.25},
+    {"month":"2025-12","total_turnover_bil_hkd":3135.17}
+  ],
+  "sources": [
+    {
+      "name":"HKEX Stock Exchange Participants' Market Share Report",
+      "url":"https://www.hkex.com.hk/Market-Data/Statistics/Participant/Stock-Exchange-Participants_-Market-Share-Report?sc_lang=en"
+    }
+  ]
+}

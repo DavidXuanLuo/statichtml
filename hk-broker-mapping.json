@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-02-12",
+  "source_priority": "official_hkex",
+  "notes": [
+    "映射口径：SEHK Exchange Participant（参与者编号）+ Broker No（经纪代号）",
+    "数据源为HKEX Find-a-Partner页面中的官方CSV（Current SEHK EP List）"
+  ],
+  "brands": [
+    {
+      "brand": "富途",
+      "legal_entity": "Futu Securities International (Hong Kong) Limited",
+      "participant_id": "01955",
+      "broker_nos": ["2240","2241","2244","2245","2246","2249","2452","2453","2454","2455","2456","2457","2458","8300","8301","8302","8303","8304","8305","8306","8307","8308","8309","8460","8461","8462","8463","8464","8465","8466","8467","8468","8469"],
+      "source": {
+        "name": "HKEX Current SEHK Exchange Participants CSV",
+        "url": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV"
+      }
+    },
+    {
+      "brand": "老虎",
+      "legal_entity": "Tiger Brokers (HK) Global Limited",
+      "participant_id": "02142",
+      "broker_nos": ["2200","2204"],
+      "source": {
+        "name": "HKEX Current SEHK Exchange Participants CSV",
+        "url": "https://www.hkex.com.hk/ENG/PLW/csv/List_of_Current_SEHK_EP.CSV"
+      }
+    }
+  ]
+}
