@@ -3,7 +3,7 @@
     {
       "date": "2026-02-09",
       "timestamp": 1739095673,
-      "price": 1.0,
+      "price": 1,
       "marketCap": 72880000000,
       "volume24h": 10560000000,
       "circulatingSupply": 72880000000,
@@ -26,8 +26,17 @@
       "volume24h": 13580000000,
       "circulatingSupply": 73300000000,
       "source": "CoinMarketCap"
+    },
+    {
+      "date": "2026-02-12",
+      "timestamp": 1770868380,
+      "price": 0.9999737023754255,
+      "marketCap": 73321020103.64,
+      "volume24h": 15794839296.25803,
+      "circulatingSupply": 73322948323.01195,
+      "source": "CoinMarketCap"
     }
   ],
-  "lastUpdate": "2026-02-11T04:00:00Z",
+  "lastUpdate": "2026-02-12T03:53:00.000Z",
   "source": "CoinMarketCap"
 }
