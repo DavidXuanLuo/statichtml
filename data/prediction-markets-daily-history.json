@@ -3,19 +3,10 @@
   "timezone": "Asia/Shanghai",
   "generated_at": "2026-02-13T07:47:25+08:00",
   "coverage": {
-    "start_date": "2026-02-10",
+    "start_date": "2026-02-12",
     "end_date": "2026-02-13"
   },
   "records": [
-    {
-      "date": "2026-02-10",
-      "platform": "Kalshi",
-      "daily_total_value": 24700475,
-      "unit": "contracts",
-      "source": "https://www.kalshidata.com/api/analytics/historical-snapshots",
-      "method": "published_daily_t_plus_1",
-      "status": "ok"
-    },
     {
       "date": "2026-02-12",
       "platform": "Manifold",
