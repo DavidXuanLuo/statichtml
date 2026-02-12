@@ -1,0 +1,6 @@
+# Install with: crontab scripts/crypto-dashboard.cron
+# 每天12:00采集四币数据（USDC/USDT/BTC/ETH）
+0 12 * * * /bin/bash /Users/uc_bilin/.openclaw/workspace/statichtml/scripts/update_crypto_data.sh >> /Users/uc_bilin/.openclaw/workspace/statichtml/data/crypto-collect-cron.log 2>&1
+
+# 每天09:00生成四币日报文本（供发送机器人读取）
+0 9 * * * /bin/bash /Users/uc_bilin/.openclaw/workspace/statichtml/scripts/generate_crypto_daily_report.sh >> /Users/uc_bilin/.openclaw/workspace/statichtml/data/crypto-report-cron.log 2>&1

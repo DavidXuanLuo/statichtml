@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto 四币数据看板</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; background: linear-gradient(135deg,#667eea 0%,#764ba2 100%); min-height: 100vh; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .header { text-align: center; color: #fff; margin-bottom: 20px; }
+    .header h1 { font-size: 2.2em; margin-bottom: 8px; text-shadow: 2px 2px 4px rgba(0,0,0,.2); }
+    .tabs { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:20px; }
+    .tab { border:none; border-radius:999px; padding:10px 18px; font-weight:700; cursor:pointer; background:rgba(255,255,255,.25); color:#fff; }
+    .tab.active { background:#fff; color:#5b61d6; }
+    .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin-bottom:20px; }
+    .stat-card,.chart-container,.info-box { background:#fff; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,.18); }
+    .stat-card { padding:22px; }
+    .stat-label { font-size:.9em; color:#666; margin-bottom:8px; text-transform:uppercase; letter-spacing:1px; }
+    .stat-value { font-size:1.9em; font-weight:700; color:#333; }
+    .stat-change { font-size:.9em; margin-top:5px; }
+    .positive { color:#10b981; } .negative { color:#ef4444; }
+    .chart-container { padding:24px; margin-bottom:16px; }
+    .chart-title { font-size:1.2em; font-weight:700; margin-bottom:14px; }
+    .info-box { padding:18px; color:#333; }
+    .info-box h3 { color:#667eea; margin-bottom:10px; }
+    .info-box p { line-height:1.6; margin-bottom:6px; }
+    .update-time { text-align:center; color:#fff; margin-top:14px; opacity:.88; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>💹 四币数据监控面板</h1>
+      <p>USDC / USDT / BTC / ETH 每日流通量与24h交易额走势</p>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-label">当前价格</div><div class="stat-value" id="currentPrice">加载中...</div><div class="stat-change" id="priceNote"></div></div>
+      <div class="stat-card"><div class="stat-label">市值 / 流通量</div><div class="stat-value" id="marketCap">加载中...</div><div class="stat-change" id="marketCapChange">--</div></div>
+      <div class="stat-card"><div class="stat-label">24小时交易量</div><div class="stat-value" id="volume24h">加载中...</div><div class="stat-change" id="volumeChange">--</div></div>
+      <div class="stat-card"><div class="stat-label">交易量/市值比</div><div class="stat-value" id="ratio">加载中...</div><div class="stat-change">流动性指标</div></div>
+    </div>
+    <div class="chart-container"><div class="chart-title" id="supplyTitle">📈 流通量走势</div><canvas id="supplyChart"></canvas></div>
+    <div class="chart-container"><div class="chart-title">📊 24h交易量走势</div><canvas id="volumeChart"></canvas></div>
+    <div class="info-box" id="infoBox"></div>
+    <div class="update-time" id="updateTime"></div>
+  </div>
+<script>
+let store = null, current='USDC', supplyChart=null, volumeChart=null;
+const symbols=['USDC','USDT','BTC','ETH'];
+function fmtMoney(n){ if(n==null) return '--'; if(n>=1e9) return '$'+(n/1e9).toFixed(2)+'B'; if(n>=1e6) return '$'+(n/1e6).toFixed(2)+'M'; return '$'+n.toFixed(2); }
+function fmtPrice(s,p){ if(p==null) return '--'; return s==='BTC'||s==='ETH' ? '$'+p.toLocaleString(undefined,{maximumFractionDigits:2}) : '$'+p.toFixed(4); }
+function buildTabs(){ const el=document.getElementById('tabs'); el.innerHTML=''; symbols.forEach(s=>{ const b=document.createElement('button'); b.className='tab'+(s===current?' active':''); b.textContent=s; b.onclick=()=>switchTab(s); el.appendChild(b); }); }
+function switchTab(s){ current=s; history.replaceState(null,'',`#${s.toLowerCase()}`); buildTabs(); render(); }
+function changeText(v){ if(v==null||!isFinite(v)) return '--'; const abs=Math.abs(v).toFixed(2); return v>=0?`<span class='positive'>▲ ${abs}%</span>`:`<span class='negative'>▼ ${abs}%</span>`; }
+function render(){
+  const asset=store.assets[current]; const records=asset.records||[]; if(!records.length) return;
+  const latest=records[records.length-1], prev=records.length>1?records[records.length-2]:null;
+  document.getElementById('currentPrice').textContent=fmtPrice(current,latest.price);
+  document.getElementById('priceNote').textContent=current==='USDC'||current==='USDT'?'稳定币锚定参考':'现货价格';
+  document.getElementById('marketCap').textContent=fmtMoney(latest.marketCap);
+  document.getElementById('volume24h').textContent=fmtMoney(latest.volume24h);
+  document.getElementById('ratio').textContent=(latest.volume24h&&latest.marketCap)?((latest.volume24h/latest.marketCap*100).toFixed(2)+'%'):'--';
+  document.getElementById('marketCapChange').innerHTML=prev?changeText((latest.marketCap-prev.marketCap)/prev.marketCap*100):'--';
+  document.getElementById('volumeChange').innerHTML=prev?changeText((latest.volume24h-prev.volume24h)/prev.volume24h*100):'--';
+
+  const dates=records.map(r=>r.date), supplies=records.map(r=> (r.circulatingSupply||0)/(current==='BTC'||current==='ETH'?1e6:1e9)), volumes=records.map(r=>(r.volume24h||0)/1e9);
+  const supplyUnit=current==='BTC'||current==='ETH'?'百万':'十亿';
+  document.getElementById('supplyTitle').textContent=`📈 流通量走势（${supplyUnit} ${current}）`;
+
+  if(supplyChart) supplyChart.destroy(); if(volumeChart) volumeChart.destroy();
+  supplyChart=new Chart(document.getElementById('supplyChart').getContext('2d'),{type:'line',data:{labels:dates,datasets:[{label:`流通量 (${supplyUnit} ${current})`,data:supplies,borderColor:'#667eea',backgroundColor:'rgba(102,126,234,.12)',borderWidth:3,fill:true,tension:.35}]},options:{responsive:true,plugins:{legend:{display:true}}}});
+  volumeChart=new Chart(document.getElementById('volumeChart').getContext('2d'),{type:'bar',data:{labels:dates,datasets:[{label:'24h交易量(十亿美元)',data:volumes,backgroundColor:'rgba(118,75,162,.72)',borderColor:'#764ba2',borderWidth:2}]},options:{responsive:true,plugins:{legend:{display:true}}}});
+
+  document.getElementById('infoBox').innerHTML=`<h3>📌 ${current} 数据说明</h3><p><strong>口径：</strong>${latest.supplyMetric||'circulating_supply'}</p><p><strong>数据来源：</strong>${latest.source||asset.source}（<a target='_blank' href='${latest.sourceUrl||"https://www.coingecko.com"}'>API</a>）</p><p><strong>更新频率：</strong>每天定时采集</p><p><strong>采集字段：</strong>日期、流通量/发行量口径、24h交易额、来源</p>`;
+  const t=new Date(store.lastUpdate); document.getElementById('updateTime').textContent='最后更新：'+t.toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})+' (GMT+8)';
+}
+fetch('crypto-data.json').then(r=>r.json()).then(d=>{ store=d; const h=(location.hash||'').replace('#','').toUpperCase(); if(symbols.includes(h)) current=h; buildTabs(); render(); }).catch(()=>{document.body.innerHTML='<div style="color:#fff;text-align:center;margin-top:60px">数据加载失败</div>';});
+</script>
+</body>
+</html>

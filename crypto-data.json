@@ -1,0 +1,111 @@
+{
+  "assets": {
+    "USDC": {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "source": "CoinGecko",
+      "records": [
+        {
+          "date": "2026-02-09",
+          "timestamp": 1739095673,
+          "price": 1,
+          "marketCap": 72880000000,
+          "volume24h": 10560000000,
+          "circulatingSupply": 72880000000,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinMarketCap",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-10",
+          "timestamp": 1739419200,
+          "price": 0.9998,
+          "marketCap": 73020000000,
+          "volume24h": 14950000000,
+          "circulatingSupply": 73030000000,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinMarketCap",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-11",
+          "timestamp": 1770782400,
+          "price": 0.9999,
+          "marketCap": 73300000000,
+          "volume24h": 13580000000,
+          "circulatingSupply": 73300000000,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinMarketCap",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-12",
+          "timestamp": 1770886770,
+          "price": 0.999907,
+          "marketCap": 73302507159,
+          "volume24h": 5445834321,
+          "circulatingSupply": 73309479179.9745,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        }
+      ]
+    },
+    "USDT": {
+      "symbol": "USDT",
+      "name": "Tether",
+      "source": "CoinGecko",
+      "records": [
+        {
+          "date": "2026-02-12",
+          "timestamp": 1770886770,
+          "price": 0.999384,
+          "marketCap": 183901189982,
+          "volume24h": 81019345392,
+          "circulatingSupply": 184021084709.7995,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        }
+      ]
+    },
+    "BTC": {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "source": "CoinGecko",
+      "records": [
+        {
+          "date": "2026-02-12",
+          "timestamp": 1770886770,
+          "price": 67081,
+          "marketCap": 1340761832475,
+          "volume24h": 50888248535,
+          "circulatingSupply": 19988059.0,
+          "supplyMetric": "circulating_supply（链上流通量，近似发行量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        }
+      ]
+    },
+    "ETH": {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "source": "CoinGecko",
+      "records": [
+        {
+          "date": "2026-02-12",
+          "timestamp": 1770886770,
+          "price": 1964.11,
+          "marketCap": 237068447374,
+          "volume24h": 22996924022,
+          "circulatingSupply": 120692542.2815806,
+          "supplyMetric": "circulating_supply（链上流通量，近似发行量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        }
+      ]
+    }
+  },
+  "lastUpdate": "2026-02-12T08:59:30.682754+00:00",
+  "source": "CoinGecko"
+}
