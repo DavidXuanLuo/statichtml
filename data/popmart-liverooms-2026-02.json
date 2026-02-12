@@ -5,22 +5,665 @@
   "unit": "yuan",
   "method": "estimate_gmv = (low_gmv + high_gmv) / 2; 同日同直播间多场次按区间求和；未抓到记为null",
   "source": "蝉妈妈 liveRank 关键词=泡泡玛特 时间筛选=近30天",
-  "rooms": ["泡泡玛特官方旗舰店","泡泡玛特盲盒屋","泡泡玛特生活空间","泡泡玛特拆盒体验馆","泡泡玛特潮玩商店","泡泡玛特欧气玩家","泡泡玛特拆卡直播间"],
-  "days": [
-    {"date":"2026-02-01","total":{"low_gmv":5325000,"high_gmv":11600000,"estimate_gmv":8462500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特潮玩商店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特欧气玩家","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":75000,"high_gmv":100000,"estimate_gmv":87500}],"has_visible_record":true},
-    {"date":"2026-02-02","total":{"low_gmv":7275000,"high_gmv":10850000,"estimate_gmv":9062500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},{"room_name":"泡泡玛特盲盒屋","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特生活空间","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},{"room_name":"泡泡玛特潮玩商店","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":75000,"high_gmv":100000,"estimate_gmv":87500}],"has_visible_record":true},
-    {"date":"2026-02-03","total":{"low_gmv":10675000,"high_gmv":16850000,"estimate_gmv":13762500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":7500000,"high_gmv":10000000,"estimate_gmv":8750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特潮玩商店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":75000,"high_gmv":100000,"estimate_gmv":87500}],"has_visible_record":true},
-    {"date":"2026-02-04","total":{"low_gmv":12800000,"high_gmv":21325000,"estimate_gmv":17062500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":7500000,"high_gmv":10000000,"estimate_gmv":8750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特生活空间","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特潮玩商店","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特欧气玩家","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500}],"has_visible_record":true},
-    {"date":"2026-02-05","total":{"low_gmv":10650000,"high_gmv":16825000,"estimate_gmv":13737500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":7500000,"high_gmv":10000000,"estimate_gmv":8750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特潮玩商店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500}],"has_visible_record":true},
-    {"date":"2026-02-06","total":{"low_gmv":7250000,"high_gmv":12075000,"estimate_gmv":9662500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},{"room_name":"泡泡玛特盲盒屋","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特潮玩商店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500}],"has_visible_record":true},
-    {"date":"2026-02-07","total":{"low_gmv":7550000,"high_gmv":12575000,"estimate_gmv":10062500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},{"room_name":"泡泡玛特盲盒屋","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特潮玩商店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特欧气玩家","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500}],"has_visible_record":true},
-    {"date":"2026-02-08","total":{"low_gmv":2000000,"high_gmv":4575000,"estimate_gmv":3287500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特生活空间","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特潮玩商店","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500}],"has_visible_record":true},
-    {"date":"2026-02-09","total":{"low_gmv":6225000,"high_gmv":9800000,"estimate_gmv":8012500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},{"room_name":"泡泡玛特盲盒屋","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特生活空间","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特潮玩商店","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":25000,"high_gmv":50000,"estimate_gmv":37500}],"has_visible_record":true},
-    {"date":"2026-02-10","total":{"low_gmv":4600000,"high_gmv":9575000,"estimate_gmv":7087500},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":350000,"high_gmv":750000,"estimate_gmv":550000},{"room_name":"泡泡玛特潮玩商店","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500}],"has_visible_record":true},
-    {"date":"2026-02-11","total":{"low_gmv":6580000,"high_gmv":11307500,"estimate_gmv":8943750},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},{"room_name":"泡泡玛特盲盒屋","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特生活空间","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特潮玩商店","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特欧气玩家","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":30000,"high_gmv":57500,"estimate_gmv":43750}],"has_visible_record":true},
-    {"date":"2026-02-12","total":{"low_gmv":2200000,"high_gmv":4750000,"estimate_gmv":3475000},"rooms":[{"room_name":"泡泡玛特官方旗舰店","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},{"room_name":"泡泡玛特盲盒屋","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特生活空间","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},{"room_name":"泡泡玛特拆盒体验馆","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特潮玩商店","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},{"room_name":"泡泡玛特欧气玩家","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},{"room_name":"泡泡玛特拆卡直播间","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"}],"has_visible_record":true}
+  "rooms": [
+    "泡泡玛特官方旗舰店",
+    "泡泡玛特盲盒屋",
+    "泡泡玛特生活空间",
+    "泡泡玛特拆盒体验馆",
+    "泡泡玛特潮玩商店",
+    "泡泡玛特欧气玩家",
+    "泡泡玛特拆卡直播间"
   ],
-  "month_to_date_total": {"low_gmv":83130000,"high_gmv":142107500,"estimate_gmv":112618750},
-  "meta": {"time_filter":"近30天","pages_traversed":8,"total_rows_captured":351,"feb_target_rows":88},
-  "updated_at": "2026-02-12 16:25 GMT+8"
+  "days": [
+    {
+      "date": "2026-02-01",
+      "total": {
+        "low_gmv": 5325000,
+        "high_gmv": 11600000,
+        "estimate_gmv": 8462500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 2500000,
+          "high_gmv": 5000000,
+          "estimate_gmv": 3750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 75000,
+          "high_gmv": 100000,
+          "estimate_gmv": 87500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-02",
+      "total": {
+        "low_gmv": 7275000,
+        "high_gmv": 10850000,
+        "estimate_gmv": 9062500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 5000000,
+          "high_gmv": 7500000,
+          "estimate_gmv": 6250000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 750000,
+          "high_gmv": 1000000,
+          "estimate_gmv": 875000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 750000,
+          "high_gmv": 1000000,
+          "estimate_gmv": 875000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 75000,
+          "high_gmv": 100000,
+          "estimate_gmv": 87500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-03",
+      "total": {
+        "low_gmv": 10675000,
+        "high_gmv": 16850000,
+        "estimate_gmv": 13762500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 7500000,
+          "high_gmv": 10000000,
+          "estimate_gmv": 8750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 750000,
+          "high_gmv": 1000000,
+          "estimate_gmv": 875000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 75000,
+          "high_gmv": 100000,
+          "estimate_gmv": 87500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-04",
+      "total": {
+        "low_gmv": 12800000,
+        "high_gmv": 21325000,
+        "estimate_gmv": 17062500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 7500000,
+          "high_gmv": 10000000,
+          "estimate_gmv": 8750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 2500000,
+          "high_gmv": 5000000,
+          "estimate_gmv": 3750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 50000,
+          "high_gmv": 75000,
+          "estimate_gmv": 62500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-05",
+      "total": {
+        "low_gmv": 10650000,
+        "high_gmv": 16825000,
+        "estimate_gmv": 13737500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 7500000,
+          "high_gmv": 10000000,
+          "estimate_gmv": 8750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 750000,
+          "high_gmv": 1000000,
+          "estimate_gmv": 875000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 50000,
+          "high_gmv": 75000,
+          "estimate_gmv": 62500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-06",
+      "total": {
+        "low_gmv": 7250000,
+        "high_gmv": 12075000,
+        "estimate_gmv": 9662500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 5000000,
+          "high_gmv": 7500000,
+          "estimate_gmv": 6250000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 750000,
+          "high_gmv": 1000000,
+          "estimate_gmv": 875000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 50000,
+          "high_gmv": 75000,
+          "estimate_gmv": 62500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-07",
+      "total": {
+        "low_gmv": 7550000,
+        "high_gmv": 12575000,
+        "estimate_gmv": 10062500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 5000000,
+          "high_gmv": 7500000,
+          "estimate_gmv": 6250000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 50000,
+          "high_gmv": 75000,
+          "estimate_gmv": 62500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-08",
+      "total": {
+        "low_gmv": 2000000,
+        "high_gmv": 4575000,
+        "estimate_gmv": 3287500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 50000,
+          "high_gmv": 75000,
+          "estimate_gmv": 62500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-09",
+      "total": {
+        "low_gmv": 6225000,
+        "high_gmv": 9800000,
+        "estimate_gmv": 8012500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 5000000,
+          "high_gmv": 7500000,
+          "estimate_gmv": 6250000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 25000,
+          "high_gmv": 50000,
+          "estimate_gmv": 37500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-10",
+      "total": {
+        "low_gmv": 4600000,
+        "high_gmv": 9575000,
+        "estimate_gmv": 7087500
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 2500000,
+          "high_gmv": 5000000,
+          "estimate_gmv": 3750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 350000,
+          "high_gmv": 750000,
+          "estimate_gmv": 550000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 50000,
+          "high_gmv": 75000,
+          "estimate_gmv": 62500
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-11",
+      "total": {
+        "low_gmv": 6580000,
+        "high_gmv": 11307500,
+        "estimate_gmv": 8943750
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 5000000,
+          "high_gmv": 7500000,
+          "estimate_gmv": 6250000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": 30000,
+          "high_gmv": 57500,
+          "estimate_gmv": 43750
+        }
+      ],
+      "has_visible_record": true
+    },
+    {
+      "date": "2026-02-12",
+      "total": {
+        "low_gmv": 2200000,
+        "high_gmv": 4750000,
+        "estimate_gmv": 3475000
+      },
+      "rooms": [
+        {
+          "room_name": "泡泡玛特官方旗舰店",
+          "low_gmv": 1000000,
+          "high_gmv": 2500000,
+          "estimate_gmv": 1750000
+        },
+        {
+          "room_name": "泡泡玛特盲盒屋",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特生活空间",
+          "low_gmv": 500000,
+          "high_gmv": 750000,
+          "estimate_gmv": 625000
+        },
+        {
+          "room_name": "泡泡玛特拆盒体验馆",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特潮玩商店",
+          "low_gmv": 100000,
+          "high_gmv": 250000,
+          "estimate_gmv": 175000
+        },
+        {
+          "room_name": "泡泡玛特欧气玩家",
+          "low_gmv": 250000,
+          "high_gmv": 500000,
+          "estimate_gmv": 375000
+        },
+        {
+          "room_name": "泡泡玛特拆卡直播间",
+          "low_gmv": null,
+          "high_gmv": null,
+          "estimate_gmv": null,
+          "record_status": "not_found"
+        }
+      ],
+      "has_visible_record": true
+    }
+  ],
+  "month_to_date_total": {
+    "low_gmv": 83130000,
+    "high_gmv": 142107500,
+    "estimate_gmv": 112618750
+  },
+  "meta": {
+    "time_filter": "近30天",
+    "pages_traversed": 8,
+    "total_rows_captured": 351,
+    "feb_target_rows": 88,
+    "last_run": "2026-02-13 07:30 GMT+8"
+  },
+  "updated_at": "2026-02-13 07:30 GMT+8"
 }
