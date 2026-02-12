@@ -126,116 +126,54 @@ def manifold(start_utc: datetime, _end_utc: datetime):
     }
 
 
-def kalshi(start_utc: datetime, end_utc: datetime):
-    now_utc = datetime.now(UTC)
-    end_cap = now_utc if now_utc < end_utc else end_utc
-    start_s, end_s = int(start_utc.timestamp()), int(end_cap.timestamp())
+def kalshi(_start_utc: datetime, _end_utc: datetime):
+    snapshots = http_get_json("https://www.kalshidata.com/api/analytics/historical-snapshots", retries=4, timeout=20)
+    arr = snapshots.get("snapshots", []) if isinstance(snapshots, dict) else []
 
-    cursor = None
-    pages = 0
-    scanned = 0
-    total = 0.0
-    tickers = set()
-    first_ts = None
-    last_ts = None
-    max_pages = 20
+    today_local_str = datetime.now(TZ).strftime("%Y-%m-%d")
+    published = [x for x in arr if isinstance(x, dict) and x.get("date") and x["date"] < today_local_str]
+    published.sort(key=lambda x: x["date"])
 
-    for _ in range(max_pages):
-        params = {"limit": 1000, "min_ts": start_s, "max_ts": end_s}
-        if cursor:
-            params["cursor"] = cursor
-        data = http_get_json("https://api.elections.kalshi.com/trade-api/v2/markets/trades?" + urllib.parse.urlencode(params), retries=3, timeout=20)
-        arr = data.get("trades", []) if isinstance(data, dict) else []
-        if not arr:
-            break
-        pages += 1
-        scanned += len(arr)
-        if first_ts is None:
-            first_ts = parse_iso_utc(arr[0]["created_time"])
-        last_ts = parse_iso_utc(arr[-1]["created_time"])
-        for t in arr:
-            total += float(t.get("count_fp") or t.get("count") or 0)
-            if t.get("ticker"):
-                tickers.add(t["ticker"])
-        cursor = data.get("cursor") if isinstance(data, dict) else None
-        if not cursor:
-            break
+    if not published:
+        return {
+            "primary": {"name": "最新已公布交易日成交合约总量", "value": None, "unit": "接口失败", "source_metric": "n/a"},
+            "derived": {"method": "missing", "published_date": None, "robinhood_inferred_contracts": None},
+            "auxiliary": {"new_market_count": None, "new_contract_listing_count": None, "robinhood_inferred_contracts": None},
+            "status": "missing",
+            "note": "Kalshi公开日度接口未返回可用历史快照。",
+        }
 
-    m = http_get_json("https://api.elections.kalshi.com/trade-api/v2/markets?limit=200", retries=4)
-    mkts = m.get("markets", []) if isinstance(m, dict) else []
-    v24_nonzero = sum(1 for x in mkts if float(x.get("volume_24h_fp") or x.get("volume_24h") or 0) > 0)
-    sum_v24 = round(sum(float(x.get("volume_24h_fp") or x.get("volume_24h") or 0) for x in mkts), 2)
-    sum_oi = round(sum(float(x.get("open_interest_fp") or x.get("open_interest") or 0) for x in mkts), 2)
-    new_markets = sum(1 for x in mkts if x.get("created_time") and start_utc <= parse_iso_utc(x["created_time"]) < end_utc)
+    latest = published[-1]
+    prev = published[-2] if len(published) >= 2 else None
 
-    if scanned > 0 and first_ts and last_ts:
-        elapsed = max(1.0, (end_cap - start_utc).total_seconds())
-        if not cursor:
-            sample_est = total
-            source = "sum(/markets/trades.count_fp, min_ts~max_ts)"
-            method = "exact"
-            status = "ok"
-            note_prefix = f"Kalshi官方交易流精确汇总：{pages}页/{scanned}条成交，覆盖{len(tickers)}个ticker。"
-        else:
-            span = max(1.0, (first_ts - last_ts).total_seconds())
-            sample_est = total / span * elapsed
-            source = "sum(first_20_pages.trades.count_fp) * elapsed_day/sample_span"
-            method = "extrapolated_from_official_trade_feed"
-            status = "partial"
-            note_prefix = (
-                f"今日全量交易页数过大，采用可验证替代：官方/markets/trades前{pages}页样本（{scanned}条）"
-                f"覆盖{round(span/60,1)}分钟，按同速率外推至今日已过时长。"
-            )
+    daily_change = latest.get("total_contracts_traded_change")
+    if daily_change is None and prev is not None:
+        daily_change = float(latest.get("total_contracts_traded") or 0) - float(prev.get("total_contracts_traded") or 0)
 
-        # 业务锚点：Robinhood 1月约4亿/月，约占Kalshi 50% => Kalshi月度约8亿
-        robinhood_month_anchor = 400_000_000
-        kalshi_month_anchor = robinhood_month_anchor / 0.5
-        jan_days = 31
-        kalshi_anchor_daily = kalshi_month_anchor / jan_days
-        kalshi_anchor_elapsed = kalshi_anchor_daily * (elapsed / 86400.0)
+    kalshi_main = int(round(float(daily_change or 0)))
+    robinhood_inferred = int(round(kalshi_main * 0.5))
 
-        conservative = int(round(max(kalshi_anchor_elapsed, sample_est * 0.85)))
-        neutral = int(round(max(conservative, sample_est)))
-        kalshi_main = neutral
-        robinhood_inferred = int(round(kalshi_main * 0.5))
-
-        value = kalshi_main
-        unit = "contracts（整数）"
-
-        note = (
-            f"{note_prefix} 校准：以trades流样本外推为基础，叠加业务锚点（Robinhood 1月约4亿/月，且约占Kalshi 50%，"
-            f"推得Kalshi月度锚点约8亿；折算当日已过时长锚点约{int(round(kalshi_anchor_elapsed)):,} contracts）。"
-            f"保守值={conservative:,}，中性值={neutral:,}；主展示取中性值。"
-            f"同步反推Robinhood≈Kalshi×0.5={robinhood_inferred:,} contracts（整数）。"
-        )
-    else:
-        value, unit, source, method, status = None, "missing", "n/a", "missing", "missing"
-        conservative, neutral, robinhood_inferred = None, None, None
-        note = "Kalshi接口异常。"
-
-    note += f" 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零{v24_nonzero}个（sum={sum_v24}）。"
-
+    published_date = latest.get("date")
     return {
-        "primary": {"name": "当日成交合约总量", "value": value, "unit": unit, "source_metric": source},
+        "primary": {
+            "name": "最新已公布交易日成交合约总量",
+            "value": kalshi_main,
+            "unit": "contracts（整数）",
+            "source_metric": "kalshidata historical-snapshots.total_contracts_traded_change",
+        },
         "derived": {
-            "traded_contract_entries": len(tickers),
-            "trades_scanned": scanned,
-            "trades_pages_sampled": pages,
-            "markets_sampled": len(mkts),
-            "volume24h_nonzero_markets": v24_nonzero,
-            "open_interest_sum_markets_sample": sum_oi,
-            "method": method,
-            "calibrated_conservative_contracts": conservative,
-            "calibrated_neutral_contracts": neutral,
+            "method": "published_daily_t_plus_1",
+            "published_date": published_date,
+            "total_contracts_traded_cum": int(round(float(latest.get("total_contracts_traded") or 0))),
             "robinhood_inferred_contracts": robinhood_inferred,
         },
         "auxiliary": {
-            "new_market_count": new_markets,
-            "new_contract_listing_count": new_markets * 2,
+            "new_market_count": None,
+            "new_contract_listing_count": None,
             "robinhood_inferred_contracts": robinhood_inferred,
         },
-        "status": status,
-        "note": note,
+        "status": "ok",
+        "note": f"采用公开日度口径（T+1）：展示最新已公布交易日 {published_date} 的Kalshi日度总值={kalshi_main:,} contracts；Robinhood反推={robinhood_inferred:,}（=Kalshi×0.5，整数）。",
     }
 
 
@@ -249,8 +187,13 @@ def render_html(report):
         cls = "card kalshi" if name == "Kalshi" else "card"
         focus = "<div class='focus'>Kalshi主值（优先展示）</div>" if name == "Kalshi" else ""
         rh_line = ""
-        if name == "Kalshi" and a.get("robinhood_inferred_contracts") is not None:
-            rh_line = f"<li><b>Robinhood反推：</b>{int(a['robinhood_inferred_contracts']):,} contracts（=Kalshi×0.5，整数）</li>"
+        published_line = ""
+        if name == "Kalshi":
+            pub_date = d.get("derived", {}).get("published_date")
+            if pub_date:
+                published_line = f"<li><b>公布交易日：</b>{pub_date}</li>"
+            if a.get("robinhood_inferred_contracts") is not None:
+                rh_line = f"<li><b>Robinhood反推：</b>{int(a['robinhood_inferred_contracts']):,} contracts（=Kalshi×0.5，整数）</li>"
         cards += f"""
 <section class='{cls}'>
   <h3>{name} <span class='tag {d['status']}'>{d['status']}</span></h3>
@@ -261,6 +204,7 @@ def render_html(report):
     <li><b>主指标来源：</b>{p['source_metric']}</li>
     <li><b>辅助-新增市场：</b>{'—' if a['new_market_count'] is None else a['new_market_count']}</li>
     <li><b>辅助-新增合约条目：</b>{'—' if a['new_contract_listing_count'] is None else a['new_contract_listing_count']}</li>
+    {published_line}
     {rh_line}
     <li><b>说明：</b>{d['note']}</li>
   </ul>
@@ -295,7 +239,7 @@ ul{{padding-left:18px;margin:6px 0 0}} li{{margin:4px 0;font-size:13px;line-heig
 <div class='h'>预测市场日报：主指标=当日成交合约总量</div>
 <div class='meta'>日期：<b>{report['date_shanghai']}</b> ｜ 生成：{report['generated_at']} ｜ 完整性：{report['completeness']}</div>
 <div class='box'><b>口径说明</b>：
-主指标为“当日成交合约总量”。Kalshi优先用官方交易流 /markets/trades（count_fp）口径；若当日全量分页过大，降级为“官方交易流样本速率外推+业务锚点校准”。<b>Kalshi与Robinhood反推单位=contracts（整数）</b>。不同平台单位不同，<b>不做跨平台直接加总</b>。
+主指标为“当日成交合约总量”。Kalshi主口径切换为<b>公开日度总值（T+1）</b>，展示“最新已公布交易日”的整数contracts，并标注该日期；Robinhood同步展示反推值（Kalshi×0.5，整数）。不同平台单位不同，<b>不做跨平台直接加总</b>。
 </div>
 <div class='grid'>{cards}</div>
 </body></html>"""
@@ -324,9 +268,9 @@ def main():
         "window": {"start_local": start_local.isoformat(), "end_local": end_local.isoformat(), "start_utc": start_utc.isoformat(), "end_utc": end_utc.isoformat()},
         "generated_at": now_local.isoformat(),
         "definition": {
-            "primary": "当日成交合约总量（无法直取时采用公开可复现近似）",
+            "primary": "当日成交合约总量（Kalshi主口径=公开日度总值T+1）",
             "auxiliary": "新增市场/新增合约条目（listing口径）",
-            "note": "避免与listing count混淆；跨平台单位不可直接求和；Kalshi/Robinhood用contracts整数",
+            "note": "Kalshi展示最新已公布交易日整数contracts并标注日期；Robinhood=Kalshi×0.5（整数）；跨平台单位不可直接求和",
         },
         "platforms": platforms,
         "completeness": f"{sum(1 for v in platforms.values() if v['status'] != 'missing')}/3",

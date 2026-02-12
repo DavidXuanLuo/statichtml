@@ -24,20 +24,21 @@ ul{padding-left:18px;margin:6px 0 0} li{margin:4px 0;font-size:13px;line-height:
 </head>
 <body>
 <div class='h'>预测市场日报：主指标=当日成交合约总量</div>
-<div class='meta'>日期：<b>2026-02-12</b> ｜ 生成：2026-02-12T16:34:21.082126+08:00 ｜ 完整性：3/3</div>
+<div class='meta'>日期：<b>2026-02-12</b> ｜ 生成：2026-02-12T16:54:31.575296+08:00 ｜ 完整性：3/3</div>
 <div class='box'><b>口径说明</b>：
-主指标为“当日成交合约总量”。Kalshi优先用官方交易流 /markets/trades（count_fp）口径；若当日全量分页过大，降级为“官方交易流样本速率外推+业务锚点校准”。<b>Kalshi与Robinhood反推单位=contracts（整数）</b>。不同平台单位不同，<b>不做跨平台直接加总</b>。
+主指标为“当日成交合约总量”。Kalshi主口径切换为<b>公开日度总值（T+1）</b>，展示“最新已公布交易日”的整数contracts，并标注该日期；Robinhood同步展示反推值（Kalshi×0.5，整数）。不同平台单位不同，<b>不做跨平台直接加总</b>。
 </div>
 <div class='grid'>
 <section class='card'>
   <h3>Polymarket <span class='tag partial'>partial</span></h3>
   
-  <div class='big'>103,805,391.94</div>
+  <div class='big'>103,804,078.62</div>
   <div class='sub'>USDC(volume24hr sum, proxy)</div>
   <ul>
     <li><b>主指标来源：</b>sum(markets.volume24hr)</li>
     <li><b>辅助-新增市场：</b>—</li>
     <li><b>辅助-新增合约条目：</b>—</li>
+    
     
     <li><b>说明：</b>公开Gamma接口分页抓取800个活跃未结算市场，以volume24hr汇总作为近似（24h滚动）。</li>
   </ul>
@@ -46,28 +47,30 @@ ul{padding-left:18px;margin:6px 0 0} li{margin:4px 0;font-size:13px;line-height:
 <section class='card'>
   <h3>Manifold <span class='tag partial'>partial</span></h3>
   
-  <div class='big'>317,867.47</div>
+  <div class='big'>331,944.88</div>
   <div class='sub'>shares(today, paged)</div>
   <ul>
     <li><b>主指标来源：</b>sum(abs(bets.shares))</li>
-    <li><b>辅助-新增市场：</b>74</li>
-    <li><b>辅助-新增合约条目：</b>132</li>
+    <li><b>辅助-新增市场：</b>75</li>
+    <li><b>辅助-新增合约条目：</b>134</li>
+    
     
     <li><b>说明：</b>分页扫描2000条bets，累加当日shares绝对值近似。</li>
   </ul>
 </section>
 
 <section class='card kalshi'>
-  <h3>Kalshi <span class='tag partial'>partial</span></h3>
+  <h3>Kalshi <span class='tag ok'>ok</span></h3>
   <div class='focus'>Kalshi主值（优先展示）</div>
-  <div class='big'>77,210,041</div>
+  <div class='big'>24,700,475</div>
   <div class='sub'>contracts（整数）</div>
   <ul>
-    <li><b>主指标来源：</b>sum(first_20_pages.trades.count_fp) * elapsed_day/sample_span</li>
-    <li><b>辅助-新增市场：</b>200</li>
-    <li><b>辅助-新增合约条目：</b>400</li>
-    <li><b>Robinhood反推：</b>38,605,020 contracts（=Kalshi×0.5，整数）</li>
-    <li><b>说明：</b>今日全量交易页数过大，采用可验证替代：官方/markets/trades前20页样本（20000条）覆盖31.7分钟，按同速率外推至今日已过时长。 校准：以trades流样本外推为基础，叠加业务锚点（Robinhood 1月约4亿/月，且约占Kalshi 50%，推得Kalshi月度锚点约8亿；折算当日已过时长锚点约17,822,738 contracts）。保守值=65,628,535，中性值=77,210,041；主展示取中性值。同步反推Robinhood≈Kalshi×0.5=38,605,020 contracts（整数）。 字段校验：yes_bid/no_bid为美分报价（见*_dollars）；open_interest/open_interest_fp为持仓合约数。markets抽样200个中volume_24h非零0个（sum=0.0）。</li>
+    <li><b>主指标来源：</b>kalshidata historical-snapshots.total_contracts_traded_change</li>
+    <li><b>辅助-新增市场：</b>—</li>
+    <li><b>辅助-新增合约条目：</b>—</li>
+    <li><b>公布交易日：</b>2026-02-10</li>
+    <li><b>Robinhood反推：</b>12,350,238 contracts（=Kalshi×0.5，整数）</li>
+    <li><b>说明：</b>采用公开日度口径（T+1）：展示最新已公布交易日 2026-02-10 的Kalshi日度总值=24,700,475 contracts；Robinhood反推=12,350,238（=Kalshi×0.5，整数）。</li>
   </ul>
 </section>
 </div>
