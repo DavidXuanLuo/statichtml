@@ -1,5 +1,5 @@
 {
-  "metric": "today_new_prediction_markets",
+  "metric": "today_new_prediction_markets_and_contracts",
   "timezone": "Asia/Shanghai",
   "date_shanghai": "2026-02-12",
   "window": {
@@ -8,26 +8,30 @@
     "start_utc": "2026-02-11T16:00:00+00:00",
     "end_utc": "2026-02-12T16:00:00+00:00"
   },
-  "generated_at": "2026-02-12T14:35:12.853322+08:00",
+  "generated_at": "2026-02-12T14:55:35.002124+08:00",
   "platforms": {
     "Polymarket": {
-      "count": 2065,
+      "market_count": 2065,
+      "contract_count": 4130,
       "status": "ok",
-      "note": "分页抓取 12 页，按 createdAt 统计"
+      "note": "市场数沿用原统计；合约数按二元市场约2合约/市场估算（实际以outcomes为准）"
     },
     "Manifold": {
-      "count": 67,
-      "status": "ok",
-      "note": "基于最新1000条 markets 统计（接口分页能力受限）"
+      "market_count": 67,
+      "contract_count": 134,
+      "status": "partial",
+      "note": "市场数沿用原统计；合约数按BINARY≈2估算（多选/其他类型可能偏差）"
     },
     "Kalshi": {
-      "count": 6000,
+      "market_count": 6000,
+      "contract_count": 12000,
       "status": "partial",
-      "note": "分页抓取 30 页，按 created_time 统计（达到页数上限，可能低估）"
+      "note": "市场数沿用原统计；Kalshi多为binary，合约数按2估算；原始市场数本身为partial"
     }
   },
+  "completeness": "3/3",
   "totals": {
-    "known_sum": 8132
-  },
-  "completeness": "3/3"
+    "known_market_sum": 8132,
+    "known_contract_sum": 16264
+  }
 }
