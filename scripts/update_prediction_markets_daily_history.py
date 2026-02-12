@@ -162,28 +162,10 @@ def upsert(records, rec):
 
 
 def ensure_90_day_coverage(records, end_date_str):
-    end_date = datetime.strptime(end_date_str, "%Y-%m-%d").date()
-    start_date = end_date - timedelta(days=89)
-
-    existing = {(r.get("date"), r.get("platform")) for r in records}
-    for i in range(90):
-        d = (start_date + timedelta(days=i)).isoformat()
-        for p in PLATFORMS:
-            k = (d, p)
-            if k in existing:
-                continue
-            method = "published_daily_t_plus_1" if p == "Kalshi" else "public_proxy_not_backfilled"
-            unit = "contracts" if p == "Kalshi" else ("USDC(volume24hr sum, proxy)" if p == "Polymarket" else "shares(today, paged)")
-            source = "https://www.kalshidata.com/api/analytics/historical-snapshots" if p == "Kalshi" else ("https://gamma-api.polymarket.com/markets" if p == "Polymarket" else "https://api.manifold.markets/v0/bets")
-            records.append({
-                "date": d,
-                "platform": p,
-                "daily_total_value": None,
-                "unit": unit,
-                "source": source,
-                "method": method,
-                "status": "missing"
-            })
+    """Deprecated: do not backfill null placeholder rows.
+    Keep function for compatibility but intentionally no-op.
+    """
+    return
 
 
 def render_html():
@@ -234,9 +216,10 @@ def render_html():
 (async function(){
   const res = await fetch('./data/prediction-markets-daily-history.json?_='+Date.now());
   const data = await res.json();
-  const rows = (data.records||[]).slice().sort((a,b)=> (a.date===b.date? a.platform.localeCompare(b.platform):a.date.localeCompare(b.date)));
+  const priority = {Kalshi:0, Polymarket:1, Manifold:2};
+  const rows = (data.records||[]).slice().sort((a,b)=> (a.date===b.date? (priority[a.platform]??9)-(priority[b.platform]??9) :a.date.localeCompare(b.date)));
   const recentCut = (data.coverage && data.coverage.start_date) ? data.coverage.start_date : rows[0]?.date;
-  const recentRows = rows.filter(r => !recentCut || r.date >= recentCut);
+  const recentRows = rows.filter(r => (!recentCut || r.date >= recentCut) && r.daily_total_value != null);
 
   const byDate = {};
   for (const r of recentRows){
@@ -335,7 +318,7 @@ def main():
 
     # trim to recent 90 days only
     cutoff = (datetime.strptime(today_local, "%Y-%m-%d").date() - timedelta(days=89)).isoformat()
-    trimmed = [r for r in records if r.get("date") and r["date"] >= cutoff]
+    trimmed = [r for r in records if r.get("date") and r["date"] >= cutoff and r.get("daily_total_value") is not None]
 
     payload = {
         "dataset": "prediction_markets_daily_history",
