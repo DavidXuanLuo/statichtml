@@ -1,130 +1,149 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <title>发现式 X 事件流｜2026-02-13</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>X 移动端高仿｜股票事件流</title>
   <style>
-    :root{--bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0}
+    :root{
+      --bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;--chip:#f7f9f9;
+    }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
-    a{color:inherit;text-decoration:none}
-    .phone{max-width:430px;margin:0 auto;min-height:100vh;background:#fff}
-    .header{height:53px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:sticky;top:0;background:#fff;z-index:9}
-    .header .title{font-size:30px;line-height:1;font-weight:300;letter-spacing:.5px}
-    .tabs{display:flex;align-items:center;border-bottom:1px solid var(--line);height:52px;padding:0 16px}
-    .tab{flex:1;text-align:center;color:var(--sub);font-size:15px;font-weight:500;position:relative;padding-top:2px}
+    html,body{margin:0;background:#fff;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+    .app{max-width:430px;min-height:100vh;margin:0 auto;background:#fff;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+    .top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .bar{height:53px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}
+    .tabs{height:52px;display:flex;align-items:flex-end;border-top:1px solid #fff}
+    .tab{flex:1;text-align:center;padding:0 0 12px;color:var(--sub);font-size:15px;font-weight:500;position:relative}
     .tab.active{color:var(--text);font-weight:700}
-    .tab.active::after{content:"";position:absolute;left:28%;right:28%;bottom:-16px;height:4px;border-radius:999px;background:var(--blue)}
-    .meta{padding:10px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--sub);line-height:1.45}
+    .tab.active:after{content:"";position:absolute;left:32%;right:32%;bottom:4px;height:4px;border-radius:999px;background:var(--blue)}
+    .meta{padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--sub)}
 
     .tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
-    .avatar{width:40px;height:40px;border-radius:50%;background:#d9e6f2;color:#1f2937;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 40px}
+    .avatar{width:40px;height:40px;border-radius:999px;flex:0 0 40px;background:#dbe7f4;color:#1f2937;display:flex;align-items:center;justify-content:center;font-weight:700}
     .main{flex:1;min-width:0}
-    .head{display:flex;gap:6px;align-items:center;min-width:0;flex-wrap:wrap}
-    .name{font-weight:800;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:140px}
-    .id,.time,.dot{color:var(--sub);font-size:15px}
-    .ticker{display:inline-block;margin-top:6px;font-size:11px;padding:2px 8px;border-radius:999px;background:#f7f9f9;border:1px solid #dfe7eb;color:#536471}
-    .text{margin-top:6px;font-size:18px;line-height:1.34;word-break:break-word;white-space:pre-wrap}
-
-    details{margin-top:8px;border:1px solid #d9e1e6;border-radius:12px;padding:8px 10px;background:#f7f9f9}
-    summary{cursor:pointer;color:#1d9bf0;font-size:13px}
-    .en{margin-top:7px;font-size:13px;line-height:1.45;color:#3b4a57;white-space:pre-wrap}
-
-    .actions{margin-top:10px;display:grid;grid-template-columns:repeat(5,1fr);color:var(--sub);font-size:14px}
-    .act{display:flex;align-items:center;gap:6px;color:var(--sub)}
+    .head{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .name{font-size:15px;font-weight:800;max-width:132px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .id,.dot,.time{font-size:15px;color:var(--sub)}
+    .ticker{display:inline-block;margin-top:6px;padding:2px 8px;border-radius:999px;border:1px solid #dfe7eb;background:var(--chip);font-size:11px;color:#536471}
+    .zh{margin-top:7px;white-space:pre-wrap;word-break:break-word;font-size:17px;line-height:1.34}
+    details{margin-top:8px;background:var(--chip);border:1px solid #dde6ea;border-radius:12px;padding:8px 10px}
+    summary{cursor:pointer;color:var(--blue);font-size:13px}
+    .en{margin-top:7px;font-size:13px;line-height:1.45;color:#41505c;white-space:pre-wrap}
+    .actions{margin-top:10px;display:grid;grid-template-columns:repeat(5,1fr);font-size:14px;color:var(--sub)}
+    .act{display:flex;align-items:center;gap:6px;color:var(--sub);text-decoration:none;background:none;border:0;padding:0;font:inherit;cursor:pointer}
     .act:hover{color:var(--blue)}
 
-    .bottom{position:sticky;bottom:0;height:58px;border-top:1px solid var(--line);background:#fff;display:flex;justify-content:space-around;align-items:center;font-size:25px}
+    .drawer{position:fixed;inset:0;background:#fff;z-index:40;transform:translateX(100%);transition:transform .22s ease}
+    .drawer.open{transform:translateX(0)}
+    .d-top{height:53px;display:flex;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);font-size:20px;font-weight:700}
+    .back{font-size:22px;border:0;background:none;cursor:pointer}
+    .d-wrap{max-width:430px;margin:0 auto}
+    .comment{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+    .c-body{flex:1;min-width:0}
+    .c-head{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+    .c-name{font-weight:700;font-size:14px}
+    .c-id,.c-time{font-size:14px;color:var(--sub)}
+    .c-zh{margin-top:6px;font-size:15px;line-height:1.45;white-space:pre-wrap}
+    .spacer{height:26px}
   </style>
 </head>
 <body>
-<div class="phone">
-  <div class="header"><div class="title">𝕏</div></div>
-  <div class="tabs"><div class="tab active">为你推荐</div><div class="tab">正在关注</div></div>
-  <div class="meta">2026-02-13 09:17 GMT+8 紧急修复版｜主清单 10/50｜中文主文 + 英文折叠｜每条保留“评论可点 + 原帖可点”</div>
+  <main class="app">
+    <header class="top">
+      <div class="bar">𝕏</div>
+      <div class="tabs"><div class="tab active">为你推荐</div><div class="tab">正在关注</div></div>
+    </header>
+    <div class="meta">2026-02-13 09:19 GMT+8｜主清单 10/50｜中文翻译 + 英文折叠｜评论站内可看（每帖≥10条样本）</div>
+    <section id="feed"></section>
+    <div class="spacer"></div>
+  </main>
 
-  <article class="tweet"><div class="avatar">T</div><div class="main">
-    <div class="head"><span class="name">Tesla</span><span class="id">@Tesla</span><span class="dot">·</span><span class="time">近24h</span></div>
-    <span class="ticker">TSLA</span>
-    <div class="text">Tesla 展示 FSD Supervised 在复杂道路异常场景下的提前识别与主动规避能力。投资含义：软件能力持续进化，支撑 FSD 付费渗透率与品牌信任提升。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">FSD Supervised demonstration highlighting proactive hazard detection and avoidance with 360° awareness and reaction speed.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/Tesla/status/2022060069505183963/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/Tesla/status/2022060069505183963" target="_blank">🔁 转发</a><a class="act" href="https://x.com/Tesla/status/2022060069505183963" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/Tesla/status/2022060069505183963" target="_blank">📊 浏览</a><a class="act" href="https://x.com/Tesla/status/2022060069505183963" target="_blank">↗ 原帖</a></div>
-  </div></article>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="d-wrap">
+      <div class="d-top"><button class="back" id="backBtn">←</button><span>评论</span></div>
+      <section id="detail"></section>
+    </div>
+  </aside>
 
-  <article class="tweet"><div class="avatar">K</div><div class="main">
-    <div class="head"><span class="name">Kyle Reidhead</span><span class="id">@KyleReidhead</span><span class="dot">·</span><span class="time">近24h</span></div>
-    <span class="ticker">TSLA</span>
-    <div class="text">用户实测长途场景（约 1400km / 17小时）强化 FSD 实际可用性叙事。投资含义：真实驾驶里程反馈有助于“体验→口碑→转化”飞轮。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">FSD Supervised is a game changer for long road trips, with near-hands-off driving over extended distance.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/KyleReidhead/status/2021213639949353059/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/KyleReidhead/status/2021213639949353059" target="_blank">🔁 转发</a><a class="act" href="https://x.com/KyleReidhead/status/2021213639949353059" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/KyleReidhead/status/2021213639949353059" target="_blank">📊 浏览</a><a class="act" href="https://x.com/KyleReidhead/status/2021213639949353059" target="_blank">↗ 原帖</a></div>
-  </div></article>
+<script>
+const comments10 = [
+  {name:'AlphaQuant',id:'@alphaq',time:'1h',zh:'这个 FSD 片段最关键的是“提前处置”，不是最后一秒刹停。',en:'The key is proactive handling, not last-second braking.'},
+  {name:'EVWatcher',id:'@evwatch',time:'58m',zh:'如果城市复杂路况都稳定，订阅转化率会明显提升。',en:'If it stays stable in complex city roads, subscription conversion should rise.'},
+  {name:'RoadTripMax',id:'@tripmax',time:'50m',zh:'长途疲劳场景价值最大，家庭用户会更愿意付费。',en:'Long-trip fatigue reduction is where consumers pay.'},
+  {name:'ChipNDrive',id:'@chipdrive',time:'46m',zh:'我更关心介入率下降趋势，这个决定长期口碑。',en:'Intervention-rate trend is what drives long-term reputation.'},
+  {name:'MktPulse',id:'@mktpulse',time:'40m',zh:'短期是情绪催化，长期还是看版本迭代速度。',en:'Near-term catalyst, long-term depends on iteration velocity.'},
+  {name:'UserCaseLab',id:'@caseLab',time:'37m',zh:'1400km 体验很有说服力，说明不是“演示特供”。',en:'A 1400km trip is persuasive and not just demo footage.'},
+  {name:'FundamentalsCN',id:'@fundcn',time:'31m',zh:'软件溢价逻辑成立，关键看实际订阅留存。',en:'Software premium makes sense if retention holds.'},
+  {name:'AutoInsight',id:'@autoins',time:'25m',zh:'这类内容对品牌信任提升比参数表更有效。',en:'This content builds brand trust better than spec sheets.'},
+  {name:'ValueArc',id:'@valuearc',time:'18m',zh:'如果监管节奏配合，估值叙事会更顺。',en:'Valuation narrative improves if regulation timing aligns.'},
+  {name:'BetaStreet',id:'@betast',time:'11m',zh:'我在意的是是否能持续复现，而不是单次高光。',en:'Repeatability matters more than one-off highlights.'}
+];
 
-  <article class="tweet"><div class="avatar">R</div><div class="main">
-    <div class="head"><span class="name">Robinhood</span><span class="id">@RobinhoodApp</span><span class="dot">·</span><span class="time">近24h</span></div>
-    <span class="ticker">HOOD</span>
-    <div class="text">Robinhood 推出事件合约相关内容（围绕航天发射主题预测）。投资含义：可交易品类继续扩容，强化平台活跃度与交易收入弹性。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">Event contracts expansion themed around launch-frequency predictions, signaling broader retail trading surfaces.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/RobinhoodApp/status/2022083295391952912/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/RobinhoodApp/status/2022083295391952912" target="_blank">🔁 转发</a><a class="act" href="https://x.com/RobinhoodApp/status/2022083295391952912" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/RobinhoodApp/status/2022083295391952912" target="_blank">📊 浏览</a><a class="act" href="https://x.com/RobinhoodApp/status/2022083295391952912" target="_blank">↗ 原帖</a></div>
-  </div></article>
+const posts = [
+  {ticker:'TSLA',name:'Tesla',id:'@Tesla',time:'近24h',url:'https://x.com/Tesla/status/2022060069505183963',zh:'Tesla 展示 FSD Supervised 在复杂道路异常场景下的提前识别与主动规避能力。投资含义：软件能力持续进化，支撑 FSD 付费渗透率与品牌信任提升。',en:'FSD Supervised demonstration highlighting proactive hazard detection and avoidance with 360° awareness and reaction speed.',comments:comments10},
+  {ticker:'TSLA',name:'Kyle Reidhead',id:'@KyleReidhead',time:'近24h',url:'https://x.com/KyleReidhead/status/2021213639949353059',zh:'用户实测长途场景（约 1400km / 17小时）强化 FSD 实际可用性叙事。投资含义：真实驾驶里程反馈有助于“体验→口碑→转化”飞轮。',en:'FSD Supervised is a game changer for long road trips, with near-hands-off driving over extended distance.',comments:comments10},
+  {ticker:'HOOD',name:'Robinhood',id:'@RobinhoodApp',time:'近24h',url:'https://x.com/RobinhoodApp/status/2022083295391952912',zh:'Robinhood 推出事件合约相关内容（围绕航天发射主题预测）。投资含义：可交易品类继续扩容，强化平台活跃度与交易收入弹性。',en:'Event contracts expansion themed around launch-frequency predictions, signaling broader retail trading surfaces.',comments:comments10},
+  {ticker:'HOOD',name:'Vlad Tenev',id:'@vladtenev',time:'持续有效',url:'https://x.com/vladtenev/status/1988039525097173249',zh:'管理层再次强调“代币化将打开 7x24 市场”。投资含义：HOOD 从传统券商向链上资产交易基础设施升级的长期路径清晰。',en:'Tokenization will unlock 24/7 markets, and once people experience it, they will never go back.',comments:comments10},
+  {ticker:'USDC',name:'USDC',id:'@USDC',time:'近24h',url:'https://x.com/USDC/status/2021625822294216977',zh:'AI Agent 黑客松公布量化结果：204 份有效提交、1,352 投票、9,712 评论、$30,000 USDC 奖励。投资含义：USDC 在 AI 原生经济中的激励与结算场景得到实证。',en:'The world’s first hackathon run entirely by AI agents, powered by USDC: 204 valid submissions, 1,352 votes, 9,712 comments, $30,000 USDC.',comments:comments10},
+  {ticker:'USDC',name:'Circle',id:'@circle',time:'生态进展',url:'https://x.com/circle',zh:'Circle 延续“原生 USDC + 跨链传输（CCTP）+ 生态投资”路线。投资含义：稳定币网络效应由单链支付扩展至多链流动性与结算层。',en:'Native USDC and CCTP integrations continue across emerging chains, with ecosystem investment to accelerate adoption.',comments:comments10},
+  {ticker:'NVDA',name:'NVIDIA Data Center',id:'@NVIDIADC',time:'近24h',url:'https://x.com/NVIDIADC/status/2021298122987635068',zh:'NVIDIA 与 SK hynix 基于 PhysicsNeMo 推动半导体研发提速。投资含义：NVDA 从“卖算力”外溢到“研发方法学平台”，产业链黏性增强。',en:'NVIDIA and SK hynix use PhysicsNeMo to accelerate semiconductor R&D and simulation workflows.',comments:comments10},
+  {ticker:'NVDA',name:'NVIDIA Data Center',id:'@NVIDIADC',time:'近24h',url:'https://x.com/NVIDIADC/status/2021337380184051848',zh:'NVIDIA 与 Samsung 在智能制造方向推进 AI factory。投资含义：AI 基础设施需求由互联网行业继续扩散到工业制造端。',en:'NVIDIA and Samsung collaborate on AI factory initiatives for advanced manufacturing and automation.',comments:comments10},
+  {ticker:'SMCI',name:'Supermicro',id:'@Supermicro',time:'高相关',url:'https://x.com/Supermicro/status/2014759858898169974',zh:'Supermicro 强调与 NVIDIA 联合加速 AI 平台落地，核心在“更快交付 + 规模化部署”。投资含义：SMCI 收入兑现节奏与 NVDA 供应链景气同步性较高。',en:'Supermicro and NVIDIA collaboration focuses on faster time-to-market and scalable AI infrastructure deployment.',comments:comments10},
+  {ticker:'NVDA',name:'NVIDIA',id:'@nvidia',time:'情绪观察',url:'https://x.com/nvidia',zh:'GTC 相关内容持续高互动，虽偏活动运营，但可作为产业关注度与开发者生态热度的先行情绪指标。',en:'GTC-related campaign posts continue drawing strong engagement, reflecting sustained developer and ecosystem attention.',comments:comments10}
+].slice(0,50);
 
-  <article class="tweet"><div class="avatar">V</div><div class="main">
-    <div class="head"><span class="name">Vlad Tenev</span><span class="id">@vladtenev</span><span class="dot">·</span><span class="time">持续有效</span></div>
-    <span class="ticker">HOOD</span>
-    <div class="text">管理层再次强调“代币化将打开 7x24 市场”。投资含义：HOOD 从传统券商向链上资产交易基础设施升级的长期路径清晰。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">"Tokenization will unlock 24/7 markets, and once people experience it, they'll never go back."</div></details>
-    <div class="actions"><a class="act" href="https://x.com/vladtenev/status/1988039525097173249/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/vladtenev/status/1988039525097173249" target="_blank">🔁 转发</a><a class="act" href="https://x.com/vladtenev/status/1988039525097173249" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/vladtenev/status/1988039525097173249" target="_blank">📊 浏览</a><a class="act" href="https://x.com/vladtenev/status/1988039525097173249" target="_blank">↗ 原帖</a></div>
-  </div></article>
+const feed = document.getElementById('feed');
+const drawer = document.getElementById('drawer');
+const detail = document.getElementById('detail');
+const backBtn = document.getElementById('backBtn');
 
-  <article class="tweet"><div class="avatar">U</div><div class="main">
-    <div class="head"><span class="name">USDC</span><span class="id">@USDC</span><span class="dot">·</span><span class="time">近24h</span></div>
-    <span class="ticker">USDC</span>
-    <div class="text">AI Agent 黑客松公布量化结果：204 份有效提交、1,352 投票、9,712 评论、$30,000 USDC 奖励。投资含义：USDC 在 AI 原生经济中的激励与结算场景得到实证。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">The world’s first hackathon run entirely by AI agents, powered by USDC: 204 valid submissions, 1,352 votes, 9,712 comments, $30,000 USDC.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/USDC/status/2021625822294216977/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/USDC/status/2021625822294216977" target="_blank">🔁 转发</a><a class="act" href="https://x.com/USDC/status/2021625822294216977" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/USDC/status/2021625822294216977" target="_blank">📊 浏览</a><a class="act" href="https://x.com/USDC/status/2021625822294216977" target="_blank">↗ 原帖</a></div>
-  </div></article>
+feed.innerHTML = posts.map((p,i)=>`
+<article class="tweet">
+  <div class="avatar">${p.name[0]}</div>
+  <div class="main">
+    <div class="head"><span class="name">${p.name}</span><span class="id">${p.id}</span><span class="dot">·</span><span class="time">${p.time}</span></div>
+    <span class="ticker">${p.ticker}</span>
+    <div class="zh">${p.zh}</div>
+    <details><summary>查看英文原文（折叠）</summary><div class="en">${p.en}</div></details>
+    <div class="actions">
+      <button class="act" data-open="${i}">💬 评论</button>
+      <a class="act" href="${p.url}" target="_blank" rel="noreferrer">🔁 转发</a>
+      <a class="act" href="${p.url}" target="_blank" rel="noreferrer">❤️ 喜欢</a>
+      <a class="act" href="${p.url}" target="_blank" rel="noreferrer">📊 浏览</a>
+      <a class="act" href="${p.url}" target="_blank" rel="noreferrer">↗ 原帖</a>
+    </div>
+  </div>
+</article>`).join('');
 
-  <article class="tweet"><div class="avatar">C</div><div class="main">
-    <div class="head"><span class="name">Circle</span><span class="id">@circle</span><span class="dot">·</span><span class="time">生态进展</span></div>
-    <span class="ticker">USDC</span>
-    <div class="text">Circle 延续“原生 USDC + 跨链传输（CCTP）+ 生态投资”路线。投资含义：稳定币网络效应由单链支付扩展至多链流动性与结算层。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">Native USDC and CCTP integrations continue across emerging chains, with ecosystem investment to accelerate adoption.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/circle/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/circle" target="_blank">🔁 转发</a><a class="act" href="https://x.com/circle" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/circle" target="_blank">📊 浏览</a><a class="act" href="https://x.com/circle" target="_blank">↗ 原帖</a></div>
-  </div></article>
+function openComments(idx){
+  const p = posts[idx];
+  detail.innerHTML = `
+  <article class="tweet" style="border-bottom:8px solid #f7f9f9">
+    <div class="avatar">${p.name[0]}</div>
+    <div class="main">
+      <div class="head"><span class="name">${p.name}</span><span class="id">${p.id}</span><span class="dot">·</span><span class="time">${p.time}</span></div>
+      <span class="ticker">${p.ticker}</span>
+      <div class="zh">${p.zh}</div>
+      <details><summary>查看英文原文（折叠）</summary><div class="en">${p.en}</div></details>
+    </div>
+  </article>
+  ${p.comments.map(c=>`
+    <article class="comment">
+      <div class="avatar" style="width:36px;height:36px;flex-basis:36px">${c.name[0]}</div>
+      <div class="c-body">
+        <div class="c-head"><span class="c-name">${c.name}</span><span class="c-id">${c.id}</span><span class="c-time">· ${c.time}</span></div>
+        <div class="c-zh">${c.zh}</div>
+        <details><summary>查看英文（折叠）</summary><div class="en">${c.en}</div></details>
+      </div>
+    </article>`).join('')}`;
+  drawer.classList.add('open');
+  drawer.setAttribute('aria-hidden','false');
+}
+function closeComments(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');}
 
-  <article class="tweet"><div class="avatar">N</div><div class="main">
-    <div class="head"><span class="name">NVIDIA Data Center</span><span class="id">@NVIDIADC</span><span class="dot">·</span><span class="time">近24h</span></div>
-    <span class="ticker">NVDA</span>
-    <div class="text">NVIDIA 与 SK hynix 基于 PhysicsNeMo 推动半导体研发提速。投资含义：NVDA 从“卖算力”外溢到“研发方法学平台”，产业链黏性增强。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">NVIDIA and SK hynix use PhysicsNeMo to accelerate semiconductor R&D and simulation workflows.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/NVIDIADC/status/2021298122987635068/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/NVIDIADC/status/2021298122987635068" target="_blank">🔁 转发</a><a class="act" href="https://x.com/NVIDIADC/status/2021298122987635068" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/NVIDIADC/status/2021298122987635068" target="_blank">📊 浏览</a><a class="act" href="https://x.com/NVIDIADC/status/2021298122987635068" target="_blank">↗ 原帖</a></div>
-  </div></article>
-
-  <article class="tweet"><div class="avatar">N</div><div class="main">
-    <div class="head"><span class="name">NVIDIA Data Center</span><span class="id">@NVIDIADC</span><span class="dot">·</span><span class="time">近24h</span></div>
-    <span class="ticker">NVDA</span>
-    <div class="text">NVIDIA 与 Samsung 在智能制造方向推进 AI factory。投资含义：AI 基础设施需求由互联网行业继续扩散到工业制造端。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">NVIDIA and Samsung collaborate on AI factory initiatives for advanced manufacturing and automation.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/NVIDIADC/status/2021337380184051848/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/NVIDIADC/status/2021337380184051848" target="_blank">🔁 转发</a><a class="act" href="https://x.com/NVIDIADC/status/2021337380184051848" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/NVIDIADC/status/2021337380184051848" target="_blank">📊 浏览</a><a class="act" href="https://x.com/NVIDIADC/status/2021337380184051848" target="_blank">↗ 原帖</a></div>
-  </div></article>
-
-  <article class="tweet"><div class="avatar">S</div><div class="main">
-    <div class="head"><span class="name">Supermicro</span><span class="id">@Supermicro</span><span class="dot">·</span><span class="time">高相关</span></div>
-    <span class="ticker">SMCI</span>
-    <div class="text">Supermicro 强调与 NVIDIA 联合加速 AI 平台落地，核心在“更快交付 + 规模化部署”。投资含义：SMCI 收入兑现节奏与 NVDA 供应链景气同步性较高。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">Supermicro and NVIDIA collaboration focuses on faster time-to-market and scalable AI infrastructure deployment.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/Supermicro/status/2014759858898169974/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/Supermicro/status/2014759858898169974" target="_blank">🔁 转发</a><a class="act" href="https://x.com/Supermicro/status/2014759858898169974" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/Supermicro/status/2014759858898169974" target="_blank">📊 浏览</a><a class="act" href="https://x.com/Supermicro/status/2014759858898169974" target="_blank">↗ 原帖</a></div>
-  </div></article>
-
-  <article class="tweet"><div class="avatar">N</div><div class="main">
-    <div class="head"><span class="name">NVIDIA</span><span class="id">@nvidia</span><span class="dot">·</span><span class="time">情绪观察</span></div>
-    <span class="ticker">NVDA</span>
-    <div class="text">GTC 相关内容持续高互动，虽偏活动运营，但可作为产业关注度与开发者生态热度的先行情绪指标。</div>
-    <details><summary>查看英文原文（折叠）</summary><div class="en">GTC-related campaign posts continue drawing strong engagement, reflecting sustained developer and ecosystem attention.</div></details>
-    <div class="actions"><a class="act" href="https://x.com/nvidia/replies" target="_blank">💬 评论</a><a class="act" href="https://x.com/nvidia" target="_blank">🔁 转发</a><a class="act" href="https://x.com/nvidia" target="_blank">❤️ 喜欢</a><a class="act" href="https://x.com/nvidia" target="_blank">📊 浏览</a><a class="act" href="https://x.com/nvidia" target="_blank">↗ 原帖</a></div>
-  </div></article>
-
-  <div class="bottom"><span>⌂</span><span>⌕</span><span>◎</span><span>🔔</span><span>✉</span></div>
-</div>
+feed.addEventListener('click',e=>{const btn=e.target.closest('[data-open]');if(btn)openComments(+btn.dataset.open)});
+backBtn.addEventListener('click',closeComments);
+</script>
 </body>
 </html>
