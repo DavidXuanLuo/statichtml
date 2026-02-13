@@ -3,7 +3,7 @@
   "month": "2026-02",
   "currency": "CNY",
   "unit": "yuan",
-  "method": "estimate_gmv = (low_gmv + high_gmv) / 2; 同日同直播间多场次按区间求和；仅统计关键词“东方甄选”检索命中",
+  "method": "estimate_gmv = (low_gmv + high_gmv) / 2; 同日同直播间多场次按区间求和；仅统计关键词“东方甄选”检索命中；\"--\"不计入GMV",
   "source": "蝉妈妈 liveRank 关键词=东方甄选 时间筛选=近7天",
   "rooms": [
     "东方甄选",
@@ -14,6 +14,7 @@
     "东方甄选果蔬旗舰店",
     "东方甄选生活馆",
     "东方甄选生鲜",
+    "东方甄选看世界",
     "东方甄选美丽生活",
     "东方甄选自营产品",
     "东方甄选萌宠生活",
@@ -23,25 +24,76 @@
   ],
   "days": [
     {
-      "date": "2026-02-09",
-      "total": {"low_gmv": 3850000, "high_gmv": 7750000, "estimate_gmv": 5800000},
+      "date": "2026-02-07",
+      "total": {"low_gmv": 32700000, "high_gmv": 72250000, "estimate_gmv": 52475000},
       "rooms": [
-        {"room_name":"东方甄选","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选亲子成长","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
+        {"room_name":"东方甄选","low_gmv":10000000,"high_gmv":25000000,"estimate_gmv":17500000},
+        {"room_name":"东方甄选亲子成长","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
+        {"room_name":"东方甄选天下溯源","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},
+        {"room_name":"东方甄选家居馆","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},
+        {"room_name":"东方甄选服饰","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},
+        {"room_name":"东方甄选果蔬旗舰店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},
+        {"room_name":"东方甄选生活馆","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},
+        {"room_name":"东方甄选生鲜","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
+        {"room_name":"东方甄选看世界","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
+        {"room_name":"东方甄选美丽生活","low_gmv":10000000,"high_gmv":25000000,"estimate_gmv":17500000},
+        {"room_name":"东方甄选自营产品","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},
+        {"room_name":"东方甄选萌宠生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
+        {"room_name":"东方甄选营养健康","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
+        {"room_name":"东方甄选诗酒人生","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},
+        {"room_name":"东方甄选零食速食","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000}
+      ],
+      "has_visible_record": true,
+      "valid_rows": 13,
+      "total_rows": 13
+    },
+    {
+      "date": "2026-02-08",
+      "total": {"low_gmv": 30475000, "high_gmv": 70550000, "estimate_gmv": 50512500},
+      "rooms": [
+        {"room_name":"东方甄选","low_gmv":10000000,"high_gmv":25000000,"estimate_gmv":17500000},
+        {"room_name":"东方甄选亲子成长","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
+        {"room_name":"东方甄选天下溯源","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
+        {"room_name":"东方甄选家居馆","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},
+        {"room_name":"东方甄选服饰","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
+        {"room_name":"东方甄选果蔬旗舰店","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},
+        {"room_name":"东方甄选生活馆","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},
+        {"room_name":"东方甄选生鲜","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
+        {"room_name":"东方甄选看世界","low_gmv":625000,"high_gmv":1050000,"estimate_gmv":837500},
+        {"room_name":"东方甄选美丽生活","low_gmv":10000000,"high_gmv":25000000,"estimate_gmv":17500000},
+        {"room_name":"东方甄选自营产品","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
+        {"room_name":"东方甄选萌宠生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
+        {"room_name":"东方甄选营养健康","low_gmv":600000,"high_gmv":1000000,"estimate_gmv":800000},
+        {"room_name":"东方甄选诗酒人生","low_gmv":1250000,"high_gmv":3000000,"estimate_gmv":2125000},
+        {"room_name":"东方甄选零食速食","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000}
+      ],
+      "has_visible_record": true,
+      "valid_rows": 16,
+      "total_rows": 19
+    },
+    {
+      "date": "2026-02-09",
+      "total": {"low_gmv": 29210000, "high_gmv": 58275000, "estimate_gmv": 43742500},
+      "rooms": [
+        {"room_name":"东方甄选","low_gmv":10000000,"high_gmv":25000000,"estimate_gmv":17500000},
+        {"room_name":"东方甄选亲子成长","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
         {"room_name":"东方甄选天下溯源","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选家居馆","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000},
         {"room_name":"东方甄选服饰","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
-        {"room_name":"东方甄选果蔬旗舰店","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选生活馆","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选生鲜","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选美丽生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选自营产品","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选萌宠生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
-        {"room_name":"东方甄选营养健康","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},
+        {"room_name":"东方甄选果蔬旗舰店","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
+        {"room_name":"东方甄选生活馆","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
+        {"room_name":"东方甄选生鲜","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},
+        {"room_name":"东方甄选看世界","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},
+        {"room_name":"东方甄选美丽生活","low_gmv":3500000,"high_gmv":7500000,"estimate_gmv":5500000},
+        {"room_name":"东方甄选自营产品","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},
+        {"room_name":"东方甄选萌宠生活","low_gmv":10000,"high_gmv":25000,"estimate_gmv":17500},
+        {"room_name":"东方甄选营养健康","low_gmv":500000,"high_gmv":1000000,"estimate_gmv":750000},
         {"room_name":"东方甄选诗酒人生","low_gmv":1100000,"high_gmv":2750000,"estimate_gmv":1925000},
         {"room_name":"东方甄选零食速食","low_gmv":750000,"high_gmv":1000000,"estimate_gmv":875000}
       ],
-      "has_visible_record": true
+      "has_visible_record": true,
+      "valid_rows": 17,
+      "total_rows": 17
     },
     {
       "date": "2026-02-10",
@@ -55,6 +107,7 @@
         {"room_name":"东方甄选果蔬旗舰店","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
         {"room_name":"东方甄选生活馆","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},
         {"room_name":"东方甄选生鲜","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},
+        {"room_name":"东方甄选看世界","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选美丽生活","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},
         {"room_name":"东方甄选自营产品","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
         {"room_name":"东方甄选萌宠生活","low_gmv":50000,"high_gmv":75000,"estimate_gmv":62500},
@@ -62,7 +115,9 @@
         {"room_name":"东方甄选诗酒人生","low_gmv":10000000,"high_gmv":25000000,"estimate_gmv":17500000},
         {"room_name":"东方甄选零食速食","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000}
       ],
-      "has_visible_record": true
+      "has_visible_record": true,
+      "valid_rows": 15,
+      "total_rows": 15
     },
     {
       "date": "2026-02-11",
@@ -76,6 +131,7 @@
         {"room_name":"东方甄选果蔬旗舰店","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选生活馆","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
         {"room_name":"东方甄选生鲜","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
+        {"room_name":"东方甄选看世界","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选美丽生活","low_gmv":5000000,"high_gmv":7500000,"estimate_gmv":6250000},
         {"room_name":"东方甄选自营产品","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
         {"room_name":"东方甄选萌宠生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
@@ -83,7 +139,9 @@
         {"room_name":"东方甄选诗酒人生","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
         {"room_name":"东方甄选零食速食","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000}
       ],
-      "has_visible_record": true
+      "has_visible_record": true,
+      "valid_rows": 13,
+      "total_rows": 13
     },
     {
       "date": "2026-02-12",
@@ -97,6 +155,7 @@
         {"room_name":"东方甄选果蔬旗舰店","low_gmv":75000,"high_gmv":100000,"estimate_gmv":87500},
         {"room_name":"东方甄选生活馆","low_gmv":250000,"high_gmv":500000,"estimate_gmv":375000},
         {"room_name":"东方甄选生鲜","low_gmv":850000,"high_gmv":1250000,"estimate_gmv":1050000},
+        {"room_name":"东方甄选看世界","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选美丽生活","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
         {"room_name":"东方甄选自营产品","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
         {"room_name":"东方甄选萌宠生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
@@ -104,7 +163,9 @@
         {"room_name":"东方甄选诗酒人生","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选零食速食","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"}
       ],
-      "has_visible_record": true
+      "has_visible_record": true,
+      "valid_rows": 10,
+      "total_rows": 10
     },
     {
       "date": "2026-02-13",
@@ -118,6 +179,7 @@
         {"room_name":"东方甄选果蔬旗舰店","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选生活馆","low_gmv":100000,"high_gmv":250000,"estimate_gmv":175000},
         {"room_name":"东方甄选生鲜","low_gmv":1000000,"high_gmv":2500000,"estimate_gmv":1750000},
+        {"room_name":"东方甄选看世界","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选美丽生活","low_gmv":500000,"high_gmv":750000,"estimate_gmv":625000},
         {"room_name":"东方甄选自营产品","low_gmv":2500000,"high_gmv":5000000,"estimate_gmv":3750000},
         {"room_name":"东方甄选萌宠生活","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
@@ -125,16 +187,19 @@
         {"room_name":"东方甄选诗酒人生","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"},
         {"room_name":"东方甄选零食速食","low_gmv":null,"high_gmv":null,"estimate_gmv":null,"record_status":"not_found"}
       ],
-      "has_visible_record": true
+      "has_visible_record": true,
+      "valid_rows": 6,
+      "total_rows": 6
     }
   ],
-  "month_to_date_total": {"low_gmv": 87900000, "high_gmv": 184775000, "estimate_gmv": 136337500},
+  "month_to_date_total": {"low_gmv": 176435000, "high_gmv": 378100000, "estimate_gmv": 277267500},
   "meta": {
     "time_filter": "近7天",
-    "pages_traversed": 1,
-    "total_rows_captured": 50,
+    "pages_traversed": 2,
+    "total_rows_captured": 93,
+    "dedup_rows": 93,
     "keyword": "东方甄选",
-    "note": "当前为可见页抓取，后续可扩展翻页补全月度"
+    "note": "已翻页抓取当前检索结果全部分页；含无销售额区间记录（\"--\"）但不计入GMV"
   },
-  "updated_at": "2026/2/13 17:45:34 GMT+8"
+  "updated_at": "2026/2/13 17:54:06 GMT+8"
 }
