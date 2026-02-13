@@ -13,10 +13,9 @@ body{margin:0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Sego
 .bar{height:52px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}
 .tabs{display:flex;height:46px}.tab{flex:1;text-align:center;font-size:15px;color:var(--sub);padding-top:14px;position:relative}.tab.on{font-weight:700;color:var(--text)}.tab.on:after{content:"";position:absolute;left:34%;right:34%;bottom:0;height:4px;border-radius:999px;background:var(--blue)}
 .page{display:none}.page.on{display:block}
-.card{position:relative;display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
-.card-link{position:absolute;inset:0;z-index:1}
+.card{position:relative;display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
 .av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 40px;background:#eef3f5}
-.main{min-width:0;flex:1;position:relative;z-index:2}
+.main{min-width:0;flex:1;position:relative}
 .head{display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden}
 .name{font-weight:700;font-size:15px;overflow:hidden;text-overflow:ellipsis}
 .handle,.time,.dot{color:var(--sub);font-size:15px}
@@ -74,8 +73,7 @@ function actions(c,i){
 
 function row(p,i){
   return `<article class="card" data-i="${i}">
-    <a class="card-link js-open" data-i="${i}" aria-label="查看帖子详情"></a>
-    <img class="av" src="${esc(p.avatar)}" alt="${esc(p.name)}" loading="lazy" referrerpolicy="no-referrer"/>
+    <img class="av" src="${esc(p.avatar)}" alt="${esc(p.name)}" loading="lazy"/>
     <div class="main">
       <div class="head"><span class="name">${esc(p.name)}</span><span class="handle">${esc(p.handle)}</span><span class="dot">·</span><span class="time">${d(p.time)}</span></div>
       <div class="zh">${esc(p.zh)}</div>
@@ -87,7 +85,7 @@ function row(p,i){
 
 function commentRow(c){
   return `<article class="comment">
-    <img class="av" src="${esc(c.avatar)}" alt="${esc(c.name)}" loading="lazy" referrerpolicy="no-referrer"/>
+    <img class="av" src="${esc(c.avatar)}" alt="${esc(c.name)}" loading="lazy"/>
     <div class="main">
       <div class="head"><span class="name">${esc(c.name)}</span><span class="handle">${esc(c.handle)}</span><span class="dot">·</span><span class="time">${d(c.time)}</span></div>
       <div class="zh">${esc(c.zh)}</div>
@@ -115,8 +113,11 @@ function showDetail(i,push){
 }
 
 feed.addEventListener('click',e=>{
+  if(e.target.closest('details')) return;
   const btn=e.target.closest('.js-open');
-  if(btn){e.preventDefault();showDetail(+btn.dataset.i,true)}
+  if(btn){e.preventDefault();e.stopPropagation();showDetail(+btn.dataset.i,true);return}
+  const card=e.target.closest('.card');
+  if(card){showDetail(+card.dataset.i,true)}
 });
 
 detail.addEventListener('click',e=>{
