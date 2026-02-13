@@ -5,136 +5,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>X</title>
 <style>
-:root{--bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;--green:#00ba7c;--pink:#f91880;--icon:#536471}
+:root{--bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;--green:#00ba7c;--pink:#f91880}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC",sans-serif;color:var(--text)}
-.app{max-width:430px;margin:0 auto;min-height:100vh;border-left:1px solid var(--line);border-right:1px solid var(--line);background:#fff}
-.top{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);z-index:20;border-bottom:1px solid var(--line)}
-.bar{height:52px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}
-.tabs{display:flex;height:46px}.tab{flex:1;text-align:center;font-size:15px;color:var(--sub);padding-top:14px;position:relative}.tab.on{font-weight:700;color:var(--text)}.tab.on:after{content:"";position:absolute;left:34%;right:34%;bottom:0;height:4px;border-radius:999px;background:var(--blue)}
+body{margin:0;background:#fff;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC",sans-serif}
+.app{max-width:430px;margin:0 auto;min-height:100vh;background:#fff;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{height:52px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}
+.tabs{height:46px;display:flex}.tab{flex:1;text-align:center;font-size:15px;color:var(--sub);padding-top:14px;position:relative}.tab.on{color:var(--text);font-weight:700}.tab.on::after{content:"";position:absolute;left:34%;right:34%;bottom:0;height:4px;border-radius:99px;background:var(--blue)}
 .page{display:none}.page.on{display:block}
-.card{position:relative;display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
-.av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 40px;background:#eef3f5}
-.main{min-width:0;flex:1;position:relative}
-.head{display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden}
-.name{font-weight:700;font-size:15px;overflow:hidden;text-overflow:ellipsis}
-.handle,.time,.dot{color:var(--sub);font-size:15px}
-.zh{margin-top:4px;white-space:pre-wrap;font-size:17px;line-height:1.35;word-break:break-word}
-details{margin-top:7px}
-summary{color:var(--blue);font-size:13px;cursor:pointer;list-style:none;width:max-content;position:relative;z-index:3}
-summary::-webkit-details-marker{display:none}
-.en{margin-top:6px;color:#4b5f6a;font-size:13px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
-.actions{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:10px;align-items:center;color:var(--icon);font-size:13px}
-.action{display:inline-flex;align-items:center;gap:4px;width:max-content;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;position:relative;z-index:3}
-.action .i{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;transition:.15s ease}
-.action svg{width:18px;height:18px;fill:currentColor}
-.action .n{font-size:12px;line-height:1}
-.action.reply:hover{color:var(--blue)}.action.reply:hover .i{background:rgba(29,155,240,.1)}
-.action.rt:hover{color:var(--green)}.action.rt:hover .i{background:rgba(0,186,124,.12)}
-.action.like:hover{color:var(--pink)}.action.like:hover .i{background:rgba(249,24,128,.1)}
-.action.view:hover,.action.share:hover{color:#1f2d3d}.action.view:hover .i,.action.share:hover .i{background:rgba(15,20,25,.08)}
-.dtop{position:sticky;top:0;height:52px;display:flex;align-items:center;gap:14px;padding:0 12px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(10px);z-index:20}
-.back{border:0;background:none;font-size:22px;cursor:pointer;width:32px;height:32px;border-radius:50%}.back:hover{background:rgba(15,20,25,.08)}
-.tt{font-size:20px;font-weight:700}
-.sep{height:8px;background:#f7f9f9;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.comment{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
-.comment .av{width:36px;height:36px;flex-basis:36px}
+.tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;background:#eef3f5;flex:0 0 40px}
+.main{min-width:0;flex:1}
+.head{display:flex;align-items:center;gap:4px;min-width:0;font-size:15px;line-height:1.25}
+.name{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46%}
+.handle,.dot,.time{color:var(--sub)}
+.text{margin-top:3px;white-space:pre-wrap;word-break:break-word;font-size:17px;line-height:1.36}
+.media{margin-top:10px;display:grid;gap:2px;border-radius:16px;overflow:hidden;border:1px solid #cfd9de;background:#f7f9f9}
+.media.one{grid-template-columns:1fr}
+.media.two{grid-template-columns:1fr 1fr}
+.media.three{grid-template-columns:1fr 1fr}.media.three .m:first-child{grid-row:span 2}
+.media.four{grid-template-columns:1fr 1fr}
+.m{aspect-ratio:16/10;overflow:hidden;background:#dde5ea}
+.m img{width:100%;height:100%;object-fit:cover;display:block}
+.m.video::after{content:"▶";position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.6);color:#fff;border-radius:999px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:12px}
+.m{position:relative}
+details{margin-top:8px}summary{list-style:none;color:var(--blue);font-size:13px;cursor:pointer;width:max-content}summary::-webkit-details-marker{display:none}
+.orig{margin-top:6px;color:#4b5f6a;font-size:13px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
+.actions{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:10px;font-size:13px;color:var(--sub)}
+.a{display:inline-flex;align-items:center;gap:4px;width:max-content;border:0;background:none;padding:0;color:inherit;cursor:pointer}
+.a .i{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px}.a svg{width:18px;height:18px;fill:currentColor}.a .n{font-size:12px}
+.a.reply:hover{color:var(--blue)}.a.rt:hover{color:var(--green)}.a.like:hover{color:var(--pink)}
+.detail-top{position:sticky;top:0;z-index:35;height:52px;display:flex;align-items:center;gap:14px;padding:0 12px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}
+.back{border:0;background:none;font-size:22px;cursor:pointer;width:32px;height:32px;border-radius:50%}
+.title{font-size:20px;font-weight:700}
+.sep{height:1px;background:var(--line)}
+.subtle{height:8px;background:#f7f9f9;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.comment{cursor:default}
+.comment .avatar{width:36px;height:36px;flex-basis:36px}
 </style>
 </head>
 <body>
 <div class="app">
-  <div class="top"><div class="bar">𝕏</div><div class="tabs"><div class="tab on">为你推荐</div><div class="tab">正在关注</div></div></div>
+  <div class="top" id="feedTop"><div class="logo">𝕏</div><div class="tabs"><div class="tab on">为你推荐</div><div class="tab">正在关注</div></div></div>
   <section id="feed" class="page on"></section>
   <section id="detail" class="page"></section>
 </div>
 <script>
 let posts=[];
-const feed=document.getElementById('feed'),detail=document.getElementById('detail');
+const feed=document.getElementById('feed'),detail=document.getElementById('detail'),feedTop=document.getElementById('feedTop');
 const esc=s=>String(s||'').replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
 const d=s=>new Date(s).toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'});
-
-const icons={
-reply:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.75 10c0-4.42 3.58-8 8-8h4.5c4.42 0 8 3.58 8 8v4c0 4.42-3.58 8-8 8H9.75c-4.42 0-8-3.58-8-8v-4zm8-6a6 6 0 0 0-6 6v4a6 6 0 0 0 6 6h4.5a6 6 0 0 0 6-6v-4a6 6 0 0 0-6-6h-4.5z"></path></svg>',
-rt:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.75a.75.75 0 0 1 .75.75V15h12.19l-1.97-1.97a.75.75 0 1 1 1.06-1.06l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 1 1-1.06-1.06l1.97-1.97H4.5a.75.75 0 0 1-.75-.75V4.5a.75.75 0 0 1 .75-.75zm15-1.5a.75.75 0 0 1 .75.75V13.5a.75.75 0 0 1-1.5 0V3h-12.2l1.98 1.97a.75.75 0 1 1-1.06 1.06L4.22 2.78a.75.75 0 0 1 0-1.06L7.47-1.53a.75.75 0 1 1 1.06 1.06L6.55 1.5H19.5z" transform="translate(0 2)"></path></svg>',
-like:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.697 5.5c-1.222 0-2.44.493-3.347 1.426L12 8.273l-1.35-1.347C9.743 5.993 8.525 5.5 7.303 5.5 4.59 5.5 2.5 7.59 2.5 10.303c0 1.6.69 3.137 1.9 4.227l6.98 6.317a1 1 0 0 0 1.24 0l6.98-6.317a5.7 5.7 0 0 0 1.9-4.227c0-2.713-2.09-4.803-4.803-4.803z"></path></svg>',
-view:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.75A2.75 2.75 0 0 1 5.75 3h12.5A2.75 2.75 0 0 1 21 5.75v12.5A2.75 2.75 0 0 1 18.25 21H5.75A2.75 2.75 0 0 1 3 18.25V5.75zm2.75-1.25c-.69 0-1.25.56-1.25 1.25v12.5c0 .69.56 1.25 1.25 1.25h12.5c.69 0 1.25-.56 1.25-1.25V5.75c0-.69-.56-1.25-1.25-1.25H5.75zM7 15.5l2.7-3.6 2 2.2 3-4.1L17 13.2V17H7v-1.5z"></path></svg>',
-share:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.59 2.59a2 2 0 0 1 2.82 0l5 5a2 2 0 0 1-2.82 2.82L14 6.83V15a1 1 0 1 1-2 0V6.83l-3.59 3.58A2 2 0 0 1 5.59 7.6l5-5zM5 13a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a1 1 0 1 1 2 0v4a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-4a1 1 0 0 1 1-1z"></path></svg>'
-};
-
-function actions(c,i){
-  return `<div class="actions">
-    <button class="action reply js-open" data-i="${i}" aria-label="回复"><span class="i">${icons.reply}</span><span class="n">${esc(c.reply||'')}</span></button>
-    <button class="action rt" aria-label="转发"><span class="i">${icons.rt}</span><span class="n">${esc(c.repost||'')}</span></button>
-    <button class="action like" aria-label="点赞"><span class="i">${icons.like}</span><span class="n">${esc(c.like||'')}</span></button>
-    <button class="action view" aria-label="浏览"><span class="i">${icons.view}</span><span class="n">${esc(c.view||'')}</span></button>
-    <button class="action share" aria-label="分享"><span class="i">${icons.share}</span></button>
-  </div>`;
+const ic={reply:'<svg viewBox="0 0 24 24"><path d="M1.75 10c0-4.42 3.58-8 8-8h4.5c4.42 0 8 3.58 8 8v4c0 4.42-3.58 8-8 8H9.75c-4.42 0-8-3.58-8-8v-4zm8-6a6 6 0 0 0-6 6v4a6 6 0 0 0 6 6h4.5a6 6 0 0 0 6-6v-4a6 6 0 0 0-6-6h-4.5z"></path></svg>',rt:'<svg viewBox="0 0 24 24"><path d="M4.5 3.75a.75.75 0 0 1 .75.75V15h12.19l-1.97-1.97a.75.75 0 1 1 1.06-1.06l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 1 1-1.06-1.06l1.97-1.97H4.5a.75.75 0 0 1-.75-.75V4.5a.75.75 0 0 1 .75-.75zm15-1.5a.75.75 0 0 1 .75.75V13.5a.75.75 0 0 1-1.5 0V3h-12.2l1.98 1.97a.75.75 0 1 1-1.06 1.06L4.22 2.78a.75.75 0 0 1 0-1.06L7.47-1.53a.75.75 0 1 1 1.06 1.06L6.55 1.5H19.5z" transform="translate(0 2)"></path></svg>',like:'<svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222 0-2.44.493-3.347 1.426L12 8.273l-1.35-1.347C9.743 5.993 8.525 5.5 7.303 5.5 4.59 5.5 2.5 7.59 2.5 10.303c0 1.6.69 3.137 1.9 4.227l6.98 6.317a1 1 0 0 0 1.24 0l6.98-6.317a5.7 5.7 0 0 0 1.9-4.227c0-2.713-2.09-4.803-4.803-4.803z"></path></svg>',view:'<svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zm4.5-6V3h2v12h-2zm4.5 6V3h2v18h-2zM4.25 12V3h2v9h-2z"></path></svg>',share:'<svg viewBox="0 0 24 24"><path d="M12.59 2.59a2 2 0 0 1 2.82 0l5 5a2 2 0 0 1-2.82 2.82L14 6.83V15a1 1 0 1 1-2 0V6.83l-3.59 3.58A2 2 0 0 1 5.59 7.6l5-5zM5 13a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a1 1 0 1 1 2 0v4a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-4a1 1 0 0 1 1-1z"></path></svg>'};
+function mediaGrid(arr){
+  arr=(arr||[]).slice(0,4); if(!arr.length) return '';
+  const cls=['one','two','three','four'][Math.min(arr.length,4)-1];
+  return `<div class="media ${cls}">${arr.map(m=>`<div class="m ${m.type==='video'?'video':''}"><img src="${esc(m.url)}" loading="lazy"/></div>`).join('')}</div>`;
 }
-
-function row(p,i){
-  return `<article class="card" data-i="${i}">
-    <img class="av" src="${esc(p.avatar)}" alt="${esc(p.name)}" loading="lazy"/>
-    <div class="main">
-      <div class="head"><span class="name">${esc(p.name)}</span><span class="handle">${esc(p.handle)}</span><span class="dot">·</span><span class="time">${d(p.time)}</span></div>
-      <div class="zh">${esc(p.zh)}</div>
-      <details><summary>原文</summary><div class="en">${esc(p.text)}</div></details>
-      ${actions(p.counts||{},i)}
-    </div>
-  </article>`;
-}
-
-function commentRow(c){
-  return `<article class="comment">
-    <img class="av" src="${esc(c.avatar)}" alt="${esc(c.name)}" loading="lazy"/>
-    <div class="main">
-      <div class="head"><span class="name">${esc(c.name)}</span><span class="handle">${esc(c.handle)}</span><span class="dot">·</span><span class="time">${d(c.time)}</span></div>
-      <div class="zh">${esc(c.zh)}</div>
-      <details><summary>原文</summary><div class="en">${esc(c.text)}</div></details>
-      ${actions(c.counts||{},-1)}
-    </div>
-  </article>`;
-}
-
-function showFeed(){
-  detail.classList.remove('on');
-  feed.classList.add('on');
-  document.querySelector('.top').style.display='block';
-}
-
-function showDetail(i,push){
-  const p=posts[i]; if(!p) return;
-  detail.innerHTML=`<div class="dtop"><button class="back" id="back" aria-label="返回">←</button><div class="tt">帖子</div></div>${row(p,i)}<div class="sep"></div>${(p.comments||[]).map(commentRow).join('')}`;
-  feed.classList.remove('on');
-  detail.classList.add('on');
-  document.querySelector('.top').style.display='none';
+function actions(c,i){return `<div class="actions">
+  <button class="a reply js-open" data-i="${i}"><span class="i">${ic.reply}</span><span class="n">${esc(c.reply||'')}</span></button>
+  <button class="a rt"><span class="i">${ic.rt}</span><span class="n">${esc(c.repost||'')}</span></button>
+  <button class="a like"><span class="i">${ic.like}</span><span class="n">${esc(c.like||'')}</span></button>
+  <button class="a"><span class="i">${ic.view}</span><span class="n">${esc(c.view||'')}</span></button>
+  <button class="a"><span class="i">${ic.share}</span></button></div>`}
+function tweet(p,i,comment){return `<article class="tweet ${comment?'comment':''}" data-i="${i}">
+  <img class="avatar" src="${esc(p.avatar)}" alt="${esc(p.name)}" loading="lazy"/>
+  <div class="main">
+    <div class="head"><span class="name">${esc(p.name)}</span><span class="handle">${esc(p.handle)}</span><span class="dot">·</span><span class="time">${d(p.time)}</span></div>
+    <div class="text">${esc(p.zh||p.text||'')}</div>
+    ${mediaGrid(p.media)}
+    <details><summary>原文</summary><div class="orig">${esc(p.text||'')}</div></details>
+    ${actions(p.counts||{},i)}
+  </div></article>`}
+function feedView(){detail.classList.remove('on');feed.classList.add('on');feedTop.style.display='block';}
+function detailView(i,push){const p=posts[i];if(!p)return;
+  detail.innerHTML=`<div class="detail-top"><button class="back" id="back">←</button><div class="title">帖子</div></div>${tweet(p,i,false)}<div class="subtle"></div>${(p.comments||[]).map(c=>tweet(c,-1,true)).join('')}`;
+  feed.classList.remove('on');detail.classList.add('on');feedTop.style.display='none';
   if(push) history.pushState({i},'',`#post-${i}`);
   document.getElementById('back').onclick=()=>history.back();
   window.scrollTo(0,0);
 }
-
-feed.addEventListener('click',e=>{
-  if(e.target.closest('details')) return;
-  const btn=e.target.closest('.js-open');
-  if(btn){e.preventDefault();e.stopPropagation();showDetail(+btn.dataset.i,true);return}
-  const card=e.target.closest('.card');
-  if(card){showDetail(+card.dataset.i,true)}
-});
-
-detail.addEventListener('click',e=>{
-  const btn=e.target.closest('.js-open');
-  if(btn){e.preventDefault();const i=+btn.dataset.i;if(i>=0) showDetail(i,true)}
-});
-
-window.addEventListener('popstate',ev=>{
-  if(ev.state&&typeof ev.state.i==='number') showDetail(ev.state.i,false);
-  else showFeed();
-});
-
-fetch('./stocks-tweets-data.json').then(r=>r.json()).then(d=>{
-  posts=(d.posts||[]).slice(0,50).map(p=>({...p,comments:(p.comments||[]).slice(0,50)}));
-  feed.innerHTML=posts.map(row).join('');
-  if(location.hash.startsWith('#post-')){const i=+location.hash.replace('#post-','');if(!Number.isNaN(i)) showDetail(i,false)}
-});
+feed.addEventListener('click',e=>{if(e.target.closest('details'))return;const b=e.target.closest('.js-open');if(b){e.preventDefault();e.stopPropagation();detailView(+b.dataset.i,true);return;}const t=e.target.closest('.tweet');if(t)detailView(+t.dataset.i,true)});
+detail.addEventListener('click',e=>{const b=e.target.closest('.js-open');if(b){e.preventDefault();const i=+b.dataset.i;if(i>=0)detailView(i,true)}});
+window.addEventListener('popstate',ev=>{if(ev.state&&typeof ev.state.i==='number')detailView(ev.state.i,false);else feedView()});
+fetch('./stocks-tweets-data.json').then(r=>r.json()).then(j=>{posts=(j.posts||[]).slice(0,50).map(p=>({...p,comments:(p.comments||[]).slice(0,50)}));feed.innerHTML=posts.map((p,i)=>tweet(p,i,false)).join('');if(location.hash.startsWith('#post-')){const i=+location.hash.slice(6);if(!Number.isNaN(i))detailView(i,false);}})
 </script>
 </body>
 </html>

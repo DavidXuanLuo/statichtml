@@ -1,81 +1,351 @@
 {
-  "generatedAt": "2026-02-14T07:25:00+08:00",
+  "generatedAt": "2026-02-13T23:47:09.426Z",
   "posts": [
     {
       "ticker": "TSLA",
       "url": "https://x.com/TheSonOfWalkley/status/2022437219353444853",
-      "avatar": "https://pbs.twimg.com/profile_images/1719849731415846912/JDwWShW8_x96.jpg",
+      "avatar": "https://pbs.twimg.com/profile_images/1719849731415846912/JDwWShW8_normal.jpg",
       "name": "TheSonOfWalkley",
       "handle": "@TheSonOfWalkley",
       "time": "2026-02-13T22:26:22.000Z",
-      "text": "BREAKING: 6+ $TSLA CYBERCABS SPOTTED TESTING AT GIGA TEXAS\n\nThey’re coming !",
+      "text": "BREAKING: 6+ $TSLA CYBERCABS SPOTTED TESTING AT GIGA TEXAS 👀\n\nThey’re coming !\n\n https://t.co/gNEBmbFSdP",
       "zh": "突发：在得州超级工厂拍到 6 台以上 $TSLA Cybercab 正在测试。\n\n它们要来了！",
-      "counts": {"reply": "12", "repost": "32", "like": "316", "view": "6,132"},
+      "counts": {
+        "reply": "14",
+        "repost": "32",
+        "like": "379",
+        "view": "6,132"
+      },
       "comments": [
-        {"url":"https://x.com/TSLA1st/status/2022445268009128303","avatar":"https://pbs.twimg.com/profile_images/2015618827443216384/GKce_n1U_x96.jpg","name":"원기옥 모으는 잠만보Zzz","handle":"@TSLA1st","time":"2026-02-13T22:58:21.000Z","text":"I rode that car. It was so comfortable that I ended up falling asleep","zh":"我坐过那辆车，太舒服了，结果我都睡着了。","counts":{"reply":"0","repost":"0","like":"1","view":"65"}},
-        {"url":"https://x.com/v270355/status/2022437728298635281","avatar":"https://pbs.twimg.com/profile_images/1635260637310853121/-o915WtH_x96.jpg","name":"Charles Cook","handle":"@v270355","time":"2026-02-13T22:28:24.000Z","text":"I’m waiting for the BREAKING —10,000 cybercabs unleashed overnight in Austin","zh":"我在等真正的突发——奥斯汀一夜之间放出 1 万辆 Cybercab。","counts":{"reply":"0","repost":"1","like":"4","view":"163"}},
-        {"url":"https://x.com/william_R2Rclub/status/2022437976517771449","avatar":"https://pbs.twimg.com/profile_images/2013318105439543296/FITrrilj_x96.jpg","name":"William | Relax to Rich","handle":"@william_R2Rclub","time":"2026-02-13T22:29:23.000Z","text":"Tesla's CyberCabs could reshape transportation watch out for its commercialization.","zh":"特斯拉 Cybercab 可能重塑交通，接下来要重点看商业化落地。","counts":{"reply":"0","repost":"0","like":"1","view":"83"}},
-        {"url":"https://x.com/KevinPham69420/status/2022439081754730504","avatar":"https://pbs.twimg.com/profile_images/1947127633508225024/y_pq1apx_x96.png","name":"Kevin Pham","handle":"@KevinPham69420","time":"2026-02-13T22:33:46.000Z","text":"so excited for april mass production","zh":"很期待四月量产。","counts":{"reply":"0","repost":"1","like":"1","view":"61"}}
+        {
+          "url": "https://x.com/TSLA1st/status/2022445268009128303",
+          "avatar": "https://pbs.twimg.com/profile_images/2015618827443216384/GKce_n1U_normal.jpg",
+          "name": "원기옥 모으는 잠만보Zzz",
+          "handle": "@TSLA1st",
+          "time": "2026-02-13T22:58:21.000Z",
+          "text": "@TheSonOfWalkley I rode that car. It was so comfortable that I ended up falling asleep 💤🤪 https://t.co/FR2Zs7JP5j",
+          "zh": "我坐过那辆车，太舒服了，结果我都睡着了。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "65"
+          },
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2022445250153992192/pu/img/RfoGx64UVbVNdUWB.jpg",
+              "w": 752,
+              "h": 416
+            }
+          ]
+        },
+        {
+          "url": "https://x.com/v270355/status/2022437728298635281",
+          "avatar": "https://pbs.twimg.com/profile_images/1635260637310853121/-o915WtH_normal.jpg",
+          "name": "Charles Cook",
+          "handle": "@v270355",
+          "time": "2026-02-13T22:28:24.000Z",
+          "text": "@TheSonOfWalkley I’m waiting for the BREAKING —10,000 cybercabs unleashed overnight in Austin",
+          "zh": "我在等真正的突发——奥斯汀一夜之间放出 1 万辆 Cybercab。",
+          "counts": {
+            "reply": "1",
+            "repost": "1",
+            "like": "5",
+            "view": "163"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/william_R2Rclub/status/2022437976517771449",
+          "avatar": "https://pbs.twimg.com/profile_images/2013318105439543296/FITrrilj_normal.jpg",
+          "name": "William | Relax to Rich",
+          "handle": "@william_R2Rclub",
+          "time": "2026-02-13T22:29:23.000Z",
+          "text": "@TheSonOfWalkley Tesla's CyberCabs could reshape transportation watch out for its commercialization.",
+          "zh": "特斯拉 Cybercab 可能重塑交通，接下来要重点看商业化落地。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "83"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/KevinPham69420/status/2022439081754730504",
+          "avatar": "https://pbs.twimg.com/profile_images/1947127633508225024/y_pq1apx_normal.png",
+          "name": "Kevin Pham",
+          "handle": "@KevinPham69420",
+          "time": "2026-02-13T22:33:46.000Z",
+          "text": "@TheSonOfWalkley so excited for april mass production",
+          "zh": "很期待四月量产。",
+          "counts": {
+            "reply": "0",
+            "repost": "1",
+            "like": "1",
+            "view": "61"
+          },
+          "media": []
+        }
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HBDdfs9XUAANZPW.jpg",
+          "w": 4032,
+          "h": 2268
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HBDdftiaEAA4plx.jpg",
+          "w": 2196,
+          "h": 1230
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HBDdfvKbsAAp6LV.jpg",
+          "w": 2204,
+          "h": 1195
+        },
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2022360492636016644/img/H1VyK5aQS5IpjCE0.jpg",
+          "w": 1920,
+          "h": 1080
+        }
       ]
     },
     {
       "ticker": "HOOD",
       "url": "https://x.com/JuanRodrig07/status/2020872000281972918",
-      "avatar": "https://pbs.twimg.com/profile_images/1949073246403325952/p72UzPQb_x96.jpg",
+      "avatar": "https://pbs.twimg.com/profile_images/1949073246403325952/p72UzPQb_normal.jpg",
       "name": "Juan",
       "handle": "@JuanRodrig07",
       "time": "2026-02-09T14:46:45.000Z",
       "text": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
       "zh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。",
-      "counts": {"reply": "4", "repost": "5", "like": "53", "view": "5,506"},
+      "counts": {
+        "reply": "4",
+        "repost": "5",
+        "like": "53",
+        "view": "5,506"
+      },
       "comments": [
-        {"url":"https://x.com/HarrisonSegrov2/status/2020873599364571178","avatar":"https://pbs.twimg.com/profile_images/2020642815013953536/_QPPcip3_x96.jpg","name":"Harrison Segroves","handle":"@HarrisonSegrov2","time":"2026-02-09T14:53:06.000Z","text":"For the game to be as lopsided as it was that’s not half bad. $HOOD","zh":"比赛一边倒成那样，这个结果已经很不错了。$HOOD","counts":{"reply":"1","repost":"0","like":"2","view":"117"}},
-        {"url":"https://x.com/buckinthetrend/status/2020905064311693397","avatar":"https://pbs.twimg.com/profile_images/888119219031687169/kkO83_ZY_x96.jpg","name":"AKP","handle":"@buckinthetrend","time":"2026-02-09T16:58:08.000Z","text":"March madness and NBA playoffs next","zh":"接下来还有疯狂三月和 NBA 季后赛。","counts":{"reply":"0","repost":"0","like":"1","view":"32"}}
-      ]
+        {
+          "url": "https://x.com/HarrisonSegrov2/status/2020873599364571178",
+          "avatar": "https://pbs.twimg.com/profile_images/2020642815013953536/_QPPcip3_normal.jpg",
+          "name": "Harrison Segroves",
+          "handle": "@HarrisonSegrov2",
+          "time": "2026-02-09T14:53:06.000Z",
+          "text": "@JuanRodrig07 For the game to be as lopsided as it was that’s not half bad. $HOOD",
+          "zh": "比赛一边倒成那样，这个结果已经很不错了。$HOOD",
+          "counts": {
+            "reply": "1",
+            "repost": "0",
+            "like": "2",
+            "view": "117"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/buckinthetrend/status/2020905064311693397",
+          "avatar": "https://pbs.twimg.com/profile_images/888119219031687169/kkO83_ZY_normal.jpg",
+          "name": "AKP",
+          "handle": "@buckinthetrend",
+          "time": "2026-02-09T16:58:08.000Z",
+          "text": "@JuanRodrig07 March madness and NBA playoffs next",
+          "zh": "接下来还有疯狂三月和 NBA 季后赛。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "32"
+          },
+          "media": []
+        }
+      ],
+      "media": []
     },
     {
       "ticker": "USDC",
       "url": "https://x.com/Jackcrypto4life/status/2022405552597528667",
-      "avatar": "https://pbs.twimg.com/profile_images/1995581634859712512/Pe2L3K-1_x96.jpg",
-      "name": "Jack.Sonic",
+      "avatar": "https://pbs.twimg.com/profile_images/1995581634859712512/Pe2L3K-1_normal.jpg",
+      "name": "Jack.Sonic 🇦🇺",
       "handle": "@Jackcrypto4life",
       "time": "2026-02-13T20:20:32.000Z",
-      "text": "$USDC on @SonicLabs continues it's momentum now sitting at $181.4 million - Super bullish when the Sonic market cap and USDC rises in parallel.",
+      "text": "$USDC on @SonicLabs continues it's momentum now sitting at $181.4 million - Super bullish when the Sonic market cap and USDC rises in parallel. https://t.co/mgcyqX2znf",
       "zh": "$USDC 在 @SonicLabs 上延续动能，规模已到 1.814 亿美元。Sonic 市值与 USDC 同步上升时，信号非常看多。",
-      "counts": {"reply": "1", "repost": "5", "like": "36", "view": "514"},
+      "counts": {
+        "reply": "1",
+        "repost": "5",
+        "like": "37",
+        "view": "514"
+      },
       "comments": [
-        {"url":"https://x.com/rarmarilo/status/2022445666522235058","avatar":"https://pbs.twimg.com/profile_images/1915055463919415296/IrmJlIgo_x96.png","name":"sayat","handle":"@rarmarilo","time":"2026-02-13T22:59:56.000Z","text":"do you think price of s will follow?","zh":"你觉得 S 的价格也会跟着走吗？","counts":{"reply":"0","repost":"0","like":"1","view":"5"}},
-        {"url":"https://x.com/Jackcrypto4life/status/2022403336352506046","avatar":"https://pbs.twimg.com/profile_images/1995581634859712512/Pe2L3K-1_x96.jpg","name":"Jack.Sonic","handle":"@Jackcrypto4life","time":"2026-02-13T20:11:44.000Z","text":"The ticker is $S","zh":"代码是 $S。","counts":{"reply":"3","repost":"5","like":"59","view":"378"}}
+        {
+          "url": "https://x.com/rarmarilo/status/2022445666522235058",
+          "avatar": "https://pbs.twimg.com/profile_images/1915055463919415296/IrmJlIgo_normal.png",
+          "name": "sayat",
+          "handle": "@rarmarilo",
+          "time": "2026-02-13T22:59:56.000Z",
+          "text": "@Jackcrypto4life @SonicLabs do you think price of s will follow?",
+          "zh": "你觉得 S 的价格也会跟着走吗？",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "5"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/Jackcrypto4life/status/2022403336352506046",
+          "avatar": "https://pbs.twimg.com/profile_images/1995581634859712512/Pe2L3K-1_normal.jpg",
+          "name": "Jack.Sonic 🇦🇺",
+          "handle": "@Jackcrypto4life",
+          "time": "2026-02-13T20:11:44.000Z",
+          "text": "The ticker is $S https://t.co/PlXcY2qh0p",
+          "zh": "代码是 $S。",
+          "counts": {
+            "reply": "3",
+            "repost": "5",
+            "like": "61",
+            "view": "378"
+          },
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBEFGogakAA1Kbm.jpg",
+              "w": 1536,
+              "h": 1024
+            }
+          ]
+        }
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HBEGt_MakAQznGz.png",
+          "w": 600,
+          "h": 563
+        }
       ]
     },
     {
       "ticker": "SMCI",
       "url": "https://x.com/WOLF_Financial/status/2022291232362234162",
-      "avatar": "https://pbs.twimg.com/profile_images/1986153204057309184/Vkq3fC52_x96.jpg",
+      "avatar": "https://pbs.twimg.com/profile_images/1986153204057309184/Vkq3fC52_normal.jpg",
       "name": "WOLF",
       "handle": "@WOLF_Financial",
       "time": "2026-02-13T12:46:16.000Z",
-      "text": "Did you know that Super Micro $SMCI brought in more revenue than $AMD this past quarter",
+      "text": "Did you know that Super Micro $SMCI brought in more revenue than $AMD this past quarter https://t.co/eMKbeFr5FK",
       "zh": "你知道吗，上一季度 Super Micro（$SMCI）营收已经高于 $AMD。",
-      "counts": {"reply": "10", "repost": "6", "like": "32", "view": "8,025"},
+      "counts": {
+        "reply": "10",
+        "repost": "6",
+        "like": "32",
+        "view": "8,025"
+      },
       "comments": [
-        {"url":"https://x.com/ayush_jasoria/status/2022291670599864395","avatar":"https://pbs.twimg.com/profile_images/2008669986034749441/Cmh2ualt_x96.jpg","name":"Ayush Jasoria | MBA & Engineer | Investor & Trader","handle":"@ayush_jasoria","time":"2026-02-13T12:48:01.000Z","text":"What could be the reason?","zh":"可能是什么原因？","counts":{"reply":"0","repost":"0","like":"0","view":"50"}}
+        {
+          "url": "https://x.com/ayush_jasoria/status/2022291670599864395",
+          "avatar": "https://pbs.twimg.com/profile_images/2008669986034749441/Cmh2ualt_normal.jpg",
+          "name": "Ayush Jasoria | MBA & Engineer | Investor & Trader",
+          "handle": "@ayush_jasoria",
+          "time": "2026-02-13T12:48:01.000Z",
+          "text": "@WOLF_Financial What could be the reason?",
+          "zh": "可能是什么原因？",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "50"
+          },
+          "media": []
+        }
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HBCfJ3rbAAAnNP1.png",
+          "w": 800,
+          "h": 800
+        }
       ]
     },
     {
       "ticker": "NVDA",
       "url": "https://x.com/CheddarFlow/status/2020872715490451955",
-      "avatar": "https://pbs.twimg.com/profile_images/1295066313790853120/oUO_9g3c_x96.jpg",
+      "avatar": "https://pbs.twimg.com/profile_images/1295066313790853120/oUO_9g3c_normal.jpg",
       "name": "Cheddar Flow",
       "handle": "@CheddarFlow",
       "time": "2026-02-09T14:49:36.000Z",
-      "text": "$NVDA $505M Dark Pool Print (Unusual)",
+      "text": "$NVDA $505M Dark Pool Print (Unusual) 🔮 https://t.co/qZkBYRo2ke",
       "zh": "$NVDA 出现 5.05 亿美元暗池成交（异常级别）。",
-      "counts": {"reply": "19", "repost": "18", "like": "236", "view": "5.1万"},
+      "counts": {
+        "reply": "19",
+        "repost": "18",
+        "like": "236",
+        "view": "5.1万"
+      },
       "comments": [
-        {"url":"https://x.com/JeffW008/status/2020878782664499473","avatar":"https://pbs.twimg.com/profile_images/1499413879696334853/OXi1NANx_x96.jpg","name":"Jeff Farmer","handle":"@JeffW008","time":"2026-02-09T15:13:42.000Z","text":"NVDA is heading to a new high!","zh":"NVDA 正在冲向新高！","counts":{"reply":"1","repost":"1","like":"10","view":"1,502"}},
-        {"url":"https://x.com/cheesewagoneer/status/2020997227078926650","avatar":"https://pbs.twimg.com/profile_images/1951318849082540033/xYmdmmkP_x96.png","name":"Clark","handle":"@cheesewagoneer","time":"2026-02-09T23:04:21.000Z","text":"Sorry guys that was me","zh":"抱歉各位，那笔是我打的。","counts":{"reply":"1","repost":"0","like":"0","view":"272"}},
-        {"url":"https://x.com/LongTechCapital/status/2020941639242613097","avatar":"https://pbs.twimg.com/profile_images/2016582267217260545/SxlfAquA_x96.jpg","name":"LongTech Capital","handle":"@LongTechCapital","time":"2026-02-09T19:23:28.000Z","text":"$6T incoming","zh":"6 万亿美元要来了。","counts":{"reply":"1","repost":"0","like":"0","view":"364"}}
+        {
+          "url": "https://x.com/JeffW008/status/2020878782664499473",
+          "avatar": "https://pbs.twimg.com/profile_images/1499413879696334853/OXi1NANx_normal.jpg",
+          "name": "Jeff Farmer",
+          "handle": "@JeffW008",
+          "time": "2026-02-09T15:13:42.000Z",
+          "text": "@CheddarFlow NVDA is heading to a new high!",
+          "zh": "NVDA 正在冲向新高！",
+          "counts": {
+            "reply": "1",
+            "repost": "1",
+            "like": "10",
+            "view": "1,502"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/cheesewagoneer/status/2020997227078926650",
+          "avatar": "https://pbs.twimg.com/profile_images/1951318849082540033/xYmdmmkP_normal.png",
+          "name": "Clark",
+          "handle": "@cheesewagoneer",
+          "time": "2026-02-09T23:04:21.000Z",
+          "text": "@CheddarFlow Sorry guys that was me",
+          "zh": "抱歉各位，那笔是我打的。",
+          "counts": {
+            "reply": "1",
+            "repost": "0",
+            "like": "0",
+            "view": "272"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/LongTechCapital/status/2020941639242613097",
+          "avatar": "https://pbs.twimg.com/profile_images/2016582267217260545/SxlfAquA_normal.jpg",
+          "name": "LongTech Capital",
+          "handle": "@LongTechCapital",
+          "time": "2026-02-09T19:23:28.000Z",
+          "text": "@CheddarFlow $6T incoming",
+          "zh": "6 万亿美元要来了。",
+          "counts": {
+            "reply": "1",
+            "repost": "0",
+            "like": "0",
+            "view": "364"
+          },
+          "media": []
+        }
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HAuU_QDboAARfE-.jpg",
+          "w": 2400,
+          "h": 1248
+        }
       ]
     }
   ]
