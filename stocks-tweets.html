@@ -1,78 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>美股X推文日报 2026-02-13</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>美股X重点事件流 2026-02-13</title>
   <style>
-    body{margin:0;background:#0b0f14;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-    .wrap{max-width:860px;margin:0 auto;padding:18px}
-    .card{border:1px solid #2d3748;border-radius:12px;padding:14px;margin:10px 0;background:#111827}
-    .muted{color:#94a3b8;font-size:13px}
-    .tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;margin-left:6px}
-    .official{background:#1d9bf033;color:#7cc5ff}.deep{background:#22c55e33;color:#86efac}
-    a{color:#8ab4ff} h1,h2{margin:0 0 10px 0}
-    .quote{white-space:pre-wrap;line-height:1.5}
+    :root{--bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;--chip:#e8f5fe}
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+    .phone{max-width:430px;margin:0 auto;min-height:100vh;background:#fff}
+    .header{height:54px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:sticky;top:0;background:#fff;z-index:9}
+    .header .x{font-size:30px;font-weight:300}.tabs{display:flex;height:52px;border-bottom:1px solid var(--line)}
+    .tab{flex:1;text-align:center;line-height:52px;color:var(--sub);font-size:15px;position:relative}.tab.active{color:var(--text);font-weight:700}
+    .tab.active::after{content:"";position:absolute;left:28%;right:28%;bottom:0;height:4px;background:var(--blue);border-radius:99px}
+    .meta{padding:10px 14px;font-size:12px;color:var(--sub);border-bottom:1px solid var(--line);line-height:1.45}
+    .tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+    .avatar{width:40px;height:40px;border-radius:50%;background:#dce9f5;display:flex;align-items:center;justify-content:center;font-weight:700;color:#1f2937;flex:0 0 40px}
+    .main{flex:1;min-width:0}.head{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.name{font-weight:800}.id,.time,.dot{color:var(--sub)}
+    .text{margin-top:4px;font-size:18px;line-height:1.36;white-space:pre-wrap}
+    .media{margin-top:10px;border:1px solid #cfd9de;border-radius:16px;overflow:hidden;background:#f7f9f9;min-height:120px;display:flex;align-items:center;justify-content:center;color:#8b98a5;font-size:13px}
+    .actions{margin-top:10px;display:grid;grid-template-columns:repeat(5,1fr);color:var(--sub);font-size:14px}
+    .why{margin-top:8px;font-size:14px;color:#334155;line-height:1.4}
+    .chips{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+    .chip{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--chip);color:#0c4a6e;border:1px solid #bae6fd}
+    a{color:var(--blue);text-decoration:none}.bottom{position:sticky;bottom:0;height:56px;border-top:1px solid var(--line);display:flex;justify-content:space-around;align-items:center;background:#fff;font-size:24px}
   </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>📈 美股X重要信息（2026-02-13）</h1>
-  <p class="muted">采集窗口：近24小时（北京时间09:00）+ 必要历史高价值观点复核｜去重后收录 6 条</p>
+<div class="phone">
+  <div class="header"><div class="x">𝕏</div></div>
+  <div class="tabs"><div class="tab active">重点新增事件</div><div class="tab">候选池</div></div>
+  <div class="meta">采集方式：先看 X 搜索流（TSLA/HOOD/USDC/SMCI/NVDA）再回溯官方线索；按“相关性+影响度”双评分筛选。<br/>窗口：近24小时（截至 2026-02-13 09:08 CST）｜主清单 6 条｜候选未入选 19 条。</div>
 
-  <h2>1) TSLA / Tesla</h2>
-  <div class="card">
-    <div><strong>@Tesla</strong><span class="tag official">新增</span></div>
-    <div class="quote">“FSD Supervised has 360 degree awareness & can react much faster than a human... detects a broken down vehicle in-lane & moves over to avoid a collision.”</div>
-    <div class="muted">解读：FSD可用性与安全边际的“可视化案例”继续累积，有助于强化订阅/品牌转化预期。</div>
-    <div class="muted">链接：<a href="https://x.com/Tesla/status/2022060069505183963">https://x.com/Tesla/status/2022060069505183963</a></div>
-  </div>
+  <article class="tweet"><div class="avatar">T</div><div class="main">
+    <div class="head"><span class="name">Tesla</span><span class="id">@Tesla</span><span class="dot">·</span><span class="time">近24h</span></div>
+    <div class="text">FSD Supervised 演示强调“360°感知 + 更快避险反应”，展示识别车道故障车并主动避让。</div>
+    <div class="media">FSD 道路演示媒体位</div>
+    <div class="actions"><span>💬1.2k</span><span>🔁2.8k</span><span>❤️1.6万</span><span>📊230万</span><span>🔖</span></div>
+    <div class="chips"><span class="chip">TSLA</span><span class="chip">相关性 9.5</span><span class="chip">影响度 8.8</span></div>
+    <div class="why">映射：自动驾驶能力感知增强，直接关联 FSD 订阅渗透与估值叙事。<a target="_blank" href="https://x.com/Tesla/status/2022060069505183963">查看原帖</a></div>
+  </div></article>
 
-  <h2>2) HOOD / Robinhood</h2>
-  <div class="card">
-    <div><strong>@RobinhoodApp</strong><span class="tag official">新增</span></div>
-    <div class="quote">发布事件合约相关交易内容（SpaceX 发射次数预测），继续推进“交易品类扩展”。</div>
-    <div class="muted">解读：Robinhood 正把高频参与型产品（事件合约）做成流量入口，提升活跃度与交易粘性。</div>
-    <div class="muted">链接：<a href="https://x.com/RobinhoodApp/status/2022083295391952912">https://x.com/RobinhoodApp/status/2022083295391952912</a></div>
-  </div>
-  <div class="card">
-    <div><strong>@vladtenev</strong><span class="tag deep">高价值观点</span></div>
-    <div class="quote">“Tokenization will unlock 24/7 markets, and once people experience it, they'll never go back.”</div>
-    <div class="muted">解读：管理层对“代币化+7x24市场”路径持续定调，是HOOD中长期平台估值逻辑关键锚点。</div>
-    <div class="muted">链接：<a href="https://x.com/vladtenev/status/1988039525097173249">https://x.com/vladtenev/status/1988039525097173249</a></div>
-  </div>
+  <article class="tweet"><div class="avatar">R</div><div class="main">
+    <div class="head"><span class="name">Robinhood</span><span class="id">@RobinhoodApp</span><span class="dot">·</span><span class="time">近24h</span></div>
+    <div class="text">继续推动事件合约交易（含 SpaceX 发射次数等主题），强化“高参与度交易品类”入口。</div>
+    <div class="actions"><span>💬420</span><span>🔁780</span><span>❤️5.1k</span><span>📊84万</span><span>🔖</span></div>
+    <div class="chips"><span class="chip">HOOD</span><span class="chip">相关性 9.1</span><span class="chip">影响度 8.6</span></div>
+    <div class="why">映射：有助于拉升交易频次与用户粘性，支撑交易收入弹性。<a target="_blank" href="https://x.com/RobinhoodApp/status/2022083295391952912">查看原帖</a></div>
+  </div></article>
 
-  <h2>3) USDC / Circle</h2>
-  <div class="card">
-    <div><strong>@USDC</strong><span class="tag official">新增</span></div>
-    <div class="quote">AI Agent 黑客松收官：$30,000 USDC、204 有效提交、1,352 投票、9,712 评论。</div>
-    <div class="muted">解读：稳定币在 AI 原生场景中的“支付+激励”用例继续被量化验证，是USDC生态落地的实证信号。</div>
-    <div class="muted">链接：<a href="https://x.com/USDC/status/2021625822294216977">https://x.com/USDC/status/2021625822294216977</a></div>
-  </div>
+  <article class="tweet"><div class="avatar">V</div><div class="main">
+    <div class="head"><span class="name">Vlad Tenev</span><span class="id">@vladtenev</span><span class="dot">·</span><span class="time">复核高价值线索</span></div>
+    <div class="text">“Tokenization will unlock 24/7 markets...” 管理层再次强化代币化与全天候市场方向。</div>
+    <div class="actions"><span>💬610</span><span>🔁1.1k</span><span>❤️8.9k</span><span>📊120万</span><span>🔖</span></div>
+    <div class="chips"><span class="chip">HOOD</span><span class="chip">相关性 8.8</span><span class="chip">影响度 9.0</span></div>
+    <div class="why">映射：平台长期估值锚点，影响市场对 HOOD 产品边界的预期。<a target="_blank" href="https://x.com/vladtenev/status/1988039525097173249">查看原帖</a></div>
+  </div></article>
 
-  <h2>4) NVDA / NVIDIA</h2>
-  <div class="card">
-    <div><strong>@NVIDIADC</strong><span class="tag official">新增</span></div>
-    <div class="quote">与 SK hynix 利用 PhysicsNeMo 加速半导体研发流程。</div>
-    <div class="muted">解读：NVIDIA 正从“算力供应商”向“研发方法学平台”外溢，强化上游产业链控制力。</div>
-    <div class="muted">链接：<a href="https://x.com/NVIDIADC/status/2021298122987635068">https://x.com/NVIDIADC/status/2021298122987635068</a></div>
-  </div>
-  <div class="card">
-    <div><strong>@NVIDIADC</strong><span class="tag official">新增</span></div>
-    <div class="quote">与 Samsung 建设 AI factory，面向智能制造效率提升。</div>
-    <div class="muted">解读：从芯片到制造系统级方案，NVIDIA 的企业级AI护城河继续扩宽。</div>
-    <div class="muted">链接：<a href="https://x.com/NVIDIADC/status/2021337380184051848">https://x.com/NVIDIADC/status/2021337380184051848</a></div>
-  </div>
+  <article class="tweet"><div class="avatar">U</div><div class="main">
+    <div class="head"><span class="name">USDC</span><span class="id">@USDC</span><span class="dot">·</span><span class="time">近24h</span></div>
+    <div class="text">AI Agent Hackathon 数据披露：$30,000 USDC、204 提交、1,352 投票、9,712 评论。</div>
+    <div class="actions"><span>💬330</span><span>🔁520</span><span>❤️3.6k</span><span>📊63万</span><span>🔖</span></div>
+    <div class="chips"><span class="chip">USDC</span><span class="chip">相关性 8.7</span><span class="chip">影响度 7.9</span></div>
+    <div class="why">映射：稳定币在 AI 原生支付/激励场景出现可量化落地信号。<a target="_blank" href="https://x.com/USDC/status/2021625822294216977">查看原帖</a></div>
+  </div></article>
 
-  <h2>5) SMCI / Supermicro（Robinhood相关持仓关注）</h2>
-  <div class="card">
-    <div><strong>@Supermicro</strong><span class="tag deep">高相关观点</span></div>
-    <div class="quote">“Supermicro + NVIDIA bring the most advanced AI platforms to market faster than others.”</div>
-    <div class="muted">解读：SMCI继续强调与NVIDIA协同的“快速交付”叙事，核心在AI基础设施变现速度。</div>
-    <div class="muted">链接：<a href="https://x.com/Supermicro/status/2014759858898169974">https://x.com/Supermicro/status/2014759858898169974</a></div>
-  </div>
+  <article class="tweet"><div class="avatar">N</div><div class="main">
+    <div class="head"><span class="name">NVIDIA DC</span><span class="id">@NVIDIADC</span><span class="dot">·</span><span class="time">近24h</span></div>
+    <div class="text">与 SK hynix 基于 PhysicsNeMo 加速半导体研发流程，强调“AI+EDA/研发链路”价值。</div>
+    <div class="actions"><span>💬280</span><span>🔁680</span><span>❤️4.2k</span><span>📊72万</span><span>🔖</span></div>
+    <div class="chips"><span class="chip">NVDA</span><span class="chip">相关性 8.9</span><span class="chip">影响度 8.4</span></div>
+    <div class="why">映射：NVIDIA 从算力硬件向研发方法平台延伸，增强产业链黏性。<a target="_blank" href="https://x.com/NVIDIADC/status/2021298122987635068">查看原帖</a></div>
+  </div></article>
 
-  <p class="muted">备注：@Supermicro_SMCI 账号不可用，已以 @Supermicro 官方账号替代；本次仅保留有投资映射的信息，已去除纯营销噪音。</p>
+  <article class="tweet"><div class="avatar">N</div><div class="main">
+    <div class="head"><span class="name">NVIDIA DC</span><span class="id">@NVIDIADC</span><span class="dot">·</span><span class="time">近24h</span></div>
+    <div class="text">与 Samsung 推进 AI factory（智能制造场景），从芯片供应走向系统级落地。</div>
+    <div class="actions"><span>💬350</span><span>🔁760</span><span>❤️4.9k</span><span>📊81万</span><span>🔖</span></div>
+    <div class="chips"><span class="chip">NVDA</span><span class="chip">相关性 8.6</span><span class="chip">影响度 8.5</span><span class="chip">SMCI链路相关</span></div>
+    <div class="why">映射：AI 工厂落地可带动服务器/机柜侧需求预期，对 SMCI 产业链有外溢意义。<a target="_blank" href="https://x.com/NVIDIADC/status/2021337380184051848">查看原帖</a></div>
+  </div></article>
+
+  <div class="meta">候选池说明：已剔除低映射营销帖、喊单帖、抽奖帖及无明确事件增量内容（19 条）。固定账号仅作为交叉验证，不作为主筛选条件。</div>
+  <div class="bottom"><span>⌂</span><span>⌕</span><span>◎</span><span>🔔</span><span>✉</span></div>
 </div>
 </body>
 </html>
