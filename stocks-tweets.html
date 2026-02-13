@@ -1,63 +1,46 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>X 移动端高仿｜UGC股票事件流</title>
-  <style>
-    :root{--bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;--chip:#f7f9f9;--green:#00ba7c;--pink:#f91880}
-    *{box-sizing:border-box} html,body{margin:0;background:#fff;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
-    .app{max-width:430px;min-height:100vh;margin:0 auto;background:#fff;border-left:1px solid var(--line);border-right:1px solid var(--line)}
-    .top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    .bar{height:53px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}.tabs{height:52px;display:flex;align-items:flex-end}
-    .tab{flex:1;text-align:center;padding:0 0 12px;color:var(--sub);font-size:15px;font-weight:500;position:relative}.tab.active{color:var(--text);font-weight:700}
-    .tab.active:after{content:"";position:absolute;left:32%;right:32%;bottom:4px;height:4px;border-radius:999px;background:var(--blue)}
-    .meta{padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--sub)}
-    .tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)} .avatar{width:40px;height:40px;border-radius:999px;flex:0 0 40px;background:#dbe7f4;display:flex;align-items:center;justify-content:center;font-weight:700}
-    .main{flex:1;min-width:0}.head{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.name{font-size:15px;font-weight:800;max-width:132px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-    .id,.dot,.time{font-size:15px;color:var(--sub)}.ticker{display:inline-block;margin-top:6px;padding:2px 8px;border-radius:999px;border:1px solid #dfe7eb;background:var(--chip);font-size:11px;color:#536471}
-    .zh{margin-top:7px;white-space:pre-wrap;word-break:break-word;font-size:17px;line-height:1.34} details{margin-top:8px;background:var(--chip);border:1px solid #dde6ea;border-radius:12px;padding:8px 10px}
-    summary{cursor:pointer;color:var(--blue);font-size:13px}.en{margin-top:7px;font-size:13px;line-height:1.45;color:#41505c;white-space:pre-wrap}
-    .actions{margin-top:12px;display:grid;grid-template-columns:repeat(5,1fr);font-size:13px;color:var(--sub)}
-    .act{display:flex;align-items:center;gap:4px;color:var(--sub);text-decoration:none;background:none;border:0;padding:0;cursor:pointer}.act svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
-    .act .num{font-size:12px}.act.repost:hover{color:var(--green)}.act.like:hover{color:var(--pink)}
-    .drawer{position:fixed;inset:0;background:#fff;z-index:40;transform:translateX(100%);transition:transform .22s ease}.drawer.open{transform:translateX(0)}
-    .d-top{height:53px;display:flex;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);font-size:20px;font-weight:700}.back{font-size:22px;border:0;background:none;cursor:pointer}
-    .d-wrap{max-width:430px;margin:0 auto}.comment{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}.c-body{flex:1}.c-name{font-weight:700;font-size:14px}.c-id,.c-time{font-size:14px;color:var(--sub)}.c-zh{margin-top:6px;font-size:15px;line-height:1.45;white-space:pre-wrap}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>X</title>
+<style>
+:root{--bg:#fff;--text:#0f1419;--sub:#536471;--line:#eff3f4;--blue:#1d9bf0;--chip:#f7f9f9}
+*{box-sizing:border-box}body{margin:0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC",sans-serif;color:var(--text)}
+.app{max-width:430px;margin:0 auto;min-height:100vh;border-left:1px solid var(--line);border-right:1px solid var(--line);background:#fff}
+.top{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid var(--line)}
+.bar{height:52px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}.tabs{display:flex;height:46px}.tab{flex:1;text-align:center;font-size:15px;color:var(--sub);padding-top:14px;position:relative}.tab.on{font-weight:700;color:var(--text)}.tab.on:after{content:"";position:absolute;left:34%;right:34%;bottom:0;height:4px;border-radius:999px;background:var(--blue)}
+.tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 40px;background:#eef3f5}.main{min-width:0;flex:1}.head{display:flex;gap:6px;align-items:center;white-space:nowrap;overflow:hidden}.name{font-weight:700;font-size:15px;overflow:hidden;text-overflow:ellipsis}.handle,.time,.dot{color:var(--sub);font-size:15px}
+.zh{margin-top:4px;white-space:pre-wrap;font-size:17px;line-height:1.35}.tag{display:inline-block;margin-top:6px;background:var(--chip);border:1px solid #dbe3e7;border-radius:999px;padding:2px 8px;font-size:11px;color:#455a64}
+details{margin-top:8px}summary{color:var(--blue);font-size:13px;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}.en{margin-top:6px;color:#4b5f6a;font-size:13px;line-height:1.45;white-space:pre-wrap}
+.actions{display:grid;grid-template-columns:repeat(5,1fr);margin-top:10px;color:var(--sub);font-size:13px}.act{display:flex;align-items:center;gap:4px}.n{font-size:12px}
+.page{display:none}.page.on{display:block}
+.dtop{position:sticky;top:0;height:52px;display:flex;align-items:center;gap:14px;padding:0 12px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(10px)}
+.back{border:0;background:none;font-size:22px;cursor:pointer}.tt{font-size:20px;font-weight:700}
+.sep{height:8px;background:#f7f9f9;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.comment{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+</style>
 </head>
 <body>
-  <main class="app">
-    <header class="top"><div class="bar">𝕏</div><div class="tabs"><div class="tab active">为你推荐</div><div class="tab">正在关注</div></div></header>
-    <div class="meta">2026-02-14 07:xx GMT+8｜UGC优先（非官方为主）｜主清单 10/50｜评论 50/500</div>
-    <section id="feed"></section>
-  </main>
-  <aside class="drawer" id="drawer"><div class="d-wrap"><div class="d-top"><button class="back" id="backBtn">←</button><span>评论</span></div><section id="detail"></section></div></aside>
+<div class="app">
+  <div class="top"><div class="bar">𝕏</div><div class="tabs"><div class="tab on">为你推荐</div><div class="tab">正在关注</div></div></div>
+  <section id="feed" class="page on"></section>
+  <section id="detail" class="page"></section>
+</div>
 <script>
-const baseComments=[
-{name:'ValueFlow',id:'@valueflow',time:'1h',zh:'这个角度比官方口径更有信息量，关键在可持续验证。',en:'This is more informative than official messaging; repeatability is key.'},
-{name:'MacroTape',id:'@macrotape',time:'53m',zh:'短线是交易，长线看兑现率。',en:'Short-term is trading, long-term is execution.'},
-{name:'QuantLeaf',id:'@quantleaf',time:'47m',zh:'互动数据说明关注度在回升，但要防情绪过热。',en:'Engagement is rising, but watch for overheating sentiment.'},
-{name:'StreetNote',id:'@streetnote',time:'39m',zh:'如果下个财报/交付节点配合，这条逻辑会被放大。',en:'This narrative scales if next earnings/delivery confirms it.'},
-{name:'RiskMap',id:'@riskmap',time:'31m',zh:'我更在意 downside 风险位，仓位管理比观点更重要。',en:'I care more about downside levels; position sizing matters most.'}
-];
-const posts=[
-{ticker:'TSLA',name:'StockWhale',id:'@thestockwhale',time:'近24h',url:'https://x.com/thestockwhale/status/2020807452078260550',zh:'UGC观点：TSLA 处于“可分批吸纳但需慢买”的区间，作者给出上行目标位同时提醒仍有下破风险。',en:'$TSLA is at interesting levels for a BUY, but scale in slowly as breakdown risk remains; sees path toward $566 if bulls regain control.',c:'27',r:'58',l:'436',v:'5.9万',comments:baseComments},
-{ticker:'TSLA',name:'Tsla Archive',id:'@tesla_archive',time:'近24h',url:'https://x.com/tesla_archive/status/2020842137429111062',zh:'UGC线索：奥斯汀路测中可见更多 Cybercab，社区追踪器显示测试车辆数量在增加。',en:'Cybercab sightings in Austin are becoming easier; community tracker suggests multiple vehicles actively testing.',c:'12',r:'9',l:'110',v:'6,841',comments:baseComments},
-{ticker:'HOOD',name:'Juan',id:'@JuanRodrig07',time:'近24h',url:'https://x.com/JuanRodrig07/status/2020872000281972918',zh:'UGC测算：若 HOOD 吃到部分赛事合约成交量，单日交易收入弹性可观，市场在重新定价事件合约能力。',en:'If HOOD captured ~40% of Super Bowl prediction volume, implied daily revenue could be meaningful.',c:'4',r:'5',l:'53',v:'5,504',comments:baseComments},
-{ticker:'HOOD',name:'AliceMia',id:'@Alice_MiaX',time:'近24h',url:'https://x.com/Alice_MiaX/status/2020868169171128754',zh:'UGC用户行为：散户讨论从现货转向期权（现金担保卖沽），说明平台工具渗透在提升。',en:'Retail user considering first cash-secured puts on $HOOD, signaling deeper options participation.',c:'62',r:'1',l:'181',v:'1万',comments:baseComments},
-{ticker:'USDC',name:'Cryptocito',id:'@Cryptocito',time:'近24h',url:'https://x.com/Cryptocito/status/2022376533747458282',zh:'UGC数据帖：IBC 周交易额中 USDC 明显领先，显示其在跨链结算场景中的主导地位。',en:'Top IBC weekly volume asset is USDC (~$94.9M), far ahead of other assets.',c:'4',r:'2',l:'26',v:'2,167',comments:baseComments},
-{ticker:'USDC',name:'Jack.Sonic',id:'@Jackcrypto4life',time:'近24h',url:'https://x.com/Jackcrypto4life/status/2022405552597528667',zh:'UGC观察：Sonic 链上 USDC 规模继续爬升，社区将其视为生态活跃度和资金承载能力的同步指标。',en:'USDC on Sonic continues climbing (noted around $181.4M), seen as bullish for ecosystem depth.',c:'1',r:'5',l:'36',v:'510',comments:baseComments},
-{ticker:'SMCI',name:'Mr Chart Norris',id:'@kholov23',time:'近24h',url:'https://x.com/kholov23/status/2020599722281472241',zh:'UGC技术派：SMCI 日线/月线结构被解读为“关键位上方偏强”，社区给出分层目标区。',en:'Chart-focused take sees SMCI structure constructive if key levels hold, with staged upside targets.',c:'3',r:'1',l:'26',v:'4,917',comments:baseComments},
-{ticker:'SMCI',name:'WOM',id:'@wealthonmars',time:'近24h',url:'https://x.com/wealthonmars/status/2019831667356262814',zh:'UGC情绪线索：作者提示 SMCI 近期强势可能对应高波动阶段，提醒不要追高无风控。',en:'Noting unusual strength in SMCI and warning that similar setups previously led to sharp moves.',c:'1',r:'2',l:'24',v:'4,445',comments:baseComments},
-{ticker:'NVDA',name:'Cheddar Flow',id:'@CheddarFlow',time:'近24h',url:'https://x.com/CheddarFlow/status/2020872715490451955',zh:'UGC资金流：出现超大额暗池成交，社区将其解读为机构在关键价位重新布仓。',en:'Reported $505M unusual dark pool print in NVDA, often watched as institutional positioning signal.',c:'19',r:'18',l:'236',v:'5.1万',comments:baseComments},
-{ticker:'NVDA',name:'The Rock Trading',id:'@The_RockTrading',time:'近24h',url:'https://x.com/The_RockTrading/status/2020852251057680487',zh:'UGC交易计划：分享“强势日先减仓，回踩再接”的节奏，关注 187-190 区间突破确认。',en:'Trader notes selling after strong +$13 day, watching 187 break for 190 and buying dips.',c:'10',r:'6',l:'59',v:'8,168',comments:baseComments}
-];
-const icon={reply:'<svg viewBox="0 0 24 24"><path d="M4 4h9a7 7 0 0 1 0 14H8l-4 3v-3.5A7 7 0 0 1 4 4z"/></svg>',repost:'<svg viewBox="0 0 24 24"><path d="M4 7h10l-2.5-2.5M20 17H10l2.5 2.5M14 4.5 17.5 8 14 11.5M10 12.5 6.5 16 10 19.5"/></svg>',like:'<svg viewBox="0 0 24 24"><path d="M12 21s-6.7-4.3-9.3-8.1C.6 9.8 2.4 6 6 6c2.1 0 3.4 1 4 2 0.6-1 1.9-2 4-2 3.6 0 5.4 3.8 3.3 6.9C18.7 16.7 12 21 12 21z"/></svg>',view:'<svg viewBox="0 0 24 24"><path d="M4 17l4-4 3 3 6-7 3 3"/><path d="M4 20h16"/></svg>',share:'<svg viewBox="0 0 24 24"><path d="M12 5v10M8 9l4-4 4 4"/><path d="M5 13v5h14v-5"/></svg>'};
-const feed=document.getElementById('feed'),drawer=document.getElementById('drawer'),detail=document.getElementById('detail');
-feed.innerHTML=posts.map((p,i)=>`<article class=tweet><div class=avatar>${p.name[0]}</div><div class=main><div class=head><span class=name>${p.name}</span><span class=id>${p.id}</span><span class=dot>·</span><span class=time>${p.time}</span></div><span class=ticker>${p.ticker}</span><div class=zh>${p.zh}</div><details><summary>查看英文原文（折叠）</summary><div class=en>${p.en}</div></details><div class=actions><button class=act data-open=${i}>${icon.reply}<span class=num>${p.c}</span></button><a class="act repost" href="${p.url}" target=_blank>${icon.repost}<span class=num>${p.r}</span></a><a class="act like" href="${p.url}" target=_blank>${icon.like}<span class=num>${p.l}</span></a><a class=act href="${p.url}" target=_blank>${icon.view}<span class=num>${p.v}</span></a><a class=act href="${p.url}" target=_blank>${icon.share}</a></div></div></article>`).join('');
-function openComments(i){const p=posts[i];detail.innerHTML=`<article class="tweet" style="border-bottom:8px solid #f7f9f9"><div class=avatar>${p.name[0]}</div><div class=main><div class=head><span class=name>${p.name}</span><span class=id>${p.id}</span><span class=dot>·</span><span class=time>${p.time}</span></div><span class=ticker>${p.ticker}</span><div class=zh>${p.zh}</div><details><summary>查看英文原文（折叠）</summary><div class=en>${p.en}</div></details></div></article>${p.comments.map(c=>`<article class=comment><div class=avatar style="width:36px;height:36px;flex-basis:36px">${c.name[0]}</div><div class=c-body><div><span class=c-name>${c.name}</span> <span class=c-id>${c.id}</span> <span class=c-time>· ${c.time}</span></div><div class=c-zh>${c.zh}</div><details><summary>查看英文（折叠）</summary><div class=en>${c.en}</div></details></div></article>`).join('')}`;drawer.classList.add('open');}
-feed.addEventListener('click',e=>{const b=e.target.closest('[data-open]');if(b)openComments(+b.dataset.open)});document.getElementById('backBtn').onclick=()=>drawer.classList.remove('open');
+const ic={r:'↩',rt:'⟲',l:'♡',v:'▤',s:'↗'};
+let posts=[];
+const feed=document.getElementById('feed'),detail=document.getElementById('detail');
+const esc=s=>String(s||'').replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
+function row(p,i){return `<article class="tweet" data-i="${i}"><img class="av" src="${esc(p.avatar)}"/><div class="main"><div class="head"><span class="name">${esc(p.name)}</span><span class="handle">${esc(p.handle)}</span><span class="dot">·</span><span class="time">${new Date(p.time).toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'})}</span></div><span class="tag">${esc(p.ticker)}</span><div class="zh">${esc(p.zh)}</div><details><summary>查看原文</summary><div class="en">${esc(p.text)}</div></details><div class="actions"><div class="act">${ic.r}<span class="n">${p.counts.reply}</span></div><div class="act">${ic.rt}<span class="n">${p.counts.repost}</span></div><div class="act">${ic.l}<span class="n">${p.counts.like}</span></div><div class="act">${ic.v}<span class="n">${p.counts.view}</span></div><div class="act">${ic.s}</div></div></div></article>`}
+function renderFeed(){feed.innerHTML=posts.map(row).join('');}
+function renderDetail(i){const p=posts[i];detail.innerHTML=`<div class="dtop"><button class="back" id="back">←</button><div class="tt">帖子</div></div>${row(p,i)}<div class="sep"></div>${p.comments.map(c=>`<article class="comment"><img class="av" src="${esc(c.avatar)}" style="width:36px;height:36px;flex-basis:36px"/><div class="main"><div class="head"><span class="name">${esc(c.name)}</span><span class="handle">${esc(c.handle)}</span><span class="dot">·</span><span class="time">${new Date(c.time).toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'})}</span></div><div class="zh">${esc(c.zh)}</div><details><summary>查看原文</summary><div class="en">${esc(c.text)}</div></details><div class="actions"><div class="act">${ic.r}<span class="n">${c.counts.reply}</span></div><div class="act">${ic.rt}<span class="n">${c.counts.repost}</span></div><div class="act">${ic.l}<span class="n">${c.counts.like}</span></div><div class="act">${ic.v}<span class="n">${c.counts.view}</span></div><div></div></div></div></article>`).join('')}`;
+feed.classList.remove('on'); detail.classList.add('on');
+  document.getElementById('back').onclick=()=>{detail.classList.remove('on');feed.classList.add('on');window.scrollTo(0,0)}
+}
+feed.addEventListener('click',e=>{const t=e.target.closest('[data-i]'); if(t) renderDetail(+t.dataset.i)});
+fetch('./stocks-tweets-data.json').then(r=>r.json()).then(d=>{posts=d.posts.slice(0,50).map(p=>({...p,comments:(p.comments||[]).slice(0,50)}));renderFeed();});
 </script>
 </body>
 </html>
