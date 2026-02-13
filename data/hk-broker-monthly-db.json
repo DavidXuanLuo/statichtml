@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "dataset": "hk_broker_monthly_turnover_share",
+  "base_currency": "HKD",
+  "unit": "HKD_100M",
+  "notes": [
+    "turnover_hkd_100m 为亿港元口径",
+    "share_pct 按同月 HKEX 总成交额计算；若分母缺失则可为空",
+    "status=verified 表示有可复核原文链接；status=provisional 表示暂由截图/OCR提取，待原文链接补齐"
+  ],
+  "records": [
+    {
+      "month": "2025-12",
+      "source": {
+        "type": "article",
+        "name": "捷利金融云/AiPO 月报",
+        "url": "https://resource.iqdii.com/img/jyb/aipo/20260107/liveReportCreate/20260107193141a7c313414e43b08e6602df30107f9c.html"
+      },
+      "hkex_total_turnover_hkd_100m": 31351.7,
+      "brokers": {
+        "futu_hk": {
+          "name": "富途证券国际（香港）",
+          "turnover_hkd_100m": 1304.29,
+          "share_pct": 4.16
+        },
+        "tiger_hk": {
+          "name": "老虎证券（香港）环球",
+          "turnover_hkd_100m": 105.14,
+          "share_pct": 0.34
+        }
+      },
+      "status": "verified"
+    },
+    {
+      "month": "2026-01",
+      "source": {
+        "type": "screenshot",
+        "name": "用户提供截图（待补原文链接）",
+        "url": null
+      },
+      "hkex_total_turnover_hkd_100m": 63156.26,
+      "hkex_total_turnover_calc": "5298.81 / 8.39%",
+      "brokers": {
+        "futu_hk": {
+          "name": "富途证券国际（香港）",
+          "turnover_hkd_100m": 2435.19,
+          "share_pct": 3.86
+        },
+        "tiger_hk": {
+          "name": "老虎证券（香港）环球",
+          "turnover_hkd_100m": 176.49,
+          "share_pct": 0.28
+        }
+      },
+      "status": "provisional"
+    }
+  ],
+  "updated_at": "2026-02-13T14:38:00+08:00"
+}
