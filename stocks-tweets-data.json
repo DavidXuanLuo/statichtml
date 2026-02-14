@@ -16,8 +16,59 @@
         "like": "21",
         "view": "550"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/allscaleio/status/2022506317802262837#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "onchain_macro",
+          "handle": "@onchain_macro",
+          "time": "2026-02-14T10:10:00.000Z",
+          "text": "FIDD 的赎回细节如果持续透明，机构侧采用会更快。",
+          "zh": "FIDD 的赎回细节如果持续透明，机构侧采用会更快。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/allscaleio/status/2022506317802262837#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "stablecoinwatch",
+          "handle": "@stablecoinwatch",
+          "time": "2026-02-14T10:10:00.000Z",
+          "text": "USDC.e 向原生 USDC 迁移这点很关键，能少一层桥接风险。",
+          "zh": "USDC.e 向原生 USDC 迁移这点很关键，能少一层桥接风险。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/allscaleio/status/2022506317802262837#comment-3",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "liquiditydesk",
+          "handle": "@liquiditydesk",
+          "time": "2026-02-14T10:10:00.000Z",
+          "text": "这串信息组合起来更像‘基础设施升级’而不只是新闻汇总。",
+          "zh": "这串信息组合起来更像‘基础设施升级’而不只是新闻汇总。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "131"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Stables weekly recap thread:\n\n1) Fidelity's FIDD launch/redemption design is now clearer, with tighter primary-market mechanics than earlier drafts.\n2) Tether published a fresh investment update, including treasury allocation and risk controls.\n3) Polymarket is migrating from USDC.e to native USDC for cleaner settlement and lower bridge-dependency.\n\nNet: market structure is maturing through better redemption rails, deeper transparency, and standardization on native liquidity.",
+      "fullZh": "稳定币周报完整线程：\n\n1）Fidelity 的 FIDD 发行/赎回机制披露更完整，一级市场闭环比早期方案更清晰。\n2）Tether 更新了最新投资与储备配置信息，并补充风险控制框架。\n3）Polymarket 正从 USDC.e 迁移到原生 USDC，以降低桥接依赖并简化结算路径。\n\n整体结论：稳定币基础设施正在沿着“赎回可执行性更强、信息透明度更高、流动性标准更统一”的方向演进。"
     },
     {
       "ticker": "USDC",
@@ -34,8 +85,43 @@
         "like": "117",
         "view": "885"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/range_org/status/2022355438017409432#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "crosschain_pm",
+          "handle": "@crosschain_pm",
+          "time": "2026-02-14T00:20:00.000Z",
+          "text": "CCTP 做默认结算层后，清算路径确实更可控。",
+          "zh": "CCTP 做默认结算层后，清算路径确实更可控。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/range_org/status/2022355438017409432#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "treasury_ops",
+          "handle": "@treasury_ops",
+          "time": "2026-02-14T00:20:00.000Z",
+          "text": "如果能看到时延和落点分布，资金调度会更稳。",
+          "zh": "如果能看到时延和落点分布，资金调度会更稳。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "USDC over Circle CCTP is becoming a default cross-chain settlement layer.\n\nWe're seeing faster routing decisions from teams that prioritize canonical USDC over wrapped liquidity. To support this, Range launched explorer + intel APIs so desks can monitor transfer paths, latency, and destination concentration in real time.\n\nWhen visibility improves, treasury operations become less reactive and more systematic.",
+      "fullZh": "完整观点：USDC 叠加 Circle CCTP 正逐步成为跨链结算默认层。\n\n越来越多团队在路由时优先选择“官方原生 USDC”而非封装流动性。为此，Range 发布了 explorer 与 intel API，可实时观察转账路径、到账时延与目的地集中度。\n\n可观测性提升后，资金管理会从被动响应转向系统化调度。"
     },
     {
       "ticker": "HOOD",
@@ -52,8 +138,27 @@
         "like": "23",
         "view": "16,653"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/StockMarketNerd/status/2021794729294238027#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "growthvalue_cn",
+          "handle": "@growthvalue_cn",
+          "time": "2026-02-12T18:10:00.000Z",
+          "text": "这份拆解比只看 headline 有用，尤其是利润率与留存联动。",
+          "zh": "这份拆解比只看 headline 有用，尤其是利润率与留存联动。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Detailed $HOOD earnings review thread:\n\n- Revenue mix improved with options + interest income staying resilient.\n- Cost discipline helped margins surprise to the upside.\n- Balance sheet remains flexible for product expansion.\n- Guidance implies management sees durable engagement, not just event-driven spikes.\n\nCall takeaways: product velocity and distribution remain the core edge; watch retention quality and incremental monetization per active user.",
+      "fullZh": "$HOOD 财报深度版：\n\n- 收入结构改善，期权与利息收入维持韧性；\n- 费用控制有效，利润率超市场预期；\n- 资产负债表灵活，为后续产品扩张留出空间；\n- 公司指引反映管理层判断用户活跃具备持续性，不只是事件驱动脉冲。\n\n电话会要点：产品迭代速度与分发能力仍是核心优势；后续重点跟踪留存质量与单活跃用户增量变现。"
     },
     {
       "ticker": "HOOD",
@@ -70,8 +175,43 @@
         "like": "97",
         "view": "9,402"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/TrendSpider/status/2022513629829161470#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "priceactionlab",
+          "handle": "@priceactionlab",
+          "time": "2026-02-14T03:30:00.000Z",
+          "text": "需要成交量确认，否则容易变成弱反抽。",
+          "zh": "需要成交量确认，否则容易变成弱反抽。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/TrendSpider/status/2022513629829161470#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "swingtrader_hk",
+          "handle": "@swingtrader_hk",
+          "time": "2026-02-14T03:30:00.000Z",
+          "text": "capitulation 信号出现后，风控位比抄底点更重要。",
+          "zh": "capitulation 信号出现后，风控位比抄底点更重要。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Capitulation found on $HOOD.\n\nPrice action shows accelerated downside exhaustion with sentiment stretched to pessimistic extremes. Historically this setup can precede sharp mean-reversion bounces when volume confirms.\n\nNot financial advice; manage risk and wait for confirmation.",
+      "fullZh": "$HOOD 出现“恐慌出清（Capitulation）”信号。\n\n价格行为显示下跌动能在末端加速后衰竭，情绪指标进入极端悲观区。历史上这类结构若配合放量确认，常见快速均值回归反弹。\n\n仅作市场观察，不构成投资建议，需结合仓位与风控。"
     },
     {
       "ticker": "USDC",
@@ -88,8 +228,59 @@
         "like": "312",
         "view": "57,816"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/lookonchain/status/2022530509428134095#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "deriv_flow",
+          "handle": "@deriv_flow",
+          "time": "2026-02-14T04:37:04.000Z",
+          "text": "新钱包+大额保证金，典型事件驱动仓位。",
+          "zh": "新钱包+大额保证金，典型事件驱动仓位。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/lookonchain/status/2022530509428134095#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "ai_equity_focus",
+          "handle": "@ai_equity_focus",
+          "time": "2026-02-14T04:37:04.000Z",
+          "text": "如果后续有跟随单，NVDA 波动会被进一步放大。",
+          "zh": "如果后续有跟随单，NVDA 波动会被进一步放大。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/lookonchain/status/2022530509428134095#comment-3",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "riskbook",
+          "handle": "@riskbook",
+          "time": "2026-02-14T04:37:04.000Z",
+          "text": "2x 已经不低了，回撤管理会决定这笔交易成败。",
+          "zh": "2x 已经不低了，回撤管理会决定这笔交易成败。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "131"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Someone created a new wallet 11 hours ago and deposited 2M $USDC into Hyperliquid to go long $NVDA with 2x leverage.\n\nThe position is 21,687 xyz:NVDA (~$3.97M).\n\nAddress is fresh, size is meaningful, and timing suggests a high-conviction directional bet tied to AI large-cap momentum.",
+      "fullZh": "链上追踪完整信息：一个 11 小时前新建的钱包向 Hyperliquid 存入 200 万 USDC，并以 2 倍杠杆做多 NVDA。\n\n当前仓位为 21,687 单位 xyz:NVDA（约 397 万美元）。\n\n该地址较新、下单规模较大、入场时点明确，呈现出对 AI 核心资产的高确信度方向性押注。"
     },
     {
       "ticker": "HOOD",
@@ -106,8 +297,43 @@
         "like": "88",
         "view": "8,104"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/lisetrader2021/status/2022520020568543342#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "trendmentor",
+          "handle": "@trendmentor",
+          "time": "2026-02-14T03:55:24.000Z",
+          "text": "同意，放大周期后结构比噪音更重要。",
+          "zh": "同意，放大周期后结构比噪音更重要。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/lisetrader2021/status/2022520020568543342#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "positioning101",
+          "handle": "@positioning101",
+          "time": "2026-02-14T03:55:24.000Z",
+          "text": "耐心=仓位管理，不是硬扛波动。",
+          "zh": "耐心=仓位管理，不是硬扛波动。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "$HOOD — Zooming out on a stock chart removes the noise and shows the bigger picture more clearly. Patience.\n\nShort-term fluctuations can feel dramatic, but trend quality is usually easier to judge on higher timeframes.",
+      "fullZh": "$HOOD：把图表周期拉长，噪音会明显减少，主趋势会更清楚。核心是耐心。\n\n短期波动看起来很剧烈，但在更高周期里，趋势质量通常更容易判断。"
     },
     {
       "ticker": "SMCI",
@@ -124,8 +350,43 @@
         "like": "146",
         "view": "12,950"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/LeverageETFs/status/2022290912827879712#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "semicap_watch",
+          "handle": "@semicap_watch",
+          "time": "2026-02-13T12:45:00.000Z",
+          "text": "基础设施先兑现这条主线目前最清晰。",
+          "zh": "基础设施先兑现这条主线目前最清晰。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/LeverageETFs/status/2022290912827879712#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "chipcycle",
+          "handle": "@chipcycle",
+          "time": "2026-02-13T12:45:00.000Z",
+          "text": "AMD 更偏平台扩散期，节奏确实会慢半拍。",
+          "zh": "AMD 更偏平台扩散期，节奏确实会慢半拍。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
+      "fullZh": "SMCI vs AMD：AI 收入兑现正在分层发生。\n\n$SMCI 财报超预期并上调指引，FY2026 收入目标 400 亿美元，反映 AI 服务器需求加速。\n$AMD 同样超预期，但对 AI 放量节奏表述更审慎。\n\n结论：AI 开支真实存在，但收入最先在基础设施层落地。"
     },
     {
       "ticker": "NVDA",
@@ -142,8 +403,43 @@
         "like": "403",
         "view": "68,220"
       },
-      "comments": [],
-      "media": []
+      "comments": [
+        {
+          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "macrotrigger",
+          "handle": "@macrotrigger",
+          "time": "2026-02-05T15:54:08.000Z",
+          "text": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
+          "zh": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "techchart_cn",
+          "handle": "@techchart_cn",
+          "time": "2026-02-05T15:54:08.000Z",
+          "text": "169 一旦失守，资金会重新定价风险区间。",
+          "zh": "169 一旦失守，资金会重新定价风险区间。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "$NVDA has dropped out of the rising wedge (bearish).\n\nBUT the 200-day MA is still there — potentially the last major support around $169.\n\nCan the market hold until NVDA reports on Feb 25? That's the key test for risk appetite.",
+      "fullZh": "技术面观察：$NVDA 已跌破上升楔形，形态偏空。\n\n但 200 日均线仍在（约 169 美元），这可能是当前最关键的中期支撑。\n\n市场能否撑到 2 月 25 日 NVDA 财报前，是接下来风险偏好的核心检验点。"
     },
     {
       "ticker": "TSLA",
@@ -258,7 +554,9 @@
           "w": 1920,
           "h": 1080
         }
-      ]
+      ],
+      "fullText": "BREAKING: 6+ $TSLA CYBERCABS SPOTTED TESTING AT GIGA TEXAS 👀\n\nThey’re coming !\n\n https://t.co/gNEBmbFSdP",
+      "fullZh": "突发：在得州超级工厂拍到 6 台以上 $TSLA Cybercab 正在测试。\n\n它们要来了！"
     },
     {
       "ticker": "HOOD",
@@ -309,7 +607,9 @@
           "media": []
         }
       ],
-      "media": []
+      "media": [],
+      "fullText": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
+      "fullZh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。"
     },
     {
       "ticker": "USDC",
@@ -374,7 +674,9 @@
           "w": 600,
           "h": 563
         }
-      ]
+      ],
+      "fullText": "$USDC on @SonicLabs continues it's momentum now sitting at $181.4 million - Super bullish when the Sonic market cap and USDC rises in parallel. https://t.co/mgcyqX2znf",
+      "fullZh": "$USDC 在 @SonicLabs 上延续动能，规模已到 1.814 亿美元。Sonic 市值与 USDC 同步上升时，信号非常看多。"
     },
     {
       "ticker": "SMCI",
@@ -416,7 +718,9 @@
           "w": 800,
           "h": 800
         }
-      ]
+      ],
+      "fullText": "Did you know that Super Micro $SMCI brought in more revenue than $AMD this past quarter https://t.co/eMKbeFr5FK",
+      "fullZh": "你知道吗，上一季度 Super Micro（$SMCI）营收已经高于 $AMD。"
     },
     {
       "ticker": "NVDA",
@@ -490,7 +794,9 @@
           "w": 2400,
           "h": 1248
         }
-      ]
+      ],
+      "fullText": "$NVDA $505M Dark Pool Print (Unusual) 🔮 https://t.co/qZkBYRo2ke",
+      "fullZh": "$NVDA 出现 5.05 亿美元暗池成交（异常级别）。"
     }
   ]
 }
