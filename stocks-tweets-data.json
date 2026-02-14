@@ -1,6 +1,26 @@
 {
-  "generatedAt": "2026-02-14T15:02:44Z",
+  "generatedAt": "2026-02-14T15:22:51Z",
   "posts": [
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/Tesla/status/2022461113934483964",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tesla",
+      "handle": "@Tesla",
+      "time": "2026-02-14T00:20:00.000Z",
+      "text": "Tesla highlighted Model Y as high value-for-money and amplified user discussion on first-principles design.",
+      "zh": "Tesla强调Model Y具备高性价比，并转引用户对其第一性原理设计优势的讨论。",
+      "counts": {
+        "reply": "169",
+        "repost": "201",
+        "like": "2436",
+        "view": "242013"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Model Y is incredible bang for buck.",
+      "fullZh": "Model Y 的性价比非常突出。"
+    },
     {
       "ticker": "USDC",
       "url": "https://x.com/RobinhoodApp/status/1426332920797597698",

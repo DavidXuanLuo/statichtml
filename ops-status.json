@@ -1,17 +1,22 @@
 {
-  "lastUpdated": "2026-02-14 23:02 GMT+8",
+  "lastUpdated": "2026-02-14 23:20 GMT+8",
   "status": {
-    "text": "运行中：X单源滚动收录（相关即收录）",
+    "text": "运行中：X单源滚动收录（发送前闸门版）",
     "mode": "仅X采集（profile=openclaw）",
-    "note": "已取消高质量筛选与完整性硬门禁前置；只要与目标公司或相关行业有关即收录（仍过滤明显垃圾噪声）。"
+    "note": "已启用发送前闸门：写入校验、可见性抽检、git push校验，任一失败即阻断发送。"
   },
   "metrics": {
-    "todayRounds": 10,
-    "todayScanned": 150,
-    "todayCollected": 40,
-    "toNextPublish": 0
+    "todayRounds": 11,
+    "todayScanned": 168,
+    "todayCollected": 41,
+    "toNextPublish": 1
   },
   "recentActions": [
+    {
+      "time": "23:20",
+      "text": "X滚动收录（闸门版）完成：新增1条；累计待推送9条。",
+      "level": "ok"
+    },
     {
       "time": "23:02",
       "text": "X滚动收录（放宽版）完成：新增10条，相关即收录。",
@@ -35,11 +40,6 @@
     {
       "time": "21:29",
       "text": "已刷新任务逻辑：取消高质量硬门槛，相关即收录。",
-      "level": "ok"
-    },
-    {
-      "time": "21:28",
-      "text": "已刷新任务逻辑：取消完整性硬门禁前置，线程/评论改为后续补全项。",
       "level": "ok"
     }
   ]
