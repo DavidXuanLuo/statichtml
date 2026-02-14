@@ -1,17 +1,27 @@
 {
-  "lastUpdated": "2026-02-14 21:29 GMT+8",
+  "lastUpdated": "2026-02-14 22:00 GMT+8",
   "status": {
     "text": "运行中：X单源滚动收录（相关即收录）",
     "mode": "仅X采集（profile=openclaw）",
     "note": "已取消高质量筛选与完整性硬门禁前置；只要与目标公司或相关行业有关即收录（仍过滤明显垃圾噪声）。"
   },
   "metrics": {
-    "todayRounds": 6,
-    "todayScanned": 100,
-    "todayCollected": 12,
-    "toNextPublish": 2
+    "todayRounds": 8,
+    "todayScanned": 130,
+    "todayCollected": 25,
+    "toNextPublish": 7
   },
   "recentActions": [
+    {
+      "time": "22:00",
+      "text": "X滚动收录（放宽版）完成：新增3条；未达10条，按规则不打扰。",
+      "level": "ok"
+    },
+    {
+      "time": "21:40",
+      "text": "X滚动收录（放宽版）完成：新增10条，相关即收录。",
+      "level": "ok"
+    },
     {
       "time": "21:29",
       "text": "已刷新任务逻辑：取消高质量硬门槛，相关即收录。",

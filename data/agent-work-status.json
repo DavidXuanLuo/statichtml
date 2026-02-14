@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 21:27"
+    "lastUpdated": "2026-02-14 22:00"
   },
   "summary": {
     "status": "running",
@@ -14,11 +14,11 @@
   "now": [
     {
       "id": "job-x-ugc",
-      "title": "X高质量UGC滚动收录",
+      "title": "X滚动收录（放宽版）",
       "status": "running",
-      "progress": "仅X采集进行中（已取消高质量门槛）",
-      "detail": "执行口径：只要与目标公司或相关行业有关就收录；不再因高质量筛选拦截入库",
-      "updatedAt": "21:27"
+      "progress": "仅X采集进行中（相关即收录）",
+      "detail": "本轮新增3条；未达10条阈值，不发送外部通知。",
+      "updatedAt": "22:00"
     },
     {
       "id": "job-xhs-draft",
@@ -32,12 +32,17 @@
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步最新规则（取消高质量门槛）",
-      "detail": "看板文案已更新为当前执行口径，避免旧状态误导",
-      "updatedAt": "21:27"
+      "progress": "已同步22:00巡检结果",
+      "detail": "看板与ops状态已更新：距下一次触发通知还差7条。",
+      "updatedAt": "22:00"
     }
   ],
   "timeline": [
+    {
+      "time": "22:00",
+      "type": "scan",
+      "text": "仅X（profile=openclaw）巡检完成：新增3条（TSLA相关），未达10条阈值，未通知。"
+    },
     {
       "time": "21:27",
       "type": "policy",
