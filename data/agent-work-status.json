@@ -1,83 +1,144 @@
 {
   "meta": {
-    "title": "贾维斯工作看板",
+    "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14T15:55:00+08:00"
+    "lastUpdated": "2026-02-14 16:02"
   },
   "summary": {
     "status": "running",
-    "todayCompleted": 9,
+    "todayCompleted": 12,
     "todayRunning": 2,
-    "todayPending": 3
+    "todayPending": 7
   },
   "now": [
     {
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "按20分钟窗口巡检中",
-      "detail": "仅采集X；满足高质量标准才入库；累计10条才通知",
-      "updatedAt": "15:40"
+      "progress": "20分钟窗口巡检中（仅X）",
+      "detail": "达到10条才通知；通知仅“条数+链接”",
+      "updatedAt": "16:00"
     },
     {
-      "id": "route-isolation",
-      "title": "会话隔离巡检",
+      "id": "ops-dashboard",
+      "title": "工作看板维护",
       "status": "running",
-      "progress": "Telegram/Feishu路由持续观察",
-      "detail": "session.dmScope=per-channel-peer 已生效",
-      "updatedAt": "15:35"
+      "progress": "按轮次更新任务状态与时间线",
+      "detail": "桌面端布局，展示全部任务（运行中/待执行/停用）",
+      "updatedAt": "16:02"
     }
   ],
   "timeline": [
     {
-      "time": "15:50",
-      "type": "new-request",
-      "text": "收到新需求：搭建可实时刷新的工作概览H5看板"
+      "time": "16:02",
+      "type": "dashboard",
+      "text": "工作看板升级为桌面版：加入全任务排班与下一次执行时间"
     },
     {
-      "time": "15:40",
-      "type": "cron",
-      "text": "X滚动收录本轮新增0条，未触发10条阈值通知"
+      "time": "15:57",
+      "type": "request",
+      "text": "收到要求：看板需展示当天全部任务，不仅运行中的X任务"
+    },
+    {
+      "time": "15:50",
+      "type": "delivery",
+      "text": "实时工作看板已上线并支持自动刷新"
     },
     {
       "time": "15:22",
       "type": "policy",
       "text": "采集源调整为仅X，小红书待账号可用后恢复"
-    },
-    {
-      "time": "15:02",
-      "type": "quality",
-      "text": "收录标准升级：数据密度/逻辑链/讨论价值优先，低信息量过滤"
-    },
-    {
-      "time": "14:43",
-      "type": "delivery",
-      "text": "触发口径固定：仅回传“收录条数 + H5链接”"
     }
   ],
   "completed": [
     {
-      "title": "GMV日报看板格式锁定",
+      "title": "X收录通知口径固定",
+      "result": "仅发送“本次收录条数 + H5链接”",
+      "updatedAt": "14:43"
+    },
+    {
+      "title": "GMV日报模板锁定",
       "result": "不分页、当月合计对齐、全表倒序",
       "updatedAt": "14:10"
     },
     {
-      "title": "X页面评论计数一致性修复",
-      "result": "展示评论数量与计数字段一致",
-      "updatedAt": "13:20"
-    },
-    {
-      "title": "X媒体本地化",
-      "result": "头像/图片改为本地资源路径",
-      "updatedAt": "12:40"
+      "title": "会话拆分策略已调整",
+      "result": "session.dmScope=per-channel-peer",
+      "updatedAt": "13:35"
     }
   ],
   "blocked": [
     {
-      "title": "小红书网页端登录墙",
-      "impact": "未登录时难以完成高质量核验",
-      "nextAction": "待提供账号后接入采集"
+      "title": "小红书未登录状态",
+      "impact": "高质量核验受限，已暂停采集",
+      "nextAction": "待账号可用后恢复并并入同一X风格页面"
+    }
+  ],
+  "scheduled": [
+    {
+      "name": "X高质量UGC滚动收录",
+      "enabled": true,
+      "cadence": "每20分钟（07:00-23:59）",
+      "nextRun": "16:20",
+      "status": "running",
+      "scope": "TSLA/HOOD/NVDA/USDC/Circle/SMCI"
+    },
+    {
+      "name": "任务监控+长时间未回告警",
+      "enabled": true,
+      "cadence": "每5分钟",
+      "nextRun": "16:05",
+      "status": "running",
+      "scope": "主会话超时与任务失败重试监控"
+    },
+    {
+      "name": "Crypto四币每日数据采集",
+      "enabled": true,
+      "cadence": "每日 07:10",
+      "nextRun": "明日 07:10",
+      "status": "pending",
+      "scope": "USDC/USDT/BTC/ETH"
+    },
+    {
+      "name": "Crypto四币每日数据报告",
+      "enabled": true,
+      "cadence": "每日 07:30",
+      "nextRun": "明日 07:30",
+      "status": "pending",
+      "scope": "日报发送"
+    },
+    {
+      "name": "Kalshi每日跟踪",
+      "enabled": true,
+      "cadence": "每日 07:30",
+      "nextRun": "明日 07:30",
+      "status": "pending",
+      "scope": "合约数+合约金额"
+    },
+    {
+      "name": "泡泡玛特+东方甄选GMV日报",
+      "enabled": true,
+      "cadence": "每日 07:30",
+      "nextRun": "明日 07:30",
+      "status": "pending",
+      "scope": "固定模板看板更新+发布"
+    },
+    {
+      "name": "Robinhood月度运营数据跟踪",
+      "enabled": false,
+      "cadence": "每日 19:50（当前停用）",
+      "nextRun": "停用",
+      "status": "disabled",
+      "scope": "IR月度数据13个月维护"
+    },
+    {
+      "name": "美股X推文每日汇总",
+      "enabled": false,
+      "cadence": "每日 07:30（当前停用）",
+      "nextRun": "停用",
+      "status": "disabled",
+      "scope": "固定模板汇总"
     }
   ]
 }
