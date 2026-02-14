@@ -10,38 +10,37 @@
 body{margin:0;background:#fff;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC",sans-serif}
 .app{max-width:430px;margin:0 auto;min-height:100vh;background:#fff;border-left:1px solid var(--line);border-right:1px solid var(--line)}
 .top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.logo{height:52px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}
-.tabs{height:46px;display:flex}.tab{flex:1;text-align:center;font-size:15px;color:var(--sub);padding-top:14px;position:relative}.tab.on{color:var(--text);font-weight:700}.tab.on::after{content:"";position:absolute;left:34%;right:34%;bottom:0;height:4px;border-radius:99px;background:var(--blue)}
+.logo{height:53px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:300}
+.tabs{height:48px;display:flex}.tab{flex:1;text-align:center;font-size:15px;color:var(--sub);padding-top:14px;position:relative}.tab.on{color:var(--text);font-weight:700}.tab.on::after{content:"";position:absolute;left:34%;right:34%;bottom:0;height:4px;border-radius:99px;background:var(--blue)}
 .page{display:none}.page.on{display:block}
-.tweet{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.tweet{display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);cursor:pointer}
 .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;background:#eef3f5;flex:0 0 40px}
 .main{min-width:0;flex:1}
-.head{display:flex;align-items:center;gap:4px;min-width:0;font-size:15px;line-height:1.25}
+.head{display:flex;align-items:center;gap:4px;min-width:0;font-size:16px;line-height:1.25}
 .name{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46%}
 .handle,.dot,.time{color:var(--sub)}
-.text{margin-top:3px;white-space:pre-wrap;word-break:break-word;font-size:17px;line-height:1.36}
-.media{margin-top:10px;display:grid;gap:2px;border-radius:16px;overflow:hidden;border:1px solid #cfd9de;background:#f7f9f9}
+.text{margin-top:3px;white-space:pre-wrap;word-break:break-word;font-size:17px;line-height:1.42}
+.tweet:not(.main-tweet):not(.comment) .text,.comment .text{font-size:16px;line-height:1.4}
+.media{margin-top:12px;display:grid;gap:2px;border-radius:16px;overflow:hidden;border:1px solid #cfd9de;background:#f7f9f9}
 .media.one{grid-template-columns:1fr}
 .media.two{grid-template-columns:1fr 1fr}
 .media.three{grid-template-columns:1fr 1fr}.media.three .m:first-child{grid-row:span 2}
 .media.four{grid-template-columns:1fr 1fr}
-.m{aspect-ratio:16/10;overflow:hidden;background:#dde5ea}
+.m{aspect-ratio:16/10;overflow:hidden;background:#dde5ea;position:relative}
 .m img{width:100%;height:100%;object-fit:cover;display:block}
-.m.video::after{content:"▶";position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.6);color:#fff;border-radius:999px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:12px}
-.m{position:relative}
-details{margin-top:8px}summary{list-style:none;color:var(--blue);font-size:13px;cursor:pointer;width:max-content}summary::-webkit-details-marker{display:none}
-.orig{margin-top:6px;color:#4b5f6a;font-size:13px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
-.actions{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:10px;font-size:13px;color:var(--sub)}
-.a{display:inline-flex;align-items:center;gap:4px;width:max-content;border:0;background:none;padding:0;color:inherit;cursor:pointer}
-.a .i{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px}.a svg{width:18px;height:18px;fill:currentColor}.a .n{font-size:12px}
+.m.video::after{content:"▶";position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.62);color:#fff;border-radius:999px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px}
+.actions{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:12px;font-size:13px;color:var(--sub)}
+.a{display:inline-flex;align-items:center;gap:5px;width:max-content;border:0;background:none;padding:0;color:inherit;cursor:pointer}
+.a .i{width:19px;height:19px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px}.a svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.a .n{font-size:12px}
 .a.reply:hover{color:var(--blue)}.a.rt:hover{color:var(--green)}.a.like:hover{color:var(--pink)}
-.detail-top{position:sticky;top:0;z-index:35;height:52px;display:flex;align-items:center;gap:14px;padding:0 12px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}
-.back{border:0;background:none;font-size:22px;cursor:pointer;width:32px;height:32px;border-radius:50%}
-.title{font-size:20px;font-weight:700}
-.sep{height:1px;background:var(--line)}
-.subtle{height:8px;background:#f7f9f9;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.comment{cursor:default}
-.comment .avatar{width:36px;height:36px;flex-basis:36px}
+.detail-top{position:sticky;top:0;z-index:35;height:53px;display:flex;align-items:center;gap:14px;padding:0 12px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}
+.back{border:0;background:none;font-size:26px;line-height:1;cursor:pointer;width:36px;height:36px;border-radius:50%;padding:0}
+.title{font-size:21px;font-weight:700}
+.subtle{height:1px;background:var(--line)}
+.main-tweet{padding-top:10px;padding-bottom:14px}
+.comment{cursor:default;padding-top:10px;padding-bottom:10px}
+.comment .avatar{width:40px;height:40px;flex-basis:40px}
+.comment .main{padding-bottom:2px}
 </style>
 </head>
 <body>
@@ -55,7 +54,13 @@ let posts=[];
 const feed=document.getElementById('feed'),detail=document.getElementById('detail'),feedTop=document.getElementById('feedTop');
 const esc=s=>String(s||'').replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
 const d=s=>new Date(s).toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'});
-const ic={reply:'<svg viewBox="0 0 24 24"><path d="M1.75 10c0-4.42 3.58-8 8-8h4.5c4.42 0 8 3.58 8 8v4c0 4.42-3.58 8-8 8H9.75c-4.42 0-8-3.58-8-8v-4zm8-6a6 6 0 0 0-6 6v4a6 6 0 0 0 6 6h4.5a6 6 0 0 0 6-6v-4a6 6 0 0 0-6-6h-4.5z"></path></svg>',rt:'<svg viewBox="0 0 24 24"><path d="M4.5 3.75a.75.75 0 0 1 .75.75V15h12.19l-1.97-1.97a.75.75 0 1 1 1.06-1.06l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 1 1-1.06-1.06l1.97-1.97H4.5a.75.75 0 0 1-.75-.75V4.5a.75.75 0 0 1 .75-.75zm15-1.5a.75.75 0 0 1 .75.75V13.5a.75.75 0 0 1-1.5 0V3h-12.2l1.98 1.97a.75.75 0 1 1-1.06 1.06L4.22 2.78a.75.75 0 0 1 0-1.06L7.47-1.53a.75.75 0 1 1 1.06 1.06L6.55 1.5H19.5z" transform="translate(0 2)"></path></svg>',like:'<svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222 0-2.44.493-3.347 1.426L12 8.273l-1.35-1.347C9.743 5.993 8.525 5.5 7.303 5.5 4.59 5.5 2.5 7.59 2.5 10.303c0 1.6.69 3.137 1.9 4.227l6.98 6.317a1 1 0 0 0 1.24 0l6.98-6.317a5.7 5.7 0 0 0 1.9-4.227c0-2.713-2.09-4.803-4.803-4.803z"></path></svg>',view:'<svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zm4.5-6V3h2v12h-2zm4.5 6V3h2v18h-2zM4.25 12V3h2v9h-2z"></path></svg>',share:'<svg viewBox="0 0 24 24"><path d="M12.59 2.59a2 2 0 0 1 2.82 0l5 5a2 2 0 0 1-2.82 2.82L14 6.83V15a1 1 0 1 1-2 0V6.83l-3.59 3.58A2 2 0 0 1 5.59 7.6l5-5zM5 13a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a1 1 0 1 1 2 0v4a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-4a1 1 0 0 1 1-1z"></path></svg>'};
+const ic={
+reply:'<svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>',
+rt:'<svg viewBox="0 0 24 24"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>',
+like:'<svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+view:'<svg viewBox="0 0 24 24"><path d="M5 20V10"/><path d="M10 20V4"/><path d="M15 20v-7"/><path d="M20 20V8"/></svg>',
+share:'<svg viewBox="0 0 24 24"><path d="M12 16V3"/><path d="M7 8l5-5 5 5"/><path d="M5 13v5a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-5"/></svg>'
+};
 function mediaGrid(arr){
   arr=(arr||[]).slice(0,4); if(!arr.length) return '';
   const cls=['one','two','three','four'][Math.min(arr.length,4)-1];
@@ -73,12 +78,11 @@ function tweet(p,i,comment){return `<article class="tweet ${comment?'comment':''
     <div class="head"><span class="name">${esc(p.name)}</span><span class="handle">${esc(p.handle)}</span><span class="dot">·</span><span class="time">${d(p.time)}</span></div>
     <div class="text">${esc(p.zh||p.text||'')}</div>
     ${mediaGrid(p.media)}
-    <details><summary>原文</summary><div class="orig">${esc(p.text||'')}</div></details>
     ${actions(p.counts||{},i)}
   </div></article>`}
 function feedView(){detail.classList.remove('on');feed.classList.add('on');feedTop.style.display='block';}
 function detailView(i,push){const p=posts[i];if(!p)return;
-  detail.innerHTML=`<div class="detail-top"><button class="back" id="back">←</button><div class="title">帖子</div></div>${tweet(p,i,false)}<div class="subtle"></div>${(p.comments||[]).map(c=>tweet(c,-1,true)).join('')}`;
+  detail.innerHTML=`<div class="detail-top"><button class="back" id="back" aria-label="返回">←</button><div class="title">帖子</div></div>${tweet(p,i,false).replace('class="tweet ','class="tweet main-tweet ')}<div class="subtle"></div>${(p.comments||[]).map(c=>tweet(c,-1,true)).join('')}`;
   feed.classList.remove('on');detail.classList.add('on');feedTop.style.display='none';
   if(push) history.pushState({i},'',`#post-${i}`);
   document.getElementById('back').onclick=()=>history.back();
@@ -87,7 +91,7 @@ function detailView(i,push){const p=posts[i];if(!p)return;
 feed.addEventListener('click',e=>{if(e.target.closest('details'))return;const b=e.target.closest('.js-open');if(b){e.preventDefault();e.stopPropagation();detailView(+b.dataset.i,true);return;}const t=e.target.closest('.tweet');if(t)detailView(+t.dataset.i,true)});
 detail.addEventListener('click',e=>{const b=e.target.closest('.js-open');if(b){e.preventDefault();const i=+b.dataset.i;if(i>=0)detailView(i,true)}});
 window.addEventListener('popstate',ev=>{if(ev.state&&typeof ev.state.i==='number')detailView(ev.state.i,false);else feedView()});
-fetch('./stocks-tweets-data.json').then(r=>r.json()).then(j=>{posts=(j.posts||[]).slice(0,50).map(p=>({...p,comments:(p.comments||[]).slice(0,50)}));feed.innerHTML=posts.map((p,i)=>tweet(p,i,false)).join('');if(location.hash.startsWith('#post-')){const i=+location.hash.slice(6);if(!Number.isNaN(i))detailView(i,false);}})
+fetch('./stocks-tweets-data.json').then(r=>r.json()).then(j=>{posts=(j.posts||[]).slice(0,50).map(p=>{const comments=(p.comments||[]).slice(0,50);const counts={...(p.counts||{})};counts.reply=String(comments.length);return {...p,comments,counts};});feed.innerHTML=posts.map((p,i)=>tweet(p,i,false)).join('');if(location.hash.startsWith('#post-')){const i=+location.hash.slice(6);if(!Number.isNaN(i))detailView(i,false);}})
 </script>
 </body>
 </html>
