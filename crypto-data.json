@@ -70,6 +70,17 @@
           "supplyMetric": "circulating_supply（流通供应量）",
           "source": "CoinGecko",
           "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-15",
+          "timestamp": 1771110607,
+          "price": 0.999821,
+          "marketCap": 73536508274,
+          "volume24h": 3266007222,
+          "circulatingSupply": 73545500722.59013,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
         }
       ]
     },
@@ -107,6 +118,17 @@
           "marketCap": 183816803897,
           "volume24h": 71351025798,
           "circulatingSupply": 183898052239.9661,
+          "supplyMetric": "circulating_supply（流通供应量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-15",
+          "timestamp": 1771110607,
+          "price": 0.999624,
+          "marketCap": 183747384719,
+          "volume24h": 63242597088,
+          "circulatingSupply": 183816960128.6833,
           "supplyMetric": "circulating_supply（流通供应量）",
           "source": "CoinGecko",
           "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
@@ -150,6 +172,17 @@
           "supplyMetric": "circulating_supply（链上流通量，近似发行量）",
           "source": "CoinGecko",
           "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-15",
+          "timestamp": 1771110607,
+          "price": 69952,
+          "marketCap": 1398164646188,
+          "volume24h": 38579780168,
+          "circulatingSupply": 19989378.0,
+          "supplyMetric": "circulating_supply（链上流通量，近似发行量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
         }
       ]
     },
@@ -190,10 +223,21 @@
           "supplyMetric": "circulating_supply（链上流通量，近似发行量）",
           "source": "CoinGecko",
           "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
+        },
+        {
+          "date": "2026-02-15",
+          "timestamp": 1771110607,
+          "price": 2090.06,
+          "marketCap": 252239268936,
+          "volume24h": 24361654047,
+          "circulatingSupply": 120692467.6142904,
+          "supplyMetric": "circulating_supply（链上流通量，近似发行量）",
+          "source": "CoinGecko",
+          "sourceUrl": "https://api.coingecko.com/api/v3/coins/markets"
         }
       ]
     }
   },
-  "lastUpdate": "2026-02-13T23:10:08.332702+00:00",
+  "lastUpdate": "2026-02-14T23:10:07.585429+00:00",
   "source": "CoinGecko"
 }
