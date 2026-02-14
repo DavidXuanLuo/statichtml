@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "贾维斯工作看板",
+    "timezone": "Asia/Shanghai",
+    "refreshSeconds": 8,
+    "lastUpdated": "2026-02-14T15:55:00+08:00"
+  },
+  "summary": {
+    "status": "running",
+    "todayCompleted": 9,
+    "todayRunning": 2,
+    "todayPending": 3
+  },
+  "now": [
+    {
+      "id": "job-x-ugc",
+      "title": "X高质量UGC滚动收录",
+      "status": "running",
+      "progress": "按20分钟窗口巡检中",
+      "detail": "仅采集X；满足高质量标准才入库；累计10条才通知",
+      "updatedAt": "15:40"
+    },
+    {
+      "id": "route-isolation",
+      "title": "会话隔离巡检",
+      "status": "running",
+      "progress": "Telegram/Feishu路由持续观察",
+      "detail": "session.dmScope=per-channel-peer 已生效",
+      "updatedAt": "15:35"
+    }
+  ],
+  "timeline": [
+    {
+      "time": "15:50",
+      "type": "new-request",
+      "text": "收到新需求：搭建可实时刷新的工作概览H5看板"
+    },
+    {
+      "time": "15:40",
+      "type": "cron",
+      "text": "X滚动收录本轮新增0条，未触发10条阈值通知"
+    },
+    {
+      "time": "15:22",
+      "type": "policy",
+      "text": "采集源调整为仅X，小红书待账号可用后恢复"
+    },
+    {
+      "time": "15:02",
+      "type": "quality",
+      "text": "收录标准升级：数据密度/逻辑链/讨论价值优先，低信息量过滤"
+    },
+    {
+      "time": "14:43",
+      "type": "delivery",
+      "text": "触发口径固定：仅回传“收录条数 + H5链接”"
+    }
+  ],
+  "completed": [
+    {
+      "title": "GMV日报看板格式锁定",
+      "result": "不分页、当月合计对齐、全表倒序",
+      "updatedAt": "14:10"
+    },
+    {
+      "title": "X页面评论计数一致性修复",
+      "result": "展示评论数量与计数字段一致",
+      "updatedAt": "13:20"
+    },
+    {
+      "title": "X媒体本地化",
+      "result": "头像/图片改为本地资源路径",
+      "updatedAt": "12:40"
+    }
+  ],
+  "blocked": [
+    {
+      "title": "小红书网页端登录墙",
+      "impact": "未登录时难以完成高质量核验",
+      "nextAction": "待提供账号后接入采集"
+    }
+  ]
+}

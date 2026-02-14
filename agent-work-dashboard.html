@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>贾维斯工作看板</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#121a2d; --muted:#93a0bd; --text:#e8edf8; --ok:#35d07f; --run:#4da3ff; --warn:#ffb347; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0a0f1d,#0f1528);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Noto Sans SC",sans-serif}
+    .wrap{max-width:1180px;margin:0 auto;padding:20px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .title{font-size:22px;font-weight:700}
+    .meta{color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:12px;margin-top:14px}
+    .card{background:var(--panel);border:1px solid #223054;border-radius:14px;padding:14px}
+    .k{color:var(--muted);font-size:12px}
+    .v{font-size:22px;font-weight:700;margin-top:4px}
+    .sections{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:12px}
+    h3{margin:0 0 10px 0;font-size:15px}
+    ul{list-style:none;padding:0;margin:0}
+    li{padding:10px;border-radius:10px;background:#0f1629;border:1px solid #1f2a49;margin-bottom:8px}
+    .row{display:flex;justify-content:space-between;gap:10px}
+    .muted{color:var(--muted);font-size:12px}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px}
+    .running{background:rgba(77,163,255,.15);color:var(--run)}
+    .done{background:rgba(53,208,127,.15);color:var(--ok)}
+    .warn{background:rgba(255,179,71,.15);color:var(--warn)}
+    @media (max-width:920px){.grid{grid-template-columns:repeat(2,1fr)}.sections{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="title" id="title">贾维斯工作看板</div>
+        <div class="meta" id="meta">加载中...</div>
+      </div>
+      <div class="meta">自动刷新：<span id="refresh">--</span>s</div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><div class="k">当前状态</div><div class="v" id="status">--</div></div>
+      <div class="card"><div class="k">今日完成</div><div class="v" id="done">0</div></div>
+      <div class="card"><div class="k">进行中</div><div class="v" id="running">0</div></div>
+      <div class="card"><div class="k">待处理</div><div class="v" id="pending">0</div></div>
+    </div>
+
+    <div class="sections">
+      <div class="card">
+        <h3>正在做</h3>
+        <ul id="now"></ul>
+      </div>
+      <div class="card">
+        <h3>时间线</h3>
+        <ul id="timeline"></ul>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div class="card">
+        <h3>今日已完成</h3>
+        <ul id="completed"></ul>
+      </div>
+      <div class="card">
+        <h3>阻塞/风险</h3>
+        <ul id="blocked"></ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+const dataUrl = './data/agent-work-status.json';
+const $ = (id)=>document.getElementById(id);
+function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
+function renderList(el, arr, fn){ el.innerHTML = (arr||[]).map(fn).join('') || '<li class="muted">暂无</li>'; }
+function statusBadge(status){
+  if(status==='running') return '<span class="badge running">进行中</span>';
+  if(status==='done') return '<span class="badge done">完成</span>';
+  return '<span class="badge warn">关注</span>';
+}
+async function load(){
+  const res = await fetch(dataUrl + '?t=' + Date.now(), {cache:'no-store'});
+  const d = await res.json();
+  $('title').textContent = d.meta?.title || '工作看板';
+  $('meta').textContent = `最后更新：${d.meta?.lastUpdated || '--'} · 时区：${d.meta?.timezone || '--'}`;
+  $('refresh').textContent = d.meta?.refreshSeconds || 8;
+  $('status').textContent = d.summary?.status || '--';
+  $('done').textContent = d.summary?.todayCompleted ?? 0;
+  $('running').textContent = d.summary?.todayRunning ?? 0;
+  $('pending').textContent = d.summary?.todayPending ?? 0;
+
+  renderList($('now'), d.now, i => `<li><div class="row"><b>${esc(i.title)}</b>${statusBadge(i.status)}</div><div class="muted" style="margin-top:6px">${esc(i.progress||'')}</div><div class="muted">${esc(i.detail||'')} · ${esc(i.updatedAt||'')}</div></li>`);
+  renderList($('timeline'), d.timeline, i => `<li><div class="row"><b>${esc(i.time||'--')}</b><span class="muted">${esc(i.type||'')}</span></div><div style="margin-top:6px">${esc(i.text||'')}</div></li>`);
+  renderList($('completed'), d.completed, i => `<li><div><b>${esc(i.title)}</b></div><div class="muted" style="margin-top:6px">${esc(i.result||'')} · ${esc(i.updatedAt||'')}</div></li>`);
+  renderList($('blocked'), d.blocked, i => `<li><div><b>${esc(i.title)}</b></div><div class="muted" style="margin-top:6px">影响：${esc(i.impact||'')}</div><div class="muted">下一步：${esc(i.nextAction||'')}</div></li>`);
+
+  const sec = (d.meta?.refreshSeconds || 8) * 1000;
+  clearInterval(window.__tick);
+  window.__tick = setInterval(() => load().catch(()=>{}), sec);
+}
+load().catch(err=>{ $('meta').textContent = '加载失败：' + (err?.message || err); });
+</script>
+</body>
+</html>
