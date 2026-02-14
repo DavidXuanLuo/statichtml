@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 20:29"
+    "lastUpdated": "2026-02-14 21:00"
   },
   "summary": {
     "status": "running",
@@ -16,9 +16,9 @@
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "仅X采集进行中（高质量筛选+完整性校验）",
-      "detail": "收录主源保持X；通过完整性闸门后才允许入库到高仿X H5",
-      "updatedAt": "20:29"
+      "progress": "仅X采集进行中（本轮新增0，完整性闸门拦截）",
+      "detail": "渠道仅X；未满足“主帖/线程/评论完整性+高质量”即不入库不发布",
+      "updatedAt": "21:00"
     },
     {
       "id": "job-xhs-draft",
@@ -38,6 +38,11 @@
     }
   ],
   "timeline": [
+    {
+      "time": "21:00",
+      "type": "scan",
+      "text": "仅X（profile=openclaw）巡检完成：候选流噪声较高，本轮新增0条；完整性门禁持续生效，未达10条阈值不通知"
+    },
     {
       "time": "20:29",
       "type": "ops",
