@@ -1,17 +1,27 @@
 {
-  "lastUpdated": "2026-02-14 19:20 GMT+8",
+  "lastUpdated": "2026-02-14 20:20 GMT+8",
   "status": {
-    "text": "运行中：X完整性修复优先（发布门禁开启）",
-    "mode": "仅X采集（profile=openclaw）",
-    "note": "先补齐线程与评论完整性，再谈新增数量；抽检不过即不发布。"
+    "text": "运行中：多源高质量滚动收录（发布门禁生效）",
+    "mode": "双源采集（X+小红书，profile=openclaw）",
+    "note": "小红书登录可用；本轮按完整性门禁筛选，未达发布阈值不外发。"
   },
   "metrics": {
-    "todayRounds": 2,
-    "todayScanned": 15,
+    "todayRounds": 3,
+    "todayScanned": 24,
     "todayCollected": 1,
     "toNextPublish": 6
   },
   "recentActions": [
+    {
+      "time": "20:20",
+      "text": "已验证小红书登录可用，启用双源巡检（X+小红书）。",
+      "level": "ok"
+    },
+    {
+      "time": "20:20",
+      "text": "本轮新增0条：候选未同时满足“主文完整+线程/评论可得范围完整”门禁，未入库未发布。",
+      "level": "warn"
+    },
     {
       "time": "19:20",
       "text": "执行完整性优先轮次：抽检3条未达标，触发发布阻断。",
