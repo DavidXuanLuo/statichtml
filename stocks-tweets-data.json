@@ -1,6 +1,96 @@
 {
-  "generatedAt": "2026-02-13T23:47:09.426Z",
+  "generatedAt": "2026-02-14T06:42:58.466Z",
   "posts": [
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/TrendSpider/status/2022513629829161470",
+      "avatar": "./assets/x-media/avatar-6b839e9ed7e4.png",
+      "name": "TrendSpider",
+      "handle": "@TrendSpider",
+      "time": "2026-02-14T03:30:00.000Z",
+      "text": "Capitulation found. $HOOD",
+      "zh": "量化信号：$HOOD 出现“恐慌出清（capitulation）”特征，通常对应短线极端情绪区。",
+      "counts": {
+        "reply": "5",
+        "repost": "13",
+        "like": "97",
+        "view": "9,402"
+      },
+      "comments": [],
+      "media": []
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/lookonchain/status/2022530509428134095",
+      "avatar": "./assets/x-media/avatar-a98ca61e61f0.jpg",
+      "name": "Lookonchain",
+      "handle": "@lookonchain",
+      "time": "2026-02-14T04:37:04.000Z",
+      "text": "Someone created a new wallet 11 hours ago and deposited 2M $USDC into Hyperliquid to go long $NVDA with 2x leverage.\n\nThe position is 21,687 xyz:NVDA($3.97M).",
+      "zh": "链上观察：一个11小时前新建的钱包向 Hyperliquid 存入 200 万 USDC，以 2 倍杠杆做多 NVDA；当前仓位约 396.7 万美元。",
+      "counts": {
+        "reply": "24",
+        "repost": "61",
+        "like": "312",
+        "view": "57,816"
+      },
+      "comments": [],
+      "media": []
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/lisetrader2021/status/2022520020568543342",
+      "avatar": "./assets/x-media/avatar-b8cb21db0d18.png",
+      "name": "LM Trading",
+      "handle": "@lisetrader2021",
+      "time": "2026-02-14T03:55:24.000Z",
+      "text": "$HOOD Zooming out on a stock chart removes the noise and shows the bigger picture more clearly. Patience.",
+      "zh": "$HOOD：拉长周期看图能过滤噪音，更清楚看到大趋势。核心是耐心。",
+      "counts": {
+        "reply": "6",
+        "repost": "9",
+        "like": "88",
+        "view": "8,104"
+      },
+      "comments": [],
+      "media": []
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/LeverageETFs/status/2022290912827879712",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Leverage Shares ETFs",
+      "handle": "@LeverageETFs",
+      "time": "2026-02-13T12:45:00.000Z",
+      "text": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
+      "zh": "SMCI vs AMD：AI 收入兑现节奏出现分化。SMCI 上调指引并锚定 FY2026 收入 400 亿美元；AMD 同样超预期但强调 AI 放量更温和。结论：AI 资本开支真实存在，当前最先兑现的是基础设施层。",
+      "counts": {
+        "reply": "11",
+        "repost": "27",
+        "like": "146",
+        "view": "12,950"
+      },
+      "comments": [],
+      "media": []
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/TheLongInvest/status/2019439405531033769",
+      "avatar": "./assets/x-media/avatar-ab747b84f912.jpg",
+      "name": "The Long Investor",
+      "handle": "@TheLongInvest",
+      "time": "2026-02-05T15:54:08.000Z",
+      "text": "$NVDA has dropped out of the rising wedge (bearish)\n\nBUT\n\nThe 200 Day MA is still there, the last saviour for the market I believe at $169\n\nCan the market hold on until $NVDA reports on the 25th of Feb?",
+      "zh": "技术观点：NVDA 跌破上升楔形偏空，但 200 日均线（约 169 美元）仍是关键支撑。市场能否撑到 2 月 25 日财报前是观察重点。",
+      "counts": {
+        "reply": "31",
+        "repost": "74",
+        "like": "403",
+        "view": "68,220"
+      },
+      "comments": [],
+      "media": []
+    },
     {
       "ticker": "TSLA",
       "url": "https://x.com/TheSonOfWalkley/status/2022437219353444853",
