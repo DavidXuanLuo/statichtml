@@ -85,6 +85,11 @@
           </table>
         </div>
 
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">今日产出索引（可点击）</div>
+          <ul class="list" id="deliveriesList"></ul>
+        </div>
+
         <div class="card">
           <div class="section-title">阻塞/风险</div>
           <ul class="list" id="blockedList"></ul>
@@ -152,6 +157,15 @@
       const st = x.enabled ? (x.status || 'pending') : 'disabled';
       tr.innerHTML = `<td><strong>${h(x.name||'')}</strong><br><span class="muted">${h(x.scope||'')}</span></td><td class="${statusClass(st)}">${h(st)}</td><td>${h(x.cadence||'')}</td><td>${h(x.nextRun||'')}</td>`;
       schedBody.appendChild(tr);
+    });
+
+    const deliveriesList = document.getElementById('deliveriesList');
+    deliveriesList.innerHTML = '';
+    (d.deliveries || []).forEach(x => {
+      const li = document.createElement('li');
+      const link = x.url ? `<a href="${h(x.url)}" target="_blank" rel="noopener noreferrer">${h(x.title||x.url)}</a>` : `<strong>${h(x.title||'')}</strong>`;
+      li.innerHTML = `${link}<br><span class="muted">${h(x.note||'')} ｜ ${h(x.updatedAt||'--')}</span>`;
+      deliveriesList.appendChild(li);
     });
 
     const blockedList = document.getElementById('blockedList');
