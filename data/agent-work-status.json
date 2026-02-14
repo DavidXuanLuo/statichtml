@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 16:09"
+    "lastUpdated": "2026-02-14 16:12"
   },
   "summary": {
     "status": "running",
@@ -16,20 +16,25 @@
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "20分钟窗口巡检中（仅X）",
-      "detail": "达到10条才通知；通知仅“条数+链接”",
+      "progress": "本轮完成X巡检（10-20分钟窗口，低噪声过滤）",
+      "detail": "本轮新增0条；未达10条阈值，不触发通知",
       "updatedAt": "16:00"
     },
     {
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "按轮次更新任务状态与时间线",
+      "progress": "已同步本轮状态（新增/阈值/时间线）",
       "detail": "桌面端布局，展示全部任务（运行中/待执行/停用）",
-      "updatedAt": "16:02"
+      "updatedAt": "16:00"
     }
   ],
   "timeline": [
+    {
+      "time": "16:00",
+      "type": "scan",
+      "text": "完成仅X巡检一轮：高噪声帖子已过滤，本轮新增0条，阈值未触发"
+    },
     {
       "time": "16:02",
       "type": "dashboard",
@@ -68,11 +73,37 @@
       "updatedAt": "13:35"
     }
   ],
+  "deliveries": [
+    {
+      "title": "工作状态实时看板",
+      "url": "https://davidxuanluo.github.io/statichtml/agent-work-dashboard.html",
+      "note": "桌面端总览（运行中/待执行/停用）",
+      "updatedAt": "16:12"
+    },
+    {
+      "title": "X风格内容汇总页",
+      "url": "https://davidxuanluo.github.io/statichtml/stocks-tweets.html",
+      "note": "高质量内容沉淀页（只在达阈值时通知）",
+      "updatedAt": "持续更新"
+    },
+    {
+      "title": "四币数据看板（USDC/USDT/BTC/ETH）",
+      "url": "https://davidxuanluo.github.io/statichtml/crypto-dashboard.html",
+      "note": "每日采集与日报",
+      "updatedAt": "07:30"
+    },
+    {
+      "title": "直播间GMV日报看板",
+      "url": "https://davidxuanluo.github.io/statichtml/liverooms-dashboard.html",
+      "note": "泡泡玛特 + 东方甄选",
+      "updatedAt": "07:30"
+    }
+  ],
   "blocked": [
     {
-      "title": "小红书未登录状态",
-      "impact": "高质量核验受限，已暂停采集",
-      "nextAction": "待账号可用后恢复并并入同一X风格页面"
+      "title": "本轮无可入库新增",
+      "impact": "搜索流以抽奖/低信息噪声为主，未满足≥2项收录标准",
+      "nextAction": "下轮继续仅X巡检，优先跟踪高信号账号与可交叉验证线索"
     }
   ],
   "scheduled": [
