@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 16:12"
+    "lastUpdated": "2026-02-14 16:20"
   },
   "summary": {
     "status": "running",
@@ -16,20 +16,25 @@
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "本轮完成X巡检（10-20分钟窗口，低噪声过滤）",
-      "detail": "本轮新增0条；未达10条阈值，不触发通知",
-      "updatedAt": "16:00"
+      "progress": "本轮完成X巡检（高信号账号池→关键词发现池）",
+      "detail": "本轮候选16条，入库3条，平均score 6.7；未达10条阈值，不触发通知",
+      "updatedAt": "16:20"
     },
     {
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步本轮状态（新增/阈值/时间线）",
-      "detail": "桌面端布局，展示全部任务（运行中/待执行/停用）",
-      "updatedAt": "16:00"
+      "progress": "已同步本轮质量指标（候选/入库/均分/空轮原因）",
+      "detail": "空轮原因Top2：噪声与证据不足（本轮非空轮）",
+      "updatedAt": "16:20"
     }
   ],
   "timeline": [
+    {
+      "time": "16:20",
+      "type": "scan",
+      "text": "X强化巡检完成：候选16条，入库3条（score≥6，且中长内容占比100%）；未达10条阈值不通知"
+    },
     {
       "time": "16:00",
       "type": "scan",
@@ -101,9 +106,9 @@
   ],
   "blocked": [
     {
-      "title": "本轮无可入库新增",
-      "impact": "搜索流以抽奖/低信息噪声为主，未满足≥2项收录标准",
-      "nextAction": "下轮继续仅X巡检，优先跟踪高信号账号与可交叉验证线索"
+      "title": "低质量候选已过滤",
+      "impact": "噪声/弱相关/证据不足内容占候选主要比例，已通过评分闸门拦截",
+      "nextAction": "下轮继续优先高信号账号并扩展72h窗口补充深度内容"
     }
   ],
   "scheduled": [

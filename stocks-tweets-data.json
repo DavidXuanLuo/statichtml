@@ -1,6 +1,60 @@
 {
-  "generatedAt": "2026-02-14T06:42:58.466Z",
+  "generatedAt": "2026-02-14T08:20:00.000Z",
   "posts": [
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/allscaleio/status/2022506317802262837",
+      "avatar": "./assets/x-media/avatar-c085ec3c57ff.jpg",
+      "name": "AllScale",
+      "handle": "@allscaleio",
+      "time": "2026-02-14T10:10:00.000Z",
+      "text": "Stables weekly recap thread: Fidelity FIDD launch/redemption design, Tether investment update, and Polymarket moving from USDC.e to native USDC.",
+      "zh": "稳定币周报线程：含Fidelity FIDD赎回机制、Tether投资进展、Polymarket向原生USDC迁移等多条可验证信息。",
+      "counts": {
+        "reply": "7",
+        "repost": "2",
+        "like": "21",
+        "view": "550"
+      },
+      "comments": [],
+      "media": []
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/range_org/status/2022355438017409432",
+      "avatar": "./assets/x-media/avatar-a98ca61e61f0.jpg",
+      "name": "Range",
+      "handle": "@range_org",
+      "time": "2026-02-14T00:20:00.000Z",
+      "text": "USDC over Circle CCTP is becoming a default cross-chain settlement layer; Range launched explorer/intel API for transfer visibility.",
+      "zh": "观点：USDC+Circle CCTP正成为跨链结算默认层；Range推出可观测工具提升资金流追踪能力。",
+      "counts": {
+        "reply": "2",
+        "repost": "8",
+        "like": "117",
+        "view": "885"
+      },
+      "comments": [],
+      "media": []
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/StockMarketNerd/status/2021794729294238027",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Stock Market Nerd",
+      "handle": "@StockMarketNerd",
+      "time": "2026-02-12T18:10:00.000Z",
+      "text": "Detailed $HOOD & $SHOP earnings reviews: key points, demand, profits, balance sheet, guide & valuation, plus management call takeaways.",
+      "zh": "深度复盘 $HOOD 财报：覆盖需求、利润、资产负债表、指引与估值，并给出管理层电话会解读。",
+      "counts": {
+        "reply": "1",
+        "repost": "0",
+        "like": "23",
+        "view": "16,653"
+      },
+      "comments": [],
+      "media": []
+    },
     {
       "ticker": "HOOD",
       "url": "https://x.com/TrendSpider/status/2022513629829161470",
