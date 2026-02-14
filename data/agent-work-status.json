@@ -113,7 +113,8 @@
       "cadence": "每20分钟（07:00-23:59）",
       "nextRun": "16:20",
       "status": "running",
-      "scope": "TSLA/HOOD/NVDA/USDC/Circle/SMCI"
+      "scope": "TSLA/HOOD/NVDA/USDC/Circle/SMCI",
+      "outputUrl": "https://davidxuanluo.github.io/statichtml/stocks-tweets.html"
     },
     {
       "name": "任务监控+长时间未回告警",
@@ -129,7 +130,8 @@
       "cadence": "每日 07:10",
       "nextRun": "明日 07:10",
       "status": "pending",
-      "scope": "USDC/USDT/BTC/ETH"
+      "scope": "USDC/USDT/BTC/ETH",
+      "outputUrl": "https://davidxuanluo.github.io/statichtml/crypto-dashboard.html"
     },
     {
       "name": "Crypto四币每日数据报告",
@@ -137,7 +139,8 @@
       "cadence": "每日 07:30",
       "nextRun": "明日 07:30",
       "status": "pending",
-      "scope": "日报发送"
+      "scope": "日报发送",
+      "outputUrl": "https://davidxuanluo.github.io/statichtml/crypto-dashboard.html"
     },
     {
       "name": "Kalshi每日跟踪",
@@ -153,7 +156,8 @@
       "cadence": "每日 07:30",
       "nextRun": "明日 07:30",
       "status": "pending",
-      "scope": "固定模板看板更新+发布"
+      "scope": "固定模板看板更新+发布",
+      "outputUrl": "https://davidxuanluo.github.io/statichtml/liverooms-dashboard.html"
     },
     {
       "name": "Robinhood月度运营数据跟踪",
