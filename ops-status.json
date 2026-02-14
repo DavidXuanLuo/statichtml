@@ -1,17 +1,22 @@
 {
-  "lastUpdated": "2026-02-14 23:20 GMT+8",
+  "lastUpdated": "2026-02-15 07:20 GMT+8",
   "status": {
-    "text": "运行中：X单源滚动收录（发送前闸门版）",
+    "text": "运行中：X单源滚动收录（放宽增量版）",
     "mode": "仅X采集（profile=openclaw）",
-    "note": "已启用发送前闸门：写入校验、可见性抽检、git push校验，任一失败即阻断发送。"
+    "note": "本轮X端异常（登录页报错），未满足100条样本浏览条件；发送前闸门阻断对外条数通知。"
   },
   "metrics": {
-    "todayRounds": 11,
+    "todayRounds": 12,
     "todayScanned": 168,
     "todayCollected": 41,
-    "toNextPublish": 1
+    "toNextPublish": 0
   },
   "recentActions": [
+    {
+      "time": "07:20",
+      "text": "X滚动收录（放宽增量版）受阻：X登录页持续报错，样本浏览0条，相关0条/新增0条；未达可发送条件。",
+      "level": "warn"
+    },
     {
       "time": "23:20",
       "text": "X滚动收录（闸门版）完成：新增1条；累计待推送9条。",

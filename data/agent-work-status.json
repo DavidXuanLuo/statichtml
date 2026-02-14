@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 23:31"
+    "lastUpdated": "2026-02-15 07:20"
   },
   "summary": {
     "status": "running",
@@ -23,18 +23,18 @@
     {
       "id": "job-x-ugc",
       "title": "X滚动收录（放宽版）",
-      "status": "running",
-      "progress": "仅X采集进行中（相关即收录）",
-      "detail": "本轮新增5条；累计待触发8/10，未发送外部通知。",
-      "updatedAt": "22:20"
+      "status": "blocked",
+      "progress": "X采集受阻（登录页错误）",
+      "detail": "本轮目标100条样本未达成（实际0条）；相关0/不相关0，新增0，发送闸门阻断。",
+      "updatedAt": "07:20"
     },
     {
-      "id": "job-xhs-draft",
-      "title": "小红书发布内容生成（第一阶段）",
+      "id": "job-xhs-interact",
+      "title": "小红书OpenClaw互动（评论模式）",
       "status": "running",
-      "progress": "将X优质内容轻修饰为小红书可发版本",
-      "detail": "按用户规则：多图内容（至少4张，建议6-8张），先出首批草稿待确认",
-      "updatedAt": "20:29"
+      "progress": "已切到评论模式：每轮点赞1条+评论1条",
+      "detail": "目标：验证评论操作正确性与内容合适度；运行后主动回执",
+      "updatedAt": "23:33"
     },
     {
       "id": "ops-dashboard",
@@ -46,6 +46,11 @@
     }
   ],
   "timeline": [
+    {
+      "time": "07:20",
+      "type": "scan",
+      "text": "仅X（profile=openclaw）巡检受阻：登录页持续报错，无法进入信息流；样本0条，相关0条，新增0条；未触发外部通知。"
+    },
     {
       "time": "23:31",
       "type": "xhs",
