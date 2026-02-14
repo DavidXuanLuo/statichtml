@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 22:00"
+    "lastUpdated": "2026-02-14 23:31"
   },
   "summary": {
     "status": "running",
@@ -13,12 +13,20 @@
   },
   "now": [
     {
+      "id": "job-xhs-comment",
+      "title": "小红书OpenClaw内容互动（评论模式）",
+      "status": "completed",
+      "progress": "本轮完成1赞+1评（自然共鸣风格）",
+      "detail": "浏览20条，命中5条OpenClaw相关；点赞1条；评论1条并发布成功。",
+      "updatedAt": "23:31"
+    },
+    {
       "id": "job-x-ugc",
       "title": "X滚动收录（放宽版）",
       "status": "running",
       "progress": "仅X采集进行中（相关即收录）",
-      "detail": "本轮新增3条；未达10条阈值，不发送外部通知。",
-      "updatedAt": "22:00"
+      "detail": "本轮新增5条；累计待触发8/10，未发送外部通知。",
+      "updatedAt": "22:20"
     },
     {
       "id": "job-xhs-draft",
@@ -32,12 +40,22 @@
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步22:00巡检结果",
-      "detail": "看板与ops状态已更新：距下一次触发通知还差7条。",
-      "updatedAt": "22:00"
+      "progress": "已同步22:20巡检结果",
+      "detail": "看板与ops状态已更新：距下一次触发通知还差2条。",
+      "updatedAt": "22:20"
     }
   ],
   "timeline": [
+    {
+      "time": "23:31",
+      "type": "xhs",
+      "text": "小红书互动（profile=openclaw）完成：浏览20条，命中5条，点赞1条，评论1条。评论“这条很实用，尤其“先装1个先跑通”这点太关键了，我也是这样才没半路放弃。”；帖子 https://www.xiaohongshu.com/explore/698d9b2e000000001503075c ，评论赞暂不可见。"
+    },
+    {
+      "time": "22:20",
+      "type": "scan",
+      "text": "仅X（profile=openclaw）巡检完成：新增5条（HOOD/稳定币/电动车产业链），未达10条阈值，未通知。"
+    },
     {
       "time": "22:00",
       "type": "scan",
