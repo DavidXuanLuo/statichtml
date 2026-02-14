@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 18:00"
+    "lastUpdated": "2026-02-14 19:40"
   },
   "summary": {
     "status": "running",
@@ -16,20 +16,30 @@
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "执行完整性修复巡检（主帖/线程/评论）",
-      "detail": "本轮抽检3条均未通过：存在“提到分析/线程但未展开”与“有回复计数但评论流为空”；按规则本轮不发布、不入库",
-      "updatedAt": "18:00"
+      "progress": "执行完整性修复巡检（仅X / profile=openclaw）",
+      "detail": "19:40抽检3条：0条通过、3条不通过（评论抓取条数与计数不一致；thread帖仍缺连续楼层）；按硬规则阻断入库与发布",
+      "updatedAt": "19:40"
     },
     {
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步完整性质检结果与阻塞原因",
-      "detail": "阈值进度维持 4/10；未触发外部通知",
-      "updatedAt": "18:00"
+      "progress": "已同步本轮完整性质检结果（发布阻断）",
+      "detail": "阈值进度维持 4/10；本轮抽检未通过，未触发外部通知",
+      "updatedAt": "19:40"
     }
   ],
   "timeline": [
+    {
+      "time": "19:40",
+      "type": "qa",
+      "text": "完整性抽检3条：均未通过（评论计数与渲染条数不一致；含thread关键词帖子未展开连续楼层）；本轮不发布、不入库"
+    },
+    {
+      "time": "19:00",
+      "type": "qa",
+      "text": "完整性抽检3条：lookonchain通过；allscale线程续帖未全收录、StockMarketNerd评论未抓全，按规则本轮不发布"
+    },
     {
       "time": "18:00",
       "type": "qa",
@@ -111,9 +121,14 @@
   ],
   "blocked": [
     {
-      "title": "X收录完整性未达标（本轮拦截）",
-      "impact": "抽检样本出现线程缺失与评论流为空，违反‘完整性硬规则’，已阻止发布",
-      "nextAction": "下一轮先补齐线程与高质量评论（目标前20条，不足则抓全），通过抽检后再入库"
+      "title": "X收录完整性未达标（19:40轮次拦截）",
+      "impact": "抽检3条全部不通过：评论抓取未达“高质量前20条或抓全”且thread帖存在续帖缺失，违反入库硬规则",
+      "nextAction": "继续仅X巡检并优先修复抓取链路：先主帖完整线程，再评论前20条（不足20抓全）；修复后再恢复入库"
+    },
+    {
+      "title": "X收录完整性未达标（19:00轮次拦截）",
+      "impact": "抽检样本仍存在线程续帖与评论抓取不完整，违反“主帖/线程/评论完整性硬规则”，已阻止发布",
+      "nextAction": "下一轮继续补齐：主帖提及thread/analysis必须展开连续楼层；有评论则抓高质量前20条（不足20抓全）"
     }
   ],
   "scheduled": [
@@ -121,7 +136,7 @@
       "name": "X高质量UGC滚动收录",
       "enabled": true,
       "cadence": "每20分钟（07:00-23:59）",
-      "nextRun": "17:00",
+      "nextRun": "19:20",
       "status": "running",
       "scope": "TSLA/HOOD/NVDA/USDC/Circle/SMCI",
       "outputUrl": "https://davidxuanluo.github.io/statichtml/stocks-tweets.html"
