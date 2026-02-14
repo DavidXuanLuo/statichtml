@@ -2,104 +2,109 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>贾维斯工作看板</title>
   <style>
-    :root { --bg:#0b1020; --panel:#121a2d; --muted:#93a0bd; --text:#e8edf8; --ok:#35d07f; --run:#4da3ff; --warn:#ffb347; }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#0a0f1d,#0f1528);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Noto Sans SC",sans-serif}
-    .wrap{max-width:1180px;margin:0 auto;padding:20px}
-    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .title{font-size:22px;font-weight:700}
-    .meta{color:var(--muted);font-size:13px}
-    .grid{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:12px;margin-top:14px}
-    .card{background:var(--panel);border:1px solid #223054;border-radius:14px;padding:14px}
-    .k{color:var(--muted);font-size:12px}
-    .v{font-size:22px;font-weight:700;margin-top:4px}
-    .sections{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:12px}
-    h3{margin:0 0 10px 0;font-size:15px}
-    ul{list-style:none;padding:0;margin:0}
-    li{padding:10px;border-radius:10px;background:#0f1629;border:1px solid #1f2a49;margin-bottom:8px}
-    .row{display:flex;justify-content:space-between;gap:10px}
-    .muted{color:var(--muted);font-size:12px}
-    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px}
-    .running{background:rgba(77,163,255,.15);color:var(--run)}
-    .done{background:rgba(53,208,127,.15);color:var(--ok)}
-    .warn{background:rgba(255,179,71,.15);color:var(--warn)}
-    @media (max-width:920px){.grid{grid-template-columns:repeat(2,1fr)}.sections{grid-template-columns:1fr}}
+    :root { color-scheme: dark; }
+    body { margin: 0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; background:#0f1419; color:#e7ecf0; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 20px; }
+    .top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom: 16px; }
+    h1 { font-size: 22px; margin: 0; }
+    .muted { color:#8b98a5; font-size:13px; }
+    .card { background:#17202a; border:1px solid #253341; border-radius:12px; padding:14px; margin-bottom:12px; }
+    .grid { display:grid; grid-template-columns: repeat(4,minmax(120px,1fr)); gap:10px; }
+    .k { font-size: 12px; color:#8b98a5; }
+    .v { font-size: 24px; font-weight: 700; margin-top:4px; }
+    ul { margin:8px 0 0; padding-left: 18px; }
+    li { margin: 6px 0; line-height:1.45; }
+    .pill { display:inline-block; padding:3px 8px; border-radius:999px; font-size:12px; border:1px solid #2f4555; color:#9fd3ff; }
+    .ok { color:#69d79f; }
+    .warn { color:#f4c66a; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div>
-        <div class="title" id="title">贾维斯工作看板</div>
-        <div class="meta" id="meta">加载中...</div>
-      </div>
-      <div class="meta">自动刷新：<span id="refresh">--</span>s</div>
-    </div>
-
-    <div class="grid">
-      <div class="card"><div class="k">当前状态</div><div class="v" id="status">--</div></div>
-      <div class="card"><div class="k">今日完成</div><div class="v" id="done">0</div></div>
-      <div class="card"><div class="k">进行中</div><div class="v" id="running">0</div></div>
-      <div class="card"><div class="k">待处理</div><div class="v" id="pending">0</div></div>
-    </div>
-
-    <div class="sections">
-      <div class="card">
-        <h3>正在做</h3>
-        <ul id="now"></ul>
-      </div>
-      <div class="card">
-        <h3>时间线</h3>
-        <ul id="timeline"></ul>
-      </div>
-    </div>
-
-    <div class="sections">
-      <div class="card">
-        <h3>今日已完成</h3>
-        <ul id="completed"></ul>
-      </div>
-      <div class="card">
-        <h3>阻塞/风险</h3>
-        <ul id="blocked"></ul>
-      </div>
-    </div>
+<div class="wrap">
+  <div class="top">
+    <h1>贾维斯工作看板（实时）</h1>
+    <div class="muted" id="clock">加载中...</div>
   </div>
 
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+      <div>
+        <div class="k">当前状态</div>
+        <div id="statusText" style="font-size:18px;font-weight:600;">--</div>
+      </div>
+      <span class="pill" id="modeTag">--</span>
+    </div>
+    <div class="muted" id="statusNote" style="margin-top:8px;">--</div>
+  </div>
+
+  <div class="card grid">
+    <div><div class="k">今日浏览轮次</div><div class="v" id="rounds">0</div></div>
+    <div><div class="k">今日浏览总量</div><div class="v" id="scanned">0</div></div>
+    <div><div class="k">今日新收录</div><div class="v" id="collected">0</div></div>
+    <div><div class="k">距离下次发布</div><div class="v" id="toPublish">0</div></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <strong>最近动作</strong><span class="muted">自动每15秒刷新</span>
+    </div>
+    <ul id="recent"></ul>
+  </div>
+
+  <div class="card">
+    <strong>策略与规则（固定）</strong>
+    <ul>
+      <li>X为当前唯一采集源（小红书待账号可用后恢复双源）。</li>
+      <li>仅收录高质量内容：数据、关键企业问题、技术到市场观点链条、可引发讨论。</li>
+      <li>每新增10条，立即发布一期H5并回传“新增条数 + 链接”。</li>
+      <li>消息内不贴正文，完整内容仅在H5查看。</li>
+    </ul>
+  </div>
+
+  <div class="muted">数据文件：<code>ops-status.json</code> ｜ 最后更新：<span id="lastUpdated">--</span></div>
+</div>
+
 <script>
-const dataUrl = './data/agent-work-status.json';
-const $ = (id)=>document.getElementById(id);
-function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
-function renderList(el, arr, fn){ el.innerHTML = (arr||[]).map(fn).join('') || '<li class="muted">暂无</li>'; }
-function statusBadge(status){
-  if(status==='running') return '<span class="badge running">进行中</span>';
-  if(status==='done') return '<span class="badge done">完成</span>';
-  return '<span class="badge warn">关注</span>';
-}
-async function load(){
-  const res = await fetch(dataUrl + '?t=' + Date.now(), {cache:'no-store'});
-  const d = await res.json();
-  $('title').textContent = d.meta?.title || '工作看板';
-  $('meta').textContent = `最后更新：${d.meta?.lastUpdated || '--'} · 时区：${d.meta?.timezone || '--'}`;
-  $('refresh').textContent = d.meta?.refreshSeconds || 8;
-  $('status').textContent = d.summary?.status || '--';
-  $('done').textContent = d.summary?.todayCompleted ?? 0;
-  $('running').textContent = d.summary?.todayRunning ?? 0;
-  $('pending').textContent = d.summary?.todayPending ?? 0;
+  const f = n => Number(n || 0).toLocaleString('zh-CN');
 
-  renderList($('now'), d.now, i => `<li><div class="row"><b>${esc(i.title)}</b>${statusBadge(i.status)}</div><div class="muted" style="margin-top:6px">${esc(i.progress||'')}</div><div class="muted">${esc(i.detail||'')} · ${esc(i.updatedAt||'')}</div></li>`);
-  renderList($('timeline'), d.timeline, i => `<li><div class="row"><b>${esc(i.time||'--')}</b><span class="muted">${esc(i.type||'')}</span></div><div style="margin-top:6px">${esc(i.text||'')}</div></li>`);
-  renderList($('completed'), d.completed, i => `<li><div><b>${esc(i.title)}</b></div><div class="muted" style="margin-top:6px">${esc(i.result||'')} · ${esc(i.updatedAt||'')}</div></li>`);
-  renderList($('blocked'), d.blocked, i => `<li><div><b>${esc(i.title)}</b></div><div class="muted" style="margin-top:6px">影响：${esc(i.impact||'')}</div><div class="muted">下一步：${esc(i.nextAction||'')}</div></li>`);
+  async function load() {
+    try {
+      const res = await fetch(`./ops-status.json?t=${Date.now()}`);
+      const d = await res.json();
 
-  const sec = (d.meta?.refreshSeconds || 8) * 1000;
-  clearInterval(window.__tick);
-  window.__tick = setInterval(() => load().catch(()=>{}), sec);
-}
-load().catch(err=>{ $('meta').textContent = '加载失败：' + (err?.message || err); });
+      document.getElementById('statusText').textContent = d.status?.text || '空闲';
+      document.getElementById('modeTag').textContent = d.status?.mode || 'X采集';
+      document.getElementById('statusNote').textContent = d.status?.note || '';
+
+      document.getElementById('rounds').textContent = f(d.metrics?.todayRounds);
+      document.getElementById('scanned').textContent = f(d.metrics?.todayScanned);
+      document.getElementById('collected').textContent = f(d.metrics?.todayCollected);
+      document.getElementById('toPublish').textContent = f(d.metrics?.toNextPublish);
+
+      const recent = document.getElementById('recent');
+      recent.innerHTML = '';
+      (d.recentActions || []).slice(0, 12).forEach(a => {
+        const li = document.createElement('li');
+        const cls = a.level === 'warn' ? 'warn' : (a.level === 'ok' ? 'ok' : '');
+        li.innerHTML = `<span class="muted">[${a.time || '--:--'}]</span> <span class="${cls}">${a.text || ''}</span>`;
+        recent.appendChild(li);
+      });
+
+      document.getElementById('lastUpdated').textContent = d.lastUpdated || '--';
+      document.getElementById('clock').textContent = `本地时间：${new Date().toLocaleString('zh-CN')}`;
+    } catch (e) {
+      document.getElementById('clock').textContent = '看板数据加载失败';
+    }
+  }
+
+  load();
+  setInterval(load, 15000);
+  setInterval(() => {
+    document.getElementById('clock').textContent = `本地时间：${new Date().toLocaleString('zh-CN')}`;
+  }, 1000);
 </script>
 </body>
 </html>

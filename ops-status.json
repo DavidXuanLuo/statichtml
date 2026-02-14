@@ -1,0 +1,31 @@
+{
+  "lastUpdated": "2026-02-14 15:55 GMT+8",
+  "status": {
+    "text": "运行中：X高质量内容持续巡检",
+    "mode": "X采集（小红书待登录）",
+    "note": "按‘新增10条即发布’策略执行，内容统一沉淀到X风格H5。"
+  },
+  "metrics": {
+    "todayRounds": 1,
+    "todayScanned": 12,
+    "todayCollected": 1,
+    "toNextPublish": 9
+  },
+  "recentActions": [
+    {
+      "time": "15:55",
+      "text": "已创建贾维斯工作看板（支持15秒自动刷新）。",
+      "level": "ok"
+    },
+    {
+      "time": "15:53",
+      "text": "确认执行口径：每新增10条，回传‘新增条数 + H5链接’。",
+      "level": "ok"
+    },
+    {
+      "time": "15:52",
+      "text": "策略更新：无小红书账号时，阶段性仅采集X。",
+      "level": "warn"
+    }
+  ]
+}
