@@ -5,119 +5,172 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>贾维斯实时工作看板（桌面版）</title>
   <style>
-    body { margin:0; background:#0f1419; color:#e7ecf0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; }
-    .wrap { max-width: 1240px; margin: 0 auto; padding: 20px; }
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#0b1220; color:#e6edf3; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; }
+    .wrap { max-width: 1360px; margin: 0 auto; padding: 18px; }
     .top { display:flex; justify-content:space-between; align-items:flex-end; gap:12px; margin-bottom:14px; }
     h1 { margin:0; font-size:24px; }
-    .muted { color:#8b98a5; font-size:13px; }
-    .card { background:#17202a; border:1px solid #253341; border-radius:12px; padding:14px; margin-bottom:12px; }
-    .grid { display:grid; grid-template-columns:repeat(4,minmax(120px,1fr)); gap:10px; }
-    .k { font-size:12px; color:#8b98a5; }
-    .v { font-size:24px; font-weight:700; margin-top:4px; }
-    .two { display:grid; grid-template-columns:1.2fr 1fr; gap:12px; }
-    .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid #2f4555; color:#9fd3ff; }
-    .running { color:#56b8ff; }
-    .pending { color:#f4c66a; }
-    .disabled { color:#8b98a5; }
-    ul { margin:8px 0 0; padding-left:18px; }
-    li { margin:6px 0; line-height:1.45; }
-    table { width:100%; border-collapse:collapse; font-size:13px; }
-    th, td { padding:10px 8px; border-bottom:1px solid #253341; text-align:left; vertical-align:top; }
-    th { color:#8b98a5; font-weight:600; }
-    .nowrap { white-space:nowrap; }
-    @media (max-width:1000px){ .two{grid-template-columns:1fr;} .grid{grid-template-columns:repeat(2,minmax(120px,1fr));} }
+    .muted { color:#8aa0b6; font-size:13px; }
+    .grid4 { display:grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap:10px; margin-bottom:12px; }
+    .card { background:#111b2e; border:1px solid #20314d; border-radius:12px; padding:12px; }
+    .k { color:#90a7bd; font-size:12px; }
+    .v { font-size:26px; font-weight:700; margin-top:3px; }
+    .layout { display:grid; grid-template-columns: 1.3fr 1fr; gap:12px; }
+    .section-title { font-size:15px; font-weight:700; margin-bottom:8px; }
+    .list { margin:0; padding-left:18px; }
+    .list li { margin:7px 0; line-height:1.45; }
+    .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid #3a587c; color:#9fd2ff; }
+    .ok { color:#7dd3a7; }
+    .warn { color:#f8cc77; }
+    .err { color:#ff8f8f; }
+    table { width:100%; border-collapse: collapse; font-size:13px; }
+    th, td { border-bottom:1px solid #20314d; padding:8px 6px; text-align:left; vertical-align:top; }
+    th { color:#9db3c8; font-weight:600; }
+    .status-running { color:#7dd3a7; }
+    .status-pending { color:#f8cc77; }
+    .status-disabled { color:#9aa8b6; }
+    .footer { margin-top:10px; color:#7f93a8; font-size:12px; }
+    @media (max-width: 1080px) {
+      .layout { grid-template-columns: 1fr; }
+      .grid4 { grid-template-columns: repeat(2, minmax(140px, 1fr)); }
+    }
   </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="top">
-    <div>
-      <h1 id="title">贾维斯实时工作看板（桌面版）</h1>
-      <div class="muted" id="meta">加载中...</div>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1 id="title">贾维斯实时工作看板（桌面版）</h1>
+        <div class="muted" id="clock">--</div>
+      </div>
+      <div class="muted">自动刷新：<span id="refreshSec">--</span>s ｜ 数据源：<code>data/agent-work-status.json</code></div>
     </div>
-    <div class="muted" id="clock">--</div>
-  </div>
 
-  <div class="card grid">
-    <div><div class="k">当前状态</div><div class="v" id="status">--</div></div>
-    <div><div class="k">今日已完成</div><div class="v" id="done">0</div></div>
-    <div><div class="k">进行中</div><div class="v" id="runningCount">0</div></div>
-    <div><div class="k">待处理</div><div class="v" id="pending">0</div></div>
-  </div>
+    <div class="grid4">
+      <div class="card"><div class="k">系统状态</div><div class="v" id="sStatus">--</div></div>
+      <div class="card"><div class="k">今日已完成</div><div class="v" id="sDone">0</div></div>
+      <div class="card"><div class="k">运行中任务</div><div class="v" id="sRunning">0</div></div>
+      <div class="card"><div class="k">待执行任务</div><div class="v" id="sPending">0</div></div>
+    </div>
 
-  <div class="two">
-    <div class="card">
-      <strong>正在执行</strong>
-      <ul id="now"></ul>
-    </div>
-    <div class="card">
-      <strong>最新时间线</strong>
-      <ul id="timeline"></ul>
-    </div>
-  </div>
+    <div class="layout">
+      <div>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">当前进行中</div>
+          <ul class="list" id="nowList"></ul>
+        </div>
 
-  <div class="card">
-    <strong>今日全部任务（运行中 / 待执行 / 停用）</strong>
-    <div class="muted" style="margin-top:6px;">你关心的“还没到时间的定时任务”会在这里显示 nextRun。</div>
-    <table style="margin-top:8px;">
-      <thead>
-        <tr>
-          <th>任务</th><th>状态</th><th>频率</th><th>下次执行</th><th>范围</th>
-        </tr>
-      </thead>
-      <tbody id="scheduledRows"></tbody>
-    </table>
-  </div>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">今日时间线（最新在前）</div>
+          <ul class="list" id="timelineList"></ul>
+        </div>
 
-  <div class="two">
-    <div class="card">
-      <strong>今日已完成</strong>
-      <ul id="completed"></ul>
+        <div class="card">
+          <div class="section-title">已完成事项</div>
+          <ul class="list" id="doneList"></ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="section-title">全任务排班（含停用）</div>
+          <table>
+            <thead>
+              <tr>
+                <th>任务</th><th>状态</th><th>频率</th><th>下次执行</th>
+              </tr>
+            </thead>
+            <tbody id="schedBody"></tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="section-title">阻塞/风险</div>
+          <ul class="list" id="blockedList"></ul>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <strong>阻塞 / 风险</strong>
-      <ul id="blocked"></ul>
-    </div>
+
+    <div class="footer">最后更新：<span id="lastUpdated">--</span></div>
   </div>
-</div>
 
 <script>
-const dataUrl = './data/agent-work-status.json';
-const $ = id => document.getElementById(id);
-function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
-function renderList(el, list, map){ el.innerHTML = (list||[]).map(map).join('') || '<li class="muted">暂无</li>'; }
-function sClass(s){ return s==='running'?'running':(s==='pending'?'pending':'disabled'); }
-async function load(){
-  const r = await fetch(dataUrl + '?t=' + Date.now(), {cache:'no-store'});
-  const d = await r.json();
+  let refreshSeconds = 15;
+  const h = (s='') => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const n = v => Number(v||0).toLocaleString('zh-CN');
 
-  $('title').textContent = d.meta?.title || '实时工作看板';
-  $('meta').textContent = `最后更新：${d.meta?.lastUpdated || '--'} ｜ 时区：${d.meta?.timezone || '--'} ｜ 自动刷新：${d.meta?.refreshSeconds || 8}s`;
-  $('status').textContent = d.summary?.status || '--';
-  $('done').textContent = d.summary?.todayCompleted ?? 0;
-  $('runningCount').textContent = d.summary?.todayRunning ?? 0;
-  $('pending').textContent = d.summary?.todayPending ?? 0;
+  function statusClass(s='') {
+    s = String(s).toLowerCase();
+    if (s.includes('running')) return 'status-running';
+    if (s.includes('pending')) return 'status-pending';
+    if (s.includes('disabled')) return 'status-disabled';
+    return '';
+  }
 
-  renderList($('now'), d.now, i => `<li><b>${esc(i.title)}</b> <span class="pill">${esc(i.status||'')}</span><br><span class="muted">${esc(i.progress||'')}</span><br><span class="muted">${esc(i.detail||'')} · ${esc(i.updatedAt||'')}</span></li>`);
-  renderList($('timeline'), d.timeline, i => `<li><span class="muted">[${esc(i.time||'--')} · ${esc(i.type||'--')}]</span><br>${esc(i.text||'')}</li>`);
-  renderList($('completed'), d.completed, i => `<li><b>${esc(i.title)}</b><br><span class="muted">${esc(i.result||'')} · ${esc(i.updatedAt||'')}</span></li>`);
-  renderList($('blocked'), d.blocked, i => `<li><b>${esc(i.title)}</b><br><span class="muted">影响：${esc(i.impact||'')}</span><br><span class="muted">下一步：${esc(i.nextAction||'')}</span></li>`);
+  async function load() {
+    const res = await fetch(`./data/agent-work-status.json?t=${Date.now()}`);
+    const d = await res.json();
 
-  const rows = (d.scheduled||[]).map(i => `
-    <tr>
-      <td>${esc(i.name)}</td>
-      <td class="${sClass(i.status)} nowrap">${esc(i.enabled ? (i.status||'running') : 'disabled')}</td>
-      <td class="nowrap">${esc(i.cadence||'--')}</td>
-      <td class="nowrap">${esc(i.nextRun||'--')}</td>
-      <td>${esc(i.scope||'--')}</td>
-    </tr>`).join('');
-  $('scheduledRows').innerHTML = rows || '<tr><td colspan="5" class="muted">暂无任务</td></tr>';
-}
+    refreshSeconds = d.meta?.refreshSeconds || 15;
+    document.getElementById('refreshSec').textContent = refreshSeconds;
+    document.getElementById('title').textContent = d.meta?.title || '贾维斯实时工作看板（桌面版）';
 
-function tickClock(){ $('clock').textContent = '本地时间：' + new Date().toLocaleString('zh-CN'); }
-load().catch(()=>{$('meta').textContent='加载失败';});
-setInterval(()=>load().catch(()=>{}), 8000);
-setInterval(tickClock, 1000); tickClock();
+    document.getElementById('sStatus').textContent = d.summary?.status || '--';
+    document.getElementById('sDone').textContent = n(d.summary?.todayCompleted);
+    document.getElementById('sRunning').textContent = n(d.summary?.todayRunning);
+    document.getElementById('sPending').textContent = n(d.summary?.todayPending);
+
+    const nowList = document.getElementById('nowList');
+    nowList.innerHTML = '';
+    (d.now || []).forEach(x => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${h(x.title||'')}</strong> <span class="badge">${h(x.status||'--')}</span><br>${h(x.progress||'')}<br><span class="muted">${h(x.detail||'')} ｜ 更新 ${h(x.updatedAt||'--')}</span>`;
+      nowList.appendChild(li);
+    });
+
+    const timelineList = document.getElementById('timelineList');
+    timelineList.innerHTML = '';
+    (d.timeline || []).forEach(x => {
+      const li = document.createElement('li');
+      li.innerHTML = `<span class="muted">[${h(x.time||'--:--')}]</span> ${h(x.text||'')}`;
+      timelineList.appendChild(li);
+    });
+
+    const doneList = document.getElementById('doneList');
+    doneList.innerHTML = '';
+    (d.completed || []).forEach(x => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${h(x.title||'')}</strong>：${h(x.result||'')} <span class="muted">(${h(x.updatedAt||'--')})</span>`;
+      doneList.appendChild(li);
+    });
+
+    const schedBody = document.getElementById('schedBody');
+    schedBody.innerHTML = '';
+    (d.scheduled || []).forEach(x => {
+      const tr = document.createElement('tr');
+      const st = x.enabled ? (x.status || 'pending') : 'disabled';
+      tr.innerHTML = `<td><strong>${h(x.name||'')}</strong><br><span class="muted">${h(x.scope||'')}</span></td><td class="${statusClass(st)}">${h(st)}</td><td>${h(x.cadence||'')}</td><td>${h(x.nextRun||'')}</td>`;
+      schedBody.appendChild(tr);
+    });
+
+    const blockedList = document.getElementById('blockedList');
+    blockedList.innerHTML = '';
+    (d.blocked || []).forEach(x => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong class="warn">${h(x.title||'')}</strong><br><span class="muted">影响：</span>${h(x.impact||'')}<br><span class="muted">下一步：</span>${h(x.nextAction||'')}`;
+      blockedList.appendChild(li);
+    });
+
+    document.getElementById('lastUpdated').textContent = d.meta?.lastUpdated || d.lastUpdated || '--';
+    document.getElementById('clock').textContent = `本地时间：${new Date().toLocaleString('zh-CN')}（${d.meta?.timezone || 'Asia/Shanghai'}）`;
+  }
+
+  async function loop() {
+    try { await load(); } catch (e) { document.getElementById('clock').textContent = '加载失败，将自动重试'; }
+    setTimeout(loop, Math.max(5, refreshSeconds) * 1000);
+  }
+  loop();
 </script>
 </body>
 </html>
