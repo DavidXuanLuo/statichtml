@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 16:20"
+    "lastUpdated": "2026-02-14 18:00"
   },
   "summary": {
     "status": "running",
@@ -16,20 +16,30 @@
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "本轮完成X巡检（高信号账号池→关键词发现池）",
-      "detail": "本轮候选16条，入库3条，平均score 6.7；未达10条阈值，不触发通知",
-      "updatedAt": "16:20"
+      "progress": "执行完整性修复巡检（主帖/线程/评论）",
+      "detail": "本轮抽检3条均未通过：存在“提到分析/线程但未展开”与“有回复计数但评论流为空”；按规则本轮不发布、不入库",
+      "updatedAt": "18:00"
     },
     {
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步本轮质量指标（候选/入库/均分/空轮原因）",
-      "detail": "空轮原因Top2：噪声与证据不足（本轮非空轮）",
-      "updatedAt": "16:20"
+      "progress": "已同步完整性质检结果与阻塞原因",
+      "detail": "阈值进度维持 4/10；未触发外部通知",
+      "updatedAt": "18:00"
     }
   ],
   "timeline": [
+    {
+      "time": "18:00",
+      "type": "qa",
+      "text": "完整性抽检3条未通过：主帖分析未展开/评论流缺失；已执行回退策略（本轮不发布、不入库）"
+    },
+    {
+      "time": "16:40",
+      "type": "scan",
+      "text": "仅X巡检完成：候选18条，入库0条（高噪声与证据不足为主）；累计待触发3/10，未通知"
+    },
     {
       "time": "16:20",
       "type": "scan",
@@ -54,11 +64,6 @@
       "time": "15:50",
       "type": "delivery",
       "text": "实时工作看板已上线并支持自动刷新"
-    },
-    {
-      "time": "15:22",
-      "type": "policy",
-      "text": "采集源调整为仅X，小红书待账号可用后恢复"
     }
   ],
   "completed": [
@@ -106,9 +111,9 @@
   ],
   "blocked": [
     {
-      "title": "低质量候选已过滤",
-      "impact": "噪声/弱相关/证据不足内容占候选主要比例，已通过评分闸门拦截",
-      "nextAction": "下轮继续优先高信号账号并扩展72h窗口补充深度内容"
+      "title": "X收录完整性未达标（本轮拦截）",
+      "impact": "抽检样本出现线程缺失与评论流为空，违反‘完整性硬规则’，已阻止发布",
+      "nextAction": "下一轮先补齐线程与高质量评论（目标前20条，不足则抓全），通过抽检后再入库"
     }
   ],
   "scheduled": [
@@ -116,7 +121,7 @@
       "name": "X高质量UGC滚动收录",
       "enabled": true,
       "cadence": "每20分钟（07:00-23:59）",
-      "nextRun": "16:20",
+      "nextRun": "17:00",
       "status": "running",
       "scope": "TSLA/HOOD/NVDA/USDC/Circle/SMCI",
       "outputUrl": "https://davidxuanluo.github.io/statichtml/stocks-tweets.html"
