@@ -3,12 +3,12 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-14 19:40"
+    "lastUpdated": "2026-02-14 20:29"
   },
   "summary": {
     "status": "running",
     "todayCompleted": 12,
-    "todayRunning": 2,
+    "todayRunning": 3,
     "todayPending": 7
   },
   "now": [
@@ -16,20 +16,38 @@
       "id": "job-x-ugc",
       "title": "X高质量UGC滚动收录",
       "status": "running",
-      "progress": "执行完整性修复巡检（仅X / profile=openclaw）",
-      "detail": "19:40抽检3条：0条通过、3条不通过（评论抓取条数与计数不一致；thread帖仍缺连续楼层）；按硬规则阻断入库与发布",
-      "updatedAt": "19:40"
+      "progress": "仅X采集进行中（高质量筛选+完整性校验）",
+      "detail": "收录主源保持X；通过完整性闸门后才允许入库到高仿X H5",
+      "updatedAt": "20:29"
+    },
+    {
+      "id": "job-xhs-draft",
+      "title": "小红书发布内容生成（第一阶段）",
+      "status": "running",
+      "progress": "将X优质内容轻修饰为小红书可发版本",
+      "detail": "按用户规则：多图内容（至少4张，建议6-8张），先出首批草稿待确认",
+      "updatedAt": "20:29"
     },
     {
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步本轮完整性质检结果（发布阻断）",
-      "detail": "阈值进度维持 4/10；本轮抽检未通过，未触发外部通知",
-      "updatedAt": "19:40"
+      "progress": "同步新增“小红书内容生成”任务状态",
+      "detail": "确保电脑端看板实时可见，不再漏显示",
+      "updatedAt": "20:29"
     }
   ],
   "timeline": [
+    {
+      "time": "20:29",
+      "type": "ops",
+      "text": "新增运行任务：小红书发布内容生成（第一阶段），规则为‘仅X采集→小红书分发’，多图不少于4张"
+    },
+    {
+      "time": "20:00",
+      "type": "qa",
+      "text": "完整性抽检3条：均未通过（analysis/thread帖未完整展开连续楼层；评论未达“高质量前20条或抓全”）；本轮不发布、不入库"
+    },
     {
       "time": "19:40",
       "type": "qa",
@@ -121,9 +139,9 @@
   ],
   "blocked": [
     {
-      "title": "X收录完整性未达标（19:40轮次拦截）",
-      "impact": "抽检3条全部不通过：评论抓取未达“高质量前20条或抓全”且thread帖存在续帖缺失，违反入库硬规则",
-      "nextAction": "继续仅X巡检并优先修复抓取链路：先主帖完整线程，再评论前20条（不足20抓全）；修复后再恢复入库"
+      "title": "X收录完整性未达标（20:00轮次拦截）",
+      "impact": "抽检3条全部不通过：analysis/thread相关主帖连续楼层抓取不完整，评论未稳定满足“高质量前20条（不足20抓全）”，违反入库硬规则",
+      "nextAction": "继续仅X巡检，先修复线程展开与评论抓取一致性；修复并通过3条随机抽检后再恢复入库与发布"
     },
     {
       "title": "X收录完整性未达标（19:00轮次拦截）",
