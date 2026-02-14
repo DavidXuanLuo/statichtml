@@ -1,17 +1,27 @@
 {
-  "lastUpdated": "2026-02-14 22:00 GMT+8",
+  "lastUpdated": "2026-02-14 23:02 GMT+8",
   "status": {
     "text": "运行中：X单源滚动收录（相关即收录）",
     "mode": "仅X采集（profile=openclaw）",
     "note": "已取消高质量筛选与完整性硬门禁前置；只要与目标公司或相关行业有关即收录（仍过滤明显垃圾噪声）。"
   },
   "metrics": {
-    "todayRounds": 8,
-    "todayScanned": 130,
-    "todayCollected": 25,
-    "toNextPublish": 7
+    "todayRounds": 10,
+    "todayScanned": 150,
+    "todayCollected": 40,
+    "toNextPublish": 0
   },
   "recentActions": [
+    {
+      "time": "23:02",
+      "text": "X滚动收录（放宽版）完成：新增10条，相关即收录。",
+      "level": "ok"
+    },
+    {
+      "time": "22:20",
+      "text": "X滚动收录（放宽版）完成：新增5条；未达10条，按规则不打扰。",
+      "level": "ok"
+    },
     {
       "time": "22:00",
       "text": "X滚动收录（放宽版）完成：新增3条；未达10条，按规则不打扰。",
@@ -31,16 +41,6 @@
       "time": "21:28",
       "text": "已刷新任务逻辑：取消完整性硬门禁前置，线程/评论改为后续补全项。",
       "level": "ok"
-    },
-    {
-      "time": "21:27",
-      "text": "渠道口径锁定：仅X收录；小红书仅用于发布分发。",
-      "level": "ok"
-    },
-    {
-      "time": "21:21",
-      "text": "旧轮次出现0条的根因已确认：过严门槛导致整轮拦截。",
-      "level": "warn"
     }
   ]
 }

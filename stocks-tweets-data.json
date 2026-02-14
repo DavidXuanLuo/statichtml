@@ -1,6 +1,206 @@
 {
-  "generatedAt": "2026-02-14T08:20:00.000Z",
+  "generatedAt": "2026-02-14T15:02:44Z",
   "posts": [
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/RobinhoodApp/status/1426332920797597698",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2021-08-14T00:00:00.000Z",
+      "text": "Robinhood weekly crypto recap mentioned USDC issuer Circle aiming to become a bank.",
+      "zh": "Robinhood加密周报提及USDC发行方Circle推动银行化目标。",
+      "counts": {
+        "reply": "249",
+        "repost": "53",
+        "like": "202",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Markets continue to climb, Ethereum gets an upgrade, and USDC issuer Circle aims to be a bank.",
+      "fullZh": "Robinhood周报提到：市场继续上行、以太坊升级，以及USDC发行方Circle推进银行化。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/2021992702875959325",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Circle",
+      "handle": "@circle",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "Circle highlighted USDC use in philanthropy and carbon projects for predictable and transparent fund delivery.",
+      "zh": "Circle强调USDC在公益与碳项目中的资金发放可预测且透明。",
+      "counts": {
+        "reply": "11",
+        "repost": "20",
+        "like": "131",
+        "view": "7048"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Using USDC to support carbon projects and direct cash assistance helps donors fund real-world impact in a predictable, transparent way.",
+      "fullZh": "通过USDC支持碳项目和现金援助，可提升公益资金流转的可预测性与透明度。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/2022407004028047704",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Circle",
+      "handle": "@circle",
+      "time": "2026-02-13T15:00:00.000Z",
+      "text": "Circle: stablecoins are expanding globally and USDC enables internet-native settlement without intermediaries or delays.",
+      "zh": "Circle称稳定币全球扩张，USDC可实现低中介、低延迟的互联网原生结算。",
+      "counts": {
+        "reply": "25",
+        "repost": "30",
+        "like": "189",
+        "view": "12767"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Stablecoins are growing globally; money settling directly over the internet changes expectations. Why settle for less when you can settle in USDC?",
+      "fullZh": "Circle表示稳定币正在全球增长，资金可通过互联网直接结算，USDC成为更高效的结算选择。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/2022032276662485244",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "NVIDIA",
+      "handle": "@nvidia",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "NVIDIA noted token cost depends on both infrastructure cost and total token output.",
+      "zh": "NVIDIA指出token成本取决于基础设施成本与总产出。",
+      "counts": {
+        "reply": "1",
+        "repost": "0",
+        "like": "7",
+        "view": "558"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "The cost of each token depends on infrastructure cost and total token output.",
+      "fullZh": "每个token的成本由基础设施投入和整体token产出共同决定。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/2022032284266766444",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "NVIDIA",
+      "handle": "@nvidia",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "NVIDIA discussed AI token economics: better infrastructure can lower unit token cost via higher output efficiency.",
+      "zh": "NVIDIA讨论AI token economics：基础设施效率提升可降低单位token成本。",
+      "counts": {
+        "reply": "1",
+        "repost": "3",
+        "like": "23",
+        "view": "10394"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Infrastructure efficiency fuels better tokenomics; better AI infrastructure means more tokens and lower cost per token.",
+      "fullZh": "基础设施效率提升将改善token经济学，通过更高产出降低单位token成本。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/2022032295364788394",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "NVIDIA",
+      "handle": "@nvidia",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "NVIDIA said leading AI inference providers are optimizing inference platforms on Blackwell.",
+      "zh": "NVIDIA称头部AI推理服务商正围绕Blackwell进行平台优化。",
+      "counts": {
+        "reply": "3",
+        "repost": "2",
+        "like": "27",
+        "view": "10027"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Leading AI inference providers are optimizing their inference platforms on Blackwell.",
+      "fullZh": "头部AI推理厂商正在Blackwell架构上优化推理平台，以提升性能与成本效率。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/Tesla/status/2022060069505183963",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tesla",
+      "handle": "@Tesla",
+      "time": "2026-02-12T16:00:00.000Z",
+      "text": "Tesla showcased an FSD Supervised case detecting an in-lane broken-down vehicle and changing lanes to avoid collision.",
+      "zh": "Tesla展示FSD识别前方故障车辆并自动变道避险案例。",
+      "counts": {
+        "reply": "273",
+        "repost": "649",
+        "like": "4500",
+        "view": "328602"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "FSD Supervised has 360-degree awareness and can react faster than a human, detecting a broken-down vehicle in lane and moving over.",
+      "fullZh": "FSD Supervised具备360度感知并快速反应，可识别车道内故障车并主动避让。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/Tesla/status/2022360734504751356",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tesla",
+      "handle": "@Tesla",
+      "time": "2026-02-13T13:00:00.000Z",
+      "text": "Tesla highlighted Cybertruck safety ratings, FSD Supervised capability, and backup power use cases.",
+      "zh": "Tesla强调Cybertruck安全评级、FSD能力及停电场景下的供电能力。",
+      "counts": {
+        "reply": "311",
+        "repost": "612",
+        "like": "3576",
+        "view": "253669"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Cybertruck IIHS Top Safety+ Pick & 5-star NHTSA rating. Drives itself with FSD Supervised and can power your house for days during a blackout.",
+      "fullZh": "Cybertruck获得IIHS与NHTSA安全认可，并强调FSD辅助驾驶与家庭应急供电能力。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1991996871410069538",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2025-11-22T00:00:00.000Z",
+      "text": "Robinhood posted top traded prediction-market contracts by category for the week.",
+      "zh": "Robinhood披露本周预测市场各类别成交最活跃合约。",
+      "counts": {
+        "reply": "23",
+        "repost": "11",
+        "like": "143",
+        "view": "22799"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "This week’s top traded event contracts by category on Robinhood Prediction Markets.",
+      "fullZh": "Robinhood发布本周预测市场热门事件合约榜单，反映用户交易偏好与流量分布。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/2001119831806910721",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2025-12-17T00:00:00.000Z",
+      "text": "Meet Robinhood Cortex, an AI assistant for researching markets and placing stock/crypto/prediction trades in conversation.",
+      "zh": "Robinhood发布Cortex：可对话完成市场研究，并交易股票、加密和预测市场。",
+      "counts": {
+        "reply": "23",
+        "repost": "24",
+        "like": "209",
+        "view": "24430"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Meet Robinhood Cortex, your new AI assistant. Research the market, dive into the technicals and make trades. Stocks, crypto and prediction markets. All in conversation.",
+      "fullZh": "Robinhood推出AI助手Cortex：支持对话式研究市场、查看技术面并执行交易，覆盖股票、加密资产与预测市场。"
+    },
     {
       "ticker": "USDC",
       "url": "https://x.com/allscaleio/status/2022506317802262837",
