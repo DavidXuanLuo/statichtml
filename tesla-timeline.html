@@ -3,10 +3,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;backg
 .w{max-width:1000px;margin:auto;padding:10px}.c{background:#fff;border-radius:12px;padding:10px;margin:8px 0}
 .row{display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap}.m{color:#6b7280;font-size:12px}
 .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:0;border-radius:999px;padding:6px 12px;background:#e5e7eb;cursor:pointer;min-height:32px}.chip.a{background:#111827;color:#fff}
-.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
-.kpi{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:8px 10px;min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:8px}
-.kpi .m{font-size:13px;color:#374151;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.kpi .n{font-size:18px;line-height:1;font-weight:700;color:#111827}
 .trend{width:100%;height:150px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px}
 .milestones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.card{border:1px solid #e5e7eb;border-radius:10px;padding:10px;background:#fafafa}
 .item{border-left:3px solid #e5e7eb;padding:10px 10px 10px 12px;margin:10px 0;background:#fafafa;border-radius:8px}
@@ -18,22 +14,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;backg
 .comment-hd{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:#6b7280;flex-wrap:wrap}.comment-zh{margin:6px 0 0 0;line-height:1.45}
 .comment-en-wrap{margin-top:6px}.comment-en-wrap summary{cursor:pointer;color:#2563eb;font-size:12px}
 .comment-en{font-size:12px;color:#4b5563;line-height:1.42;margin-top:4px}
-@media(max-width:1024px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:800px){.milestones{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.w{padding:8px}.c{padding:9px;margin:7px 0}#title{font-size:20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.trend{height:122px}.item{padding:10px}.comment{padding:8px}}
+@media(max-width:640px){.w{padding:8px}.c{padding:9px;margin:7px 0}#title{font-size:20px}.trend{height:122px}.item{padding:10px}.comment{padding:8px}}
 </style></head><body><div class="w">
 <div class="c"><div class="row"><div><h2 id="title" style="margin:0">Tesla 关键进展时间线</h2><div class="m" id="sub"></div></div><div class="m" id="meta"></div></div></div>
-<div class="c"><b>A) 分类计数看板</b><div class="grid" id="kpi"></div></div>
-<div class="c"><div class="row"><b>B) 近90天事件热度趋势（按天计数）</b><span class="m" id="trendMeta"></span></div><svg class="trend" id="trend"></svg></div>
-<div class="c"><b>C) 关键里程碑卡片</b><div class="milestones" id="milestones"></div></div>
 <div class="c"><div class="row"><b>筛选</b><div class="chips" id="chips"></div></div></div>
-<div class="c"><div id="list"></div></div>
+<div class="c"><div class="row"><b>时间线事件（含评论）</b><span class="m">首屏优先展示可阅读内容</span></div><div id="list"></div></div>
+<div class="c"><div class="row"><b>近90天事件热度趋势（按天计数）</b><span class="m" id="trendMeta"></span></div><svg class="trend" id="trend"></svg></div>
+<div class="c"><b>关键里程碑卡片</b><div class="milestones" id="milestones"></div></div>
 </div><script>
 const state={data:null,cat:'全部'};const cats=['全部','财报','销量','FSD','Robotaxi','储能','监管','价格策略','其他'];
 const chips=document.getElementById('chips'),list=document.getElementById('list');
 const esc=s=>(s||'').toString().replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 function drawChips(){chips.innerHTML=cats.map(c=>`<button class="chip${state.cat===c?' a':''}" data-c="${c}">${c}</button>`).join('');chips.querySelectorAll('button').forEach(b=>b.onclick=()=>{state.cat=b.dataset.c;drawChips();renderList();});}
-function renderKpi(){const m={};(state.data.events||[]).forEach(e=>m[e.category]=(m[e.category]||0)+1);const total=state.data.events.length;const ordered=Object.entries(m).sort((a,b)=>b[1]-a[1]);document.getElementById('kpi').innerHTML=[['总事件',total],...ordered.slice(0,7)].map(([k,v])=>`<div class="kpi" title="${esc(k)}"><span class="m">${esc(k)}</span><span class="n">${v}</span></div>`).join('');}
+/* removed category KPI board */
 function renderTrend(){const days=90,now=new Date();const counts={};for(let i=0;i<days;i++){const d=new Date(now);d.setDate(now.getDate()-i);counts[d.toISOString().slice(0,10)]=0;}for(const e of state.data.events||[]){if(counts[e.date]!==undefined) counts[e.date]++;}
 const arr=Object.keys(counts).sort();const vals=arr.map(d=>counts[d]);const max=Math.max(1,...vals);const svg=document.getElementById('trend');const w=svg.clientWidth||960,h=svg.clientHeight||180,p=18;const step=(w-p*2)/(arr.length-1||1);const y=v=>h-p-(v/max)*(h-p*2);const points=vals.map((v,i)=>`${(p+i*step).toFixed(1)},${y(v).toFixed(1)}`).join(' ');const bars=vals.map((v,i)=>`<line x1="${(p+i*step).toFixed(1)}" y1="${h-p}" x2="${(p+i*step).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="#bfdbfe" stroke-width="2"/>`).join('');svg.innerHTML=`<rect x="0" y="0" width="${w}" height="${h}" fill="transparent"/><line x1="${p}" y1="${h-p}" x2="${w-p}" y2="${h-p}" stroke="#d1d5db"/>${bars}<polyline fill="none" stroke="#2563eb" stroke-width="2" points="${points}"/>`;document.getElementById('trendMeta').textContent=`最近90天总计 ${vals.reduce((a,b)=>a+b,0)} 条，单日峰值 ${max} 条`;}
 function renderMilestones(){const ms=(state.data.events||[]).filter(e=>e.milestone).sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);document.getElementById('milestones').innerHTML=ms.map(e=>`<div class="card"><div class="date">${esc(e.date)} <span class="tag">${esc(e.category)}</span></div><div class="title">${esc(e.conclusion)}</div><div class="num">${esc(e.key_numbers||'')}</div></div>`).join('')||'<div class="empty">暂无里程碑</div>'}
@@ -42,5 +36,5 @@ return `<button class="comment-toggle" data-target="cm-${idx}">查看评论(${co
 }
 function bindCommentToggle(){list.querySelectorAll('.comment-toggle').forEach(btn=>{btn.onclick=()=>{const panel=document.getElementById(btn.dataset.target);const open=panel.classList.toggle('open');btn.textContent=open?`收起评论`:btn.textContent; if(!open){const n=(panel.querySelectorAll('.comment').length||0);btn.textContent=`查看评论(${n})`;}};});}
 function renderList(){const arr=[...(state.data.events||[])].filter(x=>state.cat==='全部'||x.category===state.cat).sort((a,b)=>b.date.localeCompare(a.date));if(!arr.length){list.innerHTML='<div class="empty">当前筛选无数据</div>';return;}list.innerHTML=arr.map((e,idx)=>`<div class="item"><div class="date">${esc(e.date)} <span class="tag">${esc(e.category||'其他')}</span></div><div class="title">${esc(e.conclusion)}</div><div>${esc(e.key_numbers||'')}</div><div class="src" style="margin-top:6px">来源：${e.source&&e.source.startsWith('http')?`<a href="${esc(e.source)}" target="_blank">${esc(e.source)}</a>`:esc(e.source||'待补充')}</div>${renderComments(e,idx)}</div>`).join('');bindCommentToggle();}
-(async()=>{const d=await (await fetch('./data/tesla-master-db.json')).json();state.data=d;document.getElementById('sub').textContent=(d.tracking_focus||[]).join(' / ');document.getElementById('meta').textContent=`更新：${d.meta?.last_updated||'-'} ｜ 时区：${d.meta?.timezone||'-'} ｜ 事件数：${d.events?.length||0}`;drawChips();renderKpi();renderTrend();renderMilestones();renderList();window.addEventListener('resize',renderTrend);})();
+(async()=>{const d=await (await fetch('./data/tesla-master-db.json')).json();state.data=d;document.getElementById('sub').textContent=(d.tracking_focus||[]).join(' / ');document.getElementById('meta').textContent=`更新：${d.meta?.last_updated||'-'} ｜ 时区：${d.meta?.timezone||'-'} ｜ 事件数：${d.events?.length||0}`;drawChips();renderList();renderTrend();renderMilestones();window.addEventListener('resize',renderTrend);})();
 </script></body></html>
