@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-15 18:23",
+    "last_updated": "2026-02-16 07:07",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,14 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-01-02",
+      "category": "财报",
+      "conclusion": "Tesla披露2025财报要点：Q4交付与产量明显下滑，且公司同时给出能量与全年指标。",
+      "key_numbers": "Q4 2025：产量434,358；交付418,227；能源部署14.2GWh；全年：产量1,654,667；交付1,636,129",
+      "source": "https://x.com/Tesla/status/2007089900613419092",
+      "milestone": true
+    },
     {
       "date": "2026-01-24",
       "category": "FSD",

@@ -3,10 +3,18 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-15 18:23",
+    "last_updated": "2026-02-16 07:07",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
+    {
+      "date": "2026-01-02",
+      "category": "财报",
+      "title": "Tesla披露2025财报要点：Q4交付与产量明显下滑，且公司同时给出能量与全年指标。",
+      "summary": "Q4 2025：产量434,358；交付418,227；能源部署14.2GWh；全年：产量1,654,667；交付1,636,129",
+      "impact": "high",
+      "source": "https://x.com/Tesla/status/2007089900613419092"
+    },
     {
       "date": "2026-01-24",
       "category": "FSD",
