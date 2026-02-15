@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-16 07:07",
+    "last_updated": "2026-02-16 07:26",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -408,6 +408,28 @@
       "summary": "部分车型下调6%~20%",
       "impact": "high",
       "source": "https://www.reuters.com/business/autos-transportation/tesla-cuts-us-prices-up-nearly-20-some-models-2023-01-13/"
+    },
+    {
+      "date": "2026-01-16",
+      "category": "监管",
+      "title": "NHTSA将FSD流量违法调查回复期限延至2月23日",
+      "summary": "NHTSA批准特斯拉将对FSD交通违法事件的调查关键回复延期5周，显示监管问责周期持续，仍要求进一步披露数千条涉案记录（8,313条待审）",
+      "impact": "high",
+      "source": "https://www.reuters.com/legal/litigation/tesla-gets-5-week-extension-us-probe-full-self-driving-traffic-violations-2026-01-16/",
+      "conclusion": "NHTSA将FSD流量违法调查回复期限延长至2月23日，监管披露与整改时间表被拉长。",
+      "key_numbers": "延长5周；2月23日截至日；待审8,313条记录",
+      "milestone": true
+    },
+    {
+      "date": "2026-01-14",
+      "category": "FSD",
+      "title": "Elon Musk：FSD在2月14日后改为仅月度订阅制",
+      "summary": "据埃文斯称，Tesla将取消一次性买断FSD Supervised，FSD将仅通过月费模式销售（现有美国一次性价位约$8,000，订阅$99/月）",
+      "impact": "high",
+      "source": "https://www.reuters.com/business/autos-transportation/tesla-offer-self-driving-software-only-monthly-basis-feb-14-musk-says-2026-01-14/",
+      "conclusion": "Elon Musk表示FSD在2月14日后仅提供月度订阅版本，强化收入模式与换购节奏风险。",
+      "key_numbers": "当前US一次性$8,000；订阅$99/月；2月14日起",
+      "milestone": true
     }
   ]
 }
