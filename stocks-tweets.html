@@ -62,7 +62,7 @@ function detailView(i,push){const p=posts[i];if(!p)return;detail.innerHTML=`<div
 feed.addEventListener('click',e=>{const t=e.target.closest('.tweet');if(t) detailView(+t.dataset.i,true)});
 detail.addEventListener('click',e=>{const b=e.target.closest('.js-open');if(!b)return;e.preventDefault();const i=+b.dataset.i;if(i>=0)detailView(i,true)});
 window.addEventListener('popstate',ev=>{if(ev.state&&typeof ev.state.i==='number')detailView(ev.state.i,false);else feedView()});
-fetch('./stocks-tweets-data.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(j=>{posts=(j.posts||[]).slice(0,50).map(normalize);feed.innerHTML=posts.map((p,i)=>`<article class="tweet" data-i="${i}">${tweetBody(p,'feed',true,i)}</article>`).join('');if(location.hash.startsWith('#post-')){const i=+location.hash.slice(6);if(!Number.isNaN(i))detailView(i,false);}})
+fetch('./stocks-tweets-data.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(j=>{posts=(j.posts||[]).sort((a,b)=>new Date(b.collectedAt||b.time||0)-new Date(a.collectedAt||a.time||0)).slice(0,50).map(normalize);feed.innerHTML=posts.map((p,i)=>`<article class="tweet" data-i="${i}">${tweetBody(p,'feed',true,i)}</article>`).join('');if(location.hash.startsWith('#post-')){const i=+location.hash.slice(6);if(!Number.isNaN(i))detailView(i,false);}})
 </script>
 </body>
 </html>

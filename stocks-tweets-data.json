@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-16T00:16:00Z",
+  "generatedAt": "2026-02-15T23:31:47Z",
   "posts": [
     {
       "ticker": "TSLA",
@@ -12,7 +12,7 @@
       "text": "马斯克被提及时隔5年多再次在公开市场买入TSLA，金额约10亿美元。",
       "zh": "帖子称马斯克时隔约5年7个月再次在公开市场买入TSLA，规模约10亿美元。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -33,7 +33,7 @@
       "text": "帖文援引SEC文件称马斯克买入约256.87万股TSLA，均价约389.281美元。",
       "zh": "帖文称根据SEC披露，马斯克买入约256.87万股TSLA，均价约389.281美元。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -54,7 +54,7 @@
       "text": "Baird将TSLA目标价上调至548美元并上调评级至Outperform。",
       "zh": "帖子称Baird上调TSLA目标价至548美元，并将评级调升至Outperform。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -75,7 +75,7 @@
       "text": "Robinhood测试高端综合服务：报税、遗产规划、CFP顾问及转仓1%匹配。",
       "zh": "Robinhood发布测试新服务，包含全流程报税、遗产规划、CFP顾问和转仓1%匹配。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -96,7 +96,7 @@
       "text": "Robinhood披露Banking功能开始放量：超1万名入金客户，存款超1亿美元。",
       "zh": "Robinhood表示Banking服务已开始扩大，已覆盖超1万名入金客户，累计存款超1亿美元。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -117,7 +117,7 @@
       "text": "Supermicro发布与NVIDIA RTX PRO 6000 Blackwell Server Edition GPU的企业级方案。",
       "zh": "Supermicro宣布与NVIDIA RTX PRO 6000 Blackwell Server Edition GPU配套的企业级应用方案。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -138,7 +138,7 @@
       "text": "市场消息称Super Micro目标2026财年收入至少330亿美元。",
       "zh": "帖子援引信息称Super Micro目标2026财年收入至少330亿美元。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -159,7 +159,7 @@
       "text": "Supermicro宣布与DataVolt达成超200亿美元合作，涉及AI数据中心建设。",
       "zh": "Supermicro披露与DataVolt签署超200亿美元合作，面向数据中心与AI基础设施。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -180,7 +180,7 @@
       "text": "Supermicro称其服务器与NVIDIA Blackwell GPU支撑Lambda云端AI基础设施。",
       "zh": "Supermicro表示其服务器结合NVIDIA Blackwell GPU用于Lambda的新一代AI云基础设施。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -201,7 +201,7 @@
       "text": "Circle宣布原生USDC上线Aptos，强调开发者与机构可用的合规稳定币基础。",
       "zh": "Circle宣布原生USDC上线Aptos，强化开发者与机构侧稳定币结算能力。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -222,7 +222,7 @@
       "text": "Tesla披露已签约投资xAI约20亿美元优先股，强调与本轮融资其他投资者条款一致。",
       "zh": "Tesla披露：已签约投资xAI约20亿美元Series E优先股，交易条款与同轮其他投资者一致。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -243,7 +243,7 @@
       "text": "NVIDIA称其AI超级计算机将首次在美国本土完整制造，Blackwell芯片已在亚利桑那投产。",
       "zh": "NVIDIA宣布AI超算将首次实现美国本土完整制造，Blackwell芯片已在亚利桑那工厂开始生产。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -264,7 +264,7 @@
       "text": "报道称中国已批准NVIDIA H200 AI芯片采购。",
       "zh": "市场消息称中国已批准NVIDIA H200 AI芯片采购。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -285,7 +285,7 @@
       "text": "Robinhood因将被纳入标普500的消息而大涨近10%。",
       "zh": "消息称Robinhood将被纳入标普500，股价一度拉升近10%。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -306,7 +306,7 @@
       "text": "华尔街解读Robinhood财报：Bernstein将目标价上调至105美元并维持买入。",
       "zh": "华尔街财报解读显示，Bernstein将HOOD目标价上调至105美元并给出买入评级。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -327,7 +327,7 @@
       "text": "讨论AI服务器基础设施竞争格局，覆盖SMCI/DELL/HPE及ODM链条变化。",
       "zh": "帖子讨论AI服务器基础设施与ODM格局，涉及SMCI/DELL/HPE产业链重构。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -348,7 +348,7 @@
       "text": "Super Micro季度营收不及预期并下调全年指引，盘后股价走弱。",
       "zh": "SMCI季度营收低于预期并下调全年销售指引，盘后明显下跌。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -369,7 +369,7 @@
       "text": "Circle宣布USDC在XRP Ledger上线，强调跨境支付与机构场景。",
       "zh": "Circle宣布USDC登陆XRP Ledger，重点覆盖跨境支付与机构资金流转场景。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -390,7 +390,7 @@
       "text": "Circle推出USDCx（xReserve）以支持Canton网络跨链流动性。",
       "zh": "Circle发布USDCx（xReserve），用于Canton网络并接入跨链USDC流动性。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -411,7 +411,7 @@
       "text": "USDC与CCTP V2上线XDC Network，面向贸易金融与RWA结算。",
       "zh": "USDC与CCTP V2已上线XDC Network，面向贸易金融、RWA与企业支付场景。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -432,7 +432,7 @@
       "text": "$SPY hourly bull-flag setup; author says a 671-670 retest is possible before a move higher into $NVDA earnings.",
       "zh": "观点：$SPY 小时级别出现多头旗形，财报前可能先回测 671-670，再冲击更高；交易关注点放在 $NVDA 财报窗口。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -453,7 +453,7 @@
       "text": "Thread says Bridgewater cut legacy SaaS exposure and increased AI infrastructure allocation including $NVDA.",
       "zh": "线程观点：Bridgewater 降低传统SaaS敞口、提升AI基础设施配置，点名包含 $NVDA。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -474,7 +474,7 @@
       "text": "Post compares single-stock AI bets vs SMH ETF approach, highlighting broad semi-chain exposure with NVDA as core weight.",
       "zh": "帖子比较“单一AI龙头”与“SMH半导体ETF”策略，强调以NVDA为核心权重的全产业链配置。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -495,7 +495,7 @@
       "text": "AI investment framework split into five layers (power/chips/cloud/models/apps), explicitly including $TSLA and $NVDA in the chain.",
       "zh": "该帖给出AI投资“五层框架”（电力/芯片/云/模型/应用），明确将 $TSLA 与 $NVDA 纳入链条。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -516,7 +516,7 @@
       "text": "Portfolio update: holding 100 shares of $HOOD and writing covered calls; emphasizes monthly premium income strategy.",
       "zh": "持仓更新：持有 100 股 $HOOD 并卖出备兑看涨，核心策略是持续获取月度权利金收入。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -537,7 +537,7 @@
       "text": "Valuation-focused thread argues TSLA's forward P/E and PEG imply a very high growth premium.",
       "zh": "估值观点：该线程认为 TSLA 当前远期PE与PEG对应的增长溢价已非常高。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -558,7 +558,7 @@
       "text": "Drawdown comparison tied to capex burden across mega caps; includes $TSLA and $NVDA in AI capex narrative.",
       "zh": "帖子用资本开支压力解释大型科技股回撤，叙事中包含 $TSLA 与 $NVDA 的AI投入对比。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -579,7 +579,7 @@
       "text": "Claim: $NVDA at ~26x forward earnings is still not expensive relative to AI leadership position.",
       "zh": "观点：$NVDA 约 26 倍远期PE，考虑其AI龙头地位仍不算贵。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -600,7 +600,7 @@
       "text": "TSMC U.S. expansion take: lower geopolitics risk but higher costs; watch margin pressure implications for NVDA supply chain.",
       "zh": "观点：TSMC美国扩产可降地缘风险但抬升成本，需关注对NVDA供应链利润率的传导。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -621,7 +621,7 @@
       "text": "Weekend portfolio update shows dividend reinvestment strategy with NFLX/HOOD as recipient positions.",
       "zh": "周末组合更新：通过分红再投资增持 NFLX/HOOD，体现长期复利配置思路。",
       "counts": {
-        "reply": "",
+        "reply": "0",
         "repost": "",
         "like": "",
         "view": ""
@@ -698,7 +698,8 @@
       ],
       "media": [],
       "fullText": "Stables weekly recap thread:\n\n1) Fidelity's FIDD launch/redemption design is now clearer, with tighter primary-market mechanics than earlier drafts.\n2) Tether published a fresh investment update, including treasury allocation and risk controls.\n3) Polymarket is migrating from USDC.e to native USDC for cleaner settlement and lower bridge-dependency.\n\nNet: market structure is maturing through better redemption rails, deeper transparency, and standardization on native liquidity.",
-      "fullZh": "稳定币周报完整线程：\n\n1）Fidelity 的 FIDD 发行/赎回机制披露更完整，一级市场闭环比早期方案更清晰。\n2）Tether 更新了最新投资与储备配置信息，并补充风险控制框架。\n3）Polymarket 正从 USDC.e 迁移到原生 USDC，以降低桥接依赖并简化结算路径。\n\n整体结论：稳定币基础设施正在沿着“赎回可执行性更强、信息透明度更高、流动性标准更统一”的方向演进。"
+      "fullZh": "稳定币周报完整线程：\n\n1）Fidelity 的 FIDD 发行/赎回机制披露更完整，一级市场闭环比早期方案更清晰。\n2）Tether 更新了最新投资与储备配置信息，并补充风险控制框架。\n3）Polymarket 正从 USDC.e 迁移到原生 USDC，以降低桥接依赖并简化结算路径。\n\n整体结论：稳定币基础设施正在沿着“赎回可执行性更强、信息透明度更高、流动性标准更统一”的方向演进。",
+      "collectedAt": ""
     },
     {
       "ticker": "USDC",
@@ -767,7 +768,8 @@
       ],
       "media": [],
       "fullText": "Someone created a new wallet 11 hours ago and deposited 2M $USDC into Hyperliquid to go long $NVDA with 2x leverage.\n\nThe position is 21,687 xyz:NVDA (~$3.97M).\n\nAddress is fresh, size is meaningful, and timing suggests a high-conviction directional bet tied to AI large-cap momentum.",
-      "fullZh": "链上追踪完整信息：一个 11 小时前新建的钱包向 Hyperliquid 存入 200 万 USDC，并以 2 倍杠杆做多 NVDA。\n\n当前仓位为 21,687 单位 xyz:NVDA（约 397 万美元）。\n\n该地址较新、下单规模较大、入场时点明确，呈现出对 AI 核心资产的高确信度方向性押注。"
+      "fullZh": "链上追踪完整信息：一个 11 小时前新建的钱包向 Hyperliquid 存入 200 万 USDC，并以 2 倍杠杆做多 NVDA。\n\n当前仓位为 21,687 单位 xyz:NVDA（约 397 万美元）。\n\n该地址较新、下单规模较大、入场时点明确，呈现出对 AI 核心资产的高确信度方向性押注。",
+      "collectedAt": ""
     },
     {
       "ticker": "HOOD",
@@ -820,7 +822,8 @@
       ],
       "media": [],
       "fullText": "$HOOD — Zooming out on a stock chart removes the noise and shows the bigger picture more clearly. Patience.\n\nShort-term fluctuations can feel dramatic, but trend quality is usually easier to judge on higher timeframes.",
-      "fullZh": "$HOOD：把图表周期拉长，噪音会明显减少，主趋势会更清楚。核心是耐心。\n\n短期波动看起来很剧烈，但在更高周期里，趋势质量通常更容易判断。"
+      "fullZh": "$HOOD：把图表周期拉长，噪音会明显减少，主趋势会更清楚。核心是耐心。\n\n短期波动看起来很剧烈，但在更高周期里，趋势质量通常更容易判断。",
+      "collectedAt": ""
     },
     {
       "ticker": "HOOD",
@@ -873,7 +876,8 @@
       ],
       "media": [],
       "fullText": "Capitulation found on $HOOD.\n\nPrice action shows accelerated downside exhaustion with sentiment stretched to pessimistic extremes. Historically this setup can precede sharp mean-reversion bounces when volume confirms.\n\nNot financial advice; manage risk and wait for confirmation.",
-      "fullZh": "$HOOD 出现“恐慌出清（Capitulation）”信号。\n\n价格行为显示下跌动能在末端加速后衰竭，情绪指标进入极端悲观区。历史上这类结构若配合放量确认，常见快速均值回归反弹。\n\n仅作市场观察，不构成投资建议，需结合仓位与风控。"
+      "fullZh": "$HOOD 出现“恐慌出清（Capitulation）”信号。\n\n价格行为显示下跌动能在末端加速后衰竭，情绪指标进入极端悲观区。历史上这类结构若配合放量确认，常见快速均值回归反弹。\n\n仅作市场观察，不构成投资建议，需结合仓位与风控。",
+      "collectedAt": ""
     },
     {
       "ticker": "TSLA",
@@ -893,7 +897,8 @@
       "comments": [],
       "media": [],
       "fullText": "Model Y is incredible bang for buck.",
-      "fullZh": "Model Y 的性价比非常突出。"
+      "fullZh": "Model Y 的性价比非常突出。",
+      "collectedAt": ""
     },
     {
       "ticker": "USDC",
@@ -946,7 +951,8 @@
       ],
       "media": [],
       "fullText": "USDC over Circle CCTP is becoming a default cross-chain settlement layer.\n\nWe're seeing faster routing decisions from teams that prioritize canonical USDC over wrapped liquidity. To support this, Range launched explorer + intel APIs so desks can monitor transfer paths, latency, and destination concentration in real time.\n\nWhen visibility improves, treasury operations become less reactive and more systematic.",
-      "fullZh": "完整观点：USDC 叠加 Circle CCTP 正逐步成为跨链结算默认层。\n\n越来越多团队在路由时优先选择“官方原生 USDC”而非封装流动性。为此，Range 发布了 explorer 与 intel API，可实时观察转账路径、到账时延与目的地集中度。\n\n可观测性提升后，资金管理会从被动响应转向系统化调度。"
+      "fullZh": "完整观点：USDC 叠加 Circle CCTP 正逐步成为跨链结算默认层。\n\n越来越多团队在路由时优先选择“官方原生 USDC”而非封装流动性。为此，Range 发布了 explorer 与 intel API，可实时观察转账路径、到账时延与目的地集中度。\n\n可观测性提升后，资金管理会从被动响应转向系统化调度。",
+      "collectedAt": ""
     },
     {
       "ticker": "TSLA",
@@ -1063,7 +1069,8 @@
         }
       ],
       "fullText": "BREAKING: 6+ $TSLA CYBERCABS SPOTTED TESTING AT GIGA TEXAS 👀\n\nThey’re coming !\n\n https://t.co/gNEBmbFSdP",
-      "fullZh": "突发：在得州超级工厂拍到 6 台以上 $TSLA Cybercab 正在测试。\n\n它们要来了！"
+      "fullZh": "突发：在得州超级工厂拍到 6 台以上 $TSLA Cybercab 正在测试。\n\n它们要来了！",
+      "collectedAt": ""
     },
     {
       "ticker": "USDC",
@@ -1130,7 +1137,8 @@
         }
       ],
       "fullText": "$USDC on @SonicLabs continues it's momentum now sitting at $181.4 million - Super bullish when the Sonic market cap and USDC rises in parallel. https://t.co/mgcyqX2znf",
-      "fullZh": "$USDC 在 @SonicLabs 上延续动能，规模已到 1.814 亿美元。Sonic 市值与 USDC 同步上升时，信号非常看多。"
+      "fullZh": "$USDC 在 @SonicLabs 上延续动能，规模已到 1.814 亿美元。Sonic 市值与 USDC 同步上升时，信号非常看多。",
+      "collectedAt": ""
     },
     {
       "ticker": "USDC",
@@ -1150,7 +1158,8 @@
       "comments": [],
       "media": [],
       "fullText": "Stablecoins are growing globally; money settling directly over the internet changes expectations. Why settle for less when you can settle in USDC?",
-      "fullZh": "Circle表示稳定币正在全球增长，资金可通过互联网直接结算，USDC成为更高效的结算选择。"
+      "fullZh": "Circle表示稳定币正在全球增长，资金可通过互联网直接结算，USDC成为更高效的结算选择。",
+      "collectedAt": ""
     },
     {
       "ticker": "TSLA",
@@ -1170,7 +1179,8 @@
       "comments": [],
       "media": [],
       "fullText": "Cybertruck IIHS Top Safety+ Pick & 5-star NHTSA rating. Drives itself with FSD Supervised and can power your house for days during a blackout.",
-      "fullZh": "Cybertruck获得IIHS与NHTSA安全认可，并强调FSD辅助驾驶与家庭应急供电能力。"
+      "fullZh": "Cybertruck获得IIHS与NHTSA安全认可，并强调FSD辅助驾驶与家庭应急供电能力。",
+      "collectedAt": ""
     },
     {
       "ticker": "SMCI",
@@ -1214,7 +1224,8 @@
         }
       ],
       "fullText": "Did you know that Super Micro $SMCI brought in more revenue than $AMD this past quarter https://t.co/eMKbeFr5FK",
-      "fullZh": "你知道吗，上一季度 Super Micro（$SMCI）营收已经高于 $AMD。"
+      "fullZh": "你知道吗，上一季度 Super Micro（$SMCI）营收已经高于 $AMD。",
+      "collectedAt": ""
     },
     {
       "ticker": "SMCI",
@@ -1267,7 +1278,8 @@
       ],
       "media": [],
       "fullText": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
-      "fullZh": "SMCI vs AMD：AI 收入兑现正在分层发生。\n\n$SMCI 财报超预期并上调指引，FY2026 收入目标 400 亿美元，反映 AI 服务器需求加速。\n$AMD 同样超预期，但对 AI 放量节奏表述更审慎。\n\n结论：AI 开支真实存在，但收入最先在基础设施层落地。"
+      "fullZh": "SMCI vs AMD：AI 收入兑现正在分层发生。\n\n$SMCI 财报超预期并上调指引，FY2026 收入目标 400 亿美元，反映 AI 服务器需求加速。\n$AMD 同样超预期，但对 AI 放量节奏表述更审慎。\n\n结论：AI 开支真实存在，但收入最先在基础设施层落地。",
+      "collectedAt": ""
     },
     {
       "ticker": "USDC",
@@ -1287,7 +1299,8 @@
       "comments": [],
       "media": [],
       "fullText": "Using USDC to support carbon projects and direct cash assistance helps donors fund real-world impact in a predictable, transparent way.",
-      "fullZh": "通过USDC支持碳项目和现金援助，可提升公益资金流转的可预测性与透明度。"
+      "fullZh": "通过USDC支持碳项目和现金援助，可提升公益资金流转的可预测性与透明度。",
+      "collectedAt": ""
     },
     {
       "ticker": "NVDA",
@@ -1307,7 +1320,8 @@
       "comments": [],
       "media": [],
       "fullText": "The cost of each token depends on infrastructure cost and total token output.",
-      "fullZh": "每个token的成本由基础设施投入和整体token产出共同决定。"
+      "fullZh": "每个token的成本由基础设施投入和整体token产出共同决定。",
+      "collectedAt": ""
     },
     {
       "ticker": "NVDA",
@@ -1327,7 +1341,8 @@
       "comments": [],
       "media": [],
       "fullText": "Infrastructure efficiency fuels better tokenomics; better AI infrastructure means more tokens and lower cost per token.",
-      "fullZh": "基础设施效率提升将改善token经济学，通过更高产出降低单位token成本。"
+      "fullZh": "基础设施效率提升将改善token经济学，通过更高产出降低单位token成本。",
+      "collectedAt": ""
     },
     {
       "ticker": "NVDA",
@@ -1347,7 +1362,8 @@
       "comments": [],
       "media": [],
       "fullText": "Leading AI inference providers are optimizing their inference platforms on Blackwell.",
-      "fullZh": "头部AI推理厂商正在Blackwell架构上优化推理平台，以提升性能与成本效率。"
+      "fullZh": "头部AI推理厂商正在Blackwell架构上优化推理平台，以提升性能与成本效率。",
+      "collectedAt": ""
     },
     {
       "ticker": "HOOD",
@@ -1384,7 +1400,8 @@
       ],
       "media": [],
       "fullText": "Detailed $HOOD earnings review thread:\n\n- Revenue mix improved with options + interest income staying resilient.\n- Cost discipline helped margins surprise to the upside.\n- Balance sheet remains flexible for product expansion.\n- Guidance implies management sees durable engagement, not just event-driven spikes.\n\nCall takeaways: product velocity and distribution remain the core edge; watch retention quality and incremental monetization per active user.",
-      "fullZh": "$HOOD 财报深度版：\n\n- 收入结构改善，期权与利息收入维持韧性；\n- 费用控制有效，利润率超市场预期；\n- 资产负债表灵活，为后续产品扩张留出空间；\n- 公司指引反映管理层判断用户活跃具备持续性，不只是事件驱动脉冲。\n\n电话会要点：产品迭代速度与分发能力仍是核心优势；后续重点跟踪留存质量与单活跃用户增量变现。"
+      "fullZh": "$HOOD 财报深度版：\n\n- 收入结构改善，期权与利息收入维持韧性；\n- 费用控制有效，利润率超市场预期；\n- 资产负债表灵活，为后续产品扩张留出空间；\n- 公司指引反映管理层判断用户活跃具备持续性，不只是事件驱动脉冲。\n\n电话会要点：产品迭代速度与分发能力仍是核心优势；后续重点跟踪留存质量与单活跃用户增量变现。",
+      "collectedAt": ""
     },
     {
       "ticker": "TSLA",
@@ -1404,7 +1421,8 @@
       "comments": [],
       "media": [],
       "fullText": "FSD Supervised has 360-degree awareness and can react faster than a human, detecting a broken-down vehicle in lane and moving over.",
-      "fullZh": "FSD Supervised具备360度感知并快速反应，可识别车道内故障车并主动避让。"
+      "fullZh": "FSD Supervised具备360度感知并快速反应，可识别车道内故障车并主动避让。",
+      "collectedAt": ""
     },
     {
       "ticker": "NVDA",
@@ -1480,7 +1498,8 @@
         }
       ],
       "fullText": "$NVDA $505M Dark Pool Print (Unusual) 🔮 https://t.co/qZkBYRo2ke",
-      "fullZh": "$NVDA 出现 5.05 亿美元暗池成交（异常级别）。"
+      "fullZh": "$NVDA 出现 5.05 亿美元暗池成交（异常级别）。",
+      "collectedAt": ""
     },
     {
       "ticker": "HOOD",
@@ -1533,120 +1552,9 @@
       ],
       "media": [],
       "fullText": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
-      "fullZh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。"
-    },
-    {
-      "ticker": "NVDA",
-      "url": "https://x.com/TheLongInvest/status/2019439405531033769",
-      "avatar": "./assets/x-media/avatar-ab747b84f912.jpg",
-      "name": "The Long Investor",
-      "handle": "@TheLongInvest",
-      "time": "2026-02-05T15:54:08.000Z",
-      "text": "$NVDA has dropped out of the rising wedge (bearish)\n\nBUT\n\nThe 200 Day MA is still there, the last saviour for the market I believe at $169\n\nCan the market hold on until $NVDA reports on the 25th of Feb?",
-      "zh": "技术观点：NVDA 跌破上升楔形偏空，但 200 日均线（约 169 美元）仍是关键支撑。市场能否撑到 2 月 25 日财报前是观察重点。",
-      "counts": {
-        "reply": "31",
-        "repost": "74",
-        "like": "403",
-        "view": "68,220"
-      },
-      "comments": [
-        {
-          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-1",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "macrotrigger",
-          "handle": "@macrotrigger",
-          "time": "2026-02-05T15:54:08.000Z",
-          "text": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
-          "zh": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "1",
-            "view": "97"
-          },
-          "media": []
-        },
-        {
-          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-2",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "techchart_cn",
-          "handle": "@techchart_cn",
-          "time": "2026-02-05T15:54:08.000Z",
-          "text": "169 一旦失守，资金会重新定价风险区间。",
-          "zh": "169 一旦失守，资金会重新定价风险区间。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "0",
-            "view": "114"
-          },
-          "media": []
-        }
-      ],
-      "media": [],
-      "fullText": "$NVDA has dropped out of the rising wedge (bearish).\n\nBUT the 200-day MA is still there — potentially the last major support around $169.\n\nCan the market hold until NVDA reports on Feb 25? That's the key test for risk appetite.",
-      "fullZh": "技术面观察：$NVDA 已跌破上升楔形，形态偏空。\n\n但 200 日均线仍在（约 169 美元），这可能是当前最关键的中期支撑。\n\n市场能否撑到 2 月 25 日 NVDA 财报前，是接下来风险偏好的核心检验点。"
-    },
-    {
-      "ticker": "HOOD",
-      "url": "https://x.com/RobinhoodApp/status/2001119831806910721",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Robinhood",
-      "handle": "@RobinhoodApp",
-      "time": "2025-12-17T00:00:00.000Z",
-      "text": "Meet Robinhood Cortex, an AI assistant for researching markets and placing stock/crypto/prediction trades in conversation.",
-      "zh": "Robinhood发布Cortex：可对话完成市场研究，并交易股票、加密和预测市场。",
-      "counts": {
-        "reply": "23",
-        "repost": "24",
-        "like": "209",
-        "view": "24430"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Meet Robinhood Cortex, your new AI assistant. Research the market, dive into the technicals and make trades. Stocks, crypto and prediction markets. All in conversation.",
-      "fullZh": "Robinhood推出AI助手Cortex：支持对话式研究市场、查看技术面并执行交易，覆盖股票、加密资产与预测市场。"
-    },
-    {
-      "ticker": "HOOD",
-      "url": "https://x.com/RobinhoodApp/status/1991996871410069538",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Robinhood",
-      "handle": "@RobinhoodApp",
-      "time": "2025-11-22T00:00:00.000Z",
-      "text": "Robinhood posted top traded prediction-market contracts by category for the week.",
-      "zh": "Robinhood披露本周预测市场各类别成交最活跃合约。",
-      "counts": {
-        "reply": "23",
-        "repost": "11",
-        "like": "143",
-        "view": "22799"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "This week’s top traded event contracts by category on Robinhood Prediction Markets.",
-      "fullZh": "Robinhood发布本周预测市场热门事件合约榜单，反映用户交易偏好与流量分布。"
-    },
-    {
-      "ticker": "USDC",
-      "url": "https://x.com/RobinhoodApp/status/1426332920797597698",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Robinhood",
-      "handle": "@RobinhoodApp",
-      "time": "2021-08-14T00:00:00.000Z",
-      "text": "Robinhood weekly crypto recap mentioned USDC issuer Circle aiming to become a bank.",
-      "zh": "Robinhood加密周报提及USDC发行方Circle推动银行化目标。",
-      "counts": {
-        "reply": "249",
-        "repost": "53",
-        "like": "202",
-        "view": ""
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Markets continue to climb, Ethereum gets an upgrade, and USDC issuer Circle aims to be a bank.",
-      "fullZh": "Robinhood周报提到：市场继续上行、以太坊升级，以及USDC发行方Circle推进银行化。"
+      "fullZh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。",
+      "collectedAt": ""
     }
-  ]
+  ],
+  "collected": 50
 }
