@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Tesla 关键进展时间线",
+    "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管",
+    "timezone": "Asia/Shanghai",
+    "last_updated": "2026-02-15 18:03",
+    "note": "先上线基础版，后续按日增量更新。"
+  },
+  "events": [
+    {
+      "date": "2026-02-15",
+      "category": "FSD",
+      "title": "FSD v14.1→14.2.2.4 迭代梳理完成",
+      "summary": "从 2025-10 至 2026-01 版本迭代频繁；小步修复快，但重大能力跃迁未线性加速。",
+      "impact": "high",
+      "source": "内部整理（X+社区跟踪交叉）"
+    },
+    {
+      "date": "2026-01-24",
+      "category": "FSD",
+      "title": "FSD 14.2.2.4 推送",
+      "summary": "继续修正弯道车道保持、停车场/车库场景与导航异常绕路，定位为抛光版。",
+      "impact": "medium",
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.9/statistics"
+    },
+    {
+      "date": "2026-01-13",
+      "category": "FSD",
+      "title": "FSD 14.2.2.3 推送",
+      "summary": "低速空间感知、停车完成质量、狭窄场景平顺性继续提升。",
+      "impact": "medium",
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.8/statistics"
+    },
+    {
+      "date": "2025-12-29",
+      "category": "FSD",
+      "title": "FSD 14.2.2.2 推送",
+      "summary": "以 bugfix 与稳定性优化为主。",
+      "impact": "low",
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.7/statistics"
+    },
+    {
+      "date": "2025-12-22",
+      "category": "FSD",
+      "title": "FSD 14.2.2 推送",
+      "summary": "新增/明确自驾统计与到达点停车选项相关体验改进。",
+      "impact": "medium",
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.5/statistics"
+    },
+    {
+      "date": "2025-11-21",
+      "category": "FSD",
+      "title": "FSD 14.2 推送",
+      "summary": "视觉编码器升级，紧急车辆/障碍物/手势识别与决策增强。",
+      "impact": "high",
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.38.9.5/statistics"
+    },
+    {
+      "date": "2025-10-07",
+      "category": "FSD",
+      "title": "FSD 14.1 开始推送",
+      "summary": "到点停车、路线规划并入视觉网络、速度档位、让行和复杂场景处理增强。",
+      "impact": "high",
+      "source": "https://x.com/aelluswamy/status/1975516996134723818"
+    },
+    {
+      "date": "2025-07-23",
+      "category": "财报",
+      "title": "Q2 财报窗口（示例占位）",
+      "summary": "此条为展示位，后续替换为正式财报核心数据（营收/毛利/交付/指引）。",
+      "impact": "medium",
+      "source": "待补充"
+    }
+  ]
+}
