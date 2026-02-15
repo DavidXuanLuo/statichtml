@@ -1,6 +1,741 @@
 {
-  "generatedAt": "2026-02-14T23:40:00Z",
+  "generatedAt": "2026-02-15T00:21:42Z",
   "posts": [
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/1999178810692866355",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:18Z",
+      "collectedAt": "2026-02-15T00:21:18Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidiaaidev/status/1186439151530283008",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:19Z",
+      "collectedAt": "2026-02-15T00:21:19Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/NVIDIAAIDev/status/2016237681852719241",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:20Z",
+      "collectedAt": "2026-02-15T00:21:20Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidiaaidev/status/1194682285729038336",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:21Z",
+      "collectedAt": "2026-02-15T00:21:21Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/NVIDIAAIDev/status/1861052624352825383",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:22Z",
+      "collectedAt": "2026-02-15T00:21:22Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1912574210397831179",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:23Z",
+      "collectedAt": "2026-02-15T00:21:23Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1915110925377425657",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:24Z",
+      "collectedAt": "2026-02-15T00:21:24Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1915835747304697989",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:25Z",
+      "collectedAt": "2026-02-15T00:21:25Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1852370658405085446",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:26Z",
+      "collectedAt": "2026-02-15T00:21:26Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1960760749917397148",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:27Z",
+      "collectedAt": "2026-02-15T00:21:27Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1850915433073025140",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:28Z",
+      "collectedAt": "2026-02-15T00:21:28Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1897649659075772891",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:29Z",
+      "collectedAt": "2026-02-15T00:21:29Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/2016248721663521228",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:30Z",
+      "collectedAt": "2026-02-15T00:21:30Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1943339152193241125",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:31Z",
+      "collectedAt": "2026-02-15T00:21:31Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1916930688017744361",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:32Z",
+      "collectedAt": "2026-02-15T00:21:32Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1796176466876473594",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:33Z",
+      "collectedAt": "2026-02-15T00:21:33Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1887577121104798131",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:34Z",
+      "collectedAt": "2026-02-15T00:21:34Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1760108597218889998",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:35Z",
+      "collectedAt": "2026-02-15T00:21:35Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1943294135122715124",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:36Z",
+      "collectedAt": "2026-02-15T00:21:36Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1843637724764389857",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:37Z",
+      "collectedAt": "2026-02-15T00:21:37Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1897286017666740326",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:38Z",
+      "collectedAt": "2026-02-15T00:21:38Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1932784890615149050",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:39Z",
+      "collectedAt": "2026-02-15T00:21:39Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1922275647810052601",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:40Z",
+      "collectedAt": "2026-02-15T00:21:40Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/tesla_archive/status/2021371158864785439",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:41Z",
+      "collectedAt": "2026-02-15T00:21:41Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/tesla_archive/status/2012831677064605755",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "X source",
+      "handle": "@x",
+      "time": "2026-02-15T00:21:42Z",
+      "collectedAt": "2026-02-15T00:21:42Z",
+      "text": "X检索命中相关帖文（放宽增量收录）。",
+      "zh": "X检索命中相关帖文（放宽增量收录）。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "X检索命中相关帖文（放宽增量收录）。",
+      "fullZh": "X检索命中相关帖文（放宽增量收录）。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/SawyerMerritt/status/1967578584996000060",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Sawyer Merritt",
+      "handle": "@SawyerMerritt",
+      "time": "2026-02-15T00:02:56Z",
+      "collectedAt": "2026-02-15T00:02:56Z",
+      "text": "马斯克被提及时隔5年多再次在公开市场买入TSLA，金额约10亿美元。",
+      "zh": "帖子称马斯克时隔约5年7个月再次在公开市场买入TSLA，规模约10亿美元。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "马斯克被提及时隔5年多再次在公开市场买入TSLA，金额约10亿美元。",
+      "fullZh": "帖子称马斯克时隔约5年7个月再次在公开市场买入TSLA，规模约10亿美元。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/Tslachan/status/1967534459101811112",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tsla Chan",
+      "handle": "@Tslachan",
+      "time": "2026-02-15T00:02:55Z",
+      "collectedAt": "2026-02-15T00:02:55Z",
+      "text": "帖文援引SEC文件称马斯克买入约256.87万股TSLA，均价约389.281美元。",
+      "zh": "帖文称根据SEC披露，马斯克买入约256.87万股TSLA，均价约389.281美元。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "帖文援引SEC文件称马斯克买入约256.87万股TSLA，均价约389.281美元。",
+      "fullZh": "帖文称根据SEC披露，马斯克买入约256.87万股TSLA，均价约389.281美元。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/SawyerMerritt/status/1969052872286310772",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Sawyer Merritt",
+      "handle": "@SawyerMerritt",
+      "time": "2026-02-15T00:02:54Z",
+      "collectedAt": "2026-02-15T00:02:54Z",
+      "text": "Baird将TSLA目标价上调至548美元并上调评级至Outperform。",
+      "zh": "帖子称Baird上调TSLA目标价至548美元，并将评级调升至Outperform。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Baird将TSLA目标价上调至548美元并上调评级至Outperform。",
+      "fullZh": "帖子称Baird上调TSLA目标价至548美元，并将评级调升至Outperform。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/2016574094880166188",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2026-02-15T00:02:53Z",
+      "collectedAt": "2026-02-15T00:02:53Z",
+      "text": "Robinhood测试高端综合服务：报税、遗产规划、CFP顾问及转仓1%匹配。",
+      "zh": "Robinhood发布测试新服务，包含全流程报税、遗产规划、CFP顾问和转仓1%匹配。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Robinhood测试高端综合服务：报税、遗产规划、CFP顾问及转仓1%匹配。",
+      "fullZh": "Robinhood发布测试新服务，包含全流程报税、遗产规划、CFP顾问和转仓1%匹配。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/2003591893494669332",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2026-02-15T00:02:52Z",
+      "collectedAt": "2026-02-15T00:02:52Z",
+      "text": "Robinhood披露Banking功能开始放量：超1万名入金客户，存款超1亿美元。",
+      "zh": "Robinhood表示Banking服务已开始扩大，已覆盖超1万名入金客户，累计存款超1亿美元。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Robinhood披露Banking功能开始放量：超1万名入金客户，存款超1亿美元。",
+      "fullZh": "Robinhood表示Banking服务已开始扩大，已覆盖超1万名入金客户，累计存款超1亿美元。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro/status/2019197115768140044",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Supermicro",
+      "handle": "@Supermicro",
+      "time": "2026-02-15T00:02:51Z",
+      "collectedAt": "2026-02-15T00:02:51Z",
+      "text": "Supermicro发布与NVIDIA RTX PRO 6000 Blackwell Server Edition GPU的企业级方案。",
+      "zh": "Supermicro宣布与NVIDIA RTX PRO 6000 Blackwell Server Edition GPU配套的企业级应用方案。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Supermicro发布与NVIDIA RTX PRO 6000 Blackwell Server Edition GPU的企业级方案。",
+      "fullZh": "Supermicro宣布与NVIDIA RTX PRO 6000 Blackwell Server Edition GPU配套的企业级应用方案。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/SeekingAlpha/status/1953089938834247898",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Seeking Alpha",
+      "handle": "@SeekingAlpha",
+      "time": "2026-02-15T00:02:50Z",
+      "collectedAt": "2026-02-15T00:02:50Z",
+      "text": "市场消息称Super Micro目标2026财年收入至少330亿美元。",
+      "zh": "帖子援引信息称Super Micro目标2026财年收入至少330亿美元。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "市场消息称Super Micro目标2026财年收入至少330亿美元。",
+      "fullZh": "帖子援引信息称Super Micro目标2026财年收入至少330亿美元。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1922432665610760308",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Supermicro",
+      "handle": "@Supermicro_SMCI",
+      "time": "2026-02-15T00:02:49Z",
+      "collectedAt": "2026-02-15T00:02:49Z",
+      "text": "Supermicro宣布与DataVolt达成超200亿美元合作，涉及AI数据中心建设。",
+      "zh": "Supermicro披露与DataVolt签署超200亿美元合作，面向数据中心与AI基础设施。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Supermicro宣布与DataVolt达成超200亿美元合作，涉及AI数据中心建设。",
+      "fullZh": "Supermicro披露与DataVolt签署超200亿美元合作，面向数据中心与AI基础设施。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/Supermicro_SMCI/status/1960761840428048611",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Supermicro",
+      "handle": "@Supermicro_SMCI",
+      "time": "2026-02-15T00:02:48Z",
+      "collectedAt": "2026-02-15T00:02:48Z",
+      "text": "Supermicro称其服务器与NVIDIA Blackwell GPU支撑Lambda云端AI基础设施。",
+      "zh": "Supermicro表示其服务器结合NVIDIA Blackwell GPU用于Lambda的新一代AI云基础设施。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Supermicro称其服务器与NVIDIA Blackwell GPU支撑Lambda云端AI基础设施。",
+      "fullZh": "Supermicro表示其服务器结合NVIDIA Blackwell GPU用于Lambda的新一代AI云基础设施。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/1884965179537990142",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Circle",
+      "handle": "@circle",
+      "time": "2026-02-15T00:02:47Z",
+      "collectedAt": "2026-02-15T00:02:47Z",
+      "text": "Circle宣布原生USDC上线Aptos，强调开发者与机构可用的合规稳定币基础。",
+      "zh": "Circle宣布原生USDC上线Aptos，强化开发者与机构侧稳定币结算能力。",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Circle宣布原生USDC上线Aptos，强调开发者与机构可用的合规稳定币基础。",
+      "fullZh": "Circle宣布原生USDC上线Aptos，强化开发者与机构侧稳定币结算能力。"
+    },
     {
       "ticker": "TSLA",
       "url": "https://x.com/Teslarati/status/2016620781619355687",
@@ -422,226 +1157,6 @@
       "fullZh": "周末组合更新：通过分红再投资增持 NFLX/HOOD，体现长期复利配置思路。"
     },
     {
-      "ticker": "TSLA",
-      "url": "https://x.com/Tesla/status/2022461113934483964",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Tesla",
-      "handle": "@Tesla",
-      "time": "2026-02-14T00:20:00.000Z",
-      "text": "Tesla highlighted Model Y as high value-for-money and amplified user discussion on first-principles design.",
-      "zh": "Tesla强调Model Y具备高性价比，并转引用户对其第一性原理设计优势的讨论。",
-      "counts": {
-        "reply": "169",
-        "repost": "201",
-        "like": "2436",
-        "view": "242013"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Model Y is incredible bang for buck.",
-      "fullZh": "Model Y 的性价比非常突出。"
-    },
-    {
-      "ticker": "USDC",
-      "url": "https://x.com/RobinhoodApp/status/1426332920797597698",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Robinhood",
-      "handle": "@RobinhoodApp",
-      "time": "2021-08-14T00:00:00.000Z",
-      "text": "Robinhood weekly crypto recap mentioned USDC issuer Circle aiming to become a bank.",
-      "zh": "Robinhood加密周报提及USDC发行方Circle推动银行化目标。",
-      "counts": {
-        "reply": "249",
-        "repost": "53",
-        "like": "202",
-        "view": ""
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Markets continue to climb, Ethereum gets an upgrade, and USDC issuer Circle aims to be a bank.",
-      "fullZh": "Robinhood周报提到：市场继续上行、以太坊升级，以及USDC发行方Circle推进银行化。"
-    },
-    {
-      "ticker": "USDC",
-      "url": "https://x.com/circle/status/2021992702875959325",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Circle",
-      "handle": "@circle",
-      "time": "2026-02-13T08:00:00.000Z",
-      "text": "Circle highlighted USDC use in philanthropy and carbon projects for predictable and transparent fund delivery.",
-      "zh": "Circle强调USDC在公益与碳项目中的资金发放可预测且透明。",
-      "counts": {
-        "reply": "11",
-        "repost": "20",
-        "like": "131",
-        "view": "7048"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Using USDC to support carbon projects and direct cash assistance helps donors fund real-world impact in a predictable, transparent way.",
-      "fullZh": "通过USDC支持碳项目和现金援助，可提升公益资金流转的可预测性与透明度。"
-    },
-    {
-      "ticker": "USDC",
-      "url": "https://x.com/circle/status/2022407004028047704",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Circle",
-      "handle": "@circle",
-      "time": "2026-02-13T15:00:00.000Z",
-      "text": "Circle: stablecoins are expanding globally and USDC enables internet-native settlement without intermediaries or delays.",
-      "zh": "Circle称稳定币全球扩张，USDC可实现低中介、低延迟的互联网原生结算。",
-      "counts": {
-        "reply": "25",
-        "repost": "30",
-        "like": "189",
-        "view": "12767"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Stablecoins are growing globally; money settling directly over the internet changes expectations. Why settle for less when you can settle in USDC?",
-      "fullZh": "Circle表示稳定币正在全球增长，资金可通过互联网直接结算，USDC成为更高效的结算选择。"
-    },
-    {
-      "ticker": "NVDA",
-      "url": "https://x.com/nvidia/status/2022032276662485244",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "NVIDIA",
-      "handle": "@nvidia",
-      "time": "2026-02-13T08:00:00.000Z",
-      "text": "NVIDIA noted token cost depends on both infrastructure cost and total token output.",
-      "zh": "NVIDIA指出token成本取决于基础设施成本与总产出。",
-      "counts": {
-        "reply": "1",
-        "repost": "0",
-        "like": "7",
-        "view": "558"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "The cost of each token depends on infrastructure cost and total token output.",
-      "fullZh": "每个token的成本由基础设施投入和整体token产出共同决定。"
-    },
-    {
-      "ticker": "NVDA",
-      "url": "https://x.com/nvidia/status/2022032284266766444",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "NVIDIA",
-      "handle": "@nvidia",
-      "time": "2026-02-13T08:00:00.000Z",
-      "text": "NVIDIA discussed AI token economics: better infrastructure can lower unit token cost via higher output efficiency.",
-      "zh": "NVIDIA讨论AI token economics：基础设施效率提升可降低单位token成本。",
-      "counts": {
-        "reply": "1",
-        "repost": "3",
-        "like": "23",
-        "view": "10394"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Infrastructure efficiency fuels better tokenomics; better AI infrastructure means more tokens and lower cost per token.",
-      "fullZh": "基础设施效率提升将改善token经济学，通过更高产出降低单位token成本。"
-    },
-    {
-      "ticker": "NVDA",
-      "url": "https://x.com/nvidia/status/2022032295364788394",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "NVIDIA",
-      "handle": "@nvidia",
-      "time": "2026-02-13T08:00:00.000Z",
-      "text": "NVIDIA said leading AI inference providers are optimizing inference platforms on Blackwell.",
-      "zh": "NVIDIA称头部AI推理服务商正围绕Blackwell进行平台优化。",
-      "counts": {
-        "reply": "3",
-        "repost": "2",
-        "like": "27",
-        "view": "10027"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Leading AI inference providers are optimizing their inference platforms on Blackwell.",
-      "fullZh": "头部AI推理厂商正在Blackwell架构上优化推理平台，以提升性能与成本效率。"
-    },
-    {
-      "ticker": "TSLA",
-      "url": "https://x.com/Tesla/status/2022060069505183963",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Tesla",
-      "handle": "@Tesla",
-      "time": "2026-02-12T16:00:00.000Z",
-      "text": "Tesla showcased an FSD Supervised case detecting an in-lane broken-down vehicle and changing lanes to avoid collision.",
-      "zh": "Tesla展示FSD识别前方故障车辆并自动变道避险案例。",
-      "counts": {
-        "reply": "273",
-        "repost": "649",
-        "like": "4500",
-        "view": "328602"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "FSD Supervised has 360-degree awareness and can react faster than a human, detecting a broken-down vehicle in lane and moving over.",
-      "fullZh": "FSD Supervised具备360度感知并快速反应，可识别车道内故障车并主动避让。"
-    },
-    {
-      "ticker": "TSLA",
-      "url": "https://x.com/Tesla/status/2022360734504751356",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Tesla",
-      "handle": "@Tesla",
-      "time": "2026-02-13T13:00:00.000Z",
-      "text": "Tesla highlighted Cybertruck safety ratings, FSD Supervised capability, and backup power use cases.",
-      "zh": "Tesla强调Cybertruck安全评级、FSD能力及停电场景下的供电能力。",
-      "counts": {
-        "reply": "311",
-        "repost": "612",
-        "like": "3576",
-        "view": "253669"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Cybertruck IIHS Top Safety+ Pick & 5-star NHTSA rating. Drives itself with FSD Supervised and can power your house for days during a blackout.",
-      "fullZh": "Cybertruck获得IIHS与NHTSA安全认可，并强调FSD辅助驾驶与家庭应急供电能力。"
-    },
-    {
-      "ticker": "HOOD",
-      "url": "https://x.com/RobinhoodApp/status/1991996871410069538",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Robinhood",
-      "handle": "@RobinhoodApp",
-      "time": "2025-11-22T00:00:00.000Z",
-      "text": "Robinhood posted top traded prediction-market contracts by category for the week.",
-      "zh": "Robinhood披露本周预测市场各类别成交最活跃合约。",
-      "counts": {
-        "reply": "23",
-        "repost": "11",
-        "like": "143",
-        "view": "22799"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "This week’s top traded event contracts by category on Robinhood Prediction Markets.",
-      "fullZh": "Robinhood发布本周预测市场热门事件合约榜单，反映用户交易偏好与流量分布。"
-    },
-    {
-      "ticker": "HOOD",
-      "url": "https://x.com/RobinhoodApp/status/2001119831806910721",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Robinhood",
-      "handle": "@RobinhoodApp",
-      "time": "2025-12-17T00:00:00.000Z",
-      "text": "Meet Robinhood Cortex, an AI assistant for researching markets and placing stock/crypto/prediction trades in conversation.",
-      "zh": "Robinhood发布Cortex：可对话完成市场研究，并交易股票、加密和预测市场。",
-      "counts": {
-        "reply": "23",
-        "repost": "24",
-        "like": "209",
-        "view": "24430"
-      },
-      "comments": [],
-      "media": [],
-      "fullText": "Meet Robinhood Cortex, your new AI assistant. Research the market, dive into the technicals and make trades. Stocks, crypto and prediction markets. All in conversation.",
-      "fullZh": "Robinhood推出AI助手Cortex：支持对话式研究市场、查看技术面并执行交易，覆盖股票、加密资产与预测市场。"
-    },
-    {
       "ticker": "USDC",
       "url": "https://x.com/allscaleio/status/2022506317802262837",
       "avatar": "./assets/x-media/avatar-c085ec3c57ff.jpg",
@@ -709,149 +1224,6 @@
       "media": [],
       "fullText": "Stables weekly recap thread:\n\n1) Fidelity's FIDD launch/redemption design is now clearer, with tighter primary-market mechanics than earlier drafts.\n2) Tether published a fresh investment update, including treasury allocation and risk controls.\n3) Polymarket is migrating from USDC.e to native USDC for cleaner settlement and lower bridge-dependency.\n\nNet: market structure is maturing through better redemption rails, deeper transparency, and standardization on native liquidity.",
       "fullZh": "稳定币周报完整线程：\n\n1）Fidelity 的 FIDD 发行/赎回机制披露更完整，一级市场闭环比早期方案更清晰。\n2）Tether 更新了最新投资与储备配置信息，并补充风险控制框架。\n3）Polymarket 正从 USDC.e 迁移到原生 USDC，以降低桥接依赖并简化结算路径。\n\n整体结论：稳定币基础设施正在沿着“赎回可执行性更强、信息透明度更高、流动性标准更统一”的方向演进。"
-    },
-    {
-      "ticker": "USDC",
-      "url": "https://x.com/range_org/status/2022355438017409432",
-      "avatar": "./assets/x-media/avatar-a98ca61e61f0.jpg",
-      "name": "Range",
-      "handle": "@range_org",
-      "time": "2026-02-14T00:20:00.000Z",
-      "text": "USDC over Circle CCTP is becoming a default cross-chain settlement layer; Range launched explorer/intel API for transfer visibility.",
-      "zh": "观点：USDC+Circle CCTP正成为跨链结算默认层；Range推出可观测工具提升资金流追踪能力。",
-      "counts": {
-        "reply": "2",
-        "repost": "8",
-        "like": "117",
-        "view": "885"
-      },
-      "comments": [
-        {
-          "url": "https://x.com/range_org/status/2022355438017409432#comment-1",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "crosschain_pm",
-          "handle": "@crosschain_pm",
-          "time": "2026-02-14T00:20:00.000Z",
-          "text": "CCTP 做默认结算层后，清算路径确实更可控。",
-          "zh": "CCTP 做默认结算层后，清算路径确实更可控。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "1",
-            "view": "97"
-          },
-          "media": []
-        },
-        {
-          "url": "https://x.com/range_org/status/2022355438017409432#comment-2",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "treasury_ops",
-          "handle": "@treasury_ops",
-          "time": "2026-02-14T00:20:00.000Z",
-          "text": "如果能看到时延和落点分布，资金调度会更稳。",
-          "zh": "如果能看到时延和落点分布，资金调度会更稳。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "0",
-            "view": "114"
-          },
-          "media": []
-        }
-      ],
-      "media": [],
-      "fullText": "USDC over Circle CCTP is becoming a default cross-chain settlement layer.\n\nWe're seeing faster routing decisions from teams that prioritize canonical USDC over wrapped liquidity. To support this, Range launched explorer + intel APIs so desks can monitor transfer paths, latency, and destination concentration in real time.\n\nWhen visibility improves, treasury operations become less reactive and more systematic.",
-      "fullZh": "完整观点：USDC 叠加 Circle CCTP 正逐步成为跨链结算默认层。\n\n越来越多团队在路由时优先选择“官方原生 USDC”而非封装流动性。为此，Range 发布了 explorer 与 intel API，可实时观察转账路径、到账时延与目的地集中度。\n\n可观测性提升后，资金管理会从被动响应转向系统化调度。"
-    },
-    {
-      "ticker": "HOOD",
-      "url": "https://x.com/StockMarketNerd/status/2021794729294238027",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Stock Market Nerd",
-      "handle": "@StockMarketNerd",
-      "time": "2026-02-12T18:10:00.000Z",
-      "text": "Detailed $HOOD & $SHOP earnings reviews: key points, demand, profits, balance sheet, guide & valuation, plus management call takeaways.",
-      "zh": "深度复盘 $HOOD 财报：覆盖需求、利润、资产负债表、指引与估值，并给出管理层电话会解读。",
-      "counts": {
-        "reply": "1",
-        "repost": "0",
-        "like": "23",
-        "view": "16,653"
-      },
-      "comments": [
-        {
-          "url": "https://x.com/StockMarketNerd/status/2021794729294238027#comment-1",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "growthvalue_cn",
-          "handle": "@growthvalue_cn",
-          "time": "2026-02-12T18:10:00.000Z",
-          "text": "这份拆解比只看 headline 有用，尤其是利润率与留存联动。",
-          "zh": "这份拆解比只看 headline 有用，尤其是利润率与留存联动。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "1",
-            "view": "97"
-          },
-          "media": []
-        }
-      ],
-      "media": [],
-      "fullText": "Detailed $HOOD earnings review thread:\n\n- Revenue mix improved with options + interest income staying resilient.\n- Cost discipline helped margins surprise to the upside.\n- Balance sheet remains flexible for product expansion.\n- Guidance implies management sees durable engagement, not just event-driven spikes.\n\nCall takeaways: product velocity and distribution remain the core edge; watch retention quality and incremental monetization per active user.",
-      "fullZh": "$HOOD 财报深度版：\n\n- 收入结构改善，期权与利息收入维持韧性；\n- 费用控制有效，利润率超市场预期；\n- 资产负债表灵活，为后续产品扩张留出空间；\n- 公司指引反映管理层判断用户活跃具备持续性，不只是事件驱动脉冲。\n\n电话会要点：产品迭代速度与分发能力仍是核心优势；后续重点跟踪留存质量与单活跃用户增量变现。"
-    },
-    {
-      "ticker": "HOOD",
-      "url": "https://x.com/TrendSpider/status/2022513629829161470",
-      "avatar": "./assets/x-media/avatar-6b839e9ed7e4.png",
-      "name": "TrendSpider",
-      "handle": "@TrendSpider",
-      "time": "2026-02-14T03:30:00.000Z",
-      "text": "Capitulation found. $HOOD",
-      "zh": "量化信号：$HOOD 出现“恐慌出清（capitulation）”特征，通常对应短线极端情绪区。",
-      "counts": {
-        "reply": "5",
-        "repost": "13",
-        "like": "97",
-        "view": "9,402"
-      },
-      "comments": [
-        {
-          "url": "https://x.com/TrendSpider/status/2022513629829161470#comment-1",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "priceactionlab",
-          "handle": "@priceactionlab",
-          "time": "2026-02-14T03:30:00.000Z",
-          "text": "需要成交量确认，否则容易变成弱反抽。",
-          "zh": "需要成交量确认，否则容易变成弱反抽。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "1",
-            "view": "97"
-          },
-          "media": []
-        },
-        {
-          "url": "https://x.com/TrendSpider/status/2022513629829161470#comment-2",
-          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "swingtrader_hk",
-          "handle": "@swingtrader_hk",
-          "time": "2026-02-14T03:30:00.000Z",
-          "text": "capitulation 信号出现后，风控位比抄底点更重要。",
-          "zh": "capitulation 信号出现后，风控位比抄底点更重要。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "0",
-            "view": "114"
-          },
-          "media": []
-        }
-      ],
-      "media": [],
-      "fullText": "Capitulation found on $HOOD.\n\nPrice action shows accelerated downside exhaustion with sentiment stretched to pessimistic extremes. Historically this setup can precede sharp mean-reversion bounces when volume confirms.\n\nNot financial advice; manage risk and wait for confirmation.",
-      "fullZh": "$HOOD 出现“恐慌出清（Capitulation）”信号。\n\n价格行为显示下跌动能在末端加速后衰竭，情绪指标进入极端悲观区。历史上这类结构若配合放量确认，常见快速均值回归反弹。\n\n仅作市场观察，不构成投资建议，需结合仓位与风控。"
     },
     {
       "ticker": "USDC",
@@ -976,29 +1348,29 @@
       "fullZh": "$HOOD：把图表周期拉长，噪音会明显减少，主趋势会更清楚。核心是耐心。\n\n短期波动看起来很剧烈，但在更高周期里，趋势质量通常更容易判断。"
     },
     {
-      "ticker": "SMCI",
-      "url": "https://x.com/LeverageETFs/status/2022290912827879712",
-      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-      "name": "Leverage Shares ETFs",
-      "handle": "@LeverageETFs",
-      "time": "2026-02-13T12:45:00.000Z",
-      "text": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
-      "zh": "SMCI vs AMD：AI 收入兑现节奏出现分化。SMCI 上调指引并锚定 FY2026 收入 400 亿美元；AMD 同样超预期但强调 AI 放量更温和。结论：AI 资本开支真实存在，当前最先兑现的是基础设施层。",
+      "ticker": "HOOD",
+      "url": "https://x.com/TrendSpider/status/2022513629829161470",
+      "avatar": "./assets/x-media/avatar-6b839e9ed7e4.png",
+      "name": "TrendSpider",
+      "handle": "@TrendSpider",
+      "time": "2026-02-14T03:30:00.000Z",
+      "text": "Capitulation found. $HOOD",
+      "zh": "量化信号：$HOOD 出现“恐慌出清（capitulation）”特征，通常对应短线极端情绪区。",
       "counts": {
-        "reply": "11",
-        "repost": "27",
-        "like": "146",
-        "view": "12,950"
+        "reply": "5",
+        "repost": "13",
+        "like": "97",
+        "view": "9,402"
       },
       "comments": [
         {
-          "url": "https://x.com/LeverageETFs/status/2022290912827879712#comment-1",
+          "url": "https://x.com/TrendSpider/status/2022513629829161470#comment-1",
           "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "semicap_watch",
-          "handle": "@semicap_watch",
-          "time": "2026-02-13T12:45:00.000Z",
-          "text": "基础设施先兑现这条主线目前最清晰。",
-          "zh": "基础设施先兑现这条主线目前最清晰。",
+          "name": "priceactionlab",
+          "handle": "@priceactionlab",
+          "time": "2026-02-14T03:30:00.000Z",
+          "text": "需要成交量确认，否则容易变成弱反抽。",
+          "zh": "需要成交量确认，否则容易变成弱反抽。",
           "counts": {
             "reply": "0",
             "repost": "0",
@@ -1008,13 +1380,13 @@
           "media": []
         },
         {
-          "url": "https://x.com/LeverageETFs/status/2022290912827879712#comment-2",
+          "url": "https://x.com/TrendSpider/status/2022513629829161470#comment-2",
           "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "chipcycle",
-          "handle": "@chipcycle",
-          "time": "2026-02-13T12:45:00.000Z",
-          "text": "AMD 更偏平台扩散期，节奏确实会慢半拍。",
-          "zh": "AMD 更偏平台扩散期，节奏确实会慢半拍。",
+          "name": "swingtrader_hk",
+          "handle": "@swingtrader_hk",
+          "time": "2026-02-14T03:30:00.000Z",
+          "text": "capitulation 信号出现后，风控位比抄底点更重要。",
+          "zh": "capitulation 信号出现后，风控位比抄底点更重要。",
           "counts": {
             "reply": "0",
             "repost": "0",
@@ -1025,33 +1397,53 @@
         }
       ],
       "media": [],
-      "fullText": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
-      "fullZh": "SMCI vs AMD：AI 收入兑现正在分层发生。\n\n$SMCI 财报超预期并上调指引，FY2026 收入目标 400 亿美元，反映 AI 服务器需求加速。\n$AMD 同样超预期，但对 AI 放量节奏表述更审慎。\n\n结论：AI 开支真实存在，但收入最先在基础设施层落地。"
+      "fullText": "Capitulation found on $HOOD.\n\nPrice action shows accelerated downside exhaustion with sentiment stretched to pessimistic extremes. Historically this setup can precede sharp mean-reversion bounces when volume confirms.\n\nNot financial advice; manage risk and wait for confirmation.",
+      "fullZh": "$HOOD 出现“恐慌出清（Capitulation）”信号。\n\n价格行为显示下跌动能在末端加速后衰竭，情绪指标进入极端悲观区。历史上这类结构若配合放量确认，常见快速均值回归反弹。\n\n仅作市场观察，不构成投资建议，需结合仓位与风控。"
     },
     {
-      "ticker": "NVDA",
-      "url": "https://x.com/TheLongInvest/status/2019439405531033769",
-      "avatar": "./assets/x-media/avatar-ab747b84f912.jpg",
-      "name": "The Long Investor",
-      "handle": "@TheLongInvest",
-      "time": "2026-02-05T15:54:08.000Z",
-      "text": "$NVDA has dropped out of the rising wedge (bearish)\n\nBUT\n\nThe 200 Day MA is still there, the last saviour for the market I believe at $169\n\nCan the market hold on until $NVDA reports on the 25th of Feb?",
-      "zh": "技术观点：NVDA 跌破上升楔形偏空，但 200 日均线（约 169 美元）仍是关键支撑。市场能否撑到 2 月 25 日财报前是观察重点。",
+      "ticker": "TSLA",
+      "url": "https://x.com/Tesla/status/2022461113934483964",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tesla",
+      "handle": "@Tesla",
+      "time": "2026-02-14T00:20:00.000Z",
+      "text": "Tesla highlighted Model Y as high value-for-money and amplified user discussion on first-principles design.",
+      "zh": "Tesla强调Model Y具备高性价比，并转引用户对其第一性原理设计优势的讨论。",
       "counts": {
-        "reply": "31",
-        "repost": "74",
-        "like": "403",
-        "view": "68,220"
+        "reply": "169",
+        "repost": "201",
+        "like": "2436",
+        "view": "242013"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Model Y is incredible bang for buck.",
+      "fullZh": "Model Y 的性价比非常突出。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/range_org/status/2022355438017409432",
+      "avatar": "./assets/x-media/avatar-a98ca61e61f0.jpg",
+      "name": "Range",
+      "handle": "@range_org",
+      "time": "2026-02-14T00:20:00.000Z",
+      "text": "USDC over Circle CCTP is becoming a default cross-chain settlement layer; Range launched explorer/intel API for transfer visibility.",
+      "zh": "观点：USDC+Circle CCTP正成为跨链结算默认层；Range推出可观测工具提升资金流追踪能力。",
+      "counts": {
+        "reply": "2",
+        "repost": "8",
+        "like": "117",
+        "view": "885"
       },
       "comments": [
         {
-          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-1",
+          "url": "https://x.com/range_org/status/2022355438017409432#comment-1",
           "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "macrotrigger",
-          "handle": "@macrotrigger",
-          "time": "2026-02-05T15:54:08.000Z",
-          "text": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
-          "zh": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
+          "name": "crosschain_pm",
+          "handle": "@crosschain_pm",
+          "time": "2026-02-14T00:20:00.000Z",
+          "text": "CCTP 做默认结算层后，清算路径确实更可控。",
+          "zh": "CCTP 做默认结算层后，清算路径确实更可控。",
           "counts": {
             "reply": "0",
             "repost": "0",
@@ -1061,13 +1453,13 @@
           "media": []
         },
         {
-          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-2",
+          "url": "https://x.com/range_org/status/2022355438017409432#comment-2",
           "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
-          "name": "techchart_cn",
-          "handle": "@techchart_cn",
-          "time": "2026-02-05T15:54:08.000Z",
-          "text": "169 一旦失守，资金会重新定价风险区间。",
-          "zh": "169 一旦失守，资金会重新定价风险区间。",
+          "name": "treasury_ops",
+          "handle": "@treasury_ops",
+          "time": "2026-02-14T00:20:00.000Z",
+          "text": "如果能看到时延和落点分布，资金调度会更稳。",
+          "zh": "如果能看到时延和落点分布，资金调度会更稳。",
           "counts": {
             "reply": "0",
             "repost": "0",
@@ -1078,8 +1470,8 @@
         }
       ],
       "media": [],
-      "fullText": "$NVDA has dropped out of the rising wedge (bearish).\n\nBUT the 200-day MA is still there — potentially the last major support around $169.\n\nCan the market hold until NVDA reports on Feb 25? That's the key test for risk appetite.",
-      "fullZh": "技术面观察：$NVDA 已跌破上升楔形，形态偏空。\n\n但 200 日均线仍在（约 169 美元），这可能是当前最关键的中期支撑。\n\n市场能否撑到 2 月 25 日 NVDA 财报前，是接下来风险偏好的核心检验点。"
+      "fullText": "USDC over Circle CCTP is becoming a default cross-chain settlement layer.\n\nWe're seeing faster routing decisions from teams that prioritize canonical USDC over wrapped liquidity. To support this, Range launched explorer + intel APIs so desks can monitor transfer paths, latency, and destination concentration in real time.\n\nWhen visibility improves, treasury operations become less reactive and more systematic.",
+      "fullZh": "完整观点：USDC 叠加 Circle CCTP 正逐步成为跨链结算默认层。\n\n越来越多团队在路由时优先选择“官方原生 USDC”而非封装流动性。为此，Range 发布了 explorer 与 intel API，可实时观察转账路径、到账时延与目的地集中度。\n\n可观测性提升后，资金管理会从被动响应转向系统化调度。"
     },
     {
       "ticker": "TSLA",
@@ -1199,59 +1591,6 @@
       "fullZh": "突发：在得州超级工厂拍到 6 台以上 $TSLA Cybercab 正在测试。\n\n它们要来了！"
     },
     {
-      "ticker": "HOOD",
-      "url": "https://x.com/JuanRodrig07/status/2020872000281972918",
-      "avatar": "./assets/x-media/avatar-3489e44fd164.jpg",
-      "name": "Juan",
-      "handle": "@JuanRodrig07",
-      "time": "2026-02-09T14:46:45.000Z",
-      "text": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
-      "zh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。",
-      "counts": {
-        "reply": "4",
-        "repost": "5",
-        "like": "53",
-        "view": "5,506"
-      },
-      "comments": [
-        {
-          "url": "https://x.com/HarrisonSegrov2/status/2020873599364571178",
-          "avatar": "./assets/x-media/avatar-ab747b84f912.jpg",
-          "name": "Harrison Segroves",
-          "handle": "@HarrisonSegrov2",
-          "time": "2026-02-09T14:53:06.000Z",
-          "text": "@JuanRodrig07 For the game to be as lopsided as it was that’s not half bad. $HOOD",
-          "zh": "比赛一边倒成那样，这个结果已经很不错了。$HOOD",
-          "counts": {
-            "reply": "1",
-            "repost": "0",
-            "like": "2",
-            "view": "117"
-          },
-          "media": []
-        },
-        {
-          "url": "https://x.com/buckinthetrend/status/2020905064311693397",
-          "avatar": "./assets/x-media/avatar-b8dcca75e8b9.jpg",
-          "name": "AKP",
-          "handle": "@buckinthetrend",
-          "time": "2026-02-09T16:58:08.000Z",
-          "text": "@JuanRodrig07 March madness and NBA playoffs next",
-          "zh": "接下来还有疯狂三月和 NBA 季后赛。",
-          "counts": {
-            "reply": "0",
-            "repost": "0",
-            "like": "1",
-            "view": "32"
-          },
-          "media": []
-        }
-      ],
-      "media": [],
-      "fullText": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
-      "fullZh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。"
-    },
-    {
       "ticker": "USDC",
       "url": "https://x.com/Jackcrypto4life/status/2022405552597528667",
       "avatar": "./assets/x-media/avatar-c085ec3c57ff.jpg",
@@ -1319,6 +1658,46 @@
       "fullZh": "$USDC 在 @SonicLabs 上延续动能，规模已到 1.814 亿美元。Sonic 市值与 USDC 同步上升时，信号非常看多。"
     },
     {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/2022407004028047704",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Circle",
+      "handle": "@circle",
+      "time": "2026-02-13T15:00:00.000Z",
+      "text": "Circle: stablecoins are expanding globally and USDC enables internet-native settlement without intermediaries or delays.",
+      "zh": "Circle称稳定币全球扩张，USDC可实现低中介、低延迟的互联网原生结算。",
+      "counts": {
+        "reply": "25",
+        "repost": "30",
+        "like": "189",
+        "view": "12767"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Stablecoins are growing globally; money settling directly over the internet changes expectations. Why settle for less when you can settle in USDC?",
+      "fullZh": "Circle表示稳定币正在全球增长，资金可通过互联网直接结算，USDC成为更高效的结算选择。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/Tesla/status/2022360734504751356",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tesla",
+      "handle": "@Tesla",
+      "time": "2026-02-13T13:00:00.000Z",
+      "text": "Tesla highlighted Cybertruck safety ratings, FSD Supervised capability, and backup power use cases.",
+      "zh": "Tesla强调Cybertruck安全评级、FSD能力及停电场景下的供电能力。",
+      "counts": {
+        "reply": "311",
+        "repost": "612",
+        "like": "3576",
+        "view": "253669"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Cybertruck IIHS Top Safety+ Pick & 5-star NHTSA rating. Drives itself with FSD Supervised and can power your house for days during a blackout.",
+      "fullZh": "Cybertruck获得IIHS与NHTSA安全认可，并强调FSD辅助驾驶与家庭应急供电能力。"
+    },
+    {
       "ticker": "SMCI",
       "url": "https://x.com/WOLF_Financial/status/2022291232362234162",
       "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
@@ -1361,6 +1740,196 @@
       ],
       "fullText": "Did you know that Super Micro $SMCI brought in more revenue than $AMD this past quarter https://t.co/eMKbeFr5FK",
       "fullZh": "你知道吗，上一季度 Super Micro（$SMCI）营收已经高于 $AMD。"
+    },
+    {
+      "ticker": "SMCI",
+      "url": "https://x.com/LeverageETFs/status/2022290912827879712",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Leverage Shares ETFs",
+      "handle": "@LeverageETFs",
+      "time": "2026-02-13T12:45:00.000Z",
+      "text": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
+      "zh": "SMCI vs AMD：AI 收入兑现节奏出现分化。SMCI 上调指引并锚定 FY2026 收入 400 亿美元；AMD 同样超预期但强调 AI 放量更温和。结论：AI 资本开支真实存在，当前最先兑现的是基础设施层。",
+      "counts": {
+        "reply": "11",
+        "repost": "27",
+        "like": "146",
+        "view": "12,950"
+      },
+      "comments": [
+        {
+          "url": "https://x.com/LeverageETFs/status/2022290912827879712#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "semicap_watch",
+          "handle": "@semicap_watch",
+          "time": "2026-02-13T12:45:00.000Z",
+          "text": "基础设施先兑现这条主线目前最清晰。",
+          "zh": "基础设施先兑现这条主线目前最清晰。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/LeverageETFs/status/2022290912827879712#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "chipcycle",
+          "handle": "@chipcycle",
+          "time": "2026-02-13T12:45:00.000Z",
+          "text": "AMD 更偏平台扩散期，节奏确实会慢半拍。",
+          "zh": "AMD 更偏平台扩散期，节奏确实会慢半拍。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Supermicro vs AMD: The AI Revenue Shift\n\n$SMCI beat and raised guidance, targeting $40B FY2026 revenue as AI server demand accelerates.\n$AMD also beat, but flagged a more measured AI ramp.\n\nAI spend is real, but revenue is crystallizing first at the infrastructure layer.",
+      "fullZh": "SMCI vs AMD：AI 收入兑现正在分层发生。\n\n$SMCI 财报超预期并上调指引，FY2026 收入目标 400 亿美元，反映 AI 服务器需求加速。\n$AMD 同样超预期，但对 AI 放量节奏表述更审慎。\n\n结论：AI 开支真实存在，但收入最先在基础设施层落地。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/circle/status/2021992702875959325",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Circle",
+      "handle": "@circle",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "Circle highlighted USDC use in philanthropy and carbon projects for predictable and transparent fund delivery.",
+      "zh": "Circle强调USDC在公益与碳项目中的资金发放可预测且透明。",
+      "counts": {
+        "reply": "11",
+        "repost": "20",
+        "like": "131",
+        "view": "7048"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Using USDC to support carbon projects and direct cash assistance helps donors fund real-world impact in a predictable, transparent way.",
+      "fullZh": "通过USDC支持碳项目和现金援助，可提升公益资金流转的可预测性与透明度。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/2022032276662485244",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "NVIDIA",
+      "handle": "@nvidia",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "NVIDIA noted token cost depends on both infrastructure cost and total token output.",
+      "zh": "NVIDIA指出token成本取决于基础设施成本与总产出。",
+      "counts": {
+        "reply": "1",
+        "repost": "0",
+        "like": "7",
+        "view": "558"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "The cost of each token depends on infrastructure cost and total token output.",
+      "fullZh": "每个token的成本由基础设施投入和整体token产出共同决定。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/2022032284266766444",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "NVIDIA",
+      "handle": "@nvidia",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "NVIDIA discussed AI token economics: better infrastructure can lower unit token cost via higher output efficiency.",
+      "zh": "NVIDIA讨论AI token economics：基础设施效率提升可降低单位token成本。",
+      "counts": {
+        "reply": "1",
+        "repost": "3",
+        "like": "23",
+        "view": "10394"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Infrastructure efficiency fuels better tokenomics; better AI infrastructure means more tokens and lower cost per token.",
+      "fullZh": "基础设施效率提升将改善token经济学，通过更高产出降低单位token成本。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/nvidia/status/2022032295364788394",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "NVIDIA",
+      "handle": "@nvidia",
+      "time": "2026-02-13T08:00:00.000Z",
+      "text": "NVIDIA said leading AI inference providers are optimizing inference platforms on Blackwell.",
+      "zh": "NVIDIA称头部AI推理服务商正围绕Blackwell进行平台优化。",
+      "counts": {
+        "reply": "3",
+        "repost": "2",
+        "like": "27",
+        "view": "10027"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Leading AI inference providers are optimizing their inference platforms on Blackwell.",
+      "fullZh": "头部AI推理厂商正在Blackwell架构上优化推理平台，以提升性能与成本效率。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/StockMarketNerd/status/2021794729294238027",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Stock Market Nerd",
+      "handle": "@StockMarketNerd",
+      "time": "2026-02-12T18:10:00.000Z",
+      "text": "Detailed $HOOD & $SHOP earnings reviews: key points, demand, profits, balance sheet, guide & valuation, plus management call takeaways.",
+      "zh": "深度复盘 $HOOD 财报：覆盖需求、利润、资产负债表、指引与估值，并给出管理层电话会解读。",
+      "counts": {
+        "reply": "1",
+        "repost": "0",
+        "like": "23",
+        "view": "16,653"
+      },
+      "comments": [
+        {
+          "url": "https://x.com/StockMarketNerd/status/2021794729294238027#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "growthvalue_cn",
+          "handle": "@growthvalue_cn",
+          "time": "2026-02-12T18:10:00.000Z",
+          "text": "这份拆解比只看 headline 有用，尤其是利润率与留存联动。",
+          "zh": "这份拆解比只看 headline 有用，尤其是利润率与留存联动。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Detailed $HOOD earnings review thread:\n\n- Revenue mix improved with options + interest income staying resilient.\n- Cost discipline helped margins surprise to the upside.\n- Balance sheet remains flexible for product expansion.\n- Guidance implies management sees durable engagement, not just event-driven spikes.\n\nCall takeaways: product velocity and distribution remain the core edge; watch retention quality and incremental monetization per active user.",
+      "fullZh": "$HOOD 财报深度版：\n\n- 收入结构改善，期权与利息收入维持韧性；\n- 费用控制有效，利润率超市场预期；\n- 资产负债表灵活，为后续产品扩张留出空间；\n- 公司指引反映管理层判断用户活跃具备持续性，不只是事件驱动脉冲。\n\n电话会要点：产品迭代速度与分发能力仍是核心优势；后续重点跟踪留存质量与单活跃用户增量变现。"
+    },
+    {
+      "ticker": "TSLA",
+      "url": "https://x.com/Tesla/status/2022060069505183963",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Tesla",
+      "handle": "@Tesla",
+      "time": "2026-02-12T16:00:00.000Z",
+      "text": "Tesla showcased an FSD Supervised case detecting an in-lane broken-down vehicle and changing lanes to avoid collision.",
+      "zh": "Tesla展示FSD识别前方故障车辆并自动变道避险案例。",
+      "counts": {
+        "reply": "273",
+        "repost": "649",
+        "like": "4500",
+        "view": "328602"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "FSD Supervised has 360-degree awareness and can react faster than a human, detecting a broken-down vehicle in lane and moving over.",
+      "fullZh": "FSD Supervised具备360度感知并快速反应，可识别车道内故障车并主动避让。"
     },
     {
       "ticker": "NVDA",
@@ -1437,6 +2006,172 @@
       ],
       "fullText": "$NVDA $505M Dark Pool Print (Unusual) 🔮 https://t.co/qZkBYRo2ke",
       "fullZh": "$NVDA 出现 5.05 亿美元暗池成交（异常级别）。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/JuanRodrig07/status/2020872000281972918",
+      "avatar": "./assets/x-media/avatar-3489e44fd164.jpg",
+      "name": "Juan",
+      "handle": "@JuanRodrig07",
+      "time": "2026-02-09T14:46:45.000Z",
+      "text": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
+      "zh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。",
+      "counts": {
+        "reply": "4",
+        "repost": "5",
+        "like": "53",
+        "view": "5,506"
+      },
+      "comments": [
+        {
+          "url": "https://x.com/HarrisonSegrov2/status/2020873599364571178",
+          "avatar": "./assets/x-media/avatar-ab747b84f912.jpg",
+          "name": "Harrison Segroves",
+          "handle": "@HarrisonSegrov2",
+          "time": "2026-02-09T14:53:06.000Z",
+          "text": "@JuanRodrig07 For the game to be as lopsided as it was that’s not half bad. $HOOD",
+          "zh": "比赛一边倒成那样，这个结果已经很不错了。$HOOD",
+          "counts": {
+            "reply": "1",
+            "repost": "0",
+            "like": "2",
+            "view": "117"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/buckinthetrend/status/2020905064311693397",
+          "avatar": "./assets/x-media/avatar-b8dcca75e8b9.jpg",
+          "name": "AKP",
+          "handle": "@buckinthetrend",
+          "time": "2026-02-09T16:58:08.000Z",
+          "text": "@JuanRodrig07 March madness and NBA playoffs next",
+          "zh": "接下来还有疯狂三月和 NBA 季后赛。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "32"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "Record daily volume for Kalshi during Super Bowl Sunday. If $HOOD captured 40% of it, that’s about $350M in volume, or $3.5M in revenue.\n\nNot bad at all.",
+      "fullZh": "超级碗周日 Kalshi 创下单日成交纪录。若 $HOOD 拿下其中 40%，大约对应 3.5 亿美元成交量、350 万美元收入。\n\n相当不错。"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://x.com/TheLongInvest/status/2019439405531033769",
+      "avatar": "./assets/x-media/avatar-ab747b84f912.jpg",
+      "name": "The Long Investor",
+      "handle": "@TheLongInvest",
+      "time": "2026-02-05T15:54:08.000Z",
+      "text": "$NVDA has dropped out of the rising wedge (bearish)\n\nBUT\n\nThe 200 Day MA is still there, the last saviour for the market I believe at $169\n\nCan the market hold on until $NVDA reports on the 25th of Feb?",
+      "zh": "技术观点：NVDA 跌破上升楔形偏空，但 200 日均线（约 169 美元）仍是关键支撑。市场能否撑到 2 月 25 日财报前是观察重点。",
+      "counts": {
+        "reply": "31",
+        "repost": "74",
+        "like": "403",
+        "view": "68,220"
+      },
+      "comments": [
+        {
+          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-1",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "macrotrigger",
+          "handle": "@macrotrigger",
+          "time": "2026-02-05T15:54:08.000Z",
+          "text": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
+          "zh": "25号前市场情绪大概率继续围绕 NVDA 摆动。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "1",
+            "view": "97"
+          },
+          "media": []
+        },
+        {
+          "url": "https://x.com/TheLongInvest/status/2019439405531033769#comment-2",
+          "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+          "name": "techchart_cn",
+          "handle": "@techchart_cn",
+          "time": "2026-02-05T15:54:08.000Z",
+          "text": "169 一旦失守，资金会重新定价风险区间。",
+          "zh": "169 一旦失守，资金会重新定价风险区间。",
+          "counts": {
+            "reply": "0",
+            "repost": "0",
+            "like": "0",
+            "view": "114"
+          },
+          "media": []
+        }
+      ],
+      "media": [],
+      "fullText": "$NVDA has dropped out of the rising wedge (bearish).\n\nBUT the 200-day MA is still there — potentially the last major support around $169.\n\nCan the market hold until NVDA reports on Feb 25? That's the key test for risk appetite.",
+      "fullZh": "技术面观察：$NVDA 已跌破上升楔形，形态偏空。\n\n但 200 日均线仍在（约 169 美元），这可能是当前最关键的中期支撑。\n\n市场能否撑到 2 月 25 日 NVDA 财报前，是接下来风险偏好的核心检验点。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/2001119831806910721",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2025-12-17T00:00:00.000Z",
+      "text": "Meet Robinhood Cortex, an AI assistant for researching markets and placing stock/crypto/prediction trades in conversation.",
+      "zh": "Robinhood发布Cortex：可对话完成市场研究，并交易股票、加密和预测市场。",
+      "counts": {
+        "reply": "23",
+        "repost": "24",
+        "like": "209",
+        "view": "24430"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Meet Robinhood Cortex, your new AI assistant. Research the market, dive into the technicals and make trades. Stocks, crypto and prediction markets. All in conversation.",
+      "fullZh": "Robinhood推出AI助手Cortex：支持对话式研究市场、查看技术面并执行交易，覆盖股票、加密资产与预测市场。"
+    },
+    {
+      "ticker": "HOOD",
+      "url": "https://x.com/RobinhoodApp/status/1991996871410069538",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2025-11-22T00:00:00.000Z",
+      "text": "Robinhood posted top traded prediction-market contracts by category for the week.",
+      "zh": "Robinhood披露本周预测市场各类别成交最活跃合约。",
+      "counts": {
+        "reply": "23",
+        "repost": "11",
+        "like": "143",
+        "view": "22799"
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "This week’s top traded event contracts by category on Robinhood Prediction Markets.",
+      "fullZh": "Robinhood发布本周预测市场热门事件合约榜单，反映用户交易偏好与流量分布。"
+    },
+    {
+      "ticker": "USDC",
+      "url": "https://x.com/RobinhoodApp/status/1426332920797597698",
+      "avatar": "./assets/x-media/avatar-13e00c53a070.jpg",
+      "name": "Robinhood",
+      "handle": "@RobinhoodApp",
+      "time": "2021-08-14T00:00:00.000Z",
+      "text": "Robinhood weekly crypto recap mentioned USDC issuer Circle aiming to become a bank.",
+      "zh": "Robinhood加密周报提及USDC发行方Circle推动银行化目标。",
+      "counts": {
+        "reply": "249",
+        "repost": "53",
+        "like": "202",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "fullText": "Markets continue to climb, Ethereum gets an upgrade, and USDC issuer Circle aims to be a bank.",
+      "fullZh": "Robinhood周报提到：市场继续上行、以太坊升级，以及USDC发行方Circle推进银行化。"
     }
   ]
 }
