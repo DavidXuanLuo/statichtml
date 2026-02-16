@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-16 07:26",
+    "last_updated": "2026-02-16 12:25",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
