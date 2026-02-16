@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-16 12:25",
+    "last_updated": "2026-02-16 12:46",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,16 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-01-25",
+      "category": "FSD",
+      "title": "HW3车主：若HW3无法满足无人值守FSD安全等级，后续将获HW4免费升级",
+      "summary": "Tesla新闻账号转述Elon Musk：HW3所有者若不能达到无人驾驶FSD的安全能力门槛，则后续免费升级到HW4；同时给出V14 Lite有望于2026年Q2完成后的里程碑提示。",
+      "impact": "high",
+      "source": "https://x.com/TeslaNewswire/status/2015428176336326765",
+      "conclusion": "Elon Musk 重申HW3车主可在安全性门槛不达标时获免费HW4升级，V14 Lite里程碑提示延后至2026年Q2后，短期有利于缓解老用户担忧但对供应链/改装排期与毛利有压力。",
+      "key_numbers": "发布日期2026-01-25；V14 Lite里程碑提示：2026-Q2后；"
+    },
     {
       "date": "2026-01-24",
       "category": "FSD",
