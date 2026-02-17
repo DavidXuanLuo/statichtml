@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-17 17:03",
+    "last_updated": "2026-02-17 23:10",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -17,6 +17,17 @@
       "conclusion": "Model S/X被提示“几个月内”可能结束当前销售项目，意味着Tesla产品结构继续向3/Y与新平台集中，短期利于制造复杂度与成本控制，但会压缩高端车型名义ASP贡献。",
       "key_numbers": "时间：2月17日（Asia/Shanghai）；Elon原文关键词：\"sunset the program in a few months\"；互动：约1.9万点赞、约2750转发（抓取时点）。",
       "milestone": true
+    },
+    {
+      "date": "2026-02-17",
+      "category": "财报",
+      "title": "10-K披露联邦税损结转约35.6亿美元，可用于抵减未来应税利润",
+      "summary": "Sawyer Merritt在X引用Tesla 10-K要点称：截至2025-12-31，Tesla拥有约35.6亿美元联邦净经营亏损（NOL）结转，可用于未来应税收入抵扣。该信息来自已披露财报数据，涉及未来税负与净利兑现节奏。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2023638120030253161",
+      "conclusion": "税损结转余额为Tesla后续利润释放提供税盾缓冲，短期有助于降低现金税压力；但其兑现仍取决于盈利持续性与税务口径。",
+      "key_numbers": "联邦NOL结转：约35.6亿美元（截至2025-12-31）；信息来源：Tesla 10-K披露口径。",
+      "milestone": false
     },
     {
       "date": "2026-02-16",
