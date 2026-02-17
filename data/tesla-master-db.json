@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-17 16:08",
+    "last_updated": "2026-02-17 17:03",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -36,6 +36,17 @@
       "source": "https://x.com/elonmusk/status/2023409484757147983",
       "conclusion": "Elon给出Cybercab“4月启动生产”时间点，若按期落地将显著提升Robotaxi商业化时间表可信度，并强化2026年无人化出行叙事。",
       "key_numbers": "核心口径：无方向盘/踏板；生产启动窗口：4月；帖子曝光约2291万次（抓取时点）。",
+      "milestone": true
+    },
+    {
+      "date": "2026-01-28",
+      "category": "财报",
+      "title": "Tesla披露对xAI约20亿美元股权投资（Series E）",
+      "summary": "Tesla在Q4股东信披露：公司于2026-01-16签署协议，拟投资约20亿美元认购xAI的Series E优先股（按市场化条款），该交易预计在满足监管条件后于Q1完成。",
+      "impact": "high",
+      "source": "https://www.cnbc.com/2026/01/28/tesla-to-invest-2-billion-in-xai-elon-musks-openai-competitor.html",
+      "conclusion": "约20亿美元对外股权投资将提升Tesla“AI生态协同”想象空间，但短期增加资本占用并引入关联交易治理与回报率审视。",
+      "key_numbers": "投资规模：约20亿美元；对应轮次：xAI Series E（总融资约200亿美元）；签署时间：2026-01-16；预期完成：2026年Q1。",
       "milestone": true
     },
     {
