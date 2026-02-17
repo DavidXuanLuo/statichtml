@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-16 12:46",
+    "last_updated": "2026-02-17 15:22",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,17 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-02-17",
+      "category": "价格策略",
+      "title": "Elon称Model S/X将在“几个月内”结束当前销售项目（sunset the program）",
+      "summary": "Elon Musk在X发文称“Model S & X are great cars! Order yours before we sunset the program in a few months.”；Tesla官方账号随后转推。市场将其解读为S/X当前销售项目进入倒计时，指向产品组合进一步聚焦高销量平台。",
+      "impact": "high",
+      "source": "https://x.com/elonmusk/status/2023510007577538718",
+      "conclusion": "Model S/X被提示“几个月内”可能结束当前销售项目，意味着Tesla产品结构继续向3/Y与新平台集中，短期利于制造复杂度与成本控制，但会压缩高端车型名义ASP贡献。",
+      "key_numbers": "时间：2月17日（Asia/Shanghai）；Elon原文关键词：\"sunset the program in a few months\"；互动：约1.9万点赞、约2750转发（抓取时点）。",
+      "milestone": true
+    },
     {
       "date": "2026-01-25",
       "category": "FSD",
