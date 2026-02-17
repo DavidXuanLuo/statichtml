@@ -3,10 +3,21 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-17 23:10",
+    "last_updated": "2026-02-18 07:04",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
+    {
+      "date": "2026-02-18",
+      "category": "Robotaxi",
+      "title": "Tesla官号称Giga Texas下线首台Cybercab（First Cybercab off the production line）",
+      "summary": "Tesla官方账号发布图片并写明“First Cybercab off the production line at Giga Texas”。这将此前“4月启动生产”的口径前置为已出现首台下线，意味着Robotaxi硬件从时间指引走向实物验证。",
+      "impact": "high",
+      "source": "https://x.com/Tesla/status/2023824823747834197",
+      "conclusion": "Cybercab出现“首台下线”是Robotaxi量产链路的关键实物里程碑，强化2026年商业化兑现预期。",
+      "key_numbers": "官方口径：First Cybercab off the production line；发布时点：约4小时前（相对本轮巡检）；地点：Giga Texas。",
+      "milestone": true
+    },
     {
       "date": "2026-02-17",
       "category": "价格策略",
