@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-17 15:22",
+    "last_updated": "2026-02-17 16:08",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -25,6 +25,17 @@
       "source": "https://x.com/elonmusk/status/2023510007577538718",
       "conclusion": "Model S/X被提示“几个月内”可能结束当前销售项目，意味着Tesla产品结构继续向3/Y与新平台集中，短期利于制造复杂度与成本控制，但会压缩高端车型名义ASP贡献。",
       "key_numbers": "时间：2月17日（Asia/Shanghai）；Elon原文关键词：\"sunset the program in a few months\"；互动：约1.9万点赞、约2750转发（抓取时点）。",
+      "milestone": true
+    },
+    {
+      "date": "2026-02-16",
+      "category": "Robotaxi",
+      "title": "Elon Musk：无方向盘/踏板的Cybercab将在4月启动生产",
+      "summary": "Elon Musk在X置顶帖称“Cybercab, which has no pedals or steering wheel, starts production in April.”，将Robotaxi硬件从概念发布推进到明确量产起始窗口。",
+      "impact": "high",
+      "source": "https://x.com/elonmusk/status/2023409484757147983",
+      "conclusion": "Elon给出Cybercab“4月启动生产”时间点，若按期落地将显著提升Robotaxi商业化时间表可信度，并强化2026年无人化出行叙事。",
+      "key_numbers": "核心口径：无方向盘/踏板；生产启动窗口：4月；帖子曝光约2291万次（抓取时点）。",
       "milestone": true
     },
     {

@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-17 15:22",
+    "last_updated": "2026-02-17 16:08",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -16,6 +16,17 @@
       "source": "https://x.com/elonmusk/status/2023510007577538718",
       "conclusion": "Model S/X被提示“几个月内”可能结束当前销售项目，意味着Tesla产品结构继续向3/Y与新平台集中，短期利于制造复杂度与成本控制，但会压缩高端车型名义ASP贡献。",
       "key_numbers": "时间：2月17日（Asia/Shanghai）；Elon原文关键词：\"sunset the program in a few months\"；互动：约1.9万点赞、约2750转发（抓取时点）。",
+      "milestone": true
+    },
+    {
+      "date": "2026-02-16",
+      "category": "Robotaxi",
+      "title": "Elon Musk：无方向盘/踏板的Cybercab将在4月启动生产",
+      "summary": "Elon Musk在X置顶帖称“Cybercab, which has no pedals or steering wheel, starts production in April.”，将Robotaxi硬件从概念发布推进到明确量产起始窗口。",
+      "impact": "high",
+      "source": "https://x.com/elonmusk/status/2023409484757147983",
+      "conclusion": "Elon给出Cybercab“4月启动生产”时间点，若按期落地将显著提升Robotaxi商业化时间表可信度，并强化2026年无人化出行叙事。",
+      "key_numbers": "核心口径：无方向盘/踏板；生产启动窗口：4月；帖子曝光约2291万次（抓取时点）。",
       "milestone": true
     },
     {
@@ -34,7 +45,10 @@
       "title": "FSD 14.2.2.4继续打磨低速与泊车边界，短周期修复节奏延续。",
       "summary": "版本14.2.2.4；近100天内主分支迭代>10次",
       "impact": "medium",
-      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.9/statistics"
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.9/statistics",
+      "conclusion": "FSD 14.2.2.4继续打磨低速与泊车边界，短周期修复节奏延续。",
+      "key_numbers": "版本14.2.2.4；近100天内主分支迭代>10次",
+      "milestone": false
     },
     {
       "date": "2026-01-23",
@@ -97,23 +111,32 @@
       "title": "FSD 14.2.2.3聚焦低速空间感知与窄路平顺性，体验趋于稳态。",
       "summary": "版本14.2.2.3",
       "impact": "medium",
-      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.8/statistics"
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.8/statistics",
+      "conclusion": "FSD 14.2.2.3聚焦低速空间感知与窄路平顺性，体验趋于稳态。",
+      "key_numbers": "版本14.2.2.3",
+      "milestone": false
     },
     {
       "date": "2026-01-02",
       "category": "财报",
       "title": "Tesla披露2025财报要点：Q4交付与产量明显下滑，且公司同时给出能量与全年指标。",
       "summary": "Q4 2025：产量434,358；交付418,227；能源部署14.2GWh；全年：产量1,654,667；交付1,636,129",
-      "impact": "high",
-      "source": "https://x.com/Tesla/status/2007089900613419092"
+      "impact": "medium",
+      "source": "https://x.com/Tesla/status/2007089900613419092",
+      "conclusion": "Tesla披露2025财报要点：Q4交付与产量明显下滑，且公司同时给出能量与全年指标。",
+      "key_numbers": "Q4 2025：产量434,358；交付418,227；能源部署14.2GWh；全年：产量1,654,667；交付1,636,129",
+      "milestone": true
     },
     {
       "date": "2026-01-02",
       "category": "销量",
       "title": "Tesla公布Q4 2024交付创季度新高，但全年交付同比转负。",
       "summary": "Q4交付495,570；2024全年交付1,789,226（-1% YoY）",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q4-2024-vehicle-production-deliveries-deployments"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q4-2024-vehicle-production-deliveries-deployments",
+      "conclusion": "Tesla公布Q4 2024交付创季度新高，但全年交付同比转负。",
+      "key_numbers": "Q4交付495,570；2024全年交付1,789,226（-1% YoY）",
+      "milestone": true
     },
     {
       "date": "2025-12-29",
@@ -121,7 +144,10 @@
       "title": "FSD 14.2.2.2以Bug修复为主，版本节奏保持高频。",
       "summary": "版本14.2.2.2",
       "impact": "medium",
-      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.7/statistics"
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.7/statistics",
+      "conclusion": "FSD 14.2.2.2以Bug修复为主，版本节奏保持高频。",
+      "key_numbers": "版本14.2.2.2",
+      "milestone": false
     },
     {
       "date": "2025-12-22",
@@ -129,23 +155,32 @@
       "title": "FSD 14.2.2引入到点停车等体验增强，强调可解释统计反馈。",
       "summary": "版本14.2.2",
       "impact": "medium",
-      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.5/statistics"
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.45.5/statistics",
+      "conclusion": "FSD 14.2.2引入到点停车等体验增强，强调可解释统计反馈。",
+      "key_numbers": "版本14.2.2",
+      "milestone": false
     },
     {
       "date": "2025-11-21",
       "category": "FSD",
       "title": "FSD 14.2升级视觉编码器，对紧急车辆/障碍识别更激进。",
       "summary": "版本14.2",
-      "impact": "high",
-      "source": "https://www.notateslaapp.com/software-updates/version/2025.38.9.5/statistics"
+      "impact": "medium",
+      "source": "https://www.notateslaapp.com/software-updates/version/2025.38.9.5/statistics",
+      "conclusion": "FSD 14.2升级视觉编码器，对紧急车辆/障碍识别更激进。",
+      "key_numbers": "版本14.2",
+      "milestone": true
     },
     {
       "date": "2025-10-07",
       "category": "FSD",
       "title": "FSD 14.1开始推送，路线规划与控制逻辑进一步端到端化。",
       "summary": "版本14.1；重点覆盖城市复杂路口",
-      "impact": "high",
+      "impact": "medium",
       "source": "https://x.com/aelluswamy/status/1975516996134723818",
+      "conclusion": "FSD 14.1开始推送，路线规划与控制逻辑进一步端到端化。",
+      "key_numbers": "版本14.1；重点覆盖城市复杂路口",
+      "milestone": true,
       "comments": [
         {
           "author": "Whole Mars Catalog",
@@ -219,7 +254,10 @@
       "title": "Q2 2025财报窗口强化“AI+Robotaxi+储能”叙事，市场关注汽车毛利恢复质量。",
       "summary": "关注口径：汽车毛利率（ex credits）、自由现金流",
       "impact": "medium",
-      "source": "https://ir.tesla.com/"
+      "source": "https://ir.tesla.com/",
+      "conclusion": "Q2 2025财报窗口强化“AI+Robotaxi+储能”叙事，市场关注汽车毛利恢复质量。",
+      "key_numbers": "关注口径：汽车毛利率（ex credits）、自由现金流",
+      "milestone": false
     },
     {
       "date": "2025-04-22",
@@ -227,23 +265,32 @@
       "title": "Q1 2025财报强调成本下降与新车型时间表，利润端承压仍是核心矛盾。",
       "summary": "关注口径：毛利率、Opex、Capex",
       "impact": "medium",
-      "source": "https://ir.tesla.com/"
+      "source": "https://ir.tesla.com/",
+      "conclusion": "Q1 2025财报强调成本下降与新车型时间表，利润端承压仍是核心矛盾。",
+      "key_numbers": "关注口径：毛利率、Opex、Capex",
+      "milestone": false
     },
     {
       "date": "2025-01-29",
       "category": "财报",
       "title": "Q4 2024财报显示储能继续高增，对冲汽车业务周期波动。",
       "summary": "关注口径：能源业务毛利与Megapack产能爬坡",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q4-2024-update"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q4-2024-update",
+      "conclusion": "Q4 2024财报显示储能继续高增，对冲汽车业务周期波动。",
+      "key_numbers": "关注口径：能源业务毛利与Megapack产能爬坡",
+      "milestone": true
     },
     {
       "date": "2024-12-31",
       "category": "储能",
       "title": "2024年储能部署创历史新高，Megapack成为利润弹性核心。",
       "summary": "Q4储能部署约11.0 GWh；全年约31.4 GWh",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q4-2024-vehicle-production-deliveries-deployments"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q4-2024-vehicle-production-deliveries-deployments",
+      "conclusion": "2024年储能部署创历史新高，Megapack成为利润弹性核心。",
+      "key_numbers": "Q4储能部署约11.0 GWh；全年约31.4 GWh",
+      "milestone": true
     },
     {
       "date": "2024-11-15",
@@ -251,23 +298,32 @@
       "title": "欧盟针对中国产电动车反补贴措施落地，柏林本地化重要性提升。",
       "summary": "临时税率框架对中国出口车型利润形成扰动",
       "impact": "medium",
-      "source": "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_3630"
+      "source": "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_3630",
+      "conclusion": "欧盟针对中国产电动车反补贴措施落地，柏林本地化重要性提升。",
+      "key_numbers": "临时税率框架对中国出口车型利润形成扰动",
+      "milestone": false
     },
     {
       "date": "2024-10-23",
       "category": "财报",
       "title": "Q3 2024业绩改善，汽车毛利率较上季修复，市场风险偏好抬升。",
       "summary": "营收约25.18B美元；Non-GAAP EPS约0.72美元",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q3-2024-update"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q3-2024-update",
+      "conclusion": "Q3 2024业绩改善，汽车毛利率较上季修复，市场风险偏好抬升。",
+      "key_numbers": "营收约25.18B美元；Non-GAAP EPS约0.72美元",
+      "milestone": true
     },
     {
       "date": "2024-10-10",
       "category": "Robotaxi",
       "title": "“We, Robot”活动公布Cybercab方向，明确无人化出行长期路径。",
       "summary": "双座Cybercab概念；量产目标指向2026后",
-      "impact": "high",
-      "source": "https://www.tesla.com/we-robot"
+      "impact": "medium",
+      "source": "https://www.tesla.com/we-robot",
+      "conclusion": "“We, Robot”活动公布Cybercab方向，明确无人化出行长期路径。",
+      "key_numbers": "双座Cybercab概念；量产目标指向2026后",
+      "milestone": true
     },
     {
       "date": "2024-10-02",
@@ -275,7 +331,10 @@
       "title": "Q3 2024交付环比回升，显示促销与金融政策组合有效。",
       "summary": "Q3交付462,890；产量469,796",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q3-2024-vehicle-production-deliveries-deployments"
+      "source": "https://ir.tesla.com/press-release/tesla-q3-2024-vehicle-production-deliveries-deployments",
+      "conclusion": "Q3 2024交付环比回升，显示促销与金融政策组合有效。",
+      "key_numbers": "Q3交付462,890；产量469,796",
+      "milestone": false
     },
     {
       "date": "2024-09-30",
@@ -283,7 +342,10 @@
       "title": "Q3储能部署维持高位，能源业务继续成为第二增长曲线。",
       "summary": "Q3储能部署6.9 GWh",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q3-2024-vehicle-production-deliveries-deployments"
+      "source": "https://ir.tesla.com/press-release/tesla-q3-2024-vehicle-production-deliveries-deployments",
+      "conclusion": "Q3储能部署维持高位，能源业务继续成为第二增长曲线。",
+      "key_numbers": "Q3储能部署6.9 GWh",
+      "milestone": false
     },
     {
       "date": "2024-08-08",
@@ -291,7 +353,10 @@
       "title": "加州CPUC推进自动驾驶网约车监管框架讨论，Robotaxi商业化取决于城市级许可。",
       "summary": "焦点：运营许可、事故披露、责任界定",
       "impact": "medium",
-      "source": "https://www.cpuc.ca.gov/industries-and-topics/transportation/autonomous-vehicles"
+      "source": "https://www.cpuc.ca.gov/industries-and-topics/transportation/autonomous-vehicles",
+      "conclusion": "加州CPUC推进自动驾驶网约车监管框架讨论，Robotaxi商业化取决于城市级许可。",
+      "key_numbers": "焦点：运营许可、事故披露、责任界定",
+      "milestone": false
     },
     {
       "date": "2024-07-23",
@@ -299,15 +364,21 @@
       "title": "Q2 2024利润承压但现金流改善，管理层继续押注AI和机器人。",
       "summary": "营收约25.5B美元；Non-GAAP EPS约0.52美元",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q2-2024-update"
+      "source": "https://ir.tesla.com/press-release/tesla-q2-2024-update",
+      "conclusion": "Q2 2024利润承压但现金流改善，管理层继续押注AI和机器人。",
+      "key_numbers": "营收约25.5B美元；Non-GAAP EPS约0.52美元",
+      "milestone": false
     },
     {
       "date": "2024-07-02",
       "category": "销量",
       "title": "Q2 2024交付超预期反弹，库存与生产节奏更匹配。",
       "summary": "Q2交付443,956；产量410,831",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q2-2024-vehicle-production-deliveries-deployments"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q2-2024-vehicle-production-deliveries-deployments",
+      "conclusion": "Q2 2024交付超预期反弹，库存与生产节奏更匹配。",
+      "key_numbers": "Q2交付443,956；产量410,831",
+      "milestone": true
     },
     {
       "date": "2024-06-20",
@@ -315,7 +386,10 @@
       "title": "Megapack项目持续放量，储能订单可见度高于整车。",
       "summary": "Lathrop工厂扩产后年化产能目标40GWh级",
       "impact": "medium",
-      "source": "https://www.tesla.com/megapack"
+      "source": "https://www.tesla.com/megapack",
+      "conclusion": "Megapack项目持续放量，储能订单可见度高于整车。",
+      "key_numbers": "Lathrop工厂扩产后年化产能目标40GWh级",
+      "milestone": false
     },
     {
       "date": "2024-06-01",
@@ -323,7 +397,10 @@
       "title": "Robotaxi原型路测与数据闭环成为市场焦点，落地节奏取决于安全冗余。",
       "summary": "关注指标：每百万英里接管率、远程协助占比",
       "impact": "medium",
-      "source": "https://www.tesla.com/AI"
+      "source": "https://www.tesla.com/AI",
+      "conclusion": "Robotaxi原型路测与数据闭环成为市场焦点，落地节奏取决于安全冗余。",
+      "key_numbers": "关注指标：每百万英里接管率、远程协助占比",
+      "milestone": false
     },
     {
       "date": "2024-05-20",
@@ -331,7 +408,10 @@
       "title": "北美与欧洲阶段性金融优惠加码，替代直接降价以稳住品牌锚点。",
       "summary": "典型工具：0%~1.99% APR、限时保险补贴",
       "impact": "medium",
-      "source": "https://www.tesla.com/"
+      "source": "https://www.tesla.com/",
+      "conclusion": "北美与欧洲阶段性金融优惠加码，替代直接降价以稳住品牌锚点。",
+      "key_numbers": "典型工具：0%~1.99% APR、限时保险补贴",
+      "milestone": false
     },
     {
       "date": "2024-05-10",
@@ -339,7 +419,10 @@
       "title": "FSD v12系在城市NOA能力上继续迭代，端到端路径成为主线。",
       "summary": "v12.x持续小版本更新",
       "impact": "medium",
-      "source": "https://www.notateslaapp.com/software-updates/"
+      "source": "https://www.notateslaapp.com/software-updates/",
+      "conclusion": "FSD v12系在城市NOA能力上继续迭代，端到端路径成为主线。",
+      "key_numbers": "v12.x持续小版本更新",
+      "milestone": false
     },
     {
       "date": "2024-04-30",
@@ -347,23 +430,32 @@
       "title": "NHTSA持续跟踪Autopilot/FSD相关安全数据披露，监管透明度要求提升。",
       "summary": "重点：召回后有效性、事故统计口径",
       "impact": "medium",
-      "source": "https://www.nhtsa.gov/vehicle-safety/automated-vehicles-safety"
+      "source": "https://www.nhtsa.gov/vehicle-safety/automated-vehicles-safety",
+      "conclusion": "NHTSA持续跟踪Autopilot/FSD相关安全数据披露，监管透明度要求提升。",
+      "key_numbers": "重点：召回后有效性、事故统计口径",
+      "milestone": false
     },
     {
       "date": "2024-04-23",
       "category": "财报",
       "title": "Q1 2024盈利显著下滑，促使公司强化“低价车型+AI”叙事修复预期。",
       "summary": "营收约21.3B美元；Non-GAAP EPS约0.45美元",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q1-2024-update"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q1-2024-update",
+      "conclusion": "Q1 2024盈利显著下滑，促使公司强化“低价车型+AI”叙事修复预期。",
+      "key_numbers": "营收约21.3B美元；Non-GAAP EPS约0.45美元",
+      "milestone": true
     },
     {
       "date": "2024-04-19",
       "category": "价格策略",
       "title": "Tesla在美国下调多车型价格，应对需求弹性与竞争压力。",
       "summary": "Model Y/3等车型降价约$2,000",
-      "impact": "high",
-      "source": "https://www.reuters.com/world/us/tesla-cuts-us-prices-across-models-by-about-2000-2024-04-20/"
+      "impact": "medium",
+      "source": "https://www.reuters.com/world/us/tesla-cuts-us-prices-across-models-by-about-2000-2024-04-20/",
+      "conclusion": "Tesla在美国下调多车型价格，应对需求弹性与竞争压力。",
+      "key_numbers": "Model Y/3等车型降价约$2,000",
+      "milestone": true
     },
     {
       "date": "2024-04-15",
@@ -371,23 +463,32 @@
       "title": "美国IRA本地化要求持续影响电池与供应链布局，税收抵免结构性重塑需求。",
       "summary": "7500美元联邦税收抵免门槛动态调整",
       "impact": "medium",
-      "source": "https://home.treasury.gov/news/press-releases/jy1955"
+      "source": "https://home.treasury.gov/news/press-releases/jy1955",
+      "conclusion": "美国IRA本地化要求持续影响电池与供应链布局，税收抵免结构性重塑需求。",
+      "key_numbers": "7500美元联邦税收抵免门槛动态调整",
+      "milestone": false
     },
     {
       "date": "2024-04-02",
       "category": "销量",
       "title": "Q1 2024交付低于市场预期，需求放缓与产线切换影响明显。",
       "summary": "Q1交付386,810；产量433,371",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q1-2024-production-deliveries-deployments"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q1-2024-production-deliveries-deployments",
+      "conclusion": "Q1 2024交付低于市场预期，需求放缓与产线切换影响明显。",
+      "key_numbers": "Q1交付386,810；产量433,371",
+      "milestone": true
     },
     {
       "date": "2024-03-26",
       "category": "FSD",
       "title": "北美大规模推送FSD试用，提升数据采样密度与潜在转化。",
       "summary": "美国合格车主1个月FSD试用",
-      "impact": "high",
-      "source": "https://www.tesla.com/support/articles/360060935653"
+      "impact": "medium",
+      "source": "https://www.tesla.com/support/articles/360060935653",
+      "conclusion": "北美大规模推送FSD试用，提升数据采样密度与潜在转化。",
+      "key_numbers": "美国合格车主1个月FSD试用",
+      "milestone": true
     },
     {
       "date": "2024-03-01",
@@ -395,7 +496,10 @@
       "title": "储能业务在项目交付节奏带动下维持高增长，收入结构更均衡。",
       "summary": "Q1储能部署4.1 GWh（后续披露）",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q1-2024-production-deliveries-deployments"
+      "source": "https://ir.tesla.com/press-release/tesla-q1-2024-production-deliveries-deployments",
+      "conclusion": "储能业务在项目交付节奏带动下维持高增长，收入结构更均衡。",
+      "key_numbers": "Q1储能部署4.1 GWh（后续披露）",
+      "milestone": false
     },
     {
       "date": "2024-02-15",
@@ -403,7 +507,10 @@
       "title": "欧洲市场通过区域性补贴与金融方案应对竞争，价格体系更精细化。",
       "summary": "区域性终端优惠+低息金融组合",
       "impact": "medium",
-      "source": "https://www.tesla.com/en_eu/"
+      "source": "https://www.tesla.com/en_eu/",
+      "conclusion": "欧洲市场通过区域性补贴与金融方案应对竞争，价格体系更精细化。",
+      "key_numbers": "区域性终端优惠+低息金融组合",
+      "milestone": false
     },
     {
       "date": "2024-01-24",
@@ -411,23 +518,32 @@
       "title": "Q4 2023业绩确认汽车业务短期承压，储能和服务成为缓冲。",
       "summary": "营收约25.17B美元；Non-GAAP EPS约0.71美元",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q4-2023-update"
+      "source": "https://ir.tesla.com/press-release/tesla-q4-2023-update",
+      "conclusion": "Q4 2023业绩确认汽车业务短期承压，储能和服务成为缓冲。",
+      "key_numbers": "营收约25.17B美元；Non-GAAP EPS约0.71美元",
+      "milestone": false
     },
     {
       "date": "2024-01-02",
       "category": "销量",
       "title": "Q4 2023交付创纪录，全年超180万辆，规模化优势仍在。",
       "summary": "Q4交付484,507；全年交付1,808,581",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q4-2023-production-deliveries-deployments"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q4-2023-production-deliveries-deployments",
+      "conclusion": "Q4 2023交付创纪录，全年超180万辆，规模化优势仍在。",
+      "key_numbers": "Q4交付484,507；全年交付1,808,581",
+      "milestone": true
     },
     {
       "date": "2023-12-13",
       "category": "监管",
       "title": "Tesla发布Autopilot召回OTA修复，驾驶员监测与提示机制增强。",
       "summary": "受影响车辆超200万辆（美国）",
-      "impact": "high",
-      "source": "https://www.nhtsa.gov/press-releases/tesla-autopilot-investigation"
+      "impact": "medium",
+      "source": "https://www.nhtsa.gov/press-releases/tesla-autopilot-investigation",
+      "conclusion": "Tesla发布Autopilot召回OTA修复，驾驶员监测与提示机制增强。",
+      "key_numbers": "受影响车辆超200万辆（美国）",
+      "milestone": true
     },
     {
       "date": "2023-10-18",
@@ -435,7 +551,10 @@
       "title": "Q3 2023利润受降价拖累，市场转向关注成本曲线与新品节奏。",
       "summary": "营收约23.35B美元；Non-GAAP EPS约0.66美元",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q3-2023-update"
+      "source": "https://ir.tesla.com/press-release/tesla-q3-2023-update",
+      "conclusion": "Q3 2023利润受降价拖累，市场转向关注成本曲线与新品节奏。",
+      "key_numbers": "营收约23.35B美元；Non-GAAP EPS约0.66美元",
+      "milestone": false
     },
     {
       "date": "2023-10-02",
@@ -443,7 +562,10 @@
       "title": "Q3 2023交付受工厂升级影响短期波动，产量恢复后需求验证成关键。",
       "summary": "Q3交付435,059；产量430,488",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q3-2023-production-deliveries-deployments"
+      "source": "https://ir.tesla.com/press-release/tesla-q3-2023-production-deliveries-deployments",
+      "conclusion": "Q3 2023交付受工厂升级影响短期波动，产量恢复后需求验证成关键。",
+      "key_numbers": "Q3交付435,059；产量430,488",
+      "milestone": false
     },
     {
       "date": "2023-07-19",
@@ -451,15 +573,21 @@
       "title": "Q2 2023营收增长但毛利承压，价格换量策略延续。",
       "summary": "营收约24.93B美元；Non-GAAP EPS约0.91美元",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q2-2023-update"
+      "source": "https://ir.tesla.com/press-release/tesla-q2-2023-update",
+      "conclusion": "Q2 2023营收增长但毛利承压，价格换量策略延续。",
+      "key_numbers": "营收约24.93B美元；Non-GAAP EPS约0.91美元",
+      "milestone": false
     },
     {
       "date": "2023-07-02",
       "category": "销量",
       "title": "Q2 2023交付创纪录，显示价格策略对需求拉动显著。",
       "summary": "Q2交付466,140；产量479,700",
-      "impact": "high",
-      "source": "https://ir.tesla.com/press-release/tesla-q2-2023-production-deliveries-deployments"
+      "impact": "medium",
+      "source": "https://ir.tesla.com/press-release/tesla-q2-2023-production-deliveries-deployments",
+      "conclusion": "Q2 2023交付创纪录，显示价格策略对需求拉动显著。",
+      "key_numbers": "Q2交付466,140；产量479,700",
+      "milestone": true
     },
     {
       "date": "2023-04-19",
@@ -467,7 +595,10 @@
       "title": "Q1 2023利润端明显回落，价格战对短期盈利形成挤压。",
       "summary": "营收约23.33B美元；Non-GAAP EPS约0.85美元",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q1-2023-update"
+      "source": "https://ir.tesla.com/press-release/tesla-q1-2023-update",
+      "conclusion": "Q1 2023利润端明显回落，价格战对短期盈利形成挤压。",
+      "key_numbers": "营收约23.33B美元；Non-GAAP EPS约0.85美元",
+      "milestone": false
     },
     {
       "date": "2023-04-02",
@@ -475,15 +606,21 @@
       "title": "Q1 2023交付继续增长但低于高预期，后续以降价稳增长。",
       "summary": "Q1交付422,875；产量440,808",
       "impact": "medium",
-      "source": "https://ir.tesla.com/press-release/tesla-q1-2023-production-deliveries-deployments"
+      "source": "https://ir.tesla.com/press-release/tesla-q1-2023-production-deliveries-deployments",
+      "conclusion": "Q1 2023交付继续增长但低于高预期，后续以降价稳增长。",
+      "key_numbers": "Q1交付422,875；产量440,808",
+      "milestone": false
     },
     {
       "date": "2023-01-13",
       "category": "价格策略",
       "title": "Tesla在美国大幅下调Model 3/Y价格，开启全球电动车价格战。",
       "summary": "部分车型下调6%~20%",
-      "impact": "high",
-      "source": "https://www.reuters.com/business/autos-transportation/tesla-cuts-us-prices-up-nearly-20-some-models-2023-01-13/"
+      "impact": "medium",
+      "source": "https://www.reuters.com/business/autos-transportation/tesla-cuts-us-prices-up-nearly-20-some-models-2023-01-13/",
+      "conclusion": "Tesla在美国大幅下调Model 3/Y价格，开启全球电动车价格战。",
+      "key_numbers": "部分车型下调6%~20%",
+      "milestone": true
     }
   ]
 }
