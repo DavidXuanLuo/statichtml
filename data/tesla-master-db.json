@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-18 07:04",
+    "last_updated": "2026-02-18 07:24",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,17 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-02-18",
+      "category": "FSD",
+      "title": "Morgan Stanley跟踪：Tesla FSD安全里程按分钟高速增长（约10,003英里/分钟）",
+      "summary": "Sawyer Merritt转引Morgan Stanley分析师Adam Jonas称，其访问Tesla官方FSD Safety Tracker后观察到：514分钟内FSD累计里程增加5,141,738英里，折算约10,003英里/分钟；若按90%美国里程估算，Tesla FSD里程规模已具显著领先。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2023890220530168157",
+      "conclusion": "FSD真实运行里程加速累积，意味着数据闭环与算法迭代样本池继续扩大；对FSD商业化验证与Robotaxi安全可信度构成边际利多。",
+      "key_numbers": "514分钟新增FSD里程5,141,738英里；折算约10,003英里/分钟；来源为Tesla官方FSD Safety Tracker（经Adam Jonas/Sawyer转引）。",
+      "milestone": false
+    },
     {
       "date": "2026-02-18",
       "category": "Robotaxi",
