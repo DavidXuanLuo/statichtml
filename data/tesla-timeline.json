@@ -3,10 +3,21 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-18 08:05",
+    "last_updated": "2026-02-18 11:22",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
+    {
+      "date": "2026-02-18",
+      "category": "监管",
+      "title": "加州DMV确认Tesla已整改自动驾驶营销表述，暂不执行30天禁售",
+      "summary": "据Sawyer Merritt在X转述及美联社报道，加州DMV表示Tesla已就自动驾驶能力营销表述完成合规整改，因此不会触发此前拟议的30天销售暂停；整改包括在相关表述中强化“Supervised”并停止在州内营销中使用Autopilot措辞。",
+      "impact": "high",
+      "source": "https://apnews.com/article/tesla-musk-selfdriving-california-marketing-suspension-license-30a6f0e116bf1e7db786d45c88a03602",
+      "conclusion": "加州销售暂停风险阶段性解除，短期消除了最直接的州级经营扰动，但FSD监管审视并未结束。",
+      "key_numbers": "监管结果：不执行30天禁售；时间：2026-02-18（AP披露）；整改要点：强化“Supervised”措辞并停用Autopilot营销用语。",
+      "milestone": true
+    },
     {
       "date": "2026-02-18",
       "category": "Robotaxi",
