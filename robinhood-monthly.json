@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-02-13T11:50:51.577Z",
+  "updatedAt": "2026-02-17T11:58:14Z",
   "records": [
     {
       "month": "2025-02",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-february-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 25.6,
       "auc_b": 187,
       "net_deposits_b": 4.8,
@@ -23,7 +23,7 @@
     {
       "month": "2025-04",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-april-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 25.9,
       "auc_b": null,
       "net_deposits_b": 6.8,
@@ -37,7 +37,7 @@
     {
       "month": "2025-05",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-may-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 25.9,
       "auc_b": null,
       "net_deposits_b": 3.5,
@@ -56,7 +56,7 @@
     {
       "month": "2025-07",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-july-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 26.7,
       "auc_b": null,
       "net_deposits_b": 6.4,
@@ -70,7 +70,7 @@
     {
       "month": "2025-08",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-august-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 26.7,
       "auc_b": null,
       "net_deposits_b": 4.8,
@@ -89,7 +89,7 @@
     {
       "month": "2025-10",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-october-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 27.1,
       "auc_b": null,
       "net_deposits_b": 5.6,
@@ -103,7 +103,7 @@
     {
       "month": "2025-11",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-november-2025-operating-data",
-      "available": true,
+      "available": false,
       "funded_customers_m": 26.9,
       "auc_b": null,
       "net_deposits_b": 7.1,
