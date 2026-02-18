@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-18 11:22",
+    "last_updated": "2026-02-18 12:26",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,17 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-02-18",
+      "category": "监管",
+      "title": "NHTSA披露Tesla奥斯汀Robotaxi累计14起碰撞，近月新增5起（无重伤）",
+      "summary": "CBS基于NHTSA Standing General Order披露称：Tesla在奥斯汀上线Robotaxi以来累计报告14起碰撞；其中最新5起发生在2025年12月至2026年1月，均造成财产损失、无伤亡；另有2025年7月与10月两起为轻伤事件。",
+      "impact": "high",
+      "source": "https://www.cbsnews.com/news/tesla-robotaxi-austin-14-crashes-nhtsa/",
+      "conclusion": "Robotaxi安全事件披露频率上行，将提升监管与城市扩张审查强度，对2026年多城落地节奏构成边际压力。",
+      "key_numbers": "累计碰撞14起；近月新增5起（2025年12月-2026年1月）；最新5起无伤亡但有财产损失；历史另有2起轻伤。",
+      "milestone": true
+    },
     {
       "date": "2026-02-18",
       "category": "监管",
