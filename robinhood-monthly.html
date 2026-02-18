@@ -26,6 +26,7 @@
   <h1>📊 Robinhood 月度运营数据追踪</h1>
   <div class="sub">区间：2025-02 ~ 2026-02（13个月）｜数据源：Robinhood Investor Relations</div>
   <div class="sub">说明：本页优先使用 Robinhood 官网“Operating Data（月度运营数据）”公告；若该月官网未发布对应公告，则显示“缺失”。</div>
+  <div class="sub" id="updatedAt"></div>
 
   <div class="card grid" id="stats"></div>
 
@@ -52,6 +53,7 @@
 fetch('robinhood-monthly.json').then(r=>r.json()).then(data=>{
   const rows = data.records;
   const labels = rows.map(r=>r.month);
+  document.getElementById('updatedAt').textContent = `更新时间（UTC）：${data.updatedAt || '-'}`;
   const toNum = v => (v===null||v===undefined)?null:Number(v);
   const avail = rows.filter(r=>r.available).length;
 
