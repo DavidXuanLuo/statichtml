@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-18 17:42"
+    "lastUpdated": "2026-02-18 17:43"
   },
   "summary": {
     "status": "running",
@@ -25,8 +25,8 @@
       "title": "X滚动收录（放宽版）",
       "status": "completed",
       "progress": "本轮执行：样本100条，相关77条；新增77条。",
-      "detail": "放宽增量口径；去重后实际新增77条。发送前闸门未通过（远端可见性未刷新），未外发。",
-      "updatedAt": "17:42"
+      "detail": "放宽增量口径；去重后实际新增77条。发送前闸门通过（远端可见），已可外发。",
+      "updatedAt": "17:43"
     },
     {
       "id": "job-xhs-interact",
@@ -46,6 +46,11 @@
     }
   ],
   "timeline": [
+    {
+      "time": "17:43",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）可见性校验通过：GitHub data generatedAt=2026-02-18T09:41:32Z，可按阈值外发。"
+    },
     {
       "time": "17:42",
       "type": "scan",
@@ -440,11 +445,6 @@
       "time": "19:40",
       "type": "qa",
       "text": "完整性抽检3条：均未通过（评论计数与渲染条数不一致；含thread关键词帖子未展开连续楼层）；本轮不发布、不入库"
-    },
-    {
-      "time": "19:00",
-      "type": "qa",
-      "text": "完整性抽检3条：lookonchain通过；allscale线程续帖未全收录、StockMarketNerd评论未抓全，按规则本轮不发布"
     }
   ],
   "completed": [
