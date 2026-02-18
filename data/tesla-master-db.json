@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-18 07:24",
+    "last_updated": "2026-02-18 08:05",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,17 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-02-18",
+      "category": "Robotaxi",
+      "title": "Elon确认Cybercab将于2026年底前向客户交付，价格不高于3万美元",
+      "summary": "Sawyer Merritt发帖称Elon Musk已确认：Tesla将在2026年底前向客户交付Cybercab，单车价格为3万美元或以下；其贴文引用了Elon对相关提问的直接回复“Yes”。该口径将Cybercab从“首台下线/启动生产”进一步推进到“明确交付与价格上限”。",
+      "impact": "high",
+      "source": "https://x.com/SawyerMerritt/status/2023902257012449626",
+      "conclusion": "若按期兑现“<=3万美元、2026年底前交付”，Robotaxi经济性与规模化可行性预期将显著抬升，强化Tesla出行平台估值叙事。",
+      "key_numbers": "交付时点：2026年底前；价格上限：3万美元；确认方式：Elon对相关问题回复“Yes”（由Sawyer贴文引用）。",
+      "milestone": true
+    },
     {
       "date": "2026-02-18",
       "category": "FSD",
