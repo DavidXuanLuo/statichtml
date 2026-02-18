@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-18 13:21"
+    "lastUpdated": "2026-02-18 14:01"
   },
   "summary": {
     "status": "running",
@@ -24,9 +24,9 @@
       "id": "job-x-ugc",
       "title": "X滚动收录（放宽版）",
       "status": "completed",
-      "progress": "本轮执行：样本100条，相关89条；新增89条。",
-      "detail": "放宽增量口径；去重后实际新增89条。",
-      "updatedAt": "13:21"
+      "progress": "本轮执行：样本100条，相关72条；新增72条。",
+      "detail": "放宽增量口径；去重后实际新增72条。",
+      "updatedAt": "14:01"
     },
     {
       "id": "job-xhs-interact",
@@ -46,6 +46,16 @@
     }
   ],
   "timeline": [
+    {
+      "time": "14:01",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）执行：样本100条（相关72/不相关28），实际新增72条；已达10条门槛并提交。"
+    },
+    {
+      "time": "13:41",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）执行受阻：profile=openclaw 浏览器控制服务超时；样本0条（相关0/不相关0），实际新增0条；未达10条阈值不外发。"
+    },
     {
       "time": "13:21",
       "type": "scan",
