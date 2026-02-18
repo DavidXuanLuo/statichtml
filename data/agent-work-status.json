@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-18 11:41"
+    "lastUpdated": "2026-02-18 12:22"
   },
   "summary": {
     "status": "running",
@@ -24,9 +24,9 @@
       "id": "job-x-ugc",
       "title": "X滚动收录（放宽版）",
       "status": "completed",
-      "progress": "本轮执行：样本100条，相关77条；新增77条。",
-      "detail": "放宽增量口径；去重后实际新增77条。",
-      "updatedAt": "11:41"
+      "progress": "本轮执行：样本100条，相关78条；新增78条。",
+      "detail": "放宽增量口径；去重后实际新增78条。",
+      "updatedAt": "12:22"
     },
     {
       "id": "job-xhs-interact",
@@ -40,12 +40,22 @@
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步10:41巡检受阻结果",
+      "progress": "已同步12:02巡检受阻结果",
       "detail": "看板与ops状态已更新：browser timeout，本轮无新增。",
-      "updatedAt": "10:41"
+      "updatedAt": "12:02"
     }
   ],
   "timeline": [
+    {
+      "time": "12:22",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）执行：样本100条（相关78/不相关22），实际新增78条；已达10条门槛并提交。"
+    },
+    {
+      "time": "12:02",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）执行受阻：profile=openclaw 浏览器控制服务超时；样本0条（相关0/不相关0），实际新增0条；未达10条阈值不外发。"
+    },
     {
       "time": "11:41",
       "type": "scan",
