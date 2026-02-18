@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-18 19:41"
+    "lastUpdated": "2026-02-18 20:01"
   },
   "summary": {
     "status": "running",
@@ -24,9 +24,9 @@
       "id": "job-x-ugc",
       "title": "X滚动收录（放宽版）",
       "status": "completed",
-      "progress": "本轮执行：样本100条，相关75条；新增75条。",
-      "detail": "放宽增量口径；去重后实际新增75条。",
-      "updatedAt": "19:41"
+      "progress": "本轮执行：样本100条，相关68条；新增68条。",
+      "detail": "放宽增量口径；去重后实际新增68条。",
+      "updatedAt": "20:01"
     },
     {
       "id": "job-xhs-interact",
@@ -46,6 +46,11 @@
     }
   ],
   "timeline": [
+    {
+      "time": "20:01",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）执行：样本100条（相关68/不相关32），实际新增68条；已达10条门槛并提交。"
+    },
     {
       "time": "19:41",
       "type": "scan",
@@ -440,11 +445,6 @@
       "time": "07:20",
       "type": "scan",
       "text": "仅X（profile=openclaw）巡检受阻：登录页持续报错，无法进入信息流；样本0条，相关0条，新增0条；未触发外部通知。"
-    },
-    {
-      "time": "23:31",
-      "type": "xhs",
-      "text": "小红书互动（profile=openclaw）完成：浏览20条，命中5条，点赞1条，评论1条。评论“这条很实用，尤其“先装1个先跑通”这点太关键了，我也是这样才没半路放弃。”；帖子 https://www.xiaohongshu.com/explore/698d9b2e000000001503075c ，评论赞暂不可见。"
     }
   ],
   "completed": [
