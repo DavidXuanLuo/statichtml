@@ -3,10 +3,21 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-18 12:26",
+    "last_updated": "2026-02-19 09:26",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
+    {
+      "date": "2026-02-19",
+      "category": "FSD",
+      "title": "Tesla更新FSD安全看板：FSD Supervised里程突破44亿英里、每次重大碰撞约530万英里",
+      "summary": "Tesla官方与Sawyer Merritt披露最新FSD Safety数据：FSD Supervised累计里程4,399,561,339英里（Tesla官号同日称已超80亿英里历史累计）；按近12个月口径，FSD Supervised每次重大碰撞约5,300,676英里，显著高于美国平均660,164英里。",
+      "impact": "high",
+      "source": "https://x.com/SawyerMerritt/status/2024189957599088968",
+      "conclusion": "官方安全看板刷新强化了FSD安全性与规模化数据闭环叙事，若后续持续维持相对优势，将支撑FSD订阅渗透与Robotaxi监管沟通。",
+      "key_numbers": "FSD Supervised累计里程4,399,561,339英里；FSD每次重大碰撞5,300,676英里；美国平均660,164英里；Sawyer测算2026年前50天FSD里程约10亿英里（年化接近100亿英里）。",
+      "milestone": true
+    },
     {
       "date": "2026-02-18",
       "category": "监管",
