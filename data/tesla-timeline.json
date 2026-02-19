@@ -3,10 +3,21 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-19 09:26",
+    "last_updated": "2026-02-19 18:25",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
+    {
+      "date": "2026-02-19",
+      "category": "监管",
+      "title": "FCC批准Tesla用于Cybercab无线充电定位的UWB豁免，Robotaxi基础设施合规前进一步",
+      "summary": "Sawyer Merritt援引FCC文件称，FCC已正式批准Tesla关于超宽带（UWB）无线电规则豁免，使其可在固定、可能户外的地面充电垫与车辆间进行短距定位通信，以支持Cybercab无线充电自动对位；FCC给出的依据包括低功率、短时启用、短距离且干扰风险可控。",
+      "impact": "high",
+      "source": "https://x.com/SawyerMerritt/status/2024377945356222691",
+      "conclusion": "该豁免降低了Cybercab无线补能方案在美国落地的监管不确定性，提升Robotaxi网络中自动补能与站点化运营的可执行性。",
+      "key_numbers": "监管动作：FCC granted waiver；技术对象：UWB vehicle-to-pad positioning；场景：固定/可户外充电垫；用途：Cybercab无线充电自动对位。",
+      "milestone": true
+    },
     {
       "date": "2026-02-19",
       "category": "FSD",
