@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-19 18:25",
+    "last_updated": "2026-02-19",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -602,6 +602,14 @@
       "conclusion": "Tesla在美国大幅下调Model 3/Y价格，开启全球电动车价格战。",
       "key_numbers": "部分车型下调6%~20%",
       "source": "https://www.reuters.com/business/autos-transportation/tesla-cuts-us-prices-up-nearly-20-some-models-2023-01-13/",
+      "milestone": true
+    },
+    {
+      "date": "2026-02-19",
+      "category": "FSD",
+      "conclusion": "FSD真实世界数据规模继续扩大，强化端到端模型迭代与监管沟通的证据基础。",
+      "key_numbers": ">8 billion miles",
+      "source": "https://x.com/Tesla/status/2024177015570767920",
       "milestone": true
     }
   ]
