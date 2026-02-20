@@ -40,12 +40,17 @@
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步15:21巡检结果（0样本/0新增）",
-      "detail": "看板与ops状态已更新：browser timeout，发送前闸门阻断。",
-      "updatedAt": "15:21"
+      "progress": "已同步本轮巡检：0样本/0新增（browser timeout）",
+      "detail": "执行约束 profile=openclaw；浏览器控制服务超时，发送前闸门阻断。",
+      "updatedAt": "17:42"
     }
   ],
   "timeline": [
+    {
+      "time": "17:42",
+      "type": "scan",
+      "text": "美股X滚动收录（放宽增量版）执行受阻：样本0条（相关0/不相关0），实际新增0条；未达10条阈值不外发。"
+    },
     {
       "time": "17:21",
       "type": "scan",
@@ -440,11 +445,6 @@
       "time": "10:21",
       "type": "scan",
       "text": "美股X相关信息滚动收录（放宽增量版）执行受阻：profile=openclaw 浏览器控制服务超时；样本0条（相关0/不相关0），实际新增0条；未达10条阈值不外发。"
-    },
-    {
-      "time": "10:01",
-      "type": "scan",
-      "text": "美股X滚动收录（放宽增量版）执行：样本100条（相关95/不相关5），实际新增95条；已达10条门槛并提交。"
     }
   ],
   "completed": [
@@ -589,5 +589,5 @@
       "level": "ok"
     }
   ],
-  "updatedAt": "2026-02-19 12:20:00"
+  "updatedAt": "2026-02-20 17:42:03"
 }
