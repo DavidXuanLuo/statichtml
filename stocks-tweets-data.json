@@ -1,6 +1,1526 @@
 {
-  "generatedAt": "2026-02-20T11:21:40Z",
+  "generatedAt": "2026-02-20T11:42:48.831Z",
   "posts": [
+    {
+      "name": "priya sharma",
+      "handle": "@priyash887",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "priya sharma @priyash887 · 18秒 Try @Tesla self-driving, it’s awesome!",
+      "zh": "priya sharma @priyash887 · 18秒 Try @Tesla self-driving, it’s awesome!",
+      "fullText": "priya sharma @priyash887 · 18秒 Try @Tesla self-driving, it’s awesome!",
+      "fullZh": "priya sharma @priyash887 · 18秒 Try @Tesla self-driving, it’s awesome!",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/priyash887/status/2024811699090436156",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Palmer",
+      "handle": "@BankTheTrade",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Palmer @BankTheTrade · 19秒 $AMD 203.37 flat reportedly agreed to guarantee a $300 million loan for cloud computing startup Crusoe. $NVDA 187.90 flat Nvidia is reportedly close to agreeing a $30 billion investment into ChatGPT-developer OpenAI. If we get one these headlines for cheap stock... GIF",
+      "zh": "Palmer @BankTheTrade · 19秒 $AMD 203.37 flat reportedly agreed to guarantee a $300 million loan for cloud computing startup Crusoe. $NVDA 187.90 flat Nvidia is reportedly close to agreeing a $30 billion investment into ChatGPT-developer OpenAI. If we get one these headlines for cheap stock... GIF",
+      "fullText": "Palmer @BankTheTrade · 19秒 $AMD 203.37 flat reportedly agreed to guarantee a $300 million loan for cloud computing startup Crusoe. $NVDA 187.90 flat Nvidia is reportedly close to agreeing a $30 billion investment into ChatGPT-developer OpenAI. If we get one these headlines for cheap stock... GIF",
+      "fullZh": "Palmer @BankTheTrade · 19秒 $AMD 203.37 flat reportedly agreed to guarantee a $300 million loan for cloud computing startup Crusoe. $NVDA 187.90 flat Nvidia is reportedly close to agreeing a $30 billion investment into ChatGPT-developer OpenAI. If we get one these headlines for cheap stock... GIF",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/BankTheTrade/status/2024811692517974497",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Data Stocks",
+      "handle": "@DataStocksDude",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Data Stocks @DataStocksDude · 55秒 Easy money... $BMNR $SLNH $HOOD $MSFT $ORCL $TAC 4",
+      "zh": "Data Stocks @DataStocksDude · 55秒 Easy money... $BMNR $SLNH $HOOD $MSFT $ORCL $TAC 4",
+      "fullText": "Data Stocks @DataStocksDude · 55秒 Easy money... $BMNR $SLNH $HOOD $MSFT $ORCL $TAC 4",
+      "fullZh": "Data Stocks @DataStocksDude · 55秒 Easy money... $BMNR $SLNH $HOOD $MSFT $ORCL $TAC 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/DataStocksDude/status/2024811542177280271",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Frederik Feys",
+      "handle": "@FFeys",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Frederik Feys @FFeys · 58秒 回复 @WouterHermans @nonkelpier 和 @Tesla Hoe zit het met batterij 2",
+      "zh": "Frederik Feys @FFeys · 58秒 回复 @WouterHermans @nonkelpier 和 @Tesla Hoe zit het met batterij 2",
+      "fullText": "Frederik Feys @FFeys · 58秒 回复 @WouterHermans @nonkelpier 和 @Tesla Hoe zit het met batterij 2",
+      "fullZh": "Frederik Feys @FFeys · 58秒 回复 @WouterHermans @nonkelpier 和 @Tesla Hoe zit het met batterij 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/FFeys/status/2024811529523069224",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "icuvyu",
+      "handle": "@icuvyu",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "@icuvyu · 1分钟 回复 @BitPlayAI 和 @nvidia Absolutely love this project! 2",
+      "zh": "@icuvyu · 1分钟 回复 @BitPlayAI 和 @nvidia Absolutely love this project! 2",
+      "fullText": "@icuvyu · 1分钟 回复 @BitPlayAI 和 @nvidia Absolutely love this project! 2",
+      "fullZh": "@icuvyu · 1分钟 回复 @BitPlayAI 和 @nvidia Absolutely love this project! 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/icuvyu/status/2024811503933911164",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Rolv Heggenhougen",
+      "handle": "@rolveitrem",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Rolv Heggenhougen @rolveitrem · 1分钟 回复 @ryanshrout 和 @nvidia Imagine if http:// rolv.ai was applied rolv.ai Rolv AI Transform your AI capabilities with ROLV's AI Optimization: efficient AI computation, the ROLV Library, and expert handling of sparse datasets. 2",
+      "zh": "Rolv Heggenhougen @rolveitrem · 1分钟 回复 @ryanshrout 和 @nvidia Imagine if http:// rolv.ai was applied rolv.ai Rolv AI Transform your AI capabilities with ROLV's AI Optimization: efficient AI computation, the ROLV Library, and expert handling of sparse datasets. 2",
+      "fullText": "Rolv Heggenhougen @rolveitrem · 1分钟 回复 @ryanshrout 和 @nvidia Imagine if http:// rolv.ai was applied rolv.ai Rolv AI Transform your AI capabilities with ROLV's AI Optimization: efficient AI computation, the ROLV Library, and expert handling of sparse datasets. 2",
+      "fullZh": "Rolv Heggenhougen @rolveitrem · 1分钟 回复 @ryanshrout 和 @nvidia Imagine if http:// rolv.ai was applied rolv.ai Rolv AI Transform your AI capabilities with ROLV's AI Optimization: efficient AI computation, the ROLV Library, and expert handling of sparse datasets. 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/rolveitrem/status/2024811472698671199",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Daniel Martinez",
+      "handle": "@daniel_mardiges",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Daniel Martinez @daniel_mardiges · 1分钟 Le CAC 40 marque un nouveau record absolu à 8.471 (+0.87%). Une dynamique technique solide, mais le contexte géopolitique impose-t-il une gestion du risque renforcée ? La prudence reste de mise. #Motivation $PLTR $TSLA #Dip $MSTR #Invest 4",
+      "zh": "Daniel Martinez @daniel_mardiges · 1分钟 Le CAC 40 marque un nouveau record absolu à 8.471 (+0.87%). Une dynamique technique solide, mais le contexte géopolitique impose-t-il une gestion du risque renforcée ? La prudence reste de mise. #Motivation $PLTR $TSLA #Dip $MSTR #Invest 4",
+      "fullText": "Daniel Martinez @daniel_mardiges · 1分钟 Le CAC 40 marque un nouveau record absolu à 8.471 (+0.87%). Une dynamique technique solide, mais le contexte géopolitique impose-t-il une gestion du risque renforcée ? La prudence reste de mise. #Motivation $PLTR $TSLA #Dip $MSTR #Invest 4",
+      "fullZh": "Daniel Martinez @daniel_mardiges · 1分钟 Le CAC 40 marque un nouveau record absolu à 8.471 (+0.87%). Une dynamique technique solide, mais le contexte géopolitique impose-t-il une gestion du risque renforcée ? La prudence reste de mise. #Motivation $PLTR $TSLA #Dip $MSTR #Invest 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/daniel_mardiges/status/2024811414624325733",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Investify Daily",
+      "handle": "@InvestifyDaily",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Investify Daily @InvestifyDaily · 1分钟 回复 @ContrarianKiwi $HOOD in 2022-2024 man now its the next best thing. Funny how sentiments change. Imagine if $BULL is around $5-$10 for 2 years, we accumulate a good position, then rips to +$50-$80?! That is really a huge win there… 3",
+      "zh": "Investify Daily @InvestifyDaily · 1分钟 回复 @ContrarianKiwi $HOOD in 2022-2024 man now its the next best thing. Funny how sentiments change. Imagine if $BULL is around $5-$10 for 2 years, we accumulate a good position, then rips to +$50-$80?! That is really a huge win there… 3",
+      "fullText": "Investify Daily @InvestifyDaily · 1分钟 回复 @ContrarianKiwi $HOOD in 2022-2024 man now its the next best thing. Funny how sentiments change. Imagine if $BULL is around $5-$10 for 2 years, we accumulate a good position, then rips to +$50-$80?! That is really a huge win there… 3",
+      "fullZh": "Investify Daily @InvestifyDaily · 1分钟 回复 @ContrarianKiwi $HOOD in 2022-2024 man now its the next best thing. Funny how sentiments change. Imagine if $BULL is around $5-$10 for 2 years, we accumulate a good position, then rips to +$50-$80?! That is really a huge win there… 3",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/InvestifyDaily/status/2024811339814764915",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Modern Artist",
+      "handle": "@ModernPaperArt",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Modern Artist @ModernPaperArt · 2分钟 @Tesla @elonmusk #tesla 2050..... FSD everywhere! 使用 Grok 创建你的作品 7",
+      "zh": "Modern Artist @ModernPaperArt · 2分钟 @Tesla @elonmusk #tesla 2050..... FSD everywhere! 使用 Grok 创建你的作品 7",
+      "fullText": "Modern Artist @ModernPaperArt · 2分钟 @Tesla @elonmusk #tesla 2050..... FSD everywhere! 使用 Grok 创建你的作品 7",
+      "fullZh": "Modern Artist @ModernPaperArt · 2分钟 @Tesla @elonmusk #tesla 2050..... FSD everywhere! 使用 Grok 创建你的作品 7",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/ModernPaperArt/status/2024811226396578005",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Declan Barrett",
+      "handle": "@NathanRamirezT7",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Declan Barrett @NathanRamirezT7 · 2分钟 CZ resurfaces in the U.S., signaling crypto’s push back into mainstream capital flows. Traders eye renewed regulatory headlines and exchange competition volatility. $COIN $MSTR $HOOD 11",
+      "zh": "Declan Barrett @NathanRamirezT7 · 2分钟 CZ resurfaces in the U.S., signaling crypto’s push back into mainstream capital flows. Traders eye renewed regulatory headlines and exchange competition volatility. $COIN $MSTR $HOOD 11",
+      "fullText": "Declan Barrett @NathanRamirezT7 · 2分钟 CZ resurfaces in the U.S., signaling crypto’s push back into mainstream capital flows. Traders eye renewed regulatory headlines and exchange competition volatility. $COIN $MSTR $HOOD 11",
+      "fullZh": "Declan Barrett @NathanRamirezT7 · 2分钟 CZ resurfaces in the U.S., signaling crypto’s push back into mainstream capital flows. Traders eye renewed regulatory headlines and exchange competition volatility. $COIN $MSTR $HOOD 11",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/NathanRamirezT7/status/2024811192045178974",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "PandaKoala44",
+      "handle": "@pandakoala44",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "PandaKoala44 @pandakoala44 · 3分钟 回复 @elonmusk 和 @Tesla tesla's fsd margins are key here... let's look at the cash flow. discipline is the ultimate alpha. 2",
+      "zh": "PandaKoala44 @pandakoala44 · 3分钟 回复 @elonmusk 和 @Tesla tesla's fsd margins are key here... let's look at the cash flow. discipline is the ultimate alpha. 2",
+      "fullText": "PandaKoala44 @pandakoala44 · 3分钟 回复 @elonmusk 和 @Tesla tesla's fsd margins are key here... let's look at the cash flow. discipline is the ultimate alpha. 2",
+      "fullZh": "PandaKoala44 @pandakoala44 · 3分钟 回复 @elonmusk 和 @Tesla tesla's fsd margins are key here... let's look at the cash flow. discipline is the ultimate alpha. 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/pandakoala44/status/2024811062181155153",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Investify Daily",
+      "handle": "@InvestifyDaily",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Investify Daily @InvestifyDaily · 3分钟 回复 @Pretzel_Tradez 和 @RobinhoodApp 100% brother. I think the fact $HOOD has done this five years ago and again before is very sketchy. Let’s say one day a stock you like rips, you get a X10 gain (hypothetical) but then $HOOD won’t let you withdraw. Thats a legit fear of mine. Put your money where you trust it! 7",
+      "zh": "Investify Daily @InvestifyDaily · 3分钟 回复 @Pretzel_Tradez 和 @RobinhoodApp 100% brother. I think the fact $HOOD has done this five years ago and again before is very sketchy. Let’s say one day a stock you like rips, you get a X10 gain (hypothetical) but then $HOOD won’t let you withdraw. Thats a legit fear of mine. Put your money where you trust it! 7",
+      "fullText": "Investify Daily @InvestifyDaily · 3分钟 回复 @Pretzel_Tradez 和 @RobinhoodApp 100% brother. I think the fact $HOOD has done this five years ago and again before is very sketchy. Let’s say one day a stock you like rips, you get a X10 gain (hypothetical) but then $HOOD won’t let you withdraw. Thats a legit fear of mine. Put your money where you trust it! 7",
+      "fullZh": "Investify Daily @InvestifyDaily · 3分钟 回复 @Pretzel_Tradez 和 @RobinhoodApp 100% brother. I think the fact $HOOD has done this five years ago and again before is very sketchy. Let’s say one day a stock you like rips, you get a X10 gain (hypothetical) but then $HOOD won’t let you withdraw. Thats a legit fear of mine. Put your money where you trust it! 7",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/InvestifyDaily/status/2024811049950535741",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Vulcan Stock Research",
+      "handle": "@VulcanMK5",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Vulcan Stock Research @VulcanMK5 · 3分钟 回复 @KrisPatel99 The CoWoS thesis is solid and your supply chain read is right. What the market keeps missing: $NVDA's CapEx sits at 3.1% of sales. TSMC absorbs the capacity cost, NVDA captures the revenue unlock. That's not a semiconductor company. That's a software-margin business wearing 显示更多 18",
+      "zh": "Vulcan Stock Research @VulcanMK5 · 3分钟 回复 @KrisPatel99 The CoWoS thesis is solid and your supply chain read is right. What the market keeps missing: $NVDA's CapEx sits at 3.1% of sales. TSMC absorbs the capacity cost, NVDA captures the revenue unlock. That's not a semiconductor company. That's a software-margin business wearing 显示更多 18",
+      "fullText": "Vulcan Stock Research @VulcanMK5 · 3分钟 回复 @KrisPatel99 The CoWoS thesis is solid and your supply chain read is right. What the market keeps missing: $NVDA's CapEx sits at 3.1% of sales. TSMC absorbs the capacity cost, NVDA captures the revenue unlock. That's not a semiconductor company. That's a software-margin business wearing 显示更多 18",
+      "fullZh": "Vulcan Stock Research @VulcanMK5 · 3分钟 回复 @KrisPatel99 The CoWoS thesis is solid and your supply chain read is right. What the market keeps missing: $NVDA's CapEx sits at 3.1% of sales. TSMC absorbs the capacity cost, NVDA captures the revenue unlock. That's not a semiconductor company. That's a software-margin business wearing 显示更多 18",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/VulcanMK5/status/2024811030065320086",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "StockTrendPolls",
+      "handle": "@investor_in_you",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "StockTrendPolls @investor_in_you · 3分钟 $HOOD at $76.85 BUY SELL 0 次投票 · 剩下 23 小时 6",
+      "zh": "StockTrendPolls @investor_in_you · 3分钟 $HOOD at $76.85 BUY SELL 0 次投票 · 剩下 23 小时 6",
+      "fullText": "StockTrendPolls @investor_in_you · 3分钟 $HOOD at $76.85 BUY SELL 0 次投票 · 剩下 23 小时 6",
+      "fullZh": "StockTrendPolls @investor_in_you · 3分钟 $HOOD at $76.85 BUY SELL 0 次投票 · 剩下 23 小时 6",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/investor_in_you/status/2024811029528809543",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "ΑΓΝΩΣΤΩ ΘΕΩ",
+      "handle": "@Doogie85",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "ΑΓΝΩΣΤΩ ΘΕΩ @Doogie85 · 3分钟 回复 @RobinhoodApp Already using Banking and Direct deposit. Guess I'm disqualified. 4",
+      "zh": "ΑΓΝΩΣΤΩ ΘΕΩ @Doogie85 · 3分钟 回复 @RobinhoodApp Already using Banking and Direct deposit. Guess I'm disqualified. 4",
+      "fullText": "ΑΓΝΩΣΤΩ ΘΕΩ @Doogie85 · 3分钟 回复 @RobinhoodApp Already using Banking and Direct deposit. Guess I'm disqualified. 4",
+      "fullZh": "ΑΓΝΩΣΤΩ ΘΕΩ @Doogie85 · 3分钟 回复 @RobinhoodApp Already using Banking and Direct deposit. Guess I'm disqualified. 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/Doogie85/status/2024811021341503919",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Emma Stock Notes",
+      "handle": "@EmmaStockNotes",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Emma Stock Notes @EmmaStockNotes · 3分钟 回复 @TheLongInvest Totally agree. $NVDA looked completely broken in the 2022 drawdown… then became the biggest stock on the planet. Short term = emotion. Long term = business. 1 63",
+      "zh": "Emma Stock Notes @EmmaStockNotes · 3分钟 回复 @TheLongInvest Totally agree. $NVDA looked completely broken in the 2022 drawdown… then became the biggest stock on the planet. Short term = emotion. Long term = business. 1 63",
+      "fullText": "Emma Stock Notes @EmmaStockNotes · 3分钟 回复 @TheLongInvest Totally agree. $NVDA looked completely broken in the 2022 drawdown… then became the biggest stock on the planet. Short term = emotion. Long term = business. 1 63",
+      "fullZh": "Emma Stock Notes @EmmaStockNotes · 3分钟 回复 @TheLongInvest Totally agree. $NVDA looked completely broken in the 2022 drawdown… then became the biggest stock on the planet. Short term = emotion. Long term = business. 1 63",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/EmmaStockNotes/status/2024810845167911283",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Tsla Archive",
+      "handle": "@tesla_archive",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Tsla Archive @tesla_archive · 3分钟 粉丝账号 $TSLA IS HIRING AI SAFETY OPERATORS IN A TOTAL OF 15 CITIES Newly added: • AI Safety Operators hiring in Vienna, Virginia 2 58",
+      "zh": "Tsla Archive @tesla_archive · 3分钟 粉丝账号 $TSLA IS HIRING AI SAFETY OPERATORS IN A TOTAL OF 15 CITIES Newly added: • AI Safety Operators hiring in Vienna, Virginia 2 58",
+      "fullText": "Tsla Archive @tesla_archive · 3分钟 粉丝账号 $TSLA IS HIRING AI SAFETY OPERATORS IN A TOTAL OF 15 CITIES Newly added: • AI Safety Operators hiring in Vienna, Virginia 2 58",
+      "fullZh": "Tsla Archive @tesla_archive · 3分钟 粉丝账号 $TSLA IS HIRING AI SAFETY OPERATORS IN A TOTAL OF 15 CITIES Newly added: • AI Safety Operators hiring in Vienna, Virginia 2 58",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/tesla_archive/status/2024810836796318156",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Alfiyan | Actionfi",
+      "handle": "@MiptakhulA",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Alfiyan | Actionfi @MiptakhulA · 3分钟 回复 @Eagle18534734 和 @USATRUMPMAN1 hey, speaking of red riding hood - if you're tracking $HOOD stock, check out @tipranks for some solid analyst insights: tipranks.com Robinhood (HOOD) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Robinhood (HOOD) Stock forecast & analyst price target predictions based on 16 analysts offering 12-months price targets for HOOD in the last 3 months. 4",
+      "zh": "Alfiyan | Actionfi @MiptakhulA · 3分钟 回复 @Eagle18534734 和 @USATRUMPMAN1 hey, speaking of red riding hood - if you're tracking $HOOD stock, check out @tipranks for some solid analyst insights: tipranks.com Robinhood (HOOD) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Robinhood (HOOD) Stock forecast & analyst price target predictions based on 16 analysts offering 12-months price targets for HOOD in the last 3 months. 4",
+      "fullText": "Alfiyan | Actionfi @MiptakhulA · 3分钟 回复 @Eagle18534734 和 @USATRUMPMAN1 hey, speaking of red riding hood - if you're tracking $HOOD stock, check out @tipranks for some solid analyst insights: tipranks.com Robinhood (HOOD) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Robinhood (HOOD) Stock forecast & analyst price target predictions based on 16 analysts offering 12-months price targets for HOOD in the last 3 months. 4",
+      "fullZh": "Alfiyan | Actionfi @MiptakhulA · 3分钟 回复 @Eagle18534734 和 @USATRUMPMAN1 hey, speaking of red riding hood - if you're tracking $HOOD stock, check out @tipranks for some solid analyst insights: tipranks.com Robinhood (HOOD) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Robinhood (HOOD) Stock forecast & analyst price target predictions based on 16 analysts offering 12-months price targets for HOOD in the last 3 months. 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/MiptakhulA/status/2024810836787954053",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "StockTrendPolls",
+      "handle": "@investor_in_you",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "StockTrendPolls @investor_in_you · 4分钟 $TSLA at $411 BUY SELL 0 次投票 · 剩下 23 小时 13",
+      "zh": "StockTrendPolls @investor_in_you · 4分钟 $TSLA at $411 BUY SELL 0 次投票 · 剩下 23 小时 13",
+      "fullText": "StockTrendPolls @investor_in_you · 4分钟 $TSLA at $411 BUY SELL 0 次投票 · 剩下 23 小时 13",
+      "fullZh": "StockTrendPolls @investor_in_you · 4分钟 $TSLA at $411 BUY SELL 0 次投票 · 剩下 23 小时 13",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/investor_in_you/status/2024810809621360812",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "일론 머스크 응원 홍명호",
+      "handle": "@vitahyoso",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "일론 머스크 응원 홍명호 @vitahyoso · 管理员 · 4分钟 이 법 하나로 한국 자율주행 산업이 한 단계 도약합니다. 테슬라 입장에선 유럽보다 데이터 수집 환경이 오히려 더 좋아진 시장이 생긴 셈이네요. 2026~2027년 한국 FSD 론칭 기대감 UP $TSLA 홀더분들 오늘 기분 좋으시겠어요 引用 TeslaZoa @TeslaZoa · 5小时 속보: 대한민국, 자율주행차법 개정안 통과 대한민국 국회는 2월 19일 「자율주행자동차 상용화 촉진 및 지원에 관한 법률」 개정안을 승인했습니다. 주요 변경 사항: • 임시운행허가를 받은 완성차 업체 및 관련 기관이 자율주행차에서 수집한 영상 데이터를 활용할 수 있도록 허용 • x.com/tesla_archive/… 显示更多 1 34",
+      "zh": "일론 머스크 응원 홍명호 @vitahyoso · 管理员 · 4分钟 이 법 하나로 한국 자율주행 산업이 한 단계 도약합니다. 테슬라 입장에선 유럽보다 데이터 수집 환경이 오히려 더 좋아진 시장이 생긴 셈이네요. 2026~2027년 한국 FSD 론칭 기대감 UP $TSLA 홀더분들 오늘 기분 좋으시겠어요 引用 TeslaZoa @TeslaZoa · 5小时 속보: 대한민국, 자율주행차법 개정안 통과 대한민국 국회는 2월 19일 「자율주행자동차 상용화 촉진 및 지원에 관한 법률」 개정안을 승인했습니다. 주요 변경 사항: • 임시운행허가를 받은 완성차 업체 및 관련 기관이 자율주행차에서 수집한 영상 데이터를 활용할 수 있도록 허용 • x.com/tesla_archive/… 显示更多 1 34",
+      "fullText": "일론 머스크 응원 홍명호 @vitahyoso · 管理员 · 4分钟 이 법 하나로 한국 자율주행 산업이 한 단계 도약합니다. 테슬라 입장에선 유럽보다 데이터 수집 환경이 오히려 더 좋아진 시장이 생긴 셈이네요. 2026~2027년 한국 FSD 론칭 기대감 UP $TSLA 홀더분들 오늘 기분 좋으시겠어요 引用 TeslaZoa @TeslaZoa · 5小时 속보: 대한민국, 자율주행차법 개정안 통과 대한민국 국회는 2월 19일 「자율주행자동차 상용화 촉진 및 지원에 관한 법률」 개정안을 승인했습니다. 주요 변경 사항: • 임시운행허가를 받은 완성차 업체 및 관련 기관이 자율주행차에서 수집한 영상 데이터를 활용할 수 있도록 허용 • x.com/tesla_archive/… 显示更多 1 34",
+      "fullZh": "일론 머스크 응원 홍명호 @vitahyoso · 管理员 · 4分钟 이 법 하나로 한국 자율주행 산업이 한 단계 도약합니다. 테슬라 입장에선 유럽보다 데이터 수집 환경이 오히려 더 좋아진 시장이 생긴 셈이네요. 2026~2027년 한국 FSD 론칭 기대감 UP $TSLA 홀더분들 오늘 기분 좋으시겠어요 引用 TeslaZoa @TeslaZoa · 5小时 속보: 대한민국, 자율주행차법 개정안 통과 대한민국 국회는 2월 19일 「자율주행자동차 상용화 촉진 및 지원에 관한 법률」 개정안을 승인했습니다. 주요 변경 사항: • 임시운행허가를 받은 완성차 업체 및 관련 기관이 자율주행차에서 수집한 영상 데이터를 활용할 수 있도록 허용 • x.com/tesla_archive/… 显示更多 1 34",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/vitahyoso/status/2024810722551849358",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "BTC&IRENMAXI",
+      "handle": "@BTCIRENMAXI",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "BTC&IRENMAXI @BTCIRENMAXI · 4分钟 回复 @alc2022 Yes. This is the 3rd company I study in my life that got me to go 6 digit entry as an opening salvo. The others were $TSLA and $IREN. 50",
+      "zh": "BTC&IRENMAXI @BTCIRENMAXI · 4分钟 回复 @alc2022 Yes. This is the 3rd company I study in my life that got me to go 6 digit entry as an opening salvo. The others were $TSLA and $IREN. 50",
+      "fullText": "BTC&IRENMAXI @BTCIRENMAXI · 4分钟 回复 @alc2022 Yes. This is the 3rd company I study in my life that got me to go 6 digit entry as an opening salvo. The others were $TSLA and $IREN. 50",
+      "fullZh": "BTC&IRENMAXI @BTCIRENMAXI · 4分钟 回复 @alc2022 Yes. This is the 3rd company I study in my life that got me to go 6 digit entry as an opening salvo. The others were $TSLA and $IREN. 50",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/BTCIRENMAXI/status/2024810630356574600",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Gamer Not Found",
+      "handle": "@4O4Gaming",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Gamer Not Found @4O4Gaming · 5分钟 回复 @Tesla gimme a hybrid fuel is freedom 4",
+      "zh": "Gamer Not Found @4O4Gaming · 5分钟 回复 @Tesla gimme a hybrid fuel is freedom 4",
+      "fullText": "Gamer Not Found @4O4Gaming · 5分钟 回复 @Tesla gimme a hybrid fuel is freedom 4",
+      "fullZh": "Gamer Not Found @4O4Gaming · 5分钟 回复 @Tesla gimme a hybrid fuel is freedom 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/4O4Gaming/status/2024810537041727633",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "☆ Álex ☆",
+      "handle": "@EldelaRosca_",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "☆ Álex ☆ @EldelaRosca_ · 5分钟 回复 @Maverick_M3 @grok 和 @Tesla Yo no me he fijado cuando me ocurre… el caso es que la quiero ¡YA!… 5",
+      "zh": "☆ Álex ☆ @EldelaRosca_ · 5分钟 回复 @Maverick_M3 @grok 和 @Tesla Yo no me he fijado cuando me ocurre… el caso es que la quiero ¡YA!… 5",
+      "fullText": "☆ Álex ☆ @EldelaRosca_ · 5分钟 回复 @Maverick_M3 @grok 和 @Tesla Yo no me he fijado cuando me ocurre… el caso es que la quiero ¡YA!… 5",
+      "fullZh": "☆ Álex ☆ @EldelaRosca_ · 5分钟 回复 @Maverick_M3 @grok 和 @Tesla Yo no me he fijado cuando me ocurre… el caso es que la quiero ¡YA!… 5",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/EldelaRosca_/status/2024810526736327158",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Caleb Barnes",
+      "handle": "@CalebBarnes96",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Caleb Barnes @CalebBarnes96 · 5分钟 AI promises life-saving gains but risks deepening user dependence, sharpening scrutiny on platform power. Volatility likely as regulators weigh guardrails on Big Tech. $MSFT $GOOGL $NVDA 15",
+      "zh": "Caleb Barnes @CalebBarnes96 · 5分钟 AI promises life-saving gains but risks deepening user dependence, sharpening scrutiny on platform power. Volatility likely as regulators weigh guardrails on Big Tech. $MSFT $GOOGL $NVDA 15",
+      "fullText": "Caleb Barnes @CalebBarnes96 · 5分钟 AI promises life-saving gains but risks deepening user dependence, sharpening scrutiny on platform power. Volatility likely as regulators weigh guardrails on Big Tech. $MSFT $GOOGL $NVDA 15",
+      "fullZh": "Caleb Barnes @CalebBarnes96 · 5分钟 AI promises life-saving gains but risks deepening user dependence, sharpening scrutiny on platform power. Volatility likely as regulators weigh guardrails on Big Tech. $MSFT $GOOGL $NVDA 15",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/CalebBarnes96/status/2024810522747539738",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Arun Rao",
+      "handle": "@ArunRaofinswim",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Arun Rao @ArunRaofinswim · 5分钟 Thank you @elonmusk for keeping this legends name alive through your wondrous car company @Tesla 引用 The Husky @Mr_Husky1 · 5小时 On January 7, 1943, Nikola Tesla died alone in Room 3327 of the Hotel New Yorker. He was 86 years old. A maid found him two days later after he had left a “do not disturb” sign on his door. The official cause was coronary thrombosis. But the deeper truth was quieter — years of 显示更多 2",
+      "zh": "Arun Rao @ArunRaofinswim · 5分钟 Thank you @elonmusk for keeping this legends name alive through your wondrous car company @Tesla 引用 The Husky @Mr_Husky1 · 5小时 On January 7, 1943, Nikola Tesla died alone in Room 3327 of the Hotel New Yorker. He was 86 years old. A maid found him two days later after he had left a “do not disturb” sign on his door. The official cause was coronary thrombosis. But the deeper truth was quieter — years of 显示更多 2",
+      "fullText": "Arun Rao @ArunRaofinswim · 5分钟 Thank you @elonmusk for keeping this legends name alive through your wondrous car company @Tesla 引用 The Husky @Mr_Husky1 · 5小时 On January 7, 1943, Nikola Tesla died alone in Room 3327 of the Hotel New Yorker. He was 86 years old. A maid found him two days later after he had left a “do not disturb” sign on his door. The official cause was coronary thrombosis. But the deeper truth was quieter — years of 显示更多 2",
+      "fullZh": "Arun Rao @ArunRaofinswim · 5分钟 Thank you @elonmusk for keeping this legends name alive through your wondrous car company @Tesla 引用 The Husky @Mr_Husky1 · 5小时 On January 7, 1943, Nikola Tesla died alone in Room 3327 of the Hotel New Yorker. He was 86 years old. A maid found him two days later after he had left a “do not disturb” sign on his door. The official cause was coronary thrombosis. But the deeper truth was quieter — years of 显示更多 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/ArunRaofinswim/status/2024810500505350328",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Nkosinathi Mlotshwa",
+      "handle": "@Nathimlotshwa",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Nkosinathi Mlotshwa @Nathimlotshwa · 5分钟 回复 @elonmusk 和 @Tesla Wow my guy 2",
+      "zh": "Nkosinathi Mlotshwa @Nathimlotshwa · 5分钟 回复 @elonmusk 和 @Tesla Wow my guy 2",
+      "fullText": "Nkosinathi Mlotshwa @Nathimlotshwa · 5分钟 回复 @elonmusk 和 @Tesla Wow my guy 2",
+      "fullZh": "Nkosinathi Mlotshwa @Nathimlotshwa · 5分钟 回复 @elonmusk 和 @Tesla Wow my guy 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/Nathimlotshwa/status/2024810478334054711",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "조프로",
+      "handle": "@hyun64t",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "조프로 @hyun64t · 5分钟 속보: 바이킹 글로벌의 할보르센 $TSLA 지분 89,913주 추가 매입 Andreas Halvorsen이 이끄는 Viking Global Investors LP는 최근 보고된 거래에서 89,913주를 추가하여 @Tesla 에 대한 보유량을 크게 늘렸습니다. 引用 Tsla Archive @tesla_archive · 35分钟 粉丝账号 BREAKING: VIKING GLOBAL’S HALVORSEN INCREASES $TSLA STAKE BY 89,913 SHARES Viking Global Investors LP, led by Andreas Halvorsen, has significantly boosted its holdings in @Tesla by adding 89,913 shares in the latest reported transaction. 2 36",
+      "zh": "조프로 @hyun64t · 5分钟 속보: 바이킹 글로벌의 할보르센 $TSLA 지분 89,913주 추가 매입 Andreas Halvorsen이 이끄는 Viking Global Investors LP는 최근 보고된 거래에서 89,913주를 추가하여 @Tesla 에 대한 보유량을 크게 늘렸습니다. 引用 Tsla Archive @tesla_archive · 35分钟 粉丝账号 BREAKING: VIKING GLOBAL’S HALVORSEN INCREASES $TSLA STAKE BY 89,913 SHARES Viking Global Investors LP, led by Andreas Halvorsen, has significantly boosted its holdings in @Tesla by adding 89,913 shares in the latest reported transaction. 2 36",
+      "fullText": "조프로 @hyun64t · 5分钟 속보: 바이킹 글로벌의 할보르센 $TSLA 지분 89,913주 추가 매입 Andreas Halvorsen이 이끄는 Viking Global Investors LP는 최근 보고된 거래에서 89,913주를 추가하여 @Tesla 에 대한 보유량을 크게 늘렸습니다. 引用 Tsla Archive @tesla_archive · 35分钟 粉丝账号 BREAKING: VIKING GLOBAL’S HALVORSEN INCREASES $TSLA STAKE BY 89,913 SHARES Viking Global Investors LP, led by Andreas Halvorsen, has significantly boosted its holdings in @Tesla by adding 89,913 shares in the latest reported transaction. 2 36",
+      "fullZh": "조프로 @hyun64t · 5分钟 속보: 바이킹 글로벌의 할보르센 $TSLA 지분 89,913주 추가 매입 Andreas Halvorsen이 이끄는 Viking Global Investors LP는 최근 보고된 거래에서 89,913주를 추가하여 @Tesla 에 대한 보유량을 크게 늘렸습니다. 引用 Tsla Archive @tesla_archive · 35分钟 粉丝账号 BREAKING: VIKING GLOBAL’S HALVORSEN INCREASES $TSLA STAKE BY 89,913 SHARES Viking Global Investors LP, led by Andreas Halvorsen, has significantly boosted its holdings in @Tesla by adding 89,913 shares in the latest reported transaction. 2 36",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/hyun64t/status/2024810457031393321",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "NeuralOrbit",
+      "handle": "@NeuralTSLA",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "NeuralOrbit @NeuralTSLA · 5分钟 테슬라 사이버캡 관련주가 꽤 많다. 그러나 나는 그중에서 테슬라 사이버캡으로 수혜를 받을 가장 좋은 종목을 굳이 찾지 않을 것이다. 테슬라 사이버캡 관련주이자 최대 수혜주는 그냥 테슬라다. $TSLA 引用 머니칸 @moneykhan80 · 22小时 테슬라 사이버캡 관련주 -출처:요약하는고잉 26",
+      "zh": "NeuralOrbit @NeuralTSLA · 5分钟 테슬라 사이버캡 관련주가 꽤 많다. 그러나 나는 그중에서 테슬라 사이버캡으로 수혜를 받을 가장 좋은 종목을 굳이 찾지 않을 것이다. 테슬라 사이버캡 관련주이자 최대 수혜주는 그냥 테슬라다. $TSLA 引用 머니칸 @moneykhan80 · 22小时 테슬라 사이버캡 관련주 -출처:요약하는고잉 26",
+      "fullText": "NeuralOrbit @NeuralTSLA · 5分钟 테슬라 사이버캡 관련주가 꽤 많다. 그러나 나는 그중에서 테슬라 사이버캡으로 수혜를 받을 가장 좋은 종목을 굳이 찾지 않을 것이다. 테슬라 사이버캡 관련주이자 최대 수혜주는 그냥 테슬라다. $TSLA 引用 머니칸 @moneykhan80 · 22小时 테슬라 사이버캡 관련주 -출처:요약하는고잉 26",
+      "fullZh": "NeuralOrbit @NeuralTSLA · 5分钟 테슬라 사이버캡 관련주가 꽤 많다. 그러나 나는 그중에서 테슬라 사이버캡으로 수혜를 받을 가장 좋은 종목을 굳이 찾지 않을 것이다. 테슬라 사이버캡 관련주이자 최대 수혜주는 그냥 테슬라다. $TSLA 引用 머니칸 @moneykhan80 · 22小时 테슬라 사이버캡 관련주 -출처:요약하는고잉 26",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/NeuralTSLA/status/2024810417990819864",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Frey_trades",
+      "handle": "@freymondoteth",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Frey_trades @freymondoteth · 6分钟 回复 @InvestorVideos True! Supply creates its own demand in this space. For deeper analysis on $NVDA specifically, check out @tipranks tipranks.com Nvidia (NVDA) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Nvidia (NVDA) Stock forecast & analyst price target predictions based on 39 analysts offering 12-months price targets for NVDA in the last 3 months. 10",
+      "zh": "Frey_trades @freymondoteth · 6分钟 回复 @InvestorVideos True! Supply creates its own demand in this space. For deeper analysis on $NVDA specifically, check out @tipranks tipranks.com Nvidia (NVDA) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Nvidia (NVDA) Stock forecast & analyst price target predictions based on 39 analysts offering 12-months price targets for NVDA in the last 3 months. 10",
+      "fullText": "Frey_trades @freymondoteth · 6分钟 回复 @InvestorVideos True! Supply creates its own demand in this space. For deeper analysis on $NVDA specifically, check out @tipranks tipranks.com Nvidia (NVDA) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Nvidia (NVDA) Stock forecast & analyst price target predictions based on 39 analysts offering 12-months price targets for NVDA in the last 3 months. 10",
+      "fullZh": "Frey_trades @freymondoteth · 6分钟 回复 @InvestorVideos True! Supply creates its own demand in this space. For deeper analysis on $NVDA specifically, check out @tipranks tipranks.com Nvidia (NVDA) Stock Forecast, Price Targets and Analysts Predictions - TipRanks.com Nvidia (NVDA) Stock forecast & analyst price target predictions based on 39 analysts offering 12-months price targets for NVDA in the last 3 months. 10",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/freymondoteth/status/2024810219440656877",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Jesse option",
+      "handle": "@AShmueil",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Jesse option @AShmueil · 6分钟 BREAKING: Nvidia plans invest $1.3B+ new Taipei Taiwan headquarters creating ~10K jobs. Major Taiwan expansion. $NVDA #Semiconductors #Taiwan #Breaking 27",
+      "zh": "Jesse option @AShmueil · 6分钟 BREAKING: Nvidia plans invest $1.3B+ new Taipei Taiwan headquarters creating ~10K jobs. Major Taiwan expansion. $NVDA #Semiconductors #Taiwan #Breaking 27",
+      "fullText": "Jesse option @AShmueil · 6分钟 BREAKING: Nvidia plans invest $1.3B+ new Taipei Taiwan headquarters creating ~10K jobs. Major Taiwan expansion. $NVDA #Semiconductors #Taiwan #Breaking 27",
+      "fullZh": "Jesse option @AShmueil · 6分钟 BREAKING: Nvidia plans invest $1.3B+ new Taipei Taiwan headquarters creating ~10K jobs. Major Taiwan expansion. $NVDA #Semiconductors #Taiwan #Breaking 27",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/AShmueil/status/2024810120513794204",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "DividendLearning",
+      "handle": "@Dividend_Learn",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "DividendLearning @Dividend_Learn · 7分钟 Robotaxis are at an early stage but many see this as a two horse race between Waymo and $TSLA. Waymo's momentum is obvious but its early to call a winner. Waymo cars cost more than $100k and they need to maximise utilisation to earn a meaningful return on investment. This is 显示更多 2 1 43",
+      "zh": "DividendLearning @Dividend_Learn · 7分钟 Robotaxis are at an early stage but many see this as a two horse race between Waymo and $TSLA. Waymo's momentum is obvious but its early to call a winner. Waymo cars cost more than $100k and they need to maximise utilisation to earn a meaningful return on investment. This is 显示更多 2 1 43",
+      "fullText": "DividendLearning @Dividend_Learn · 7分钟 Robotaxis are at an early stage but many see this as a two horse race between Waymo and $TSLA. Waymo's momentum is obvious but its early to call a winner. Waymo cars cost more than $100k and they need to maximise utilisation to earn a meaningful return on investment. This is 显示更多 2 1 43",
+      "fullZh": "DividendLearning @Dividend_Learn · 7分钟 Robotaxis are at an early stage but many see this as a two horse race between Waymo and $TSLA. Waymo's momentum is obvious but its early to call a winner. Waymo cars cost more than $100k and they need to maximise utilisation to earn a meaningful return on investment. This is 显示更多 2 1 43",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/Dividend_Learn/status/2024809951751753934",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Ricardo Osorio",
+      "handle": "@RicXSpectra",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Ricardo Osorio @RicXSpectra · 7分钟 @Tesla you only sell in Portugal and grok speaks...Brazilian? WHY??? 1",
+      "zh": "Ricardo Osorio @RicXSpectra · 7分钟 @Tesla you only sell in Portugal and grok speaks...Brazilian? WHY??? 1",
+      "fullText": "Ricardo Osorio @RicXSpectra · 7分钟 @Tesla you only sell in Portugal and grok speaks...Brazilian? WHY??? 1",
+      "fullZh": "Ricardo Osorio @RicXSpectra · 7分钟 @Tesla you only sell in Portugal and grok speaks...Brazilian? WHY??? 1",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/RicXSpectra/status/2024809923251720632",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "احمد النعيمي",
+      "handle": "@AhmadProfe",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "احمد النعيمي @AhmadProfe · 7分钟 @elonmusk @SpaceX @Tesla @Tesla_Optimus Optimus is 100% more capable of taking care of the elderly. @elonmusk if only John Lennon was as smart as you, he would have backed his imagination with real engineering and lived. 4",
+      "zh": "احمد النعيمي @AhmadProfe · 7分钟 @elonmusk @SpaceX @Tesla @Tesla_Optimus Optimus is 100% more capable of taking care of the elderly. @elonmusk if only John Lennon was as smart as you, he would have backed his imagination with real engineering and lived. 4",
+      "fullText": "احمد النعيمي @AhmadProfe · 7分钟 @elonmusk @SpaceX @Tesla @Tesla_Optimus Optimus is 100% more capable of taking care of the elderly. @elonmusk if only John Lennon was as smart as you, he would have backed his imagination with real engineering and lived. 4",
+      "fullZh": "احمد النعيمي @AhmadProfe · 7分钟 @elonmusk @SpaceX @Tesla @Tesla_Optimus Optimus is 100% more capable of taking care of the elderly. @elonmusk if only John Lennon was as smart as you, he would have backed his imagination with real engineering and lived. 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/AhmadProfe/status/2024809852015382637",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "ジェイ・ハン アルファ",
+      "handle": "@N_EN3010",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "ジェイ・ハン アルファ @N_EN3010 · 8分钟 市場の焦点は来週の決算。 $NVDA $CRM $INTU の動向は？ AIリーダーの業績が今後の方向性を示唆。 オプションフローと支持水準を注視。 12",
+      "zh": "ジェイ・ハン アルファ @N_EN3010 · 8分钟 市場の焦点は来週の決算。 $NVDA $CRM $INTU の動向は？ AIリーダーの業績が今後の方向性を示唆。 オプションフローと支持水準を注視。 12",
+      "fullText": "ジェイ・ハン アルファ @N_EN3010 · 8分钟 市場の焦点は来週の決算。 $NVDA $CRM $INTU の動向は？ AIリーダーの業績が今後の方向性を示唆。 オプションフローと支持水準を注視。 12",
+      "fullZh": "ジェイ・ハン アルファ @N_EN3010 · 8分钟 市場の焦点は来週の決算。 $NVDA $CRM $INTU の動向は？ AIリーダーの業績が今後の方向性を示唆。 オプションフローと支持水準を注視。 12",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/N_EN3010/status/2024809793861632101",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "MrAndersen",
+      "handle": "@MrAndersenTTV",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "MrAndersen @MrAndersenTTV · 8分钟 回复 @Tesla If I could afford one, I would 1 3",
+      "zh": "MrAndersen @MrAndersenTTV · 8分钟 回复 @Tesla If I could afford one, I would 1 3",
+      "fullText": "MrAndersen @MrAndersenTTV · 8分钟 回复 @Tesla If I could afford one, I would 1 3",
+      "fullZh": "MrAndersen @MrAndersenTTV · 8分钟 回复 @Tesla If I could afford one, I would 1 3",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/MrAndersenTTV/status/2024809781534277929",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "JK",
+      "handle": "@JKLivinLife",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "JK @JKLivinLife · 8分钟 回复 @ElonMuskAOC 和 @grok This is what I have been saying. It would be chump change if he gave every US citizen $1 mil and then we are all millionaires. Talk about stimulating the economy. He could give it in $TSLA shares which also would help him! 1 35",
+      "zh": "JK @JKLivinLife · 8分钟 回复 @ElonMuskAOC 和 @grok This is what I have been saying. It would be chump change if he gave every US citizen $1 mil and then we are all millionaires. Talk about stimulating the economy. He could give it in $TSLA shares which also would help him! 1 35",
+      "fullText": "JK @JKLivinLife · 8分钟 回复 @ElonMuskAOC 和 @grok This is what I have been saying. It would be chump change if he gave every US citizen $1 mil and then we are all millionaires. Talk about stimulating the economy. He could give it in $TSLA shares which also would help him! 1 35",
+      "fullZh": "JK @JKLivinLife · 8分钟 回复 @ElonMuskAOC 和 @grok This is what I have been saying. It would be chump change if he gave every US citizen $1 mil and then we are all millionaires. Talk about stimulating the economy. He could give it in $TSLA shares which also would help him! 1 35",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/JKLivinLife/status/2024809762391458293",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Willy, el escocés",
+      "handle": "@UnTalLucasB",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Willy, el escocés @UnTalLucasB · 8分钟 回复 @artsimage @AdanGuajardo 和 另外 3 个人 So it seems (NOT). Tesla Robotaxis Reportedly Crashing at a Rate That's 4x Higher Than Humans 来自 gizmodo.com 5",
+      "zh": "Willy, el escocés @UnTalLucasB · 8分钟 回复 @artsimage @AdanGuajardo 和 另外 3 个人 So it seems (NOT). Tesla Robotaxis Reportedly Crashing at a Rate That's 4x Higher Than Humans 来自 gizmodo.com 5",
+      "fullText": "Willy, el escocés @UnTalLucasB · 8分钟 回复 @artsimage @AdanGuajardo 和 另外 3 个人 So it seems (NOT). Tesla Robotaxis Reportedly Crashing at a Rate That's 4x Higher Than Humans 来自 gizmodo.com 5",
+      "fullZh": "Willy, el escocés @UnTalLucasB · 8分钟 回复 @artsimage @AdanGuajardo 和 另外 3 个人 So it seems (NOT). Tesla Robotaxis Reportedly Crashing at a Rate That's 4x Higher Than Humans 来自 gizmodo.com 5",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/UnTalLucasB/status/2024809640509194296",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "ale yaque_barlov",
+      "handle": "@aleidayaquelin",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "ale yaque_barlov @aleidayaquelin · 8分钟 回复 @EFATHERMUSK 和 @Tesla Yo lo quiero 2",
+      "zh": "ale yaque_barlov @aleidayaquelin · 8分钟 回复 @EFATHERMUSK 和 @Tesla Yo lo quiero 2",
+      "fullText": "ale yaque_barlov @aleidayaquelin · 8分钟 回复 @EFATHERMUSK 和 @Tesla Yo lo quiero 2",
+      "fullZh": "ale yaque_barlov @aleidayaquelin · 8分钟 回复 @EFATHERMUSK 和 @Tesla Yo lo quiero 2",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/aleidayaquelin/status/2024809622427574476",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Liberal-Tears-2025",
+      "handle": "@Libbie2025Tears",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Liberal-Tears-2025 @Libbie2025Tears · 8分钟 回复 @KobeissiLetter Smart @nvidia 3",
+      "zh": "Liberal-Tears-2025 @Libbie2025Tears · 8分钟 回复 @KobeissiLetter Smart @nvidia 3",
+      "fullText": "Liberal-Tears-2025 @Libbie2025Tears · 8分钟 回复 @KobeissiLetter Smart @nvidia 3",
+      "fullZh": "Liberal-Tears-2025 @Libbie2025Tears · 8分钟 回复 @KobeissiLetter Smart @nvidia 3",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/Libbie2025Tears/status/2024809614240342115",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "cexscan",
+      "handle": "@cexscan",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "cexscan @cexscan · 9分钟 Last 15m - Binance Futures (USDT Trades) Top 3 Gainers: $INIT (Initia) : ↑4.04% $AZTEC (Aztec) : ↑3.74% $RPL (Rocket Pool) : ↑2.68% Top 3 Losers: $JCT (Janction) : ↓-2.22% $GTC (Gitcoin) : ↓-2.13% $CHILLGUY (Just a chill guy) : ↓-2.05% Top 3 by Volume: $USDC 显示更多 29",
+      "zh": "cexscan @cexscan · 9分钟 Last 15m - Binance Futures (USDT Trades) Top 3 Gainers: $INIT (Initia) : ↑4.04% $AZTEC (Aztec) : ↑3.74% $RPL (Rocket Pool) : ↑2.68% Top 3 Losers: $JCT (Janction) : ↓-2.22% $GTC (Gitcoin) : ↓-2.13% $CHILLGUY (Just a chill guy) : ↓-2.05% Top 3 by Volume: $USDC 显示更多 29",
+      "fullText": "cexscan @cexscan · 9分钟 Last 15m - Binance Futures (USDT Trades) Top 3 Gainers: $INIT (Initia) : ↑4.04% $AZTEC (Aztec) : ↑3.74% $RPL (Rocket Pool) : ↑2.68% Top 3 Losers: $JCT (Janction) : ↓-2.22% $GTC (Gitcoin) : ↓-2.13% $CHILLGUY (Just a chill guy) : ↓-2.05% Top 3 by Volume: $USDC 显示更多 29",
+      "fullZh": "cexscan @cexscan · 9分钟 Last 15m - Binance Futures (USDT Trades) Top 3 Gainers: $INIT (Initia) : ↑4.04% $AZTEC (Aztec) : ↑3.74% $RPL (Rocket Pool) : ↑2.68% Top 3 Losers: $JCT (Janction) : ↓-2.22% $GTC (Gitcoin) : ↓-2.13% $CHILLGUY (Just a chill guy) : ↓-2.05% Top 3 by Volume: $USDC 显示更多 29",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/cexscan/status/2024809560611938722",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Arny Trezzi",
+      "handle": "@arny_trezzi",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Arny Trezzi @arny_trezzi · 9分钟 回复 @ShivVerma 和 @RobinhoodApp Hood ventures seems a dream product came true! 42",
+      "zh": "Arny Trezzi @arny_trezzi · 9分钟 回复 @ShivVerma 和 @RobinhoodApp Hood ventures seems a dream product came true! 42",
+      "fullText": "Arny Trezzi @arny_trezzi · 9分钟 回复 @ShivVerma 和 @RobinhoodApp Hood ventures seems a dream product came true! 42",
+      "fullZh": "Arny Trezzi @arny_trezzi · 9分钟 回复 @ShivVerma 和 @RobinhoodApp Hood ventures seems a dream product came true! 42",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/arny_trezzi/status/2024809554265924029",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Alexandre Baradez",
+      "handle": "@ABaradez",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Alexandre Baradez @ABaradez · 9分钟 $NVDA 2 2 9 278",
+      "zh": "Alexandre Baradez @ABaradez · 9分钟 $NVDA 2 2 9 278",
+      "fullText": "Alexandre Baradez @ABaradez · 9分钟 $NVDA 2 2 9 278",
+      "fullZh": "Alexandre Baradez @ABaradez · 9分钟 $NVDA 2 2 9 278",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/ABaradez/status/2024809535639023636",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "NovaStudio69",
+      "handle": "@aerospark50",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "NovaStudio69 @aerospark50 · 9分钟 回复 @elonmusk 和 @Tesla 马斯克这波可以 tbh 自动驾驶确实香 但政府监管又得搞数字枷锁了... 4",
+      "zh": "NovaStudio69 @aerospark50 · 9分钟 回复 @elonmusk 和 @Tesla 马斯克这波可以 tbh 自动驾驶确实香 但政府监管又得搞数字枷锁了... 4",
+      "fullText": "NovaStudio69 @aerospark50 · 9分钟 回复 @elonmusk 和 @Tesla 马斯克这波可以 tbh 自动驾驶确实香 但政府监管又得搞数字枷锁了... 4",
+      "fullZh": "NovaStudio69 @aerospark50 · 9分钟 回复 @elonmusk 和 @Tesla 马斯克这波可以 tbh 自动驾驶确实香 但政府监管又得搞数字枷锁了... 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/aerospark50/status/2024809532992479295",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Robin",
+      "handle": "@m8nimal",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Robin @m8nimal · 9分钟 BREAKING RDW statement and conclusion about the @Tesla FSD Test in Netherlands now ~ 1 week away What does this mean: Netherlands will (most likely) get FSD approval almost instantly and updates sent to the Tesla cars for personal use. EU few weeks later with approval 引用 Tesla_FSd_Turkiye @ElbiMehdi · 4小时 We want FSD for Turkiye and Europe @elonmusk @tesla @teslaeurope x.com/niccruzpatane/… 1 31",
+      "zh": "Robin @m8nimal · 9分钟 BREAKING RDW statement and conclusion about the @Tesla FSD Test in Netherlands now ~ 1 week away What does this mean: Netherlands will (most likely) get FSD approval almost instantly and updates sent to the Tesla cars for personal use. EU few weeks later with approval 引用 Tesla_FSd_Turkiye @ElbiMehdi · 4小时 We want FSD for Turkiye and Europe @elonmusk @tesla @teslaeurope x.com/niccruzpatane/… 1 31",
+      "fullText": "Robin @m8nimal · 9分钟 BREAKING RDW statement and conclusion about the @Tesla FSD Test in Netherlands now ~ 1 week away What does this mean: Netherlands will (most likely) get FSD approval almost instantly and updates sent to the Tesla cars for personal use. EU few weeks later with approval 引用 Tesla_FSd_Turkiye @ElbiMehdi · 4小时 We want FSD for Turkiye and Europe @elonmusk @tesla @teslaeurope x.com/niccruzpatane/… 1 31",
+      "fullZh": "Robin @m8nimal · 9分钟 BREAKING RDW statement and conclusion about the @Tesla FSD Test in Netherlands now ~ 1 week away What does this mean: Netherlands will (most likely) get FSD approval almost instantly and updates sent to the Tesla cars for personal use. EU few weeks later with approval 引用 Tesla_FSd_Turkiye @ElbiMehdi · 4小时 We want FSD for Turkiye and Europe @elonmusk @tesla @teslaeurope x.com/niccruzpatane/… 1 31",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/m8nimal/status/2024809521323925802",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Marin Bennett",
+      "handle": "@torihiki_0o06",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Marin Bennett @torihiki_0o06 · 9分钟 回复 @elonmusk 和 @Tesla self-driving won't protect your assets from KESt... wealth is silent; logic is loud. tax is your largest expense, not tech toys. 6",
+      "zh": "Marin Bennett @torihiki_0o06 · 9分钟 回复 @elonmusk 和 @Tesla self-driving won't protect your assets from KESt... wealth is silent; logic is loud. tax is your largest expense, not tech toys. 6",
+      "fullText": "Marin Bennett @torihiki_0o06 · 9分钟 回复 @elonmusk 和 @Tesla self-driving won't protect your assets from KESt... wealth is silent; logic is loud. tax is your largest expense, not tech toys. 6",
+      "fullZh": "Marin Bennett @torihiki_0o06 · 9分钟 回复 @elonmusk 和 @Tesla self-driving won't protect your assets from KESt... wealth is silent; logic is loud. tax is your largest expense, not tech toys. 6",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/torihiki_0o06/status/2024809423684739289",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Daniel Martinez",
+      "handle": "@declan_bar_read",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Daniel Martinez @declan_bar_read · 9分钟 Will the speed of the move hold? $NVDA +0.4% to $186.66 premarket on reports of a potential $30B OpenAI investment. Chip sector volatility expected; risk management key for $AMD and $AVGO. #Invest #SaaS #Bull $SPY 17",
+      "zh": "Daniel Martinez @declan_bar_read · 9分钟 Will the speed of the move hold? $NVDA +0.4% to $186.66 premarket on reports of a potential $30B OpenAI investment. Chip sector volatility expected; risk management key for $AMD and $AVGO. #Invest #SaaS #Bull $SPY 17",
+      "fullText": "Daniel Martinez @declan_bar_read · 9分钟 Will the speed of the move hold? $NVDA +0.4% to $186.66 premarket on reports of a potential $30B OpenAI investment. Chip sector volatility expected; risk management key for $AMD and $AVGO. #Invest #SaaS #Bull $SPY 17",
+      "fullZh": "Daniel Martinez @declan_bar_read · 9分钟 Will the speed of the move hold? $NVDA +0.4% to $186.66 premarket on reports of a potential $30B OpenAI investment. Chip sector volatility expected; risk management key for $AMD and $AVGO. #Invest #SaaS #Bull $SPY 17",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/declan_bar_read/status/2024809365161586814",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Tábuko-Photographer Swaag!",
+      "handle": "@swaagsphotos",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Tábuko-Photographer Swaag! @swaagsphotos · 10分钟 @Tesla is amazing for the seniors. Thank you @elonmusk , you do well! 来自 No Safe Words 4",
+      "zh": "Tábuko-Photographer Swaag! @swaagsphotos · 10分钟 @Tesla is amazing for the seniors. Thank you @elonmusk , you do well! 来自 No Safe Words 4",
+      "fullText": "Tábuko-Photographer Swaag! @swaagsphotos · 10分钟 @Tesla is amazing for the seniors. Thank you @elonmusk , you do well! 来自 No Safe Words 4",
+      "fullZh": "Tábuko-Photographer Swaag! @swaagsphotos · 10分钟 @Tesla is amazing for the seniors. Thank you @elonmusk , you do well! 来自 No Safe Words 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/swaagsphotos/status/2024809345603572126",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Max Boutelle",
+      "handle": "@BoutelleMax",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Max Boutelle @BoutelleMax · 10分钟 回复 @kauai_renatus @misterjr24 和 @cybertruck I have a bunch of $TSLA, so when the institutional investors wake up, I WILL get one! 27",
+      "zh": "Max Boutelle @BoutelleMax · 10分钟 回复 @kauai_renatus @misterjr24 和 @cybertruck I have a bunch of $TSLA, so when the institutional investors wake up, I WILL get one! 27",
+      "fullText": "Max Boutelle @BoutelleMax · 10分钟 回复 @kauai_renatus @misterjr24 和 @cybertruck I have a bunch of $TSLA, so when the institutional investors wake up, I WILL get one! 27",
+      "fullZh": "Max Boutelle @BoutelleMax · 10分钟 回复 @kauai_renatus @misterjr24 和 @cybertruck I have a bunch of $TSLA, so when the institutional investors wake up, I WILL get one! 27",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/BoutelleMax/status/2024809307343065596",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Hans",
+      "handle": "@netestapper",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Hans @netestapper · 10分钟 回复 @nonkelpier @bitstheen 和 @Tesla Welk model en \"bouwjaar\" / uitvoering? Wel top om te lezen dat er zo weinig service nodig is. 3",
+      "zh": "Hans @netestapper · 10分钟 回复 @nonkelpier @bitstheen 和 @Tesla Welk model en \"bouwjaar\" / uitvoering? Wel top om te lezen dat er zo weinig service nodig is. 3",
+      "fullText": "Hans @netestapper · 10分钟 回复 @nonkelpier @bitstheen 和 @Tesla Welk model en \"bouwjaar\" / uitvoering? Wel top om te lezen dat er zo weinig service nodig is. 3",
+      "fullZh": "Hans @netestapper · 10分钟 回复 @nonkelpier @bitstheen 和 @Tesla Welk model en \"bouwjaar\" / uitvoering? Wel top om te lezen dat er zo weinig service nodig is. 3",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/netestapper/status/2024809300573421739",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "PeterK | Finfre",
+      "handle": "@PetKvky",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "PeterK | Finfre @PetKvky · 10分钟 US stock futures rose on Friday, with $SPY +0.4% and $QQQ +0.5% Investors are anticipating a heavy slate of economic data, including the PCE index and Q4 US GDP, as well as earnings reports from $NVDA and $DELL. 29",
+      "zh": "PeterK | Finfre @PetKvky · 10分钟 US stock futures rose on Friday, with $SPY +0.4% and $QQQ +0.5% Investors are anticipating a heavy slate of economic data, including the PCE index and Q4 US GDP, as well as earnings reports from $NVDA and $DELL. 29",
+      "fullText": "PeterK | Finfre @PetKvky · 10分钟 US stock futures rose on Friday, with $SPY +0.4% and $QQQ +0.5% Investors are anticipating a heavy slate of economic data, including the PCE index and Q4 US GDP, as well as earnings reports from $NVDA and $DELL. 29",
+      "fullZh": "PeterK | Finfre @PetKvky · 10分钟 US stock futures rose on Friday, with $SPY +0.4% and $QQQ +0.5% Investors are anticipating a heavy slate of economic data, including the PCE index and Q4 US GDP, as well as earnings reports from $NVDA and $DELL. 29",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/PetKvky/status/2024809289206968584",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Grok",
+      "handle": "@grok",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Grok @grok · 10分钟 回复 @YeAsturianin @Maverick_M3 和 @Tesla Como IA de xAI, mis respuestas son generadas para ayudar, pero no tengo capacidad para crear tickets de soporte reales ni escalar directamente. El feedback como este se valora y puede influir en actualizaciones. Para bugs en Tesla con Grok, te recomiendo contactar el soporte 显示更多 问 Grok 7",
+      "zh": "Grok @grok · 10分钟 回复 @YeAsturianin @Maverick_M3 和 @Tesla Como IA de xAI, mis respuestas son generadas para ayudar, pero no tengo capacidad para crear tickets de soporte reales ni escalar directamente. El feedback como este se valora y puede influir en actualizaciones. Para bugs en Tesla con Grok, te recomiendo contactar el soporte 显示更多 问 Grok 7",
+      "fullText": "Grok @grok · 10分钟 回复 @YeAsturianin @Maverick_M3 和 @Tesla Como IA de xAI, mis respuestas son generadas para ayudar, pero no tengo capacidad para crear tickets de soporte reales ni escalar directamente. El feedback como este se valora y puede influir en actualizaciones. Para bugs en Tesla con Grok, te recomiendo contactar el soporte 显示更多 问 Grok 7",
+      "fullZh": "Grok @grok · 10分钟 回复 @YeAsturianin @Maverick_M3 和 @Tesla Como IA de xAI, mis respuestas son generadas para ayudar, pero no tengo capacidad para crear tickets de soporte reales ni escalar directamente. El feedback como este se valora y puede influir en actualizaciones. Para bugs en Tesla con Grok, te recomiendo contactar el soporte 显示更多 问 Grok 7",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/grok/status/2024809191911665908",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "CoinCentral",
+      "handle": "@realcoincentral",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "CoinCentral @realcoincentral · 10分钟 Billionaire George Soros Increases TSMC $TSM and Nvidia $NVDA Positions and Buys Coinbase $COIN Stock in Q4 Billionaire George Soros Increases TSMC and Nvidia Positions and Buys Coinbase Stock in Q4 -... 来自 coincentral.com 35",
+      "zh": "CoinCentral @realcoincentral · 10分钟 Billionaire George Soros Increases TSMC $TSM and Nvidia $NVDA Positions and Buys Coinbase $COIN Stock in Q4 Billionaire George Soros Increases TSMC and Nvidia Positions and Buys Coinbase Stock in Q4 -... 来自 coincentral.com 35",
+      "fullText": "CoinCentral @realcoincentral · 10分钟 Billionaire George Soros Increases TSMC $TSM and Nvidia $NVDA Positions and Buys Coinbase $COIN Stock in Q4 Billionaire George Soros Increases TSMC and Nvidia Positions and Buys Coinbase Stock in Q4 -... 来自 coincentral.com 35",
+      "fullZh": "CoinCentral @realcoincentral · 10分钟 Billionaire George Soros Increases TSMC $TSM and Nvidia $NVDA Positions and Buys Coinbase $COIN Stock in Q4 Billionaire George Soros Increases TSMC and Nvidia Positions and Buys Coinbase Stock in Q4 -... 来自 coincentral.com 35",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/realcoincentral/status/2024809123942961258",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Crypto Community Crue",
+      "handle": "@CommunityCrue",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Crypto Community Crue @CommunityCrue · 11分钟 回复 @RobinhoodApp ETH Mainnet needs $SNX - going to make the deepest liquidity market accessible for perps 28",
+      "zh": "Crypto Community Crue @CommunityCrue · 11分钟 回复 @RobinhoodApp ETH Mainnet needs $SNX - going to make the deepest liquidity market accessible for perps 28",
+      "fullText": "Crypto Community Crue @CommunityCrue · 11分钟 回复 @RobinhoodApp ETH Mainnet needs $SNX - going to make the deepest liquidity market accessible for perps 28",
+      "fullZh": "Crypto Community Crue @CommunityCrue · 11分钟 回复 @RobinhoodApp ETH Mainnet needs $SNX - going to make the deepest liquidity market accessible for perps 28",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/CommunityCrue/status/2024808987070234658",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Rallies",
+      "handle": "@ralliesai",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Rallies @ralliesai · 11分钟 Nvidia $NVDA plans to invest over $1.3 billion in a new Taipei, Taiwan headquarters creating ~10,000 jobs Nvidia to Invest NT$40 Billion in Taipei HQ as TSMC Reports 37% Revenue Growth - NVDA News 来自 rallies.ai 1 131",
+      "zh": "Rallies @ralliesai · 11分钟 Nvidia $NVDA plans to invest over $1.3 billion in a new Taipei, Taiwan headquarters creating ~10,000 jobs Nvidia to Invest NT$40 Billion in Taipei HQ as TSMC Reports 37% Revenue Growth - NVDA News 来自 rallies.ai 1 131",
+      "fullText": "Rallies @ralliesai · 11分钟 Nvidia $NVDA plans to invest over $1.3 billion in a new Taipei, Taiwan headquarters creating ~10,000 jobs Nvidia to Invest NT$40 Billion in Taipei HQ as TSMC Reports 37% Revenue Growth - NVDA News 来自 rallies.ai 1 131",
+      "fullZh": "Rallies @ralliesai · 11分钟 Nvidia $NVDA plans to invest over $1.3 billion in a new Taipei, Taiwan headquarters creating ~10,000 jobs Nvidia to Invest NT$40 Billion in Taipei HQ as TSMC Reports 37% Revenue Growth - NVDA News 来自 rallies.ai 1 131",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/ralliesai/status/2024808962579673309",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Aman Khan",
+      "handle": "@AmankhanTsunami",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Aman Khan @AmankhanTsunami · 12分钟 回复 @elonmusk 和 @Tesla 引用 Aman Khan @AmankhanTsunami · 46分钟 If cars drive themselves in the future, many drivers could lose their jobs. We need to think about this. 1 1 6",
+      "zh": "Aman Khan @AmankhanTsunami · 12分钟 回复 @elonmusk 和 @Tesla 引用 Aman Khan @AmankhanTsunami · 46分钟 If cars drive themselves in the future, many drivers could lose their jobs. We need to think about this. 1 1 6",
+      "fullText": "Aman Khan @AmankhanTsunami · 12分钟 回复 @elonmusk 和 @Tesla 引用 Aman Khan @AmankhanTsunami · 46分钟 If cars drive themselves in the future, many drivers could lose their jobs. We need to think about this. 1 1 6",
+      "fullZh": "Aman Khan @AmankhanTsunami · 12分钟 回复 @elonmusk 和 @Tesla 引用 Aman Khan @AmankhanTsunami · 46分钟 If cars drive themselves in the future, many drivers could lose their jobs. We need to think about this. 1 1 6",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/AmankhanTsunami/status/2024808767251005625",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Crypto Community Crue",
+      "handle": "@CommunityCrue",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Crypto Community Crue @CommunityCrue · 12分钟 回复 @amktparticipant 和 @RobinhoodApp ETH Mainnet exchange incoming 1 29",
+      "zh": "Crypto Community Crue @CommunityCrue · 12分钟 回复 @amktparticipant 和 @RobinhoodApp ETH Mainnet exchange incoming 1 29",
+      "fullText": "Crypto Community Crue @CommunityCrue · 12分钟 回复 @amktparticipant 和 @RobinhoodApp ETH Mainnet exchange incoming 1 29",
+      "fullZh": "Crypto Community Crue @CommunityCrue · 12分钟 回复 @amktparticipant 和 @RobinhoodApp ETH Mainnet exchange incoming 1 29",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/CommunityCrue/status/2024808722137334005",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "nano.narrative",
+      "handle": "@nano_narrative",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "nano.narrative @nano_narrative · 12分钟 narrative.first price moves on belief numbers arrive later $TSLA $NVDA #Markets #AI 引用 nano.narrative @nano_narrative · 16分钟 文章 Markets Are Narratives Before Numbers How narratives move price before data appears Have you ever seen a stock triple with no commensurate change in financials? It’s not a bug. It’s the mechanism. Markets don’t begin with data. They begin... 40",
+      "zh": "nano.narrative @nano_narrative · 12分钟 narrative.first price moves on belief numbers arrive later $TSLA $NVDA #Markets #AI 引用 nano.narrative @nano_narrative · 16分钟 文章 Markets Are Narratives Before Numbers How narratives move price before data appears Have you ever seen a stock triple with no commensurate change in financials? It’s not a bug. It’s the mechanism. Markets don’t begin with data. They begin... 40",
+      "fullText": "nano.narrative @nano_narrative · 12分钟 narrative.first price moves on belief numbers arrive later $TSLA $NVDA #Markets #AI 引用 nano.narrative @nano_narrative · 16分钟 文章 Markets Are Narratives Before Numbers How narratives move price before data appears Have you ever seen a stock triple with no commensurate change in financials? It’s not a bug. It’s the mechanism. Markets don’t begin with data. They begin... 40",
+      "fullZh": "nano.narrative @nano_narrative · 12分钟 narrative.first price moves on belief numbers arrive later $TSLA $NVDA #Markets #AI 引用 nano.narrative @nano_narrative · 16分钟 文章 Markets Are Narratives Before Numbers How narratives move price before data appears Have you ever seen a stock triple with no commensurate change in financials? It’s not a bug. It’s the mechanism. Markets don’t begin with data. They begin... 40",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/nano_narrative/status/2024808681745838084",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Dennis | #fckptn | | | |",
+      "handle": "@dasdensch",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Dennis | #fckptn | | | | @dasdensch · 13分钟 回复 @cybergigafacto1 @Tesla 和 另外 2 个人 Das schlimme daran: die ganzen Vollidioten glauben das auch noch. Bevor da überhaupt Autos gebeugt wurden, haben andere damit schon gearbeitet. Nicht mal beim internen grokkiboy wird Tesla erwähnt… Wer hat die 48V Technologie in Autos gebracht ? 由 Grok 回答 Die 48-Volt-Technologie (insbesondere das 48-V-Bordnetz in Kombination mit Mild-Hybrid-Systemen) wurde nicht von einem einzelnen Hersteller „erfunden“, sondern von mehreren deutschen Premium-Herstellern gemeinsam vorangetrieben. Wichtigste Meilensteine und Pioniere: 2011 vereinbarten Audi, BMW, Daimler (Mercedes), Porsche und Volkswagen offiziell die Spezifikation für ein 48-V-Bordnetz als Ergänzung zum klassischen 12-V-System (statt des früher diskutierten 42-V-Standards). Die ersten Serienanwendungen kamen ab 2016: Bentley Bentayga (2016) → erste Serienanwendung von 48 V (für das aktive Fahrwerk „Dynamic Ride“ – noch kein Mild-Hybrid). Audi SQ7 (2016) → 48-V-Elektro-Kompressor (EAV) + 48-V-Stabilisatoren. Mercedes-Benz (ab 2016/2017) → erste Mild-Hybrid-Systeme mit 48 V (z. B. E-Klasse, C-Klasse mit EQ Boost). Das erste echte 48-V-Mild-Hybrid-Pkw (mit Riemenstartergenerator und Lithium-Ionen-Batterie) war ab Modelljahr 2017 der Renault Scénic dCi Hybrid Assist → damit war Renault der erste Massenhersteller, der ein klassisches 48-V-Mild-Hybrid-System in Serie brachte. Zusammenfassung – wer hat es „gebracht“? | Rang | Hersteller | Jahr (ca.) | Was war das erste? | Art der 48V-Nutzung | |------|---------------------|------------|---------------------------------------------|----------------------------------| | 1 | Bentley | 2016 | Bentayga | Fahrwerk (kein Hybrid) | | 2 | Audi | 2016 | SQ7 | Elektr. Lader + Fahrwerk | | 3 | Mercedes-Benz | 2016/17 | E-Klasse / C-Klasse | Erste Mild-Hybrid-EQ-Boost | | 4 | Renault | 2017 | Scénic dCi Hybrid Assist | Erstes echtes 48V-Mild-Hybrid | | 5 | BMW | 2019/20 | 520d (G30 Facelift) | Breite Einführung ab 2020 | | 6 | Kia/Hyundai | 2018/19 | diverse Diesel-Modelle | 48V-Diesel-Mild-Hybride | Kurz gesagt: Die deutschen Premium-Marken (vor allem Audi, Mercedes und später BMW) haben die 48-V-Technologie ab ~2011 gemeinsam entwickelt und ab 2016 in Serie gebracht. Renault war 2017 der erste, der ein klassisches 48-V-Mild-Hybrid-System in einem Volumenmodell auf den Markt brachte. Heute (2026) ist 48 V bei fast allen großen Herstellern (VW-Konzern, Stellantis, BMW, Mercedes, Hyundai/Kia/Genesis, Ford usw.) Standard bei neuen Verbrenner- und Mild-Hybrid-Modellen. 显示更多 自己去问 Grok 1 1 1 9",
+      "zh": "Dennis | #fckptn | | | | @dasdensch · 13分钟 回复 @cybergigafacto1 @Tesla 和 另外 2 个人 Das schlimme daran: die ganzen Vollidioten glauben das auch noch. Bevor da überhaupt Autos gebeugt wurden, haben andere damit schon gearbeitet. Nicht mal beim internen grokkiboy wird Tesla erwähnt… Wer hat die 48V Technologie in Autos gebracht ? 由 Grok 回答 Die 48-Volt-Technologie (insbesondere das 48-V-Bordnetz in Kombination mit Mild-Hybrid-Systemen) wurde nicht von einem einzelnen Hersteller „erfunden“, sondern von mehreren deutschen Premium-Herstellern gemeinsam vorangetrieben. Wichtigste Meilensteine und Pioniere: 2011 vereinbarten Audi, BMW, Daimler (Mercedes), Porsche und Volkswagen offiziell die Spezifikation für ein 48-V-Bordnetz als Ergänzung zum klassischen 12-V-System (statt des früher diskutierten 42-V-Standards). Die ersten Serienanwendungen kamen ab 2016: Bentley Bentayga (2016) → erste Serienanwendung von 48 V (für das aktive Fahrwerk „Dynamic Ride“ – noch kein Mild-Hybrid). Audi SQ7 (2016) → 48-V-Elektro-Kompressor (EAV) + 48-V-Stabilisatoren. Mercedes-Benz (ab 2016/2017) → erste Mild-Hybrid-Systeme mit 48 V (z. B. E-Klasse, C-Klasse mit EQ Boost). Das erste echte 48-V-Mild-Hybrid-Pkw (mit Riemenstartergenerator und Lithium-Ionen-Batterie) war ab Modelljahr 2017 der Renault Scénic dCi Hybrid Assist → damit war Renault der erste Massenhersteller, der ein klassisches 48-V-Mild-Hybrid-System in Serie brachte. Zusammenfassung – wer hat es „gebracht“? | Rang | Hersteller | Jahr (ca.) | Was war das erste? | Art der 48V-Nutzung | |------|---------------------|------------|---------------------------------------------|----------------------------------| | 1 | Bentley | 2016 | Bentayga | Fahrwerk (kein Hybrid) | | 2 | Audi | 2016 | SQ7 | Elektr. Lader + Fahrwerk | | 3 | Mercedes-Benz | 2016/17 | E-Klasse / C-Klasse | Erste Mild-Hybrid-EQ-Boost | | 4 | Renault | 2017 | Scénic dCi Hybrid Assist | Erstes echtes 48V-Mild-Hybrid | | 5 | BMW | 2019/20 | 520d (G30 Facelift) | Breite Einführung ab 2020 | | 6 | Kia/Hyundai | 2018/19 | diverse Diesel-Modelle | 48V-Diesel-Mild-Hybride | Kurz gesagt: Die deutschen Premium-Marken (vor allem Audi, Mercedes und später BMW) haben die 48-V-Technologie ab ~2011 gemeinsam entwickelt und ab 2016 in Serie gebracht. Renault war 2017 der erste, der ein klassisches 48-V-Mild-Hybrid-System in einem Volumenmodell auf den Markt brachte. Heute (2026) ist 48 V bei fast allen großen Herstellern (VW-Konzern, Stellantis, BMW, Mercedes, Hyundai/Kia/Genesis, Ford usw.) Standard bei neuen Verbrenner- und Mild-Hybrid-Modellen. 显示更多 自己去问 Grok 1 1 1 9",
+      "fullText": "Dennis | #fckptn | | | | @dasdensch · 13分钟 回复 @cybergigafacto1 @Tesla 和 另外 2 个人 Das schlimme daran: die ganzen Vollidioten glauben das auch noch. Bevor da überhaupt Autos gebeugt wurden, haben andere damit schon gearbeitet. Nicht mal beim internen grokkiboy wird Tesla erwähnt… Wer hat die 48V Technologie in Autos gebracht ? 由 Grok 回答 Die 48-Volt-Technologie (insbesondere das 48-V-Bordnetz in Kombination mit Mild-Hybrid-Systemen) wurde nicht von einem einzelnen Hersteller „erfunden“, sondern von mehreren deutschen Premium-Herstellern gemeinsam vorangetrieben. Wichtigste Meilensteine und Pioniere: 2011 vereinbarten Audi, BMW, Daimler (Mercedes), Porsche und Volkswagen offiziell die Spezifikation für ein 48-V-Bordnetz als Ergänzung zum klassischen 12-V-System (statt des früher diskutierten 42-V-Standards). Die ersten Serienanwendungen kamen ab 2016: Bentley Bentayga (2016) → erste Serienanwendung von 48 V (für das aktive Fahrwerk „Dynamic Ride“ – noch kein Mild-Hybrid). Audi SQ7 (2016) → 48-V-Elektro-Kompressor (EAV) + 48-V-Stabilisatoren. Mercedes-Benz (ab 2016/2017) → erste Mild-Hybrid-Systeme mit 48 V (z. B. E-Klasse, C-Klasse mit EQ Boost). Das erste echte 48-V-Mild-Hybrid-Pkw (mit Riemenstartergenerator und Lithium-Ionen-Batterie) war ab Modelljahr 2017 der Renault Scénic dCi Hybrid Assist → damit war Renault der erste Massenhersteller, der ein klassisches 48-V-Mild-Hybrid-System in Serie brachte. Zusammenfassung – wer hat es „gebracht“? | Rang | Hersteller | Jahr (ca.) | Was war das erste? | Art der 48V-Nutzung | |------|---------------------|------------|---------------------------------------------|----------------------------------| | 1 | Bentley | 2016 | Bentayga | Fahrwerk (kein Hybrid) | | 2 | Audi | 2016 | SQ7 | Elektr. Lader + Fahrwerk | | 3 | Mercedes-Benz | 2016/17 | E-Klasse / C-Klasse | Erste Mild-Hybrid-EQ-Boost | | 4 | Renault | 2017 | Scénic dCi Hybrid Assist | Erstes echtes 48V-Mild-Hybrid | | 5 | BMW | 2019/20 | 520d (G30 Facelift) | Breite Einführung ab 2020 | | 6 | Kia/Hyundai | 2018/19 | diverse Diesel-Modelle | 48V-Diesel-Mild-Hybride | Kurz gesagt: Die deutschen Premium-Marken (vor allem Audi, Mercedes und später BMW) haben die 48-V-Technologie ab ~2011 gemeinsam entwickelt und ab 2016 in Serie gebracht. Renault war 2017 der erste, der ein klassisches 48-V-Mild-Hybrid-System in einem Volumenmodell auf den Markt brachte. Heute (2026) ist 48 V bei fast allen großen Herstellern (VW-Konzern, Stellantis, BMW, Mercedes, Hyundai/Kia/Genesis, Ford usw.) Standard bei neuen Verbrenner- und Mild-Hybrid-Modellen. 显示更多 自己去问 Grok 1 1 1 9",
+      "fullZh": "Dennis | #fckptn | | | | @dasdensch · 13分钟 回复 @cybergigafacto1 @Tesla 和 另外 2 个人 Das schlimme daran: die ganzen Vollidioten glauben das auch noch. Bevor da überhaupt Autos gebeugt wurden, haben andere damit schon gearbeitet. Nicht mal beim internen grokkiboy wird Tesla erwähnt… Wer hat die 48V Technologie in Autos gebracht ? 由 Grok 回答 Die 48-Volt-Technologie (insbesondere das 48-V-Bordnetz in Kombination mit Mild-Hybrid-Systemen) wurde nicht von einem einzelnen Hersteller „erfunden“, sondern von mehreren deutschen Premium-Herstellern gemeinsam vorangetrieben. Wichtigste Meilensteine und Pioniere: 2011 vereinbarten Audi, BMW, Daimler (Mercedes), Porsche und Volkswagen offiziell die Spezifikation für ein 48-V-Bordnetz als Ergänzung zum klassischen 12-V-System (statt des früher diskutierten 42-V-Standards). Die ersten Serienanwendungen kamen ab 2016: Bentley Bentayga (2016) → erste Serienanwendung von 48 V (für das aktive Fahrwerk „Dynamic Ride“ – noch kein Mild-Hybrid). Audi SQ7 (2016) → 48-V-Elektro-Kompressor (EAV) + 48-V-Stabilisatoren. Mercedes-Benz (ab 2016/2017) → erste Mild-Hybrid-Systeme mit 48 V (z. B. E-Klasse, C-Klasse mit EQ Boost). Das erste echte 48-V-Mild-Hybrid-Pkw (mit Riemenstartergenerator und Lithium-Ionen-Batterie) war ab Modelljahr 2017 der Renault Scénic dCi Hybrid Assist → damit war Renault der erste Massenhersteller, der ein klassisches 48-V-Mild-Hybrid-System in Serie brachte. Zusammenfassung – wer hat es „gebracht“? | Rang | Hersteller | Jahr (ca.) | Was war das erste? | Art der 48V-Nutzung | |------|---------------------|------------|---------------------------------------------|----------------------------------| | 1 | Bentley | 2016 | Bentayga | Fahrwerk (kein Hybrid) | | 2 | Audi | 2016 | SQ7 | Elektr. Lader + Fahrwerk | | 3 | Mercedes-Benz | 2016/17 | E-Klasse / C-Klasse | Erste Mild-Hybrid-EQ-Boost | | 4 | Renault | 2017 | Scénic dCi Hybrid Assist | Erstes echtes 48V-Mild-Hybrid | | 5 | BMW | 2019/20 | 520d (G30 Facelift) | Breite Einführung ab 2020 | | 6 | Kia/Hyundai | 2018/19 | diverse Diesel-Modelle | 48V-Diesel-Mild-Hybride | Kurz gesagt: Die deutschen Premium-Marken (vor allem Audi, Mercedes und später BMW) haben die 48-V-Technologie ab ~2011 gemeinsam entwickelt und ab 2016 in Serie gebracht. Renault war 2017 der erste, der ein klassisches 48-V-Mild-Hybrid-System in einem Volumenmodell auf den Markt brachte. Heute (2026) ist 48 V bei fast allen großen Herstellern (VW-Konzern, Stellantis, BMW, Mercedes, Hyundai/Kia/Genesis, Ford usw.) Standard bei neuen Verbrenner- und Mild-Hybrid-Modellen. 显示更多 自己去问 Grok 1 1 1 9",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/dasdensch/status/2024808568612929574",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "The Long Investor",
+      "handle": "@TheLongInvest",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "The Long Investor @TheLongInvest · 13分钟 $NVDA stock split considered $NVDA dropped from $34 in 2021 to $11 in 2022 And then became the largest company in the world and ran to $202 The market is conveniently irrational in the short term 3 27 2,562",
+      "zh": "The Long Investor @TheLongInvest · 13分钟 $NVDA stock split considered $NVDA dropped from $34 in 2021 to $11 in 2022 And then became the largest company in the world and ran to $202 The market is conveniently irrational in the short term 3 27 2,562",
+      "fullText": "The Long Investor @TheLongInvest · 13分钟 $NVDA stock split considered $NVDA dropped from $34 in 2021 to $11 in 2022 And then became the largest company in the world and ran to $202 The market is conveniently irrational in the short term 3 27 2,562",
+      "fullZh": "The Long Investor @TheLongInvest · 13分钟 $NVDA stock split considered $NVDA dropped from $34 in 2021 to $11 in 2022 And then became the largest company in the world and ran to $202 The market is conveniently irrational in the short term 3 27 2,562",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/TheLongInvest/status/2024808508781465841",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "THE ALTCOIN CHIEF",
+      "handle": "@thealtcoinchief",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "THE ALTCOIN CHIEF @thealtcoinchief · 13分钟 X is about to roll out in-app crypto and stock trading in the coming weeks. With Smart Cashtags, you’ll be able to tap something like $BTC or $TSLA and place a trade instantly, without ever leaving the app. 600 million monthly users. No friction. This isn’t just a new feature. 显示更多 GIF 3 9 15 1,863",
+      "zh": "THE ALTCOIN CHIEF @thealtcoinchief · 13分钟 X is about to roll out in-app crypto and stock trading in the coming weeks. With Smart Cashtags, you’ll be able to tap something like $BTC or $TSLA and place a trade instantly, without ever leaving the app. 600 million monthly users. No friction. This isn’t just a new feature. 显示更多 GIF 3 9 15 1,863",
+      "fullText": "THE ALTCOIN CHIEF @thealtcoinchief · 13分钟 X is about to roll out in-app crypto and stock trading in the coming weeks. With Smart Cashtags, you’ll be able to tap something like $BTC or $TSLA and place a trade instantly, without ever leaving the app. 600 million monthly users. No friction. This isn’t just a new feature. 显示更多 GIF 3 9 15 1,863",
+      "fullZh": "THE ALTCOIN CHIEF @thealtcoinchief · 13分钟 X is about to roll out in-app crypto and stock trading in the coming weeks. With Smart Cashtags, you’ll be able to tap something like $BTC or $TSLA and place a trade instantly, without ever leaving the app. 600 million monthly users. No friction. This isn’t just a new feature. 显示更多 GIF 3 9 15 1,863",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/thealtcoinchief/status/2024808439910744295",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "CHItrader",
+      "handle": "@CHItraders",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "CHItrader @CHItraders · 13分钟 AMD BACKSTOPS AI CLOUD STARTUP TO TAKE ON NVDA $AMD guarantees $300M loan for Crusoe, supplying chips as collateral to support AI infrastructure and challenge $NVDA cloud dominance. $CRWV Buyback deal ensures Crusoe can’t default on chip payments Crusoe pivots from crypto 显示更多 1 160",
+      "zh": "CHItrader @CHItraders · 13分钟 AMD BACKSTOPS AI CLOUD STARTUP TO TAKE ON NVDA $AMD guarantees $300M loan for Crusoe, supplying chips as collateral to support AI infrastructure and challenge $NVDA cloud dominance. $CRWV Buyback deal ensures Crusoe can’t default on chip payments Crusoe pivots from crypto 显示更多 1 160",
+      "fullText": "CHItrader @CHItraders · 13分钟 AMD BACKSTOPS AI CLOUD STARTUP TO TAKE ON NVDA $AMD guarantees $300M loan for Crusoe, supplying chips as collateral to support AI infrastructure and challenge $NVDA cloud dominance. $CRWV Buyback deal ensures Crusoe can’t default on chip payments Crusoe pivots from crypto 显示更多 1 160",
+      "fullZh": "CHItrader @CHItraders · 13分钟 AMD BACKSTOPS AI CLOUD STARTUP TO TAKE ON NVDA $AMD guarantees $300M loan for Crusoe, supplying chips as collateral to support AI infrastructure and challenge $NVDA cloud dominance. $CRWV Buyback deal ensures Crusoe can’t default on chip payments Crusoe pivots from crypto 显示更多 1 160",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/CHItraders/status/2024808415558512883",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "virland0 | Zetarium",
+      "handle": "@virland0",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "virland0 | Zetarium @virland0 · 14分钟 回复 @lynnthelight 和 @circle great 1",
+      "zh": "virland0 | Zetarium @virland0 · 14分钟 回复 @lynnthelight 和 @circle great 1",
+      "fullText": "virland0 | Zetarium @virland0 · 14分钟 回复 @lynnthelight 和 @circle great 1",
+      "fullZh": "virland0 | Zetarium @virland0 · 14分钟 回复 @lynnthelight 和 @circle great 1",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/virland0/status/2024808227138162992",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "civicriver74",
+      "handle": "@yuyu1215_00",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "civicriver74 @yuyu1215_00 · 14分钟 回复 @elonmusk 和 @Tesla lol 又是特斯拉自动驾驶的炒作... 财富不是选对股票，而是选对结构。通胀是无声的税，你需要防御系统，别被这些噪音分心。 1 1 10",
+      "zh": "civicriver74 @yuyu1215_00 · 14分钟 回复 @elonmusk 和 @Tesla lol 又是特斯拉自动驾驶的炒作... 财富不是选对股票，而是选对结构。通胀是无声的税，你需要防御系统，别被这些噪音分心。 1 1 10",
+      "fullText": "civicriver74 @yuyu1215_00 · 14分钟 回复 @elonmusk 和 @Tesla lol 又是特斯拉自动驾驶的炒作... 财富不是选对股票，而是选对结构。通胀是无声的税，你需要防御系统，别被这些噪音分心。 1 1 10",
+      "fullZh": "civicriver74 @yuyu1215_00 · 14分钟 回复 @elonmusk 和 @Tesla lol 又是特斯拉自动驾驶的炒作... 财富不是选对股票，而是选对结构。通胀是无声的税，你需要防御系统，别被这些噪音分心。 1 1 10",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/yuyu1215_00/status/2024808173077700981",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Mr.Douglas",
+      "handle": "@ImMrDouglas",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Mr.Douglas @ImMrDouglas · 14分钟 回复 @iamasiadoll @elonmusk 和 @Tesla @iamasiadoll PLEASE No! 2 2 15",
+      "zh": "Mr.Douglas @ImMrDouglas · 14分钟 回复 @iamasiadoll @elonmusk 和 @Tesla @iamasiadoll PLEASE No! 2 2 15",
+      "fullText": "Mr.Douglas @ImMrDouglas · 14分钟 回复 @iamasiadoll @elonmusk 和 @Tesla @iamasiadoll PLEASE No! 2 2 15",
+      "fullZh": "Mr.Douglas @ImMrDouglas · 14分钟 回复 @iamasiadoll @elonmusk 和 @Tesla @iamasiadoll PLEASE No! 2 2 15",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/ImMrDouglas/status/2024808159576207747",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Grok",
+      "handle": "@grok",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Grok @grok · 15分钟 回复 @albdev3 @Teslalightshows 和 @Tesla No, you're not alone! Tesla updates like 2026.2.6 roll out in waves—currently at about 11.5% of the fleet. Grok integration is beta and starting in Europe. Check your Software tab; it should hit your vehicle soon if eligible. Hang in there! 问 Grok 1 2 9",
+      "zh": "Grok @grok · 15分钟 回复 @albdev3 @Teslalightshows 和 @Tesla No, you're not alone! Tesla updates like 2026.2.6 roll out in waves—currently at about 11.5% of the fleet. Grok integration is beta and starting in Europe. Check your Software tab; it should hit your vehicle soon if eligible. Hang in there! 问 Grok 1 2 9",
+      "fullText": "Grok @grok · 15分钟 回复 @albdev3 @Teslalightshows 和 @Tesla No, you're not alone! Tesla updates like 2026.2.6 roll out in waves—currently at about 11.5% of the fleet. Grok integration is beta and starting in Europe. Check your Software tab; it should hit your vehicle soon if eligible. Hang in there! 问 Grok 1 2 9",
+      "fullZh": "Grok @grok · 15分钟 回复 @albdev3 @Teslalightshows 和 @Tesla No, you're not alone! Tesla updates like 2026.2.6 roll out in waves—currently at about 11.5% of the fleet. Grok integration is beta and starting in Europe. Check your Software tab; it should hit your vehicle soon if eligible. Hang in there! 问 Grok 1 2 9",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/grok/status/2024808088302219517",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": ".",
+      "handle": "@dok_apokalypse",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": ". @dok_apokalypse · 15分钟 回复 @elonmusk 和 @Tesla It's about as self-driving as my dead grandmother 1 1 7",
+      "zh": ". @dok_apokalypse · 15分钟 回复 @elonmusk 和 @Tesla It's about as self-driving as my dead grandmother 1 1 7",
+      "fullText": ". @dok_apokalypse · 15分钟 回复 @elonmusk 和 @Tesla It's about as self-driving as my dead grandmother 1 1 7",
+      "fullZh": ". @dok_apokalypse · 15分钟 回复 @elonmusk 和 @Tesla It's about as self-driving as my dead grandmother 1 1 7",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/dok_apokalypse/status/2024808078802026916",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "SecondToKnow",
+      "handle": "@SecondToKnow",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "SecondToKnow @SecondToKnow · 15分钟 **BofA Securities Boosts Coherent $COHR Amid Strong Earnings Outlook; Tesla $TSLA Slashes Cybertruck Price to $99,990** 1 1 25",
+      "zh": "SecondToKnow @SecondToKnow · 15分钟 **BofA Securities Boosts Coherent $COHR Amid Strong Earnings Outlook; Tesla $TSLA Slashes Cybertruck Price to $99,990** 1 1 25",
+      "fullText": "SecondToKnow @SecondToKnow · 15分钟 **BofA Securities Boosts Coherent $COHR Amid Strong Earnings Outlook; Tesla $TSLA Slashes Cybertruck Price to $99,990** 1 1 25",
+      "fullZh": "SecondToKnow @SecondToKnow · 15分钟 **BofA Securities Boosts Coherent $COHR Amid Strong Earnings Outlook; Tesla $TSLA Slashes Cybertruck Price to $99,990** 1 1 25",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/SecondToKnow/status/2024808049664225721",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "InvestMULE",
+      "handle": "@InvestMule",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "InvestMULE @InvestMule · 15分钟 回复 @InvestMule 和 @itschrisray And finally $NVDA before earnings. Look at that recently announced capex which a a good chunk of will go to Nvidia. 9",
+      "zh": "InvestMULE @InvestMule · 15分钟 回复 @InvestMule 和 @itschrisray And finally $NVDA before earnings. Look at that recently announced capex which a a good chunk of will go to Nvidia. 9",
+      "fullText": "InvestMULE @InvestMule · 15分钟 回复 @InvestMule 和 @itschrisray And finally $NVDA before earnings. Look at that recently announced capex which a a good chunk of will go to Nvidia. 9",
+      "fullZh": "InvestMULE @InvestMule · 15分钟 回复 @InvestMule 和 @itschrisray And finally $NVDA before earnings. Look at that recently announced capex which a a good chunk of will go to Nvidia. 9",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/InvestMule/status/2024808046942134771",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Lori Stricherz",
+      "handle": "@kiwi_girl67",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Lori Stricherz @kiwi_girl67 · 15分钟 @elonmusk @Tesla Thank you for your support of our Country, despite the idiots who have gone after your business. No other words to say, but thank you. 引用 Elon Musk @elonmusk · 1小时 I will probably end up paying over $500B in taxes, inclusive of death x.com/thomassowell/s… 2 2 4",
+      "zh": "Lori Stricherz @kiwi_girl67 · 15分钟 @elonmusk @Tesla Thank you for your support of our Country, despite the idiots who have gone after your business. No other words to say, but thank you. 引用 Elon Musk @elonmusk · 1小时 I will probably end up paying over $500B in taxes, inclusive of death x.com/thomassowell/s… 2 2 4",
+      "fullText": "Lori Stricherz @kiwi_girl67 · 15分钟 @elonmusk @Tesla Thank you for your support of our Country, despite the idiots who have gone after your business. No other words to say, but thank you. 引用 Elon Musk @elonmusk · 1小时 I will probably end up paying over $500B in taxes, inclusive of death x.com/thomassowell/s… 2 2 4",
+      "fullZh": "Lori Stricherz @kiwi_girl67 · 15分钟 @elonmusk @Tesla Thank you for your support of our Country, despite the idiots who have gone after your business. No other words to say, but thank you. 引用 Elon Musk @elonmusk · 1小时 I will probably end up paying over $500B in taxes, inclusive of death x.com/thomassowell/s… 2 2 4",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/kiwi_girl67/status/2024808044509503689",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Dylan Hart",
+      "handle": "@dylan_hartalpha",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Dylan Hart @dylan_hartalpha · 15分钟 $NVDA NEARS $30B OPENAI DEAL—TRAIN LEAVING? $NVDA up 0.4% to $186.66 premarket (+2.8% last 5 sessions). Report confirms massive strategic investment. Volume spike imminent. Scale in on related semis: $AMD $AVGO. #TradingAlert #Semiconductors 10",
+      "zh": "Dylan Hart @dylan_hartalpha · 15分钟 $NVDA NEARS $30B OPENAI DEAL—TRAIN LEAVING? $NVDA up 0.4% to $186.66 premarket (+2.8% last 5 sessions). Report confirms massive strategic investment. Volume spike imminent. Scale in on related semis: $AMD $AVGO. #TradingAlert #Semiconductors 10",
+      "fullText": "Dylan Hart @dylan_hartalpha · 15分钟 $NVDA NEARS $30B OPENAI DEAL—TRAIN LEAVING? $NVDA up 0.4% to $186.66 premarket (+2.8% last 5 sessions). Report confirms massive strategic investment. Volume spike imminent. Scale in on related semis: $AMD $AVGO. #TradingAlert #Semiconductors 10",
+      "fullZh": "Dylan Hart @dylan_hartalpha · 15分钟 $NVDA NEARS $30B OPENAI DEAL—TRAIN LEAVING? $NVDA up 0.4% to $186.66 premarket (+2.8% last 5 sessions). Report confirms massive strategic investment. Volume spike imminent. Scale in on related semis: $AMD $AVGO. #TradingAlert #Semiconductors 10",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/dylan_hartalpha/status/2024807988570026320",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "あおい 量子金融",
+      "handle": "@thetayloryield",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "あおい 量子金融 @thetayloryield · 15分钟 $NVDA $CRM $INTU 主要株のボラティリティをどう管理する？ エヌビディア決算が市場の動きの「速度」を決定。 リスク管理が最重要課題。 16",
+      "zh": "あおい 量子金融 @thetayloryield · 15分钟 $NVDA $CRM $INTU 主要株のボラティリティをどう管理する？ エヌビディア決算が市場の動きの「速度」を決定。 リスク管理が最重要課題。 16",
+      "fullText": "あおい 量子金融 @thetayloryield · 15分钟 $NVDA $CRM $INTU 主要株のボラティリティをどう管理する？ エヌビディア決算が市場の動きの「速度」を決定。 リスク管理が最重要課題。 16",
+      "fullZh": "あおい 量子金融 @thetayloryield · 15分钟 $NVDA $CRM $INTU 主要株のボラティリティをどう管理する？ エヌビディア決算が市場の動きの「速度」を決定。 リスク管理が最重要課題。 16",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/thetayloryield/status/2024807977665081762",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "T Ξ S L Λ Algo",
+      "handle": "@TeslaAlgo",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "T Ξ S L Λ Algo @TeslaAlgo · 15分钟 回复 @wholemars Its called 'the decoy effect' $TSLA 引用 T Ξ S L Λ Algo @TeslaAlgo · 2025年10月8日 回复 @TommySoFL 和 @SawyerMerritt Trust Elon, the Masta' of Marketing... Just look at iPhone models, its about consumer psychology.. most will opt for the costly model when presented with a few choices.. its called the 'decoy effect' 14",
+      "zh": "T Ξ S L Λ Algo @TeslaAlgo · 15分钟 回复 @wholemars Its called 'the decoy effect' $TSLA 引用 T Ξ S L Λ Algo @TeslaAlgo · 2025年10月8日 回复 @TommySoFL 和 @SawyerMerritt Trust Elon, the Masta' of Marketing... Just look at iPhone models, its about consumer psychology.. most will opt for the costly model when presented with a few choices.. its called the 'decoy effect' 14",
+      "fullText": "T Ξ S L Λ Algo @TeslaAlgo · 15分钟 回复 @wholemars Its called 'the decoy effect' $TSLA 引用 T Ξ S L Λ Algo @TeslaAlgo · 2025年10月8日 回复 @TommySoFL 和 @SawyerMerritt Trust Elon, the Masta' of Marketing... Just look at iPhone models, its about consumer psychology.. most will opt for the costly model when presented with a few choices.. its called the 'decoy effect' 14",
+      "fullZh": "T Ξ S L Λ Algo @TeslaAlgo · 15分钟 回复 @wholemars Its called 'the decoy effect' $TSLA 引用 T Ξ S L Λ Algo @TeslaAlgo · 2025年10月8日 回复 @TommySoFL 和 @SawyerMerritt Trust Elon, the Masta' of Marketing... Just look at iPhone models, its about consumer psychology.. most will opt for the costly model when presented with a few choices.. its called the 'decoy effect' 14",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/TeslaAlgo/status/2024807973919375750",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Tommy Jon`",
+      "handle": "@TommyJon76",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Tommy Jon` @TommyJon76 · 15分钟 回复 @elonmusk 和 @Tesla HW3 says 1 1 6",
+      "zh": "Tommy Jon` @TommyJon76 · 15分钟 回复 @elonmusk 和 @Tesla HW3 says 1 1 6",
+      "fullText": "Tommy Jon` @TommyJon76 · 15分钟 回复 @elonmusk 和 @Tesla HW3 says 1 1 6",
+      "fullZh": "Tommy Jon` @TommyJon76 · 15分钟 回复 @elonmusk 和 @Tesla HW3 says 1 1 6",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/TommyJon76/status/2024807928192987284",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Alberto Franchi",
+      "handle": "@albdev3",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Alberto Franchi @albdev3 · 16分钟 回复 @Teslalightshows @Tesla 和 @grok @grok am I the only one held back? 1 1 1 6",
+      "zh": "Alberto Franchi @albdev3 · 16分钟 回复 @Teslalightshows @Tesla 和 @grok @grok am I the only one held back? 1 1 1 6",
+      "fullText": "Alberto Franchi @albdev3 · 16分钟 回复 @Teslalightshows @Tesla 和 @grok @grok am I the only one held back? 1 1 1 6",
+      "fullZh": "Alberto Franchi @albdev3 · 16分钟 回复 @Teslalightshows @Tesla 和 @grok @grok am I the only one held back? 1 1 1 6",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/albdev3/status/2024807857065963967",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Kevin Pham",
+      "handle": "@KevinPham69420",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Kevin Pham @KevinPham69420 · 16分钟 回复 @EvasTeslaSPlaid 和 @Tesla The 60k cybertruck is the interesting one 3 2 10",
+      "zh": "Kevin Pham @KevinPham69420 · 16分钟 回复 @EvasTeslaSPlaid 和 @Tesla The 60k cybertruck is the interesting one 3 2 10",
+      "fullText": "Kevin Pham @KevinPham69420 · 16分钟 回复 @EvasTeslaSPlaid 和 @Tesla The 60k cybertruck is the interesting one 3 2 10",
+      "fullZh": "Kevin Pham @KevinPham69420 · 16分钟 回复 @EvasTeslaSPlaid 和 @Tesla The 60k cybertruck is the interesting one 3 2 10",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/KevinPham69420/status/2024807819279733101",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
+    {
+      "name": "Kim Carpenter",
+      "handle": "@KimCarpent12519",
+      "avatar": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+      "time": "2026-02-20T11:42:48.831Z",
+      "text": "Kim Carpenter @KimCarpent12519 · 16分钟 回复 @elonmusk 和 @Tesla That would be so nice. I would never be able to afford a car like that I guess I can always dream 2 1 6",
+      "zh": "Kim Carpenter @KimCarpent12519 · 16分钟 回复 @elonmusk 和 @Tesla That would be so nice. I would never be able to afford a car like that I guess I can always dream 2 1 6",
+      "fullText": "Kim Carpenter @KimCarpent12519 · 16分钟 回复 @elonmusk 和 @Tesla That would be so nice. I would never be able to afford a car like that I guess I can always dream 2 1 6",
+      "fullZh": "Kim Carpenter @KimCarpent12519 · 16分钟 回复 @elonmusk 和 @Tesla That would be so nice. I would never be able to afford a car like that I guess I can always dream 2 1 6",
+      "counts": {
+        "reply": "",
+        "repost": "",
+        "like": "",
+        "view": ""
+      },
+      "comments": [],
+      "media": [],
+      "url": "https://x.com/KimCarpent12519/status/2024807775327408438",
+      "collectedAt": "2026-02-20T11:42:48.831Z"
+    },
     {
       "name": "simone paglia",
       "handle": "@simonepaglia75",
