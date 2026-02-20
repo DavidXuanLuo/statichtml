@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-20T10:42:00+08:00",
+    "last_updated": "2026-02-20T16:05:00+08:00",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -632,6 +632,17 @@
       "source": "https://x.com/SawyerMerritt/status/2024665112594788826",
       "conclusion": "高配版本名义起售价显著下调有利于提升转化与销量弹性，短期需持续跟踪真实ASP与毛利影响。",
       "key_numbers": "$114,990 → $99,990（- $15,000）",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-20",
+      "category": "价格策略",
+      "title": "Model S/X 的 Lunar Silver 车漆在定制配置器售罄，或指向产品收尾阶段推进。",
+      "summary": "Sawyer Merritt称，Tesla Model S/X 的 Lunar Silver 车漆已在官方定制配置器中不可选；仍可从现车库存购买该配色，并提及“下一季度生产结束”背景下Tesla不再新增该配色生产。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2024688553926807580",
+      "conclusion": "若该口径延续，S/X可选配置收缩与库存化销售并行，强化高端小众车型逐步收尾、资源向主力平台集中预期。",
+      "key_numbers": "关键信号：Lunar Silver在配置器下线；仍可买库存车；时间线指向“next quarter”生产收尾（转述口径）。",
       "milestone": false
     }
   ]
