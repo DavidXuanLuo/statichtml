@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-19",
+    "last_updated": "2026-02-20T10:42:00+08:00",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -611,6 +611,28 @@
       "key_numbers": ">8 billion miles",
       "source": "https://x.com/Tesla/status/2024177015570767920",
       "milestone": true
+    },
+    {
+      "date": "2026-02-20",
+      "category": "价格策略",
+      "title": "Tesla推出$59,990双电机AWD Cybertruck新配置（325英里续航）。",
+      "summary": "Sawyer Merritt发布的最新一手配置信息显示，Tesla新增更低价Cybertruck版本：$59,990、325英里续航、0-60mph 4.1s、7,500磅拖拽、325kW峰值充电。",
+      "impact": "high",
+      "source": "https://x.com/SawyerMerritt/status/2024660178700730831",
+      "conclusion": "Cybertruck入门价格带下探至约$60k，有望扩大可负担人群并改善订单获取节奏，但产品组合下移可能对单车毛利形成一定压力。",
+      "key_numbers": "$59,990；325mi；0-60mph 4.1s；7,500lb towing；325kW charging",
+      "milestone": true
+    },
+    {
+      "date": "2026-02-20",
+      "category": "价格策略",
+      "title": "北美Cyberbeast取消$15k Luxe Package，起售价下调至$99,990。",
+      "summary": "Sawyer Merritt披露，Tesla在北美取消Cyberbeast 15,000美元Luxe选装包，起售价从$114,990下调至$99,990。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2024665112594788826",
+      "conclusion": "高配版本名义起售价显著下调有利于提升转化与销量弹性，短期需持续跟踪真实ASP与毛利影响。",
+      "key_numbers": "$114,990 → $99,990（- $15,000）",
+      "milestone": false
     }
   ]
 }
