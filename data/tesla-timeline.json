@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-20T16:05:00+08:00",
+    "last_updated": "2026-02-20T20:30:00+08:00",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -763,6 +763,17 @@
       "source": "https://x.com/SawyerMerritt/status/2024688553926807580",
       "conclusion": "若该口径延续，S/X可选配置收缩与库存化销售并行，强化高端小众车型逐步收尾、资源向主力平台集中预期。",
       "key_numbers": "关键信号：Lunar Silver在配置器下线；仍可买库存车；时间线指向“next quarter”生产收尾（转述口径）。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-20",
+      "category": "价格策略",
+      "title": "$59,990 Cybertruck入门版配置差异确认：保留电动货箱盖与PowerShare，但下调拖拽/载重并取消部分高配硬件",
+      "summary": "Sawyer Merritt后续帖对新$59,990双电机AWD Cybertruck做了配置澄清：保留与高配相同的电动硬质货箱盖、全部货箱插座（2x120V+1x240V）与PowerShare；但不含vault bed storage、无L-tracks、采用标准bed lamps，并对比$79,990 Premium AWD显示拖拽由11,000lb降至7,500lb、载重由2,500lb降至2,006lb，悬架由空气悬架改为带自适应阻尼的螺旋弹簧。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2024718080958480805",
+      "conclusion": "新入门版并非简单降价，而是“功能保留+硬件降配”的产品分层策略：有利于放大可负担需求池，但ASP下行与规格下探意味着需持续跟踪订单结构与单车毛利。",
+      "key_numbers": "$59,990 vs $79,990；拖拽7,500lb vs 11,000lb；载重2,006lb vs 2,500lb；保留2x120V+1x240V与PowerShare；取消vault storage与L-tracks。",
       "milestone": false
     }
   ]
