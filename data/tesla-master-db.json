@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-20T20:30:00+08:00",
+    "last_updated": "2026-02-20T23:45:00+08:00",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -654,6 +654,17 @@
       "source": "https://x.com/SawyerMerritt/status/2024718080958480805",
       "conclusion": "新入门版并非简单降价，而是“功能保留+硬件降配”的产品分层策略：有利于放大可负担需求池，但ASP下行与规格下探意味着需持续跟踪订单结构与单车毛利。",
       "key_numbers": "$59,990 vs $79,990；拖拽7,500lb vs 11,000lb；载重2,006lb vs 2,500lb；保留2x120V+1x240V与PowerShare；取消vault storage与L-tracks。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-20",
+      "category": "其他",
+      "title": "Sawyer称Tesla首次在印度招聘AI Hardware Engineer（涉及FSD/Optimus芯片方向）",
+      "summary": "Sawyer Merritt转发Tesla India招聘信息称，Tesla正首次在印度招聘AI Hardware Engineer，岗位描述强调“custom silicon and optimized architectures”，用于加速机器学习能力并服务汽车与能源AI场景。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2024869242584076713",
+      "conclusion": "若后续扩展为本地AI硬件/R&D团队，意味着Tesla在印度的人才与研发布局前移，利于FSD/Optimus相关算力与工程体系全球化，但短期仍属前置信号。",
+      "key_numbers": "新增信号：India首个AI Hardware Engineer招聘；关键词：custom silicon、optimized architectures；覆盖方向：FSD/Optimus/能源AI（岗位描述口径）。",
       "milestone": false
     }
   ]
