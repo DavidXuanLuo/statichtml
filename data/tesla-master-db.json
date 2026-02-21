@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-21 17:43",
+    "last_updated": "2026-02-21 23:43",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -699,6 +699,17 @@
       "conclusion": "Autopilot相关重大民事判赔被维持，强化FSD/辅助驾驶在法律与监管层面的责任敞口定价，短期不利于自动驾驶风险溢价收敛。",
       "key_numbers": "判赔金额：$243M；案件事故时间：2019年；结果：法官驳回Tesla撤销裁决请求。",
       "milestone": true
+    },
+    {
+      "date": "2026-02-21",
+      "category": "FSD",
+      "title": "Elon回复“Coming”，释放FSD语言指令交互（如口头指定停车/路线偏好）上线信号",
+      "summary": "在关于FSD可否通过自然语言指定驾驶意图（如‘在门口附近找车位’‘下一街区右转’）的讨论串中，Elon Musk于2026-02-21回复“Coming”，被市场解读为FSD与语音/语言提示深度整合的短期产品信号。",
+      "impact": "medium",
+      "source": "https://x.com/elonmusk/status/2025095479302803693",
+      "conclusion": "若语言可提示导航/停车偏好落地，FSD人机交互将从‘系统猜意图’转向‘用户可控意图输入’，有望提升可用性与订阅黏性，并为Robotaxi无方向盘场景的人机交互打基础。",
+      "key_numbers": "发布时间：2026-02-21 14:29（X）；Elon原文：Coming；对应场景：停车点位与路径偏好的自然语言指令。",
+      "milestone": false
     }
   ]
 }
