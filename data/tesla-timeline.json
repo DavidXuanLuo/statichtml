@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-20T23:45:00+08:00",
+    "last_updated": "2026-02-21T08:46:00+08:00",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -785,6 +785,17 @@
       "source": "https://x.com/SawyerMerritt/status/2024869242584076713",
       "conclusion": "若后续扩展为本地AI硬件/R&D团队，意味着Tesla在印度的人才与研发布局前移，利于FSD/Optimus相关算力与工程体系全球化，但短期仍属前置信号。",
       "key_numbers": "新增信号：India首个AI Hardware Engineer招聘；关键词：custom silicon、optimized architectures；覆盖方向：FSD/Optimus/能源AI（岗位描述口径）。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-21",
+      "category": "价格策略",
+      "title": "Elon称$59,990 Cybertruck入门价仅限约10天窗口，短期促销定价策略进一步明确",
+      "summary": "Reuters援引Elon在X对用户回复称，新发布的$59,990双电机AWD Cybertruck价格“仅在接下来10天有效”；后续正式售价尚未明确。该信息与此前新低价车型发布形成组合，指向Tesla通过限时价格窗口加速订单转化。",
+      "impact": "medium",
+      "source": "https://www.reuters.com/business/autos-transportation/tesla-cuts-price-cybertruck-cyberbeast-us-2026-02-20/",
+      "conclusion": "限时10天定价窗口意味着Tesla在Cybertruck上采取更主动的短周期价格运营，以换取订单与流量；对销量节奏边际利多，但若常态化将加大ASP与汽车毛利波动。",
+      "key_numbers": "限时窗口：约10天；新入门价：$59,990；Cyberbeast：$114,990下调至$99,990（Reuters同文）。",
       "milestone": false
     }
   ]
