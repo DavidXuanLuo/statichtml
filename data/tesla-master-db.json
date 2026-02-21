@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-21 09:29",
+    "last_updated": "2026-02-21 17:43",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -688,6 +688,17 @@
       "conclusion": "Cybertruck短期采用“限时低价+按需求动态回调”策略，有助于测试价格弹性并优化订单获取，但提高ASP与毛利可预测性波动。",
       "key_numbers": "核心口径：Depends on how much demand we see at this price level；当前价格锚：$59,990；窗口：约10天（此前披露）。",
       "milestone": false
+    },
+    {
+      "date": "2026-02-21",
+      "category": "监管",
+      "title": "美国联邦法官维持特斯拉Autopilot致命事故2.43亿美元判赔，驳回撤销裁决请求",
+      "summary": "Reuters报道，联邦法官驳回Tesla推翻陪审团2.43亿美元判决的请求；该案源于2019年一辆启用Autopilot的Model S事故，造成1人死亡、1人重伤。",
+      "impact": "high",
+      "source": "https://www.reuters.com/world/us-judge-upholds-243-million-verdict-against-tesla-over-fatal-autopilot-crash-2026-02-20/",
+      "conclusion": "Autopilot相关重大民事判赔被维持，强化FSD/辅助驾驶在法律与监管层面的责任敞口定价，短期不利于自动驾驶风险溢价收敛。",
+      "key_numbers": "判赔金额：$243M；案件事故时间：2019年；结果：法官驳回Tesla撤销裁决请求。",
+      "milestone": true
     }
   ]
 }
