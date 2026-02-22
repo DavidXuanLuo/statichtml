@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-22 11:21",
+    "last_updated": "2026-02-22 15:03",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -840,6 +840,17 @@
       "source": "https://x.com/SawyerMerritt/status/2025282511090126862",
       "conclusion": "若该分层策略执行顺利，Tesla可用双座Cybercab优化单位里程成本，再以Model Y补足多人场景，从而在成本效率与服务覆盖之间取得平衡。",
       "key_numbers": "出行结构：约85%为1-2人、约15%为>2人；运力分层：Cybercab（双座）+ Model Y Robotaxi补位。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-21",
+      "category": "FSD",
+      "title": "Tesla AI披露AI4芯片具备双计算机并行全冗余故障切换架构，覆盖FSD与Optimus",
+      "summary": "Tesla AI官方账号发文称，AI4芯片采用full fail-over redundancy：两套计算机并行运行并相互校验，一旦一套出现问题另一套可立即接管；并明确该芯片同时用于车辆FSD与Tesla Optimus。",
+      "impact": "medium",
+      "source": "https://x.com/Tesla_AI/status/2024946213821485164",
+      "conclusion": "官方确认AI4为‘并行双机+即时接管’冗余架构，强化了FSD/Robotaxi在功能安全与可靠性上的技术叙事，也有助于支持后续监管沟通。",
+      "key_numbers": "核心机制：2台计算机并行运行并互检；故障处置：一侧异常时另一侧即时接管；覆盖平台：FSD + Optimus。",
       "milestone": false
     }
   ]
