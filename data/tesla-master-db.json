@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-22 15:03",
+    "last_updated": "2026-02-22 21:26",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -731,6 +731,17 @@
       "source": "https://x.com/Tesla_AI/status/2024946213821485164",
       "conclusion": "官方确认AI4为‘并行双机+即时接管’冗余架构，强化了FSD/Robotaxi在功能安全与可靠性上的技术叙事，也有助于支持后续监管沟通。",
       "key_numbers": "核心机制：2台计算机并行运行并互检；故障处置：一侧异常时另一侧即时接管；覆盖平台：FSD + Optimus。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-22",
+      "category": "FSD",
+      "title": "Elon称Tesla FSD现已可识别手势信号，欧洲窄路会车场景能力外显",
+      "summary": "Elon Musk在X发帖表示“Tesla self-driving now recognizes hand signals”，并引用Tesla Europe演示：FSD Supervised在荷兰狭窄路段会车时可响应对向来车驾驶员的手势指挥通过。",
+      "impact": "medium",
+      "source": "https://x.com/elonmusk/status/2025300509221884268",
+      "conclusion": "手势识别属于复杂交互场景能力的边界外延，若在更多地区稳定复现，将提升FSD在欧洲窄路/礼让场景的可用性与监管沟通说服力。",
+      "key_numbers": "发布时间：2026-02-22 04:04（Asia/Shanghai）；关键口径：\"Tesla self-driving now recognizes hand signals\"；演示区域：Netherlands（Tesla Europe引用视频）。",
       "milestone": false
     }
   ]
