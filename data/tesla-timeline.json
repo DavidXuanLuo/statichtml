@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-21 23:43",
+    "last_updated": "2026-02-22 11:21",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -829,6 +829,17 @@
       "source": "https://x.com/elonmusk/status/2025095479302803693",
       "conclusion": "若语言可提示导航/停车偏好落地，FSD人机交互将从‘系统猜意图’转向‘用户可控意图输入’，有望提升可用性与订阅黏性，并为Robotaxi无方向盘场景的人机交互打基础。",
       "key_numbers": "发布时间：2026-02-21 14:29（X）；Elon原文：Coming；对应场景：停车点位与路径偏好的自然语言指令。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-22",
+      "category": "Robotaxi",
+      "title": "Sawyer转引：Cybercab坚持双座定位，称北美约85%出行仅1-2人；>2人场景将由Model Y Robotaxi承接",
+      "summary": "Sawyer Merritt发帖称，Cybercab采用双座是因为北美约85%的汽车出行只有1-2人；对于剩余约15%的多人出行，Tesla网络将通过呼叫Model Y robotaxi（或多台车）来承接。该表述直接对应Robotaxi车队的车型分层与调度逻辑。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2025282511090126862",
+      "conclusion": "若该分层策略执行顺利，Tesla可用双座Cybercab优化单位里程成本，再以Model Y补足多人场景，从而在成本效率与服务覆盖之间取得平衡。",
+      "key_numbers": "出行结构：约85%为1-2人、约15%为>2人；运力分层：Cybercab（双座）+ Model Y Robotaxi补位。",
       "milestone": false
     }
   ]
