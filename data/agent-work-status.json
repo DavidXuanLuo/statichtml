@@ -3,7 +3,7 @@
     "title": "贾维斯实时工作看板（桌面版）",
     "timezone": "Asia/Shanghai",
     "refreshSeconds": 8,
-    "lastUpdated": "2026-02-23 18:42"
+    "lastUpdated": "2026-02-23 18:43"
   },
   "summary": {
     "status": "running",
@@ -40,12 +40,17 @@
       "id": "ops-dashboard",
       "title": "工作看板维护",
       "status": "running",
-      "progress": "已同步本轮巡检：100样本/75新增（闸门未过）",
-      "detail": "执行约束 profile=openclaw；数据已写入但页面暂未可见本轮 generatedAt，未外发。",
-      "updatedAt": "18:42"
+      "progress": "已同步本轮巡检：100样本/75新增（闸门已过）",
+      "detail": "数据写入并已确认页面可见，可外发收录条数。",
+      "updatedAt": "18:43"
     }
   ],
   "timeline": [
+    {
+      "time": "18:43",
+      "type": "scan",
+      "text": "发送前闸门复检通过：GitHub Pages 已可见本轮 generatedAt=2026-02-23T10:41:30.487Z（页面HTTP 200），可外发本次收录条数：75。"
+    },
     {
       "time": "18:42",
       "type": "scan",
@@ -440,11 +445,6 @@
       "time": "10:01",
       "type": "scan",
       "text": "美股X滚动收录（放宽增量版）执行：样本100条（相关74/不相关26），实际新增74条；已达10条门槛并提交。"
-    },
-    {
-      "time": "09:41",
-      "type": "scan",
-      "text": "美股X滚动收录（放宽增量版）执行：样本100条（相关91/不相关9），实际新增91条；已达10条门槛并提交。"
     }
   ],
   "completed": [
@@ -574,6 +574,11 @@
   ],
   "recentActions": [
     {
+      "time": "2026-02-23 18:43",
+      "text": "发送前闸门复检通过：GitHub Pages 已可见本轮 generatedAt=2026-02-23T10:41:30.487Z（页面HTTP 200），可外发本次收录条数：75。",
+      "level": "ok"
+    },
+    {
       "time": "2026-02-23 18:42",
       "text": "美股X相关信息滚动收录（放宽增量版）：浏览样本100条，相关75条/不相关25条；实际新增75条。已写入并同步看板，但发送前闸门未通过（GitHub Pages stocks-tweets-data.json 暂未可见本轮 generatedAt=2026-02-23T10:41:30.487Z），本轮不外发。",
       "level": "warn"
@@ -609,8 +614,14 @@
       "level": "ok"
     }
   ],
-  "updatedAt": "2026-02-23T10:42:00Z",
+  "updatedAt": "2026-02-23T10:43:00Z",
   "events": [
+    {
+      "time": "2026-02-23T10:43:00Z",
+      "type": "cron",
+      "title": "美股X相关信息滚动收录（放宽增量版）",
+      "text": "发送前闸门复检通过：GitHub Pages 已可见本轮 generatedAt=2026-02-23T10:41:30.487Z（页面HTTP 200），可外发本次收录条数：75。"
+    },
     {
       "time": "2026-02-23T10:42:00Z",
       "type": "cron",
