@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-22 21:26",
+    "last_updated": "2026-02-23 13:03",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -742,6 +742,17 @@
       "source": "https://x.com/elonmusk/status/2025300509221884268",
       "conclusion": "手势识别属于复杂交互场景能力的边界外延，若在更多地区稳定复现，将提升FSD在欧洲窄路/礼让场景的可用性与监管沟通说服力。",
       "key_numbers": "发布时间：2026-02-22 04:04（Asia/Shanghai）；关键口径：\"Tesla self-driving now recognizes hand signals\"；演示区域：Netherlands（Tesla Europe引用视频）。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-23",
+      "category": "销量",
+      "title": "Sawyer称Model YL（6座）已获澳大利亚销售批准，Tesla在澳洲产品线扩张信号增强",
+      "summary": "Sawyer Merritt发帖称，澳大利亚Rover车辆批准系统已出现Tesla Model YL（variant: YL5NDB）“approved for sale”记录，意味着6座加长版Model Y在当地销售合规层面取得关键进展。该信息由其转引当地跟踪账号Rob Grieves的一手截图与编号。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2025776204133888392",
+      "conclusion": "Model YL若在澳洲进入交付，将扩大Tesla在右舵市场的细分覆盖并改善单车产品组合；短期更偏‘准入里程碑’，对全球销量与利润的实质拉动仍取决于正式定价、产能与交付节奏。",
+      "key_numbers": "批准信号：Australia ROVER列示approved；车型：Model YL（6-seat）；变体编号：YL5NDB。",
       "milestone": false
     }
   ]
