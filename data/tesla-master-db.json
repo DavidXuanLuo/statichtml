@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-23 13:03",
+    "last_updated": "2026-02-23 17:42",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,17 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-02-21",
+      "category": "价格策略",
+      "title": "Tesla/Cybertruck上新入门版：美国起售价降至59,990美元（双电机AWD、约325英里续航）",
+      "summary": "Tesla官号转发Cybertruck官方帖，确认美国市场可下单新版Cybertruck，标注“most affordable Cybertruck yet”，起售价$59,990；配置要点包括双电机AWD、预估约325英里续航、带动力后斗盖与120V/240V外放电接口。",
+      "impact": "high",
+      "source": "https://x.com/Tesla/status/2024937622955786520",
+      "conclusion": "Cybertruck入门价格下探有望扩大可负担客群、改善订单转化，但也意味着产品组合与单车毛利需继续在放量与利润间平衡。",
+      "key_numbers": "起售价：$59,990；驱动：Dual Motor AWD；续航：est. 325 miles；定位：most affordable Cybertruck yet。",
+      "milestone": true
+    },
     {
       "date": "2026-02-19",
       "category": "监管",
