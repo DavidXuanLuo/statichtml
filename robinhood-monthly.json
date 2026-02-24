@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-02-23T11:50:44Z",
+  "updatedAt": "2026-02-24T11:52:05.265Z",
   "records": [
     {
       "month": "2025-02",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-february-2025-operating-data",
       "available": true,
       "funded_customers_m": 25.6,
-      "auc_b": 187.0,
+      "auc_b": 187,
       "net_deposits_b": 4.8,
       "equity_volume_b": 142.9,
       "options_contracts_m": 165.6,
       "crypto_volume_b": 14.4,
       "margin_book_b": 8.7,
       "total_cash_sweep_b": 26.2,
-      "securities_lending_rev_m": 22.0
+      "securities_lending_rev_m": 22
     },
     {
       "month": "2025-03",
@@ -25,28 +25,28 @@
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-april-2025-operating-data",
       "available": true,
       "funded_customers_m": 25.9,
-      "auc_b": 232.0,
+      "auc_b": 232,
       "net_deposits_b": 6.8,
       "equity_volume_b": 157.8,
       "options_contracts_m": 167.5,
       "crypto_volume_b": 8.6,
       "margin_book_b": 8.4,
       "total_cash_sweep_b": 28.9,
-      "securities_lending_rev_m": 25.0
+      "securities_lending_rev_m": 25
     },
     {
       "month": "2025-05",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-may-2025-operating-data",
       "available": true,
       "funded_customers_m": 25.9,
-      "auc_b": 255.0,
+      "auc_b": 255,
       "net_deposits_b": 3.5,
       "equity_volume_b": 180.5,
       "options_contracts_m": 179.8,
       "crypto_volume_b": 11.7,
-      "margin_book_b": 9.0,
+      "margin_book_b": 9,
       "total_cash_sweep_b": 30.8,
-      "securities_lending_rev_m": 33.0
+      "securities_lending_rev_m": 33
     },
     {
       "month": "2025-06",
@@ -58,28 +58,28 @@
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-july-2025-operating-data",
       "available": true,
       "funded_customers_m": 26.7,
-      "auc_b": 298.0,
+      "auc_b": 298,
       "net_deposits_b": 6.4,
       "equity_volume_b": 209.1,
       "options_contracts_m": 195.8,
       "crypto_volume_b": 16.8,
       "margin_book_b": 11.4,
       "total_cash_sweep_b": 33.6,
-      "securities_lending_rev_m": 61.0
+      "securities_lending_rev_m": 61
     },
     {
       "month": "2025-08",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-august-2025-operating-data",
       "available": true,
       "funded_customers_m": 26.7,
-      "auc_b": 304.0,
+      "auc_b": 304,
       "net_deposits_b": 4.8,
       "equity_volume_b": 199.2,
       "options_contracts_m": 195.5,
       "crypto_volume_b": 13.7,
       "margin_book_b": 12.5,
       "total_cash_sweep_b": 34.1,
-      "securities_lending_rev_m": 53.0
+      "securities_lending_rev_m": 53
     },
     {
       "month": "2025-09",
@@ -91,28 +91,28 @@
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-october-2025-operating-data",
       "available": true,
       "funded_customers_m": 27.1,
-      "auc_b": 343.0,
+      "auc_b": 343,
       "net_deposits_b": 5.6,
       "equity_volume_b": 320.1,
       "options_contracts_m": 266.7,
       "crypto_volume_b": 32.5,
-      "margin_book_b": null,
+      "margin_book_b": 16.5,
       "total_cash_sweep_b": 34.2,
-      "securities_lending_rev_m": 60.0
+      "securities_lending_rev_m": 60
     },
     {
       "month": "2025-11",
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-november-2025-operating-data",
       "available": true,
       "funded_customers_m": 26.9,
-      "auc_b": 325.0,
+      "auc_b": 325,
       "net_deposits_b": 7.1,
       "equity_volume_b": 201.5,
       "options_contracts_m": 193.2,
       "crypto_volume_b": 28.6,
       "margin_book_b": 16.8,
       "total_cash_sweep_b": 32.5,
-      "securities_lending_rev_m": 34.0
+      "securities_lending_rev_m": 34
     },
     {
       "month": "2025-12",
@@ -124,14 +124,14 @@
       "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-reports-january-2026-operating-data",
       "available": true,
       "funded_customers_m": 27.2,
-      "auc_b": 324.0,
+      "auc_b": 324,
       "net_deposits_b": 4.5,
       "equity_volume_b": 227.3,
-      "options_contracts_m": 200.0,
+      "options_contracts_m": 200,
       "crypto_volume_b": 22.9,
       "margin_book_b": 18.4,
       "total_cash_sweep_b": 31.5,
-      "securities_lending_rev_m": 34.0
+      "securities_lending_rev_m": 34
     },
     {
       "month": "2026-02",
