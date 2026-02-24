@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-24 08:02",
+    "last_updated": "2026-02-24 08:44",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -895,6 +895,17 @@
       "source": "https://electrek.co/2026/02/23/tesla-nhtsa-fsd-traffic-violation-investigation-second-extension/",
       "conclusion": "FSD交通违法调查进入“二次延期”阶段，显示监管取证与披露压力仍高；在Robotaxi扩城预期下，该变量将继续抬升自动驾驶监管不确定性折价。",
       "key_numbers": "截止日：1/19 → 2/23 → 3/9（2026）；涉及范围：约288万辆车（PE25012口径）；历史待审记录：8,313条（此前披露）。",
+      "milestone": true
+    },
+    {
+      "date": "2026-02-24",
+      "category": "监管",
+      "title": "Tesla起诉加州DMV要求撤销“FSD/Autopilot虚假宣传”认定，监管与诉讼进入新阶段",
+      "summary": "CNBC披露，Tesla已向法院起诉California DMV，要求推翻其在行政程序中对“Autopilot/Full Self-Driving”营销构成虚假宣传的认定。尽管DMV此前确认Tesla已完成营销措辞整改并不执行30天禁售，但本次诉讼显示双方争议从“整改执行”升级到“法律定性”层面。",
+      "impact": "high",
+      "source": "https://www.cnbc.com/2026/02/23/tesla-sues-california-dmv-to-reverse-false-advertising-ruling-on-fsd.html",
+      "conclusion": "Tesla与加州监管方围绕FSD营销表述的博弈升级为司法程序，短期将抬升自动驾驶监管不确定性与法律风险溢价，不利于FSD/Robotaxi估值折价快速收敛。",
+      "key_numbers": "关键时间：诉状日期2026-02-13；DMV整改确认日期2026-02-17；此前潜在处罚：最多30天销售/制造许可暂停（最终未执行）。",
       "milestone": true
     }
   ]
