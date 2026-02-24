@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-24 08:44",
+    "last_updated": "2026-02-24 11:42",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -787,6 +787,17 @@
       "conclusion": "Tesla与加州监管方围绕FSD营销表述的博弈升级为司法程序，短期将抬升自动驾驶监管不确定性与法律风险溢价，不利于FSD/Robotaxi估值折价快速收敛。",
       "key_numbers": "关键时间：诉状日期2026-02-13；DMV整改确认日期2026-02-17；此前潜在处罚：最多30天销售/制造许可暂停（最终未执行）。",
       "milestone": true
+    },
+    {
+      "date": "2026-02-24",
+      "category": "销量",
+      "title": "Sawyer称$59,990 Cybertruck新入门版美国预估交付由2026年6月推迟至9-10月，需求侧信号转强",
+      "summary": "Sawyer Merritt发布截图称，Tesla美国官网对新$59,990双电机AWD Cybertruck的预计交付窗口已从“2026年6月”变更为“2026年9-10月”，其判断为该价位需求强于预期。该变动发生在Elon此前给出“约10天限时价”窗口之后，属于订单/排产节奏的最新一手信号。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2026131147302805813",
+      "conclusion": "若交付窗口后移属真实订单爬升所致，说明Cybertruck在$60k价位具备较高价格弹性，有利于短期订单可见度；但排产后移也意味着收入确认节奏与产品组合仍需持续跟踪。",
+      "key_numbers": "交付预估：2026年6月→2026年9-10月；车型/价位：Cybertruck Dual Motor AWD，$59,990；信号时间：2026-02-24（Sawyer贴文）。",
+      "milestone": false
     }
   ]
 }
