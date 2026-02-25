@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-24 12:48",
+    "last_updated": "2026-02-25 08:43",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -808,6 +808,28 @@
       "source": "https://x.com/SawyerMerritt/status/2026141723584344077",
       "conclusion": "尽管仍属非官方目击，但若后续持续出现“无镜/无显性人工操控”公开路测信号，将边际强化Cybercab在2026年量产与Robotaxi落地前的工程验证进度预期。",
       "key_numbers": "时间：2026-02-24；关键信号：无外后视镜（目击视频）；来源属性：第三方路测目击，未获Tesla官方确认。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-25",
+      "category": "价格策略",
+      "title": "Sawyer称Tesla确认：$59,990 Cybertruck双电机AWD将在2月28日后上调价格",
+      "summary": "Sawyer Merritt发帖称，Tesla已在官网明确提示新款Cybertruck Dual-Motor AWD当前定价将在2月28日后上调；该口径把此前“约10天窗口”的弹性说法进一步落地为明确截止日期。",
+      "impact": "high",
+      "source": "https://x.com/SawyerMerritt/status/2026373010035224834",
+      "conclusion": "Cybertruck低价引流阶段进入明确倒计时，若2月28日后按计划提价，说明Tesla短期已通过限时低价完成需求测试并转向ASP修复。",
+      "key_numbers": "当前价格锚：$59,990；适用车型：Cybertruck Dual-Motor AWD；提价时间点：2026-02-28之后。",
+      "milestone": true
+    },
+    {
+      "date": "2026-02-25",
+      "category": "监管",
+      "title": "NHTSA宣布将于3月10日举行自动驾驶“重大活动”，聚焦联邦监管与产业协同",
+      "summary": "Sawyer Merritt援引NHTSA管理员信息称，NHTSA将在3月10日于USDOT总部举行自动驾驶公开会议，包含DOT领导发言与行业高管讨论，官方页面显示会议时间为美东9:00-16:30。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2026378513985450000",
+      "conclusion": "在FSD调查延期与Robotaxi扩城并行阶段，联邦层面集中讨论自动驾驶将提高政策预期敏感度，Tesla后续监管沟通节奏值得重点跟踪。",
+      "key_numbers": "会议时间：2026-03-10（ET 9:00-16:30）；主办方：NHTSA/USDOT；主题：自动驾驶监管与产业议题。",
       "milestone": false
     }
   ]
