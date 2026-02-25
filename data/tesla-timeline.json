@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-25 10:23",
+    "last_updated": "2026-02-25 23:44",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -961,6 +961,17 @@
       "source": "https://x.com/SawyerMerritt/status/2026476747256963361",
       "conclusion": "在2月28日后提价预期之外再取消$1,000推荐折扣，显示Tesla正同步收紧Cybertruck促销强度，短期有助于ASP修复，但需跟踪订单转化是否受影响。",
       "key_numbers": "车型：$59,990 Cybertruck Dual Motor AWD；变化：移除referral资格（新客-$1,000折扣取消）；保留：loyalty benefits；对照：Premium AWD/Cyberbeast仍可referral。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-25",
+      "category": "FSD",
+      "title": "Sawyer称Tesla已申请在瑞典延雪平开展FSD Supervised本地测试，欧洲城市落地范围或继续扩展",
+      "summary": "Sawyer Merritt发帖称，Tesla北欧公共政策负责人Sofia Bennerstål确认公司已向瑞典延雪平（Jönköping）提交FSD Supervised本地测试申请，属于在欧洲新增城市级测试准入的前置动作。当前仍处于申请/审批阶段，尚非正式开放。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2026679890301407436",
+      "conclusion": "若获批，FSD在欧洲的城市测试版图将继续扩展，有助于提升后续监管沟通与区域化商业化预期，但短期仍取决于地方审批节奏。",
+      "key_numbers": "新增申请城市：Jönköping（瑞典）；信息披露时间：2026-02-25；阶段：已提交测试申请（非正式上线）。",
       "milestone": false
     }
   ]
