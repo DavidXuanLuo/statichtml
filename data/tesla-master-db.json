@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-26 19:42",
+    "last_updated": "2026-02-26 21:08",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -875,6 +875,17 @@
       "conclusion": "Powerwall在澳洲新增分销通道，短期有助于提升区域可得性与出货效率；对Tesla储能收入的边际贡献取决于实际到货节奏与终端需求转化。",
       "key_numbers": "时间点：2月底入库、3月开售；区域：澳大利亚；产品：Tesla Powerwall及配件。",
       "milestone": false
+    },
+    {
+      "date": "2026-02-26",
+      "category": "监管",
+      "title": "Reuters：Tesla称加州Robotaxi将上线，但仍未推进关键运营许可，且连续第6年记录0英里无人驾驶测试里程",
+      "summary": "Reuters披露加州DMV记录显示，Tesla在2025年于加州自动驾驶测试里程为0英里（已连续第六年），且尚未申请超出“可配安全员测试”级别的更高阶许可。报道同时指出，加州Robotaxi合规需按序完成DMV与CPUC多重许可，而Waymo在获批无人驾驶网约车前累计记录约1300万测试里程。",
+      "impact": "high",
+      "source": "https://www.reuters.com/business/autos-transportation/musk-touts-california-robotaxis-tesla-does-nothing-get-permits-2026-02-26/",
+      "conclusion": "该报道强化了Tesla在加州Robotaxi落地上的‘时间表与许可进度错配’风险：若许可推进仍慢于市场预期，2026年Robotaxi跨州扩张与估值兑现节奏将面临监管侧不确定性折价。",
+      "key_numbers": "加州自动驾驶测试里程：2025年0英里（连续第6年）；Waymo历史测试里程：约1300万英里后获无人驾驶网约车许可；区域：加州（美国最大汽车市场）。",
+      "milestone": true
     }
   ]
 }
