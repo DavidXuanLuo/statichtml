@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-25 23:44",
+    "last_updated": "2026-02-26 11:03",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -852,6 +852,17 @@
       "source": "https://x.com/SawyerMerritt/status/2026679890301407436",
       "conclusion": "若获批，FSD在欧洲的城市测试版图将继续扩展，有助于提升后续监管沟通与区域化商业化预期，但短期仍取决于地方审批节奏。",
       "key_numbers": "新增申请城市：Jönköping（瑞典）；信息披露时间：2026-02-25；阶段：已提交测试申请（非正式上线）。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-26",
+      "category": "价格策略",
+      "title": "Tesla China将“7年超低息+5年免息”购车金融政策延长至3月31日",
+      "summary": "Sawyer Merritt披露并引用Tesla China当晚公告：中国市场购车金融支持继续延续，其中包含7年超低息与5年免息两类方案，截止日期延至2026年3月31日。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2026849126999101638",
+      "conclusion": "在中国需求竞争环境下，金融工具延续有助于稳住订单转化与短期交付节奏，但也意味着价格/金融激励仍将对汽车毛利形成压力。",
+      "key_numbers": "政策延长至2026-03-31；工具：7年超低息 + 5年免息。",
       "milestone": false
     }
   ]
