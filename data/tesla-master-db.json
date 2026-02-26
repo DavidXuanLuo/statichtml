@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-26 11:03",
+    "last_updated": "2026-02-26 19:42",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -863,6 +863,17 @@
       "source": "https://x.com/SawyerMerritt/status/2026849126999101638",
       "conclusion": "在中国需求竞争环境下，金融工具延续有助于稳住订单转化与短期交付节奏，但也意味着价格/金融激励仍将对汽车毛利形成压力。",
       "key_numbers": "政策延长至2026-03-31；工具：7年超低息 + 5年免息。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-26",
+      "category": "储能",
+      "title": "澳洲渠道商Supply Partners获Tesla Powerwall分销协议，预计2月底到货、3月开启销售",
+      "summary": "Sawyer Merritt发帖称，澳洲渠道商Supply Partners Group宣布已获得Tesla Powerwall及配套附件分销协议；公司预计首批库存将于2月底入库，并于2026年3月启动正式销售。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2026977555438293104",
+      "conclusion": "Powerwall在澳洲新增分销通道，短期有助于提升区域可得性与出货效率；对Tesla储能收入的边际贡献取决于实际到货节奏与终端需求转化。",
+      "key_numbers": "时间点：2月底入库、3月开售；区域：澳大利亚；产品：Tesla Powerwall及配件。",
       "milestone": false
     }
   ]
