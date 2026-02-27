@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-27 08:44",
+    "last_updated": "2026-02-27 10:23",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -1016,6 +1016,17 @@
       "source": "https://x.com/Tesla/status/2027078567822262280",
       "conclusion": "官方账号直接展示v14.2.2.5“前车前方风险预判”能力，有助于强化FSD安全叙事与用户信任，但投资影响仍需等待更系统的事故率/接管率数据验证。",
       "key_numbers": "发布时间：2月27日（Asia/Shanghai）；版本：FSD v14.2.2.5；互动（抓取时）：172回复、297转帖、2147点赞、约15.47万观看。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-27",
+      "category": "FSD",
+      "title": "Sawyer称Tesla确认：2026年3月31日前下单可转移FSD权益至新车，即使$59,990 Cybertruck AWD在2027年交付",
+      "summary": "Sawyer Merritt发帖表示其已向Tesla（非销售顾问）直接确认：只要用户在2026年3月31日前下单新Tesla，即可将现有FSD权益转移到新车；即便下单的是$59,990 Cybertruck AWD且车辆在2027年才交付，仍可适用。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2027205218362954008",
+      "conclusion": "FSD权益转移窗口被明确到‘下单时点而非交付时点’，有利于在3月末前刺激换购与订单锁定，短期偏利好订单获取；但软件递延确认与后续交付节奏仍需跟踪。",
+      "key_numbers": "截止：2026-03-31前下单；适用口径：可转移FSD至新车；示例车型：$59,990 Cybertruck AWD；交付可延至2027。",
       "milestone": false
     }
   ]
