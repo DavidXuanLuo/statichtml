@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-26 21:08",
+    "last_updated": "2026-02-27 08:44",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -886,6 +886,17 @@
       "conclusion": "该报道强化了Tesla在加州Robotaxi落地上的‘时间表与许可进度错配’风险：若许可推进仍慢于市场预期，2026年Robotaxi跨州扩张与估值兑现节奏将面临监管侧不确定性折价。",
       "key_numbers": "加州自动驾驶测试里程：2025年0英里（连续第6年）；Waymo历史测试里程：约1300万英里后获无人驾驶网约车许可；区域：加州（美国最大汽车市场）。",
       "milestone": true
+    },
+    {
+      "date": "2026-02-27",
+      "category": "FSD",
+      "title": "Tesla官号发布FSD v14.2.2.5前向风险预判案例：可提前识别前车潜在碰撞并主动响应",
+      "summary": "Tesla官方账号于2月27日转发Sawyer Merritt实测视频，称Model Y在FSD (Supervised) v14.2.2.5下可识别前车前方的潜在碰撞风险并及时作出反应，体现系统在前向危险预测与预防性制动上的能力外显。",
+      "impact": "medium",
+      "source": "https://x.com/Tesla/status/2027078567822262280",
+      "conclusion": "官方账号直接展示v14.2.2.5“前车前方风险预判”能力，有助于强化FSD安全叙事与用户信任，但投资影响仍需等待更系统的事故率/接管率数据验证。",
+      "key_numbers": "发布时间：2月27日（Asia/Shanghai）；版本：FSD v14.2.2.5；互动（抓取时）：172回复、297转帖、2147点赞、约15.47万观看。",
+      "milestone": false
     }
   ]
 }
