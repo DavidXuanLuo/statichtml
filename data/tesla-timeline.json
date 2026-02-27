@@ -3,7 +3,7 @@
     "title": "Tesla 关键进展时间线",
     "subtitle": "财报 / 销量 / FSD / Robotaxi / 储能 / 监管 / 价格策略",
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-27 13:41",
+    "last_updated": "2026-02-27 15:03",
     "note": "由 tesla-master-db.json 自动镜像（含推文评论）"
   },
   "events": [
@@ -1038,6 +1038,17 @@
       "source": "https://x.com/SawyerMerritt/status/2027224985715069411",
       "conclusion": "交付预估由“2027年4月”进一步变为“2027年”显示该价位车型订单/排产不确定性仍高；若后续持续后移，短期利好订单可见度但会增加收入确认节奏与车型组合波动。",
       "key_numbers": "交付预估：April 2027 → 2027；车型：Cybertruck Dual-Motor AWD；美国新单价格锚：$59,999（Sawyer贴文口径）。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-27",
+      "category": "FSD",
+      "title": "Sawyer称Tesla北美官网在“Vehicles”菜单新增FSD（Supervised）独立入口，软件产品化入口前置",
+      "summary": "Sawyer Merritt在X发帖称，Tesla已在北美官网“Vehicles”菜单下新增独立“FSD (Supervised)”栏目（配图显示该入口与Model S/3/X/Y、Cybertruck并列），反映FSD在官网信息架构中的优先级提升。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2027225714248847635",
+      "conclusion": "官网将FSD上升为与车型并列的一级入口，通常意味着Tesla正强化软件能力的独立产品叙事与转化路径；短期属营销/入口层优化，后续需跟踪其对订阅渗透与ARPU的实证拉动。",
+      "key_numbers": "时间：2026-02-27；来源：Sawyer贴文（3小时内）；变化点：北美官网“Vehicles”菜单新增“FSD (Supervised)”独立入口。",
       "milestone": false
     }
   ]
