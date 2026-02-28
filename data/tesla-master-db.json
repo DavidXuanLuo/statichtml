@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-27 15:03",
+    "last_updated": "2026-02-28 10:07",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -929,6 +929,17 @@
       "source": "https://x.com/SawyerMerritt/status/2027225714248847635",
       "conclusion": "官网将FSD上升为与车型并列的一级入口，通常意味着Tesla正强化软件能力的独立产品叙事与转化路径；短期属营销/入口层优化，后续需跟踪其对订阅渗透与ARPU的实证拉动。",
       "key_numbers": "时间：2026-02-27；来源：Sawyer贴文（3小时内）；变化点：北美官网“Vehicles”菜单新增“FSD (Supervised)”独立入口。",
+      "milestone": false
+    },
+    {
+      "date": "2026-02-28",
+      "category": "监管",
+      "title": "Reuters：Tesla与德国工会IG Metall就柏林工厂劳资争议达成阶段性和解",
+      "summary": "Reuters报道，Tesla与德国工会IG Metall已就2月柏林工厂劳资会议争议达成阶段性和解，双方同意暂时搁置冲突；该争议此前聚焦工会会议组织与员工代表沟通机制。",
+      "impact": "medium",
+      "source": "https://www.reuters.com/business/world-at-work/german-union-says-settlement-reached-dispute-with-tesla-2026-02-26/",
+      "conclusion": "柏林工厂劳资摩擦阶段性缓和，有助于降低欧洲产能端的短期运营扰动与执行不确定性，但后续仍需跟踪正式机制落地与潜在再博弈。",
+      "key_numbers": "事件时间：2026-02-26（Reuters）；主体：Tesla Germany vs IG Metall；结果：阶段性和解（truce/settlement）。",
       "milestone": false
     }
   ]
