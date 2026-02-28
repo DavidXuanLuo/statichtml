@@ -3,7 +3,7 @@
     "name": "tesla-master-db",
     "version": 2,
     "timezone": "Asia/Shanghai",
-    "last_updated": "2026-02-28 10:07",
+    "last_updated": "2026-02-28 10:25",
     "description": "Tesla投研本地数据库：事件主表驱动H5时间线与可视化模块。"
   },
   "tracking_focus": [
@@ -16,6 +16,17 @@
     "价格策略"
   ],
   "events": [
+    {
+      "date": "2026-02-27",
+      "category": "Robotaxi",
+      "title": "Sawyer称多台Cybercab路测车未见方向盘，并给出“4-8周启动量产”时间指引",
+      "summary": "Sawyer Merritt发帖称，最新路测画面中的多台Cybercab均未见方向盘，并表示“4-8 weeks until volume production starts”。该口径与此前Tesla关于Cybercab将于4月启动生产的说法方向一致，属于量产前进度的民间一手跟踪信号。",
+      "impact": "medium",
+      "source": "https://x.com/SawyerMerritt/status/2027421704566296966",
+      "conclusion": "若“4-8周量产启动”后续被官方口径或产线进展印证，Robotaxi硬件兑现时间表将进一步前移；但当前仍属第三方跟踪信息，需以Tesla官方披露为准。",
+      "key_numbers": "时间指引：4-8 weeks until volume production starts；观察点：路测多台Cybercab未见方向盘；来源：Sawyer Merritt（2026-02-27）。",
+      "milestone": false
+    },
     {
       "date": "2026-02-21",
       "category": "价格策略",
